@@ -1,0 +1,14 @@
+2025-01-22 17:24:19,359 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-22 17:24:19,359 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-22 17:24:19,359 - INFO -  * Restarting with stat
+2025-01-22 17:24:20,107 - WARNING -  * Debugger is active!
+2025-01-22 17:24:20,107 - INFO -  * Debugger PIN: 128-976-328
+2025-01-22 17:26:13,434 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/MaritacaIA.py', reloading
+2025-01-22 17:26:13,587 - INFO -  * Restarting with stat
+2025-01-22 17:26:14,331 - WARNING -  * Debugger is active!
+2025-01-22 17:26:14,331 - INFO -  * Debugger PIN: 128-976-328
+2025-01-22 17:26:16,362 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/MaritacaIA.py', reloading
+2025-01-22 17:26:16,514 - INFO -  * Restarting with stat
+2025-01-22 17:26:17,302 - WARNING -  * Debugger is active!
+2025-01-22 17:26:17,303 - INFO -  * Debugger PIN: 128-976-328
