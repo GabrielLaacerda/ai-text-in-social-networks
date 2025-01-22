@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Comentários</title>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Gerar Comentários para Posts</h1>
+
+    <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
+    <label for="ai">Escolha a IA que irá gerar os comentários:</label>
+    <div class="ia-options">
+        <div class="ia-option">
+            <input type="radio" id="cohere" name="ai" value="cohere" required>
+            <label for="cohere">
+                <div class="container">
+                    <img src="{{ url_for('static', filename='images/cohere.png') }}" alt="Cohere">
+                </div>
+                <p>Cohere</p>
+            </label>
+        </div>
+        <div class="ia-option">
+            <input type="radio" id="chatgpt" name="ai" value="chatgpt">
+            <label for="chatgpt">
+                <div class="container">
+                    <img src="{{ url_for('static', filename='images/chatgpt.png') }}" alt="ChatGPT">
+                </div>
+                <p>ChatGPT</p>
+            </label>
+        </div>
+        <div class="ia-option">
+            <input type="radio" id="gemini" name="ai" value="gemini">
+            <label for="gemini">
+                <div class="container">
+                    <img src="{{ url_for('static', filename='images/gemini.png') }}" alt="Gemini">
+                </div>
+                <p>Gemini</p>
+            </label>
+        </div>
+        <div class="ia-option">
+            <input type="radio" id="llama" name="ai" value="llama">
+            <label for="llama">
+                <div class="container">
+                    <img src="{{ url_for('static', filename='images/llama.png') }}" alt="Llama">
+                </div>
+                <p>Llama</p>
+            </label>
+        </div>
+        <div class="ia-option">
+            <input type="radio" id="maritacaIA" name="ai" value="maritacaIA">
+            <label for="maritacaIA">
+                <div class="container">
+                    <img src="{{ url_for('static', filename='images/maritacaIA.jpeg') }}" alt="MaritacaIA">
+                </div>
+                <p>MaritacaIA</p>
+            </label>
+        </div>
+    </div>
+
+    <label for="themes">Escolha um tema:</label>
+    <select id="themes" name="themes" class="dropdown" onchange="handleThemeSelection(this)">
+        <option value="" selected disabled>Clique para listar os temas disponíveis</option>
+        <option value="Streaming.json">Aluguel de Filmes em Plataformas de Streaming</option>
+        <option value="InteligenciaArtificial.json">Inteligência Artificial na criação de conteúdo</option>
+        <option value="Dolar.json">Alta do dólar</option>
+        <option value="CasasDeApostas.json">Polêmicas de casas de apostas e cassino online</option>
+        <option value="Impostos.json">Impostos/Taxas na importação de produtos</option>
+    </select>
+
+    <button type="submit">Gerar Comentários</button>
+</form>
+
+
+    <!-- Modal de Carregamento -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <p>Processamento iniciado... Por favor, aguarde!</p>
+        </div>
+    </div>
+
+    {% if comentarios %}
+        <h2>Comentários Gerados:</h2>
+        <div class="comentarios">
+            {% for comentario in comentarios %}
+                <p>{{ comentario }}</p>
+            {% endfor %}
+        </div>
+        {% if file_path %}
+            <button onclick="iniciarDownload('{{ file_path }}')">Baixar Comentários</button>
+        {% endif %}
+    {% endif %}
+</body>
+</html>

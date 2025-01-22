@@ -1,0 +1,4 @@
+- Arquivo principal -> app.py
+- Scripts LLMs -> LLMs/
+- Requirements -> Pacotes necessários
+- Comentarios Gerados -> Comentários gerados a partir de cada LLM
