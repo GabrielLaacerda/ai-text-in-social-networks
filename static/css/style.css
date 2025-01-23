@@ -63,11 +63,13 @@ button:hover {
 
 .ia-options {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 colunas */
-    gap: 1px;  /* Diminuindo ainda mais a distância entre os itens */
-    margin-bottom: 5px;  /* Menor margem inferior */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 1px; /* Diminuindo ainda mais a distância entre os itens */
+    margin-bottom: 5px; /* Menor margem inferior */
     width: 100%;
     padding: 0;
+    justify-items: center; /* Centraliza as colunas horizontalmente */
+    align-items: center; /* Centraliza as colunas verticalmente */
 }
 
 .ia-option label {
@@ -75,32 +77,32 @@ button:hover {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    font-size: 15px;  /* Reduzindo o tamanho da fonte */
-    margin-top: 0;  /* Remover margem superior */
+    font-size: 15px; /* Reduzindo o tamanho da fonte */
+    margin-top: 0; /* Remover margem superior */
 }
 
 .ia-option img {
-    width: 125px;  /* Ajusta o tamanho da imagem */
+    width: 125px; /* Ajusta o tamanho da imagem */
     height: 125px; /* Ajusta o tamanho da imagem */
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.choice{
-    margin-bottom:20px;
+.choice {
+    margin-bottom: 20px;
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .ia-options {
-        grid-template-columns: repeat(2, 1fr);  /* 2 colunas em telas menores */
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
 }
 
 @media (max-width: 480px) {
     .ia-options {
-        grid-template-columns: 1fr;  /* 1 coluna em telas ainda menores */
+        grid-template-columns: 1fr; /* 1 coluna em telas ainda menores */
     }
 }
 
