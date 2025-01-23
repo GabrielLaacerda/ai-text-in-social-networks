@@ -52,10 +52,12 @@ button:hover {
 }
 
 .ia-options {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    display: grid;  /* Usando grid em vez de flexbox */
+    grid-template-columns: repeat(3, 1fr);  /* 3 colunas igualmente distribuídas */
+    gap: 5px;  /* Distância reduzida entre os itens */
     margin-bottom: 20px;
+    width: 100%;
+    padding: 0;
 }
 
 .ia-option {
@@ -63,10 +65,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.ia-option input[type="radio"] {
-    display: none; /* Esconde os botões de rádio */
+    flex: 1;
+    max-width: 150px;
+    margin: 0;
 }
 
 .ia-option label {
@@ -75,15 +76,32 @@ button:hover {
     align-items: center;
     cursor: pointer;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 5px;  /* Diminui o espaço entre a imagem e o texto */
 }
 
 .ia-option img {
-    width: 100px;
-    height: 100px;
+    width: 145px;  /* Aumentando a largura das imagens */
+    height: 145px; /* Aumentando a altura das imagens */
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .ia-options {
+        grid-template-columns: repeat(2, 1fr);  /* 2 colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .ia-options {
+        grid-template-columns: 1fr;  /* 1 coluna em telas ainda menores */
+    }
+}
+
+.ia-option input[type="radio"] {
+    display: none; /* Esconde os botões de rádio */
 }
 
 .ia-option input[type="radio"]:checked + label {
@@ -181,6 +199,7 @@ img {
     border-color: #555;
     cursor: pointer;
 }
+
 /* Estilo do pop-up */
 .popup {
     position: fixed;

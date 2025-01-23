@@ -7,6 +7,7 @@ from LLMs.ChatGPT import gerar_comentarios_para_posts as chatGpt
 from LLMs.Gemini import gerar_comentarios_para_posts as gemini
 from LLMs.Llama import gerar_comentarios_para_posts as llama
 from LLMs.MaritacaIA import gerar_comentarios_para_posts as maritaca
+from LLMs.Mistral import gerar_comentarios_para_posts as mistral
 
 # Configuração de logging
 logging.basicConfig(
@@ -84,6 +85,8 @@ def home():
                 comentarios = llama(persona_json, tema_json)
             elif ai_choice == "maritacaIA":
                 comentarios = maritaca(persona_json, tema_json)
+            elif ai_choice == "mistral":
+                comentarios = mistral(persona_json, tema_json)
             else:
                 return {"error": "IA inválida especificada"}, 400
         except Exception as e:
