@@ -62,6 +62,7 @@ def load_json():
 @app.route("/", methods=["GET", "POST"])
 def home():
     comentarios = []
+    indices = [1,2,3,4,5,6]
 
     if request.method == "POST":
         ai_choice = request.form.get("ai")
@@ -105,7 +106,7 @@ def home():
             logging.error(f"Erro ao salvar o arquivo: {str(e)}")
             return {"error": f"Erro ao salvar o arquivo: {str(e)}"}, 500
 
-        return render_template("index.html", comentarios=comentarios, file_path=file_path)
+        return render_template("index.html", comentarios=comentarios, file_path=file_path, ind=indices, zip=zip)
 
     return render_template("index.html", comentarios=comentarios)
 

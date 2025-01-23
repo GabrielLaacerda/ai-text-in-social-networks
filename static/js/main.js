@@ -1,5 +1,3 @@
-console.log("O JavaScript externo foi carregado corretamente!");
-
 function abrirModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "block";
@@ -64,9 +62,23 @@ function showPopup(message, type) {
     // Adicionando o pop-up ao corpo do documento
     document.body.appendChild(popup);
 
-    // Estilo do pop-up
+    // Estilos para posicionar o pop-up no canto superior direito
+    popup.style.position = 'fixed';
+    popup.style.top = '20px'; // Distância de 20px do topo
+    popup.style.right = '20px'; // Distância de 20px da direita
+    popup.style.backgroundColor = 'green'; // Fundo verde
+    popup.style.color = 'white'; // Cor do texto
+    popup.style.padding = '10px'; // Espaçamento interno
+    popup.style.borderRadius = '8px'; // Borda arredondada
+    popup.style.zIndex = '9999'; // Fica acima de outros elementos
+    popup.style.opacity = '1'; // Começa com visibilidade total
+
+    // Fazendo o pop-up desaparecer após 3 segundos
     setTimeout(() => {
         popup.style.opacity = 0;
-        setTimeout(() => popup.remove(), 1000); // Remove o pop-up após ele desaparecer
-    }, 3000); // O pop-up desaparecerá após 3 segundos
+        setTimeout(() => popup.remove(), 1000); // Remove após desaparecer
+    }, 3000); // Desaparece após 3 segundos
 }
+
+
+
