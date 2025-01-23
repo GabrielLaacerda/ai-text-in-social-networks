@@ -98,7 +98,7 @@
         <h2>Comentários Gerados:</h2>
         <div class="comentarios">
             {% for comentario, indice in zip(comentarios, ind) %}
-                <p>{{indice}}.  {{ comentario }}</p>
+                <p>[{{tema}} / Post {{indice}}] - {{ comentario }}</p>
             {% endfor %}
         </div>
         {% if file_path %}

@@ -106,7 +106,7 @@ def home():
             logging.error(f"Erro ao salvar o arquivo: {str(e)}")
             return {"error": f"Erro ao salvar o arquivo: {str(e)}"}, 500
 
-        return render_template("index.html", comentarios=comentarios, file_path=file_path, ind=indices, zip=zip)
+        return render_template("index.html", comentarios=comentarios, file_path=file_path, ind=indices, zip=zip, tema = tema_json['Tema'])
 
     return render_template("index.html", comentarios=comentarios)
 
