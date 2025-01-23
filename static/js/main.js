@@ -79,6 +79,3 @@ function showPopup(message, type) {
         setTimeout(() => popup.remove(), 1000); // Remove após desaparecer
     }, 3000); // Desaparece após 3 segundos
 }
-
-
-
