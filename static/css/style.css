@@ -51,15 +51,6 @@ button:hover {
     background-color: #45a049;
 }
 
-.ia-options {
-    display: grid;  /* Usando grid em vez de flexbox */
-    grid-template-columns: repeat(3, 1fr);  /* 3 colunas igualmente distribuídas */
-    gap: 5px;  /* Distância reduzida entre os itens */
-    margin-bottom: 20px;
-    width: 100%;
-    padding: 0;
-}
-
 .ia-option {
     text-align: center;
     display: flex;
@@ -70,21 +61,34 @@ button:hover {
     margin: 0;
 }
 
+.ia-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 colunas */
+    gap: 1px;  /* Diminuindo ainda mais a distância entre os itens */
+    margin-bottom: 5px;  /* Menor margem inferior */
+    width: 100%;
+    padding: 0;
+}
+
 .ia-option label {
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    font-size: 14px;
-    margin-top: 5px;  /* Diminui o espaço entre a imagem e o texto */
+    font-size: 15px;  /* Reduzindo o tamanho da fonte */
+    margin-top: 0;  /* Remover margem superior */
 }
 
 .ia-option img {
-    width: 145px;  /* Aumentando a largura das imagens */
-    height: 145px; /* Aumentando a altura das imagens */
+    width: 125px;  /* Ajusta o tamanho da imagem */
+    height: 125px; /* Ajusta o tamanho da imagem */
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.choice{
+    margin-bottom:20px;
 }
 
 /* Responsividade para telas menores */
