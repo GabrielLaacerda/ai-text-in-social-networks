@@ -18,13 +18,12 @@ h1 {
 }
 
 form {
-  width: 80%;
-  margin: 20px auto; /* Centraliza o formulário na tela */
-  background-color: white; /* Se você quiser um fundo branco */
-  padding: 20px;   /* Adiciona um pouco de preenchimento dentro do formulário */
-  border-radius: 8px; /* Bordas arredondadas, para um visual mais suave */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
-}
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo dos labels */
@@ -97,7 +96,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 200px;
     margin: 0 auto;
 }
 
@@ -120,7 +119,7 @@ ul li a{
     width: 100%;
     border: 2px solid #ced4da;
     border-radius: 8px;
-    background-color: white;
+    background-color: #fff;
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
     box-sizing: border-box;
@@ -133,7 +132,7 @@ ul li a{
 
 .ia-option input[type="radio"]:checked + label {
     border-color: #007bff;
-    background-color: white;
+    background-color: #e9f5ff;
 }
 
 /* Ajustando a imagem dentro do label */
@@ -288,7 +287,7 @@ select:focus {
 
 
 .offcanvas-body {
-        background-image: white;  /* Cor escura para o fundo */
+        background-image: linear-gradient(to bottom, #2c3e50, #34495e);  /* Cor escura para o fundo */
         color: #ecf0f1;  /* Texto claro */
         padding: 20px;
     }
@@ -296,7 +295,6 @@ select:focus {
     /* Efeito de hover: quando o usuário passar o mouse sobre um item */
 .list-group-item:hover {
     background-image: linear-gradient(to bottom, #2c3e50, #34495e);
-
 }
 
 /* Estilo para os ícones */

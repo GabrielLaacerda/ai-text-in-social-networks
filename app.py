@@ -125,6 +125,13 @@ def download():
         logging.error(f"Erro ao enviar o arquivo: {str(e)}")
         return f"Erro ao enviar o arquivo: {str(e)}", 500
 
+
+
+@app.route("/estatisticas", methods=["GET", "POST"])
+def teste():
+    return render_template("estatisticas.html")
+
+
 if __name__ == "__main__":
     try:
         app.run(debug=True)

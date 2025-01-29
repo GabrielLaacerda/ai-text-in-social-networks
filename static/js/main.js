@@ -20,6 +20,11 @@ function iniciarDownload(file_path) {
     novaJanela.document.close();
 }
 
+function gerarEstatisticas(){
+     window.location.href = '/estatisticas';
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const selectElement = document.getElementById('themes');
@@ -79,3 +84,8 @@ function showPopup(message, type) {
         setTimeout(() => popup.remove(), 1000); // Remove após desaparecer
     }, 3000); // Desaparece após 3 segundos
 }
+
+document.getElementById("principal").addEventListener("click", function(event) {
+        event.preventDefault();  // Impede o comportamento padrão (navegação)
+        location.reload();       // Recarrega a página atual
+    });
