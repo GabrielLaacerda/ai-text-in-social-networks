@@ -78,7 +78,7 @@
 
     <h1 class="m3-4 mb-3" style="color:black">Testar detecção</h1>
 
-    <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
+    <form id="llm-form" method="POST" enctype="multipart/form-data" onsubmit="sendFormData(event)">
         <!-- Escolha da LLM -->
         <label for="ai" class="choice">Escolha a ferramenta de detecção:</label>
         <div class="ia-options">
@@ -122,8 +122,6 @@
     <div id="popupSucesso" style="display:none; position: fixed; top: 20px; right: 20px; background-color: green; color: white; padding: 10px; border-radius: 5px;">
         Sucesso ao gerar arquivo!
     </div>
-
-
 
      {% if comentarios %}
     <h2 style="color:white">Comentários Gerados:</h2>

@@ -55,3 +55,4 @@ def probabilidade_IA(comentarios, modelos):
                 })
 
     return resultados  # Retorna os resultados no formato desejado
+

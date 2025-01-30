@@ -1,14 +1,16 @@
 import os
 import json
 import logging
-from flask import Flask, render_template, request, send_file, session
+from flask import Flask, render_template, request, send_file, session, jsonify
 from LLMs.Cohere import gerar_comentarios_para_posts as cohere
 from LLMs.ChatGPT import gerar_comentarios_para_posts as chatGpt
 from LLMs.Gemini import gerar_comentarios_para_posts as gemini
 from LLMs.Llama import gerar_comentarios_para_posts as llama
 from LLMs.MaritacaIA import gerar_comentarios_para_posts as maritaca
 from LLMs.Mistral import gerar_comentarios_para_posts as mistral
-from IAText_Detectors.Roberta import probabilidade_IA as prob
+from IAText_Detectors.Roberta import probabilidade_IA as roberta_prob
+from IAText_Detectors.Sapling import probabilidade_IA as sapling_prob
+
 
 # Configuração de logging
 logging.basicConfig(
@@ -140,17 +142,18 @@ def estatisticas():
 def testar_llms():
     if request.method == 'POST':
         ai_choice = request.form.get('ai')
+        lista_llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
+
         if ai_choice == "roberta":
             theme_choice = request.form.get('themes')
-            lista_llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
+                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
                     content = file.read()
-                    lista_comentarios.append({'llm':llm,'comentarios':content})
+                    lista_comentarios.append({'llm': llm, 'comentarios': content})
 
-            result = prob(lista_comentarios,lista_llms)
+            result = roberta_prob(lista_comentarios, lista_llms)
 
             processed_data = [
                 {
@@ -162,15 +165,43 @@ def testar_llms():
                 for item in result
             ]
 
-            # Salvar resultados da LLM de detecção Roberta
             with open(f"teste.txt", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data, json_file, ensure_ascii=False, indent=4)
 
-            print("Dados salvos com sucesso em Resultados/")
+            return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
 
-        elif ai_choice == "sapling":
-            print("teste")
+        if ai_choice == "sapling":
+            theme_choice = request.form.get('themes')
+            lista_comentarios = []
 
+            for llm in lista_llms:
+                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
+                    content = file.read()
+                    lista_comentarios.append({'llm': llm, 'comentarios': content})
+
+            result_sapling = sapling_prob(lista_comentarios, lista_llms)
+
+            processed_data_sap = [
+                {
+                    'llm': item['llm'],
+                    'comentario': item['comentario'],
+                    'prob_humano': item['prob_humano'],
+                    'prob_IA': item['prob_IA']
+                }
+                for item in result_sapling
+            ]
+
+            # Salvar os resultados em um arquivo JSON
+            with open(f"Resultados_Sapling/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+                json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
+
+            # Retornar uma resposta JSON indicando sucesso
+            return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
+
+        # Se nenhuma das condições foi atendida, retornar erro
+        return jsonify({"success": False, "message": "Erro ao processar."})
+
+    # Se for um GET, retorna o template
     return render_template("testar_llms.html")
 
 

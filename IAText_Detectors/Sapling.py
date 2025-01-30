@@ -1,66 +1,53 @@
-import torch
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
-import matplotlib.pyplot as plt
-import numpy as np
+import requests
+import warnings
 
-# Carregar o modelo GPT-2 e o tokenizer
-model_name = 'gpt2'  # Pode usar 'gpt2-medium', 'gpt2-large', dependendo do seu hardware
-model = GPT2LMHeadModel.from_pretrained(model_name)
-tokenizer = GPT2Tokenizer.from_pretrained(model_name)
+def probabilidade_IA(comentarios, modelos):
+    warnings.filterwarnings("ignore")
 
-# Colocar o modelo em modo de avaliação
-model.eval()
+    # Define a chave da API e o endpoint
+    api_key = "ELC1FVXZVPSCUJJB2N4P6WFHC9272EOO"
+    url = "https://api.sapling.ai/api/v1/aidetect"
 
+    if not isinstance(comentarios, list):
+        raise ValueError("O argumento 'comentarios' deve ser uma lista.")
 
-def get_token_probs(text):
-    """
-    Função para obter as probabilidades de tokens usando GPT-2.
-    """
-    # Tokeniza o texto
-    inputs = tokenizer(text, return_tensors='pt')
+    resultados = []
 
-    # Obter as logits do modelo
-    with torch.no_grad():
-        outputs = model(**inputs)
+    for item in comentarios:
+        if not isinstance(item, dict) or 'llm' not in item or 'comentarios' not in item:
+            continue  # Pula itens inválidos
 
-    # Obter as probabilidades (softmax)
-    logits = outputs.logits
-    probs = torch.nn.functional.softmax(logits, dim=-1)
+        modelo = item['llm']
+        texto = item['comentarios']
 
-    # Converter logits em probabilidades para os tokens
-    token_probs = probs.squeeze().cpu().numpy()
+        if modelo in modelos and isinstance(texto, str):
+            frases = texto.split("\n\n")  # Divide pelo separador duplo de nova linha
+            frases = [frase.strip() for frase in frases if frase.strip()]  # Remove espaços extras
 
-    return token_probs
+            for frase in frases:
+                # Chama a API da Sapling para detecção de IA
+                response = requests.post(
+                    url,
+                    json={
+                        "key": api_key,
+                        "text": frase
+                    }
+                )
 
+                if response.status_code == 200:
+                    result = response.json()
+                    prob_ia = result['score'] * 100  # Probabilidade de ser IA
+                    prob_human = (1 - result['score']) * 100  # Probabilidade de ser humano
 
-def plot_probs(text, token_probs):
-    """
-    Função para plotar as probabilidades dos tokens.
-    """
-    # Tokenizar novamente para obter as palavras e seus índices
-    tokens = tokenizer.tokenize(text)
+                    # Adiciona os resultados no formato desejado
+                    resultados.append({
+                        'llm': modelo,
+                        'comentario': frase,
+                        'prob_humano': round(prob_human, 2),
+                        'prob_IA': round(prob_ia, 2)
+                    })
+                else:
+                    print(f"Erro ao chamar a API: {response.status_code}")
 
-    # Para cada token no texto, pegue a probabilidade associada
-    token_probabilities = []
-    for i, token in enumerate(tokens):
-        # Pegue a probabilidade do token i no vocabulário
-        token_id = tokenizer.convert_tokens_to_ids(token)
-        token_probabilities.append(token_probs[i, token_id])  # Probabilidade para o token específico
+    return resultados  # Retorna os resultados no formato desejado
 
-    # Plotando as probabilidades
-    plt.figure(figsize=(12, 6))
-    plt.bar(tokens, token_probabilities)
-    plt.xticks(rotation=90)
-    plt.xlabel('Tokens')
-    plt.ylabel('Probabilidade')
-    plt.title('Probabilidades das Palavras Geradas por GPT-2')
-    plt.show()
-
-
-# Texto de exemplo
-text = "O cachorro correu pelo parque."
-
-# Obter as probabilidades das palavras no texto
-token_probs = get_token_probs(text)
-
-print(token_probs)
