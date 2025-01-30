@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/testar_llms.css') }}">
     <link rel="icon" href="static/images/logo.png" type="image">
 
     <!-- DataTables -->
@@ -57,7 +58,7 @@
                     Gerar Comentários
                 </a>
             </li>
-             <li class="list-group-item">
+            <li class="list-group-item">
                 <a class="d-flex align-items-center" onclick="testar_llms()">
                     <i class="fa-solid fa-brain"></i>
                     Testar LLMs
@@ -76,57 +77,29 @@
 
     <h1 class="m3-4 mb-3" style="color:black">Gerar Comentários para Posts</h1>
 
-    <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
+    <form method="POST" enctype="multipart/form-data">
         <!-- Escolha da LLM -->
-        <label for="ai" class="choice">Escolha a LLM que irá gerar os comentários:</label>
+        <label for="ai" class="choice">Escolha a ferramenta de detecção:</label>
         <div class="ia-options">
             <div class="ia-option">
-                <input type="radio" id="cohere" name="ai" value="cohere" required>
-                <label for="cohere">
-                        <img src="{{ url_for('static', filename='images/cohere.png') }}" alt="Cohere">
-                    <p>Cohere</p>
+                <input type="radio" id="roberta" name="ai" value="roberta" required>
+                <label for="roberta">
+                        <img src="{{ url_for('static', filename='images/roberta.png') }}" alt="roberta">
+                    <p>Roberta Large Openai Detector</p>
                 </label>
             </div>
             <div class="ia-option">
-                <input type="radio" id="chatgpt" name="ai" value="chatgpt">
-                <label for="chatgpt">
-                        <img src="{{ url_for('static', filename='images/chatgpt.png') }}" alt="ChatGPT">
-                    <p>ChatGPT</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="gemini" name="ai" value="gemini">
-                <label for="gemini">
-                        <img src="{{ url_for('static', filename='images/gemini.png') }}" alt="Gemini">
-                    <p>Gemini</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="llama" name="ai" value="llama">
-                <label for="llama">
-                        <img src="{{ url_for('static', filename='images/llama.png') }}" alt="Llama">
-                    <p>Llama</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="maritacaIA" name="ai" value="maritacaIA">
-                <label for="maritacaIA">
-                        <img src="{{ url_for('static', filename='images/maritacaIA.jpeg') }}" alt="MaritacaIA">
-                    <p>MaritacaIA</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="mistral" name="ai" value="mistral">
-                <label for="mistral">
-                        <img src="{{ url_for('static', filename='images/mistral.png') }}" alt="Mistral">
-                        <p>Mistral</p>
+                <input type="radio" id="sapling" name="ai" value="chatgpt">
+                <label for="sapling">
+                        <img src="{{ url_for('static', filename='images/sapling.jpg') }}" alt="sapling">
+                    <p>Sapling</p>
                 </label>
             </div>
         </div>
 
         <!-- Escolha do Tema -->
         <label for="themes">Escolha um tema:</label>
-        <select id="themes" name="themes" class="dropdown" onchange="handleThemeSelection(this)">
+        <select id="themes" name="themes" class="dropdown">
             <option value="" selected disabled>Clique para listar os temas disponíveis</option>
             <option value="Streaming.json">Aluguel de Filmes em Plataformas de Streaming</option>
             <option value="InteligenciaArtificial.json">Inteligência Artificial na criação de conteúdo</option>

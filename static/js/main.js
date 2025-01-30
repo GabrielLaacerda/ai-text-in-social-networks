@@ -24,6 +24,9 @@ function gerarEstatisticas(){
      window.location.href = '/estatisticas';
 }
 
+function testar_llms(){
+     window.location.href = '/testar_llms';
+}
 
 document.addEventListener("DOMContentLoaded", () => {
 

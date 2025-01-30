@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="{{ url_for('static', filename='js/estatisticas.css') }}"></script>
+    <title>Estatisticas</title>
     <link rel="icon" href="static/images/logo.png" type="image">
 
     <!-- DataTables -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       <script src="{{ url_for('static', filename='js/estatisticas.js') }}"></script>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="{{ url_for('static', filename='css/datatables.min.css') }}" rel="stylesheet">
     <script src="{{ url_for('static', filename='js/datatables.min.js') }}"></script>
 
@@ -36,8 +38,11 @@
 
       /* Ajuste do tamanho do gráfico de pizza */
       #pieChart {
-        width: 370px !important;
-        height: 370px !important;
+        width: 100% !important;
+        height: auto !important;
+        max-width: 370px; /* Ajuste de tamanho máximo */
+        margin-left: auto;
+        margin-right: auto;
       }
 
       /* Estilo para o fundo branco onde os gráficos e tabela serão exibidos */
@@ -52,8 +57,21 @@
       /* Estilo para os gráficos e tabela dentro da área */
       .chart-container {
         display: flex;
+        flex-wrap: wrap; /* Permite que os gráficos se ajustem quando necessário */
         justify-content: space-between;
         margin-bottom: 20px;
+      }
+
+      .chart-container > div {
+        width: 48%;
+        margin-bottom: 20px;
+      }
+
+      /* Ajuste para telas menores */
+      @media (max-width: 768px) {
+        .chart-container > div {
+          width: 100%;
+        }
       }
 
       .table-container {
@@ -83,15 +101,15 @@
                 </a>
             </li>
             <li class="list-group-item">
-                <a class="d-flex align-items-center" onclick="gerarEstatisticas()">
-                    <i class="fas fa-chart-line me-2"></i> <!-- Ícone -->
-                    Gerar Estatísticas
+                <a class="d-flex align-items-center" onclick="testar_llms()">
+                    <i class="fa-solid fa-brain"></i>
+                    Testar LLMs
                 </a>
             </li>
             <li class="list-group-item">
-                <a href="#funcionalidade3" class="d-flex align-items-center">
-                    <i class="fas fa-users me-2"></i> <!-- Ícone -->
-                    Funcionalidade 3
+                <a class="d-flex align-items-center" onclick="gerarEstatisticas()">
+                    <i class="fas fa-chart-line me-2"></i> <!-- Ícone -->
+                    Visualizar Estatisticas
                 </a>
             </li>
         </ul>
@@ -106,12 +124,12 @@
       <!-- Div para exibir os gráficos lado a lado -->
       <div class="chart-container">
         <!-- Gráfico de barras -->
-        <div style="width: 48%;">
+        <div>
           <canvas id="barChart"></canvas>
         </div>
         <!-- Gráfico de pizza -->
-        <div style="width: 48%;">
-          <canvas id="pieChart" style="margin-left:30%"></canvas>
+        <div>
+          <canvas id="pieChart"></canvas>
         </div>
       </div>
 
@@ -129,21 +147,42 @@
           </thead>
           <tbody>
             <tr>
-              <td>Alice</td>
+              <td>Cohere</td>
               <td>30</td>
               <td>Brasil</td>
               <td>30</td>
               <td>Brasil</td>
             </tr>
             <tr>
-              <td>Bob</td>
+              <td>ChatGPT</td>
               <td>25</td>
               <td>EUA</td>
               <td>30</td>
               <td>Brasil</td>
             </tr>
             <tr>
-              <td>Carlos</td>
+              <td>Gemini</td>
+              <td>28</td>
+              <td>Portugal</td>
+              <td>30</td>
+              <td>Brasil</td>
+            </tr>
+          <tr>
+              <td>Llama</td>
+              <td>28</td>
+              <td>Portugal</td>
+              <td>30</td>
+              <td>Brasil</td>
+            </tr>
+          <tr>
+              <td>MaritacaIA</td>
+              <td>28</td>
+              <td>Portugal</td>
+              <td>30</td>
+              <td>MaritacaIA</td>
+            </tr>
+          <tr>
+              <td>MistralAI</td>
               <td>28</td>
               <td>Portugal</td>
               <td>30</td>
@@ -154,63 +193,5 @@
       </div>
     </div>
 
-    <script>
-      // Gráfico de barras usando Chart.js
-      var ctxBar = document.getElementById('barChart').getContext('2d');
-      var barChart = new Chart(ctxBar, {
-        type: 'bar',
-        data: {
-          labels: ['Produto A', 'Produto B', 'Produto C', 'Produto D'],
-          datasets: [{
-            label: 'Quantidade Vendida',
-            data: [50, 100, 75, 120],
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
-            borderWidth: 1
-          }]
-        }
-      });
-
-      // Gráfico de pizza usando Chart.js
-      var ctxPie = document.getElementById('pieChart').getContext('2d');
-      var pieChart = new Chart(ctxPie, {
-        type: 'pie',
-        data: {
-          labels: ['Produto A', 'Produto B', 'Produto C', 'Produto D'],
-          datasets: [{
-            label: 'Distribuição de Vendas',
-            data: [50, 100, 75, 120],
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)'
-            ],
-            borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)'
-            ],
-            borderWidth: 1
-          }]
-        },
-        options: {
-          plugins: {
-            legend: {
-              position: 'right' // Coloca a legenda à direita
-            }
-          }
-        }
-      });
-
-      $(document).ready(function () {
-          $('#dataTable').DataTable({
-              paging: false, // Desativa paginação
-              searching: false, // Desativa pesquisa
-              info: false // Desativa informações
-          });
-      });
-    </script>
   </body>
 </html>

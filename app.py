@@ -128,8 +128,13 @@ def download():
 
 
 @app.route("/estatisticas", methods=["GET", "POST"])
-def teste():
+def estatisticas():
     return render_template("estatisticas.html")
+
+
+@app.route("/testar_llms", methods=["GET", "POST"])
+def testar_llms():
+    return render_template("testar_llms.html")
 
 
 if __name__ == "__main__":

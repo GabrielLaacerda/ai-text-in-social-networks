@@ -1,0 +1,28 @@
+.ia-options {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens igualmente */
+    width: 100%;
+}
+
+.ia-option {
+    flex: 1; /* Cada opção ocupa o mesmo espaço */
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.ia-option label {
+    display: flex;
+    align-items: center; /* Alinha imagem e texto verticalmente */
+    gap: 8px; /* Espaço entre a imagem e o texto */
+    cursor: pointer; /* Indica que o rótulo é clicável */
+}
+
+.ia-option img {
+    width: 40px; /* Ajuste o tamanho da imagem */
+    height: auto;
+}
+
+.ia-option p {
+    margin: 0; /* Remove margens padrão */
+    font-size: 16px;
+}
