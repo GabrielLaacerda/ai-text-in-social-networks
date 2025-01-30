@@ -1,14 +1,16 @@
 .ia-options {
-    display: flex;
-    justify-content: space-between; /* Distribui os itens igualmente */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de tamanho igual */
+    gap: 10px; /* Espaço entre os itens */
     width: 100%;
 }
 
 .ia-option {
-    flex: 1; /* Cada opção ocupa o mesmo espaço */
     display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    align-items: center;
 }
+
 
 .ia-option label {
     display: flex;

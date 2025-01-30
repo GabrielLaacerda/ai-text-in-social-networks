@@ -10,7 +10,7 @@ import nltk
 nltk.download('stopwords')
 
 # Carregar o dataset de treinamento
-train_essays = pd.read_csv("llm-detect-ai-generated-text/train_essays.csv")
+train_essays = pd.read_csv("../llm-detect-ai-generated-text/train_essays.csv")
 
 # Pré-processamento do texto
 stop_words = set(stopwords.words('english'))
@@ -28,7 +28,7 @@ train_essays['clean_text'] = train_essays['text'].apply(clean_text)
 X_train, X_val, y_train, y_val = train_test_split(train_essays['clean_text'], train_essays['generated'], test_size=0.2, random_state=42)
 
 # Tokenização e codificação para BERT
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True, padding=True, truncation=True, max_length=64, cache_dir='Bert/bert_cache')
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True, padding=True, truncation=True, max_length=64, cache_dir='bert_cache')
 
 encoded_train = tokenizer(X_train.tolist(), padding=True, truncation=True, return_tensors='pt', max_length=64)
 encoded_val = tokenizer(X_val.tolist(), padding=True, truncation=True, return_tensors='pt', max_length=64)

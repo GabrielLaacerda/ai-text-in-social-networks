@@ -82,28 +82,36 @@
         <!-- Escolha da LLM -->
         <label for="ai" class="choice">Escolha a ferramenta de detecção:</label>
         <div class="ia-options">
-            <div class="ia-option">
-                <input type="radio" id="roberta" name="ai" value="roberta" required>
-                <label for="roberta">
-                        <img src="{{ url_for('static', filename='images/roberta.png') }}" alt="roberta">
-                    <p>Roberta Large Openai Detector</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="sapling" name="ai" value="sapling" required>
-                <label for="sapling">
-                        <img src="{{ url_for('static', filename='images/sapling.jpg') }}" alt="sapling">
-                    <p>Sapling</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="huggingface" name="ai" value="huggingface" required>
-                <label for="huggingface">
-                        <img src="{{ url_for('static', filename='images/roberta.png') }}" alt="huggingface">
-                    <p>PirateXX/AI-Content-Detector</p>
-                </label>
-            </div>
+    <div class="ia-option">
+        <input type="radio" id="bert" name="ai" value="bert" required>
+        <label for="bert">
+            <img src="{{ url_for('static', filename='images/bert.png') }}" alt="bert">
+            <p>BERT - dataset (LLM-Detect AI-Generated Text by kaggle)</p>
+        </label>
+    </div>
+        <div class="ia-option">
+            <input type="radio" id="huggingface" name="ai" value="huggingface" required>
+            <label for="huggingface">
+                <img src="{{ url_for('static', filename='images/roberta.png') }}" alt="huggingface">
+                <p>AI-Content-Detector by PirateXX (HuggingFace)</p>
+            </label>
         </div>
+        <div class="ia-option">
+            <input type="radio" id="roberta" name="ai" value="roberta" required>
+            <label for="roberta">
+                <img src="{{ url_for('static', filename='images/roberta.png') }}" alt="roberta">
+                <p>Roberta Large Openai Detector (HuggingFace)</p>
+            </label>
+        </div>
+        <div class="ia-option">
+            <input type="radio" id="sapling" name="ai" value="sapling" required>
+            <label for="sapling">
+                <img src="{{ url_for('static', filename='images/sapling.jpg') }}" alt="sapling">
+                <p>Sapling</p>
+            </label>
+        </div>
+    </div>
+
 
         <!-- Escolha do Tema -->
         <label for="themes">Escolha um tema:</label>
