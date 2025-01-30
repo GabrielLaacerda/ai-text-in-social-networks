@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
       <link rel="stylesheet" href="{{ url_for('static', filename='css/testar_llms.css') }}">
     <link rel="icon" href="static/images/logo.png" type="image">
+      <script src="{{ url_for('static', filename='js/testar_llms.js') }}"></script>
 
     <!-- DataTables -->
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -77,7 +78,7 @@
 
     <h1 class="m3-4 mb-3" style="color:black">Testar detecção</h1>
 
-    <form method="POST" enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
         <!-- Escolha da LLM -->
         <label for="ai" class="choice">Escolha a ferramenta de detecção:</label>
         <div class="ia-options">
@@ -89,7 +90,7 @@
                 </label>
             </div>
             <div class="ia-option">
-                <input type="radio" id="sapling" name="ai" value="sapling">
+                <input type="radio" id="sapling" name="ai" value="sapling" required>
                 <label for="sapling">
                         <img src="{{ url_for('static', filename='images/sapling.jpg') }}" alt="sapling">
                     <p>Sapling</p>
@@ -99,7 +100,7 @@
 
         <!-- Escolha do Tema -->
         <label for="themes">Escolha um tema:</label>
-        <select id="themes" name="themes" class="dropdown">
+        <select id="themes" name="themes" class="dropdown" required>
             <option value="" selected disabled>Clique para listar os temas disponíveis</option>
             <option value="Streaming.json">Aluguel de Filmes em Plataformas de Streaming</option>
             <option value="InteligenciaArtificial.json">Inteligência Artificial na criação de conteúdo</option>
@@ -112,12 +113,16 @@
         <button type="submit" class="bt">Gerar Comentários</button>
     </form>
 
-    <!-- Modal de Carregamento -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <p>Processamento iniciado... Por favor, aguarde!</p>
         </div>
     </div>
+
+    <div id="popupSucesso" style="display:none; position: fixed; top: 20px; right: 20px; background-color: green; color: white; padding: 10px; border-radius: 5px;">
+        Sucesso ao gerar arquivo!
+    </div>
+
 
 
      {% if comentarios %}

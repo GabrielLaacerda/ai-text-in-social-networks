@@ -8,6 +8,7 @@ from LLMs.Gemini import gerar_comentarios_para_posts as gemini
 from LLMs.Llama import gerar_comentarios_para_posts as llama
 from LLMs.MaritacaIA import gerar_comentarios_para_posts as maritaca
 from LLMs.Mistral import gerar_comentarios_para_posts as mistral
+from IAText_Detectors.Roberta import probabilidade_IA as prob
 
 # Configuração de logging
 logging.basicConfig(
@@ -139,25 +140,36 @@ def estatisticas():
 def testar_llms():
     if request.method == 'POST':
         ai_choice = request.form.get('ai')
-        theme_choice = request.form.get('themes')
-        lista_llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
-        lista_comentarios = []
-        conteudo = ''
+        if ai_choice == "roberta":
+            theme_choice = request.form.get('themes')
+            lista_llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
+            lista_comentarios = []
 
-        for llm in lista_llms:
-            try:
+            for llm in lista_llms:
                 with open(f"Comentarios_Gerados/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
                     content = file.read()
-                    lista_comentarios.append(content)
+                    lista_comentarios.append({'llm':llm,'comentarios':content})
 
+            result = prob(lista_comentarios,lista_llms)
 
+            processed_data = [
+                {
+                    'llm': item['llm'],
+                    'comentario': item['comentario'],
+                    'prob_humano': item['prob_humano'],
+                    'prob_IA': item['prob_IA']
+                }
+                for item in result
+            ]
 
+            # Salvar resultados da LLM de detecção Roberta
+            with open(f"teste.txt", 'w', encoding='utf-8') as json_file:
+                json.dump(processed_data, json_file, ensure_ascii=False, indent=4)
 
-            except FileNotFoundError:
-                print(f"O arquivo {llm}_{theme_choice[:-5]}.txt não foi encontrado.")
+            print("Dados salvos com sucesso em Resultados/")
 
-
-
+        elif ai_choice == "sapling":
+            print("teste")
 
     return render_template("testar_llms.html")
 

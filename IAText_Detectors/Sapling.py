@@ -40,9 +40,16 @@ def plot_probs(text, token_probs):
     # Tokenizar novamente para obter as palavras e seus índices
     tokens = tokenizer.tokenize(text)
 
+    # Para cada token no texto, pegue a probabilidade associada
+    token_probabilities = []
+    for i, token in enumerate(tokens):
+        # Pegue a probabilidade do token i no vocabulário
+        token_id = tokenizer.convert_tokens_to_ids(token)
+        token_probabilities.append(token_probs[i, token_id])  # Probabilidade para o token específico
+
     # Plotando as probabilidades
     plt.figure(figsize=(12, 6))
-    plt.bar(tokens, token_probs[:len(tokens)])
+    plt.bar(tokens, token_probabilities)
     plt.xticks(rotation=90)
     plt.xlabel('Tokens')
     plt.ylabel('Probabilidade')
@@ -56,5 +63,4 @@ text = "O cachorro correu pelo parque."
 # Obter as probabilidades das palavras no texto
 token_probs = get_token_probs(text)
 
-# Visualizar as probabilidades
-plot_probs(text, token_probs)
+print(token_probs)
