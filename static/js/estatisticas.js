@@ -61,6 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+function testar_llms(){
+     window.location.href = '/testar_llms';
+}
+
 
 $(document).ready(function () {
     $('#dataTable').DataTable({

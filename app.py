@@ -129,11 +129,36 @@ def download():
 
 @app.route("/estatisticas", methods=["GET", "POST"])
 def estatisticas():
+    if request.method == "POST":
+        print("Olá, mundo!")
+
     return render_template("estatisticas.html")
 
 
 @app.route("/testar_llms", methods=["GET", "POST"])
 def testar_llms():
+    if request.method == 'POST':
+        ai_choice = request.form.get('ai')
+        theme_choice = request.form.get('themes')
+        lista_llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
+        lista_comentarios = []
+        conteudo = ''
+
+        for llm in lista_llms:
+            try:
+                with open(f"Comentarios_Gerados/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
+                    content = file.read()
+                    lista_comentarios.append(content)
+
+
+
+
+            except FileNotFoundError:
+                print(f"O arquivo {llm}_{theme_choice[:-5]}.txt não foi encontrado.")
+
+
+
+
     return render_template("testar_llms.html")
 
 
