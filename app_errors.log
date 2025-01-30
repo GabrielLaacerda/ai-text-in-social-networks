@@ -13346,3 +13346,656 @@
 2025-01-30 09:46:38,235 - INFO - 127.0.0.1 - - [30/Jan/2025 09:46:38] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
 2025-01-30 09:46:38,254 - INFO - 127.0.0.1 - - [30/Jan/2025 09:46:38] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
 2025-01-30 09:47:31,053 - INFO - 127.0.0.1 - - [30/Jan/2025 09:47:31] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 09:53:00,464 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:00] "GET /estatisticas HTTP/1.1" 200 -
+2025-01-30 09:53:00,477 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:00] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-01-30 09:53:00,477 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:53:00,477 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:00] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:53:00,478 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:00] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:53:01,812 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:01] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 09:53:01,826 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:01] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 09:53:01,827 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:53:01,827 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:01] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 09:53:01,827 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:01] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:53:01,827 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:53:01,828 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:01] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:53:01,833 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:01] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:01,834 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:01] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 09:53:02,968 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "GET / HTTP/1.1" 200 -
+2025-01-30 09:53:02,983 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:53:02,984 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:53:02,984 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:53:02,985 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:53:02,985 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:02,986 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:02,993 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:02,993 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:02,997 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 09:53:02,997 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:02] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:05,400 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:05] "GET /load_json?file=Impostos.json HTTP/1.1" 200 -
+2025-01-30 09:53:13,048 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "POST / HTTP/1.1" 200 -
+2025-01-30 09:53:13,061 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:53:13,061 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:53:13,062 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:53:13,063 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:53:13,064 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:13,064 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:13,069 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:13,070 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:13,073 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 09:53:13,073 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:13] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 09:53:15,566 - INFO - 127.0.0.1 - - [30/Jan/2025 09:53:15] "GET /download?file_path=Arquivos_Temporarios/Cohere_Impostos.txt HTTP/1.1" 200 -
+2025-01-30 09:54:06,018 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "GET / HTTP/1.1" 200 -
+2025-01-30 09:54:06,033 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:54:06,035 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:54:06,036 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:54:06,036 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:54:06,037 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 09:54:06,037 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 09:54:06,042 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 09:54:06,047 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 09:54:06,047 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 09:54:06,048 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:06] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 09:54:08,018 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:08] "GET /load_json?file=CasasDeApostas.json HTTP/1.1" 200 -
+2025-01-30 09:54:17,956 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "POST / HTTP/1.1" 200 -
+2025-01-30 09:54:17,969 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:54:17,969 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:54:17,970 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:54:17,970 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:54:17,973 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 09:54:17,973 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 09:54:17,976 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 09:54:17,980 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 09:54:17,980 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 09:54:17,981 - INFO - 127.0.0.1 - - [30/Jan/2025 09:54:17] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:02,744 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "GET / HTTP/1.1" 200 -
+2025-01-30 09:55:02,756 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:55:02,756 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:55:02,757 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:55:02,757 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:55:02,758 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:02,759 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:02,764 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:02,765 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:02,768 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 09:55:02,769 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:02] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:05,028 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:05] "GET /load_json?file=Streaming.json HTTP/1.1" 200 -
+2025-01-30 09:55:12,271 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "POST / HTTP/1.1" 200 -
+2025-01-30 09:55:12,284 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:55:12,284 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:55:12,286 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:12,286 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:12,286 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:55:12,287 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:55:12,293 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:12,294 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:12,299 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 09:55:12,299 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:12] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:47,882 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "GET / HTTP/1.1" 200 -
+2025-01-30 09:55:47,897 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:55:47,897 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:55:47,897 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:55:47,898 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:55:47,898 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:47,899 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:47,905 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:47,906 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:47,909 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 09:55:47,909 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:47] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 09:55:50,019 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:50] "GET /load_json?file=InteligenciaArtificial.json HTTP/1.1" 200 -
+2025-01-30 09:55:53,322 - ERROR - Erro ao gerar comentários: status_code: 429, body: {'message': "You are using a Trial key, which is limited to 1000 API calls / month. You can continue to use the Trial key for free or upgrade to a Production key with higher rate limits at 'https://dashboard.cohere.com/api-keys'. Contact us on 'https://discord.gg/XW44jPfYJu' or email us at support@cohere.com with any questions"}
+2025-01-30 09:55:53,323 - INFO - 127.0.0.1 - - [30/Jan/2025 09:55:53] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:56:01,196 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "GET / HTTP/1.1" 200 -
+2025-01-30 09:56:01,214 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:56:01,214 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:56:01,215 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:56:01,215 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:56:01,217 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 09:56:01,217 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 09:56:01,228 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 09:56:01,228 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 09:56:01,228 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 09:56:01,228 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:01] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 09:56:02,914 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:02] "GET /load_json?file=InteligenciaArtificial.json HTTP/1.1" 200 -
+2025-01-30 09:56:03,612 - ERROR - Erro ao gerar comentários: status_code: 429, body: {'message': "You are using a Trial key, which is limited to 1000 API calls / month. You can continue to use the Trial key for free or upgrade to a Production key with higher rate limits at 'https://dashboard.cohere.com/api-keys'. Contact us on 'https://discord.gg/XW44jPfYJu' or email us at support@cohere.com with any questions"}
+2025-01-30 09:56:03,612 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:03] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:56:18,706 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:18] "GET /load_json?file=Dolar.json HTTP/1.1" 200 -
+2025-01-30 09:56:19,692 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:19] "GET /load_json?file=Streaming.json HTTP/1.1" 200 -
+2025-01-30 09:56:30,490 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "POST / HTTP/1.1" 200 -
+2025-01-30 09:56:30,504 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:56:30,504 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:56:30,505 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:56:30,507 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 09:56:30,508 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 09:56:30,508 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:56:30,514 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 09:56:30,514 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 09:56:30,517 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 09:56:30,517 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:30] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 09:56:56,819 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:56] "GET /load_json?file=Streaming.json HTTP/1.1" 200 -
+2025-01-30 09:56:57,379 - ERROR - Erro ao gerar comentários: status_code: 429, body: {'message': "You are using a Trial key, which is limited to 1000 API calls / month. You can continue to use the Trial key for free or upgrade to a Production key with higher rate limits at 'https://dashboard.cohere.com/api-keys'. Contact us on 'https://discord.gg/XW44jPfYJu' or email us at support@cohere.com with any questions"}
+2025-01-30 09:56:57,379 - INFO - 127.0.0.1 - - [30/Jan/2025 09:56:57] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 09:57:43,137 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/Cohere.py', reloading
+2025-01-30 09:57:48,612 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 09:57:48,612 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 09:57:48,612 - INFO -  * Restarting with stat
+2025-01-30 09:57:51,566 - WARNING -  * Debugger is active!
+2025-01-30 09:57:51,566 - INFO -  * Debugger PIN: 126-634-683
+2025-01-30 09:57:51,598 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "GET / HTTP/1.1" 200 -
+2025-01-30 09:57:51,611 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 09:57:51,611 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 09:57:51,612 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 09:57:51,614 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 09:57:51,614 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 09:57:51,615 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 09:57:51,619 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 09:57:51,621 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 09:57:51,625 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 09:57:51,625 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:51] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 09:57:53,926 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:53] "GET /load_json?file=Dolar.json HTTP/1.1" 200 -
+2025-01-30 09:57:54,744 - ERROR - Erro ao gerar comentários: status_code: 429, body: {'message': "You are using a Trial key, which is limited to 1000 API calls / month. You can continue to use the Trial key for free or upgrade to a Production key with higher rate limits at 'https://dashboard.cohere.com/api-keys'. Contact us on 'https://discord.gg/XW44jPfYJu' or email us at support@cohere.com with any questions"}
+2025-01-30 09:57:54,744 - INFO - 127.0.0.1 - - [30/Jan/2025 09:57:54] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-01-30 10:01:12,456 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 10:01:12,456 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 10:01:12,457 - INFO -  * Restarting with stat
+2025-01-30 10:01:15,588 - WARNING -  * Debugger is active!
+2025-01-30 10:01:15,589 - INFO -  * Debugger PIN: 126-634-683
+2025-01-30 10:01:16,321 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "GET / HTTP/1.1" 200 -
+2025-01-30 10:01:16,332 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 10:01:16,333 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 10:01:16,334 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 10:01:16,334 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 10:01:16,336 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:16,337 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:16,341 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:16,342 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:16,349 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 10:01:16,349 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:16] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:18,482 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:18] "GET /load_json?file=CasasDeApostas.json HTTP/1.1" 200 -
+2025-01-30 10:01:25,533 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "POST / HTTP/1.1" 200 -
+2025-01-30 10:01:25,551 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 10:01:25,551 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 10:01:25,551 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 10:01:25,552 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 10:01:25,552 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:25,553 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:25,559 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:25,564 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:25,565 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 10:01:25,565 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:25] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:33,886 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:33] "GET /download?file_path=Arquivos_Temporarios/Cohere_CasasDeApostas.txt HTTP/1.1" 200 -
+2025-01-30 10:01:45,837 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "GET / HTTP/1.1" 200 -
+2025-01-30 10:01:45,853 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 10:01:45,853 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 10:01:45,854 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 10:01:45,854 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 10:01:45,855 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:45,855 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:45,869 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:45,869 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 10:01:45,873 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 10:01:45,875 - INFO - 127.0.0.1 - - [30/Jan/2025 10:01:45] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 10:17:49,259 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/teste.py', reloading
+2025-01-30 10:17:49,894 - INFO -  * Restarting with stat
+2025-01-30 10:17:52,855 - WARNING -  * Debugger is active!
+2025-01-30 10:17:52,855 - INFO -  * Debugger PIN: 126-634-683
+2025-01-30 10:22:04,361 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/.venv/lib/python3.11/site-packages/triton/runtime/jit.py', reloading
+2025-01-30 10:22:05,024 - INFO -  * Restarting with stat
+2025-01-30 11:51:50,858 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 11:51:50,858 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 11:51:50,859 - INFO -  * Restarting with stat
+2025-01-30 11:51:54,830 - WARNING -  * Debugger is active!
+2025-01-30 11:51:54,968 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 11:52:34,492 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 11:52:34,492 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 11:52:34,493 - INFO -  * Restarting with stat
+2025-01-30 11:52:38,461 - WARNING -  * Debugger is active!
+2025-01-30 11:52:38,461 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 11:52:56,501 - INFO - 127.0.0.1 - - [30/Jan/2025 11:52:56] "GET / HTTP/1.1" 200 -
+2025-01-30 11:52:56,542 - INFO - 127.0.0.1 - - [30/Jan/2025 11:52:56] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-30 11:52:56,545 - INFO - 127.0.0.1 - - [30/Jan/2025 11:52:56] "GET /static/css/datatables.min.css HTTP/1.1" 200 -
+2025-01-30 11:52:56,557 - INFO - 127.0.0.1 - - [30/Jan/2025 11:52:56] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-01-30 11:52:56,559 - INFO - 127.0.0.1 - - [30/Jan/2025 11:52:56] "GET /static/js/datatables.min.js HTTP/1.1" 200 -
+2025-01-30 11:52:56,562 - INFO - 127.0.0.1 - - [30/Jan/2025 11:52:56] "GET /static/images/cohere.png HTTP/1.1" 200 -
+2025-01-30 11:52:56,562 - INFO - 127.0.0.1 - - [30/Jan/2025 11:52:56] "GET /static/images/chatgpt.png HTTP/1.1" 200 -
+2025-01-30 11:52:56,580 - INFO - 127.0.0.1 - - [30/Jan/2025 11:52:56] "GET /static/images/llama.png HTTP/1.1" 200 -
+2025-01-30 11:52:56,580 - INFO - 127.0.0.1 - - [30/Jan/2025 11:52:56] "GET /static/images/gemini.png HTTP/1.1" 200 -
+2025-01-30 11:52:56,592 - INFO - 127.0.0.1 - - [30/Jan/2025 11:52:56] "GET /static/images/maritacaIA.jpeg HTTP/1.1" 200 -
+2025-01-30 11:53:01,742 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:01] "GET /static/images/mistral.png HTTP/1.1" 200 -
+2025-01-30 11:53:08,041 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:08] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 11:53:08,071 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:08] "GET /static/js/testar_llms.js HTTP/1.1" 200 -
+2025-01-30 11:53:08,074 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:08] "GET /static/css/testar_llms.css HTTP/1.1" 200 -
+2025-01-30 11:53:08,075 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 11:53:08,075 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:08] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 11:53:08,081 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:08] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 11:53:08,083 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 11:53:08,086 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:08] "GET /static/images/roberta.png HTTP/1.1" 200 -
+2025-01-30 11:53:08,087 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:08] "GET /static/images/sapling.jpg HTTP/1.1" 200 -
+2025-01-30 11:53:22,134 - INFO - 127.0.0.1 - - [30/Jan/2025 11:53:22] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 11:54:19,993 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-01-30 11:54:21,021 - INFO -  * Restarting with stat
+2025-01-30 11:54:25,991 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 11:54:25,991 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 11:54:25,991 - INFO -  * Restarting with stat
+2025-01-30 11:54:30,087 - WARNING -  * Debugger is active!
+2025-01-30 11:54:30,088 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 11:54:30,117 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:30] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 11:54:30,141 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 11:54:30,142 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:30] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 11:54:30,145 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:30] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 11:54:30,145 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 11:54:30,146 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:30] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 11:54:30,149 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:30] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 11:54:30,152 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:30] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 11:54:30,153 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:30] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 11:54:30,194 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:30] "GET /static/images/logo.png HTTP/1.1" 200 -
+2025-01-30 11:54:43,974 - INFO - 127.0.0.1 - - [30/Jan/2025 11:54:43] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 11:58:08,964 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:08] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 11:58:08,994 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 11:58:09,004 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:09] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 11:58:09,005 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:09] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 11:58:09,005 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 11:58:09,006 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:09] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 11:58:09,010 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:09] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 11:58:09,011 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:09] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 11:58:09,016 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:09] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 11:58:09,057 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:09] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 11:58:53,414 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 11:58:53,414 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 11:58:53,416 - INFO -  * Restarting with stat
+2025-01-30 11:58:57,437 - WARNING -  * Debugger is active!
+2025-01-30 11:58:57,438 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 11:58:57,466 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:57] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 11:58:57,491 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:57] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 11:58:57,493 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 11:58:57,493 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 11:58:57,497 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:57] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 11:58:57,499 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:57] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 11:58:57,501 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:57] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 11:58:57,504 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:57] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 11:58:57,505 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:57] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 11:58:57,542 - INFO - 127.0.0.1 - - [30/Jan/2025 11:58:57] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:01:32,283 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:01:32,283 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:01:32,284 - INFO -  * Restarting with stat
+2025-01-30 12:01:36,982 - WARNING -  * Debugger is active!
+2025-01-30 12:01:36,983 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:01:37,025 - INFO - 127.0.0.1 - - [30/Jan/2025 12:01:37] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:01:37,124 - INFO - 127.0.0.1 - - [30/Jan/2025 12:01:37] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:01:37,125 - INFO - 127.0.0.1 - - [30/Jan/2025 12:01:37] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:01:37,127 - INFO - 127.0.0.1 - - [30/Jan/2025 12:01:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:01:37,127 - INFO - 127.0.0.1 - - [30/Jan/2025 12:01:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:01:37,128 - INFO - 127.0.0.1 - - [30/Jan/2025 12:01:37] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:01:37,131 - INFO - 127.0.0.1 - - [30/Jan/2025 12:01:37] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:01:37,146 - INFO - 127.0.0.1 - - [30/Jan/2025 12:01:37] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:01:37,151 - INFO - 127.0.0.1 - - [30/Jan/2025 12:01:37] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:01:42,273 - INFO - 127.0.0.1 - - [30/Jan/2025 12:01:42] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:05:11,258 - INFO - 127.0.0.1 - - [30/Jan/2025 12:05:11] "[35m[1mPOST /testar_llms HTTP/1.1[0m" 500 -
+2025-01-30 12:07:36,788 - INFO - 127.0.0.1 - - [30/Jan/2025 12:07:36] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:08:47,935 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-01-30 12:08:48,513 - INFO -  * Restarting with stat
+2025-01-30 12:08:50,542 - WARNING -  * Debugger is active!
+2025-01-30 12:08:50,542 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:09:11,986 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-01-30 12:09:12,401 - INFO -  * Restarting with stat
+2025-01-30 12:09:14,394 - WARNING -  * Debugger is active!
+2025-01-30 12:09:14,394 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:10:54,607 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:10:54,607 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:10:54,608 - INFO -  * Restarting with stat
+2025-01-30 12:10:56,821 - WARNING -  * Debugger is active!
+2025-01-30 12:10:56,821 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:11:05,652 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:11:05,652 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:11:05,652 - INFO -  * Restarting with stat
+2025-01-30 12:11:07,817 - WARNING -  * Debugger is active!
+2025-01-30 12:11:07,818 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:11:21,992 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:21] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:11:22,007 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:11:22,007 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:22] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:11:22,009 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:22] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:11:22,010 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:11:22,011 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:22] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:11:22,011 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:22] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:11:22,017 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:22] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:11:22,017 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:22] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:11:27,047 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:27] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:11:40,794 - INFO - 127.0.0.1 - - [30/Jan/2025 12:11:40] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:15:58,209 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:15:58,753 - INFO -  * Restarting with stat
+2025-01-30 12:16:02,444 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:16:02,444 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:16:02,445 - INFO -  * Restarting with stat
+2025-01-30 12:16:04,492 - WARNING -  * Debugger is active!
+2025-01-30 12:16:04,492 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:16:34,808 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:34] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:16:34,827 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:16:34,828 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:34] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:16:34,829 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:16:34,830 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:34] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:16:34,831 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:34] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:16:34,831 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:34] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:16:34,835 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:34] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:16:34,835 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:34] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:16:34,850 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:34] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:16:45,736 - INFO - 127.0.0.1 - - [30/Jan/2025 12:16:45] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:18:05,262 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:18:05,786 - INFO -  * Restarting with stat
+2025-01-30 12:18:07,806 - WARNING -  * Debugger is active!
+2025-01-30 12:18:07,806 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:18:10,195 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:10] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:18:10,211 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:18:10,212 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:18:10,213 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:10] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:18:10,213 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:10] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:18:10,214 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:10] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:18:10,215 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:10] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:18:10,219 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:10] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:18:10,220 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:10] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:18:10,242 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:10] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:18:22,727 - INFO - 127.0.0.1 - - [30/Jan/2025 12:18:22] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:24:25,977 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:24:25,977 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:24:25,977 - INFO -  * Restarting with stat
+2025-01-30 12:24:33,713 - WARNING -  * Debugger is active!
+2025-01-30 12:24:33,713 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:24:33,737 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:33] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:24:33,751 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:24:33,751 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:33] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:24:33,753 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:33] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:24:33,754 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:24:33,757 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:33] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:24:33,757 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:33] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:24:33,757 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:33] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:24:33,758 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:33] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:24:33,780 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:33] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:24:40,049 - INFO - 127.0.0.1 - - [30/Jan/2025 12:24:40] "[35m[1mPOST /testar_llms HTTP/1.1[0m" 500 -
+2025-01-30 12:26:13,597 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:26:14,123 - INFO -  * Restarting with stat
+2025-01-30 12:26:25,007 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:26:25,008 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:26:25,008 - INFO -  * Restarting with stat
+2025-01-30 12:26:32,741 - WARNING -  * Debugger is active!
+2025-01-30 12:26:32,742 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:26:32,766 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:32] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:26:32,777 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:26:32,779 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:32] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:26:32,779 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:32] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:26:32,780 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:26:32,780 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:32] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:26:32,783 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:32] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:26:32,784 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:32] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:26:32,784 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:32] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:26:32,804 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:32] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:26:36,988 - INFO - 127.0.0.1 - - [30/Jan/2025 12:26:36] "[35m[1mPOST /testar_llms HTTP/1.1[0m" 500 -
+2025-01-30 12:26:59,331 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:26:59,778 - INFO -  * Restarting with stat
+2025-01-30 12:27:07,462 - WARNING -  * Debugger is active!
+2025-01-30 12:27:07,463 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:27:07,486 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:07] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:27:07,498 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:07] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:27:07,498 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:27:07,499 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:07] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:27:07,501 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:07] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:27:07,501 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:27:07,502 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:07] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:27:07,506 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:07] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:27:07,506 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:07] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:27:07,519 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:07] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:27:10,569 - INFO - 127.0.0.1 - - [30/Jan/2025 12:27:10] "[35m[1mPOST /testar_llms HTTP/1.1[0m" 500 -
+2025-01-30 12:28:41,339 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:28:41,829 - INFO -  * Restarting with stat
+2025-01-30 12:28:49,487 - WARNING -  * Debugger is active!
+2025-01-30 12:28:49,487 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:28:49,546 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "GET / HTTP/1.1" 200 -
+2025-01-30 12:28:49,562 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:28:49,562 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:28:49,563 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:28:49,563 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:28:49,565 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-01-30 12:28:49,565 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-01-30 12:28:49,572 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-01-30 12:28:49,573 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-01-30 12:28:49,577 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-01-30 12:28:49,577 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:49] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-01-30 12:28:52,569 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:52] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:28:52,584 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:28:52,584 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:28:52,585 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:52] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:28:52,585 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:52] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:28:52,586 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:52] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:28:52,586 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:52] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:28:52,592 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:52] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:28:52,593 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:52] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:28:55,599 - INFO - 127.0.0.1 - - [30/Jan/2025 12:28:55] "[35m[1mPOST /testar_llms HTTP/1.1[0m" 500 -
+2025-01-30 12:30:20,976 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:30:21,442 - INFO -  * Restarting with stat
+2025-01-30 12:30:29,326 - WARNING -  * Debugger is active!
+2025-01-30 12:30:29,326 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:30:35,472 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:30:35,920 - INFO -  * Restarting with stat
+2025-01-30 12:30:43,577 - WARNING -  * Debugger is active!
+2025-01-30 12:30:43,577 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:30:50,748 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:30:51,229 - INFO -  * Restarting with stat
+2025-01-30 12:30:58,878 - WARNING -  * Debugger is active!
+2025-01-30 12:30:58,878 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:31:16,247 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:31:16,744 - INFO -  * Restarting with stat
+2025-01-30 12:31:28,215 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:31:28,216 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:31:28,216 - INFO -  * Restarting with stat
+2025-01-30 12:31:35,899 - WARNING -  * Debugger is active!
+2025-01-30 12:31:35,899 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:31:35,923 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:35] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:31:35,938 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:31:35,939 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:31:35,940 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:35] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:31:35,942 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:35] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:31:35,942 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:35] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:31:35,943 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:35] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:31:35,944 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:35] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:31:35,946 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:35] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:31:41,014 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:41] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:31:51,434 - INFO - 127.0.0.1 - - [30/Jan/2025 12:31:51] "[35m[1mPOST /testar_llms HTTP/1.1[0m" 500 -
+2025-01-30 12:33:09,084 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:33:09,662 - INFO -  * Restarting with stat
+2025-01-30 12:33:20,485 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:33:20,485 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:33:20,485 - INFO -  * Restarting with stat
+2025-01-30 12:33:28,153 - WARNING -  * Debugger is active!
+2025-01-30 12:33:28,154 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:33:28,177 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:28] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:33:28,188 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:33:28,189 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:28] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:33:28,189 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:28] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:33:28,190 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:33:28,191 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:28] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:33:28,192 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:28] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:33:28,196 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:28] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:33:28,197 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:28] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:33:28,211 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:28] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:33:33,776 - INFO - 127.0.0.1 - - [30/Jan/2025 12:33:33] "[35m[1mPOST /testar_llms HTTP/1.1[0m" 500 -
+2025-01-30 12:35:32,897 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:35:33,457 - INFO -  * Restarting with stat
+2025-01-30 12:35:41,221 - WARNING -  * Debugger is active!
+2025-01-30 12:35:41,222 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:35:41,244 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:41] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:35:41,262 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:35:41,262 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:41] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:35:41,264 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:41] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:35:41,265 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:41] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:35:41,265 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:35:41,266 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:41] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:35:41,270 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:41] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:35:41,270 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:41] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:35:41,283 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:41] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:35:46,799 - INFO - 127.0.0.1 - - [30/Jan/2025 12:35:46] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:38:56,654 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-01-30 12:38:57,348 - INFO -  * Restarting with stat
+2025-01-30 12:39:05,238 - WARNING -  * Debugger is active!
+2025-01-30 12:39:05,239 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:39:05,262 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:05] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:39:05,293 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:05] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:39:05,294 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:39:05,295 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:05] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:39:05,296 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:05] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:39:05,297 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:39:05,299 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:05] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:39:05,300 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:05] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:39:05,301 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:05] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:39:05,318 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:05] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:39:39,900 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:39] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:39:39,914 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:39:39,914 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:39:39,914 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:39] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:39:39,915 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:39] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:39:39,916 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:39] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:39:39,917 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:39] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:39:39,917 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:39] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:39:39,921 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:39] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:39:39,938 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:39] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:39:44,481 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:44] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:39:53,951 - INFO - 127.0.0.1 - - [30/Jan/2025 12:39:53] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:40:16,455 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:40:16,456 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:40:16,456 - INFO -  * Restarting with stat
+2025-01-30 12:40:24,179 - WARNING -  * Debugger is active!
+2025-01-30 12:40:24,179 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:40:24,203 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:24] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:40:24,214 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:40:24,220 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:24] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:40:24,220 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:24] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:40:24,220 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:40:24,222 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:24] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:40:24,225 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:24] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:40:24,225 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:24] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:40:24,226 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:24] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:40:29,292 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:29] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:40:38,648 - INFO - 127.0.0.1 - - [30/Jan/2025 12:40:38] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:41:39,057 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/IAText_Detectors/huggingface.py', reloading
+2025-01-30 12:41:39,590 - INFO -  * Restarting with stat
+2025-01-30 12:41:41,636 - WARNING -  * Debugger is active!
+2025-01-30 12:41:41,637 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:41:45,831 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:41:45,831 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:41:45,832 - INFO -  * Restarting with stat
+2025-01-30 12:41:47,828 - WARNING -  * Debugger is active!
+2025-01-30 12:41:47,828 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:41:49,296 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:49] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:41:49,312 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:49] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:41:49,312 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:49] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:41:49,312 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:41:49,313 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:41:49,315 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:49] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:41:49,315 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:49] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:41:49,318 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:49] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:41:49,319 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:49] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:41:49,337 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:49] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:41:52,606 - INFO - 127.0.0.1 - - [30/Jan/2025 12:41:52] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:42:32,984 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-01-30 12:42:33,534 - INFO -  * Restarting with stat
+2025-01-30 12:42:35,590 - WARNING -  * Debugger is active!
+2025-01-30 12:42:35,590 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:43:12,459 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-01-30 12:43:12,951 - INFO -  * Restarting with stat
+2025-01-30 12:43:14,972 - WARNING -  * Debugger is active!
+2025-01-30 12:43:14,973 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:43:20,081 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-01-30 12:43:20,585 - INFO -  * Restarting with stat
+2025-01-30 12:43:22,598 - WARNING -  * Debugger is active!
+2025-01-30 12:43:22,598 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:44:25,211 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-01-30 12:44:25,677 - INFO -  * Restarting with stat
+2025-01-30 12:44:27,715 - WARNING -  * Debugger is active!
+2025-01-30 12:44:27,715 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:44:46,146 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-01-30 12:44:46,634 - INFO -  * Restarting with stat
+2025-01-30 12:44:48,636 - WARNING -  * Debugger is active!
+2025-01-30 12:44:48,637 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:44:57,490 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-30 12:44:57,490 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-30 12:44:57,490 - INFO -  * Restarting with stat
+2025-01-30 12:44:59,573 - WARNING -  * Debugger is active!
+2025-01-30 12:44:59,573 - INFO -  * Debugger PIN: 639-205-627
+2025-01-30 12:44:59,756 - INFO - 127.0.0.1 - - [30/Jan/2025 12:44:59] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:44:59,770 - INFO - 127.0.0.1 - - [30/Jan/2025 12:44:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:44:59,771 - INFO - 127.0.0.1 - - [30/Jan/2025 12:44:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:44:59,772 - INFO - 127.0.0.1 - - [30/Jan/2025 12:44:59] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:44:59,774 - INFO - 127.0.0.1 - - [30/Jan/2025 12:44:59] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:44:59,774 - INFO - 127.0.0.1 - - [30/Jan/2025 12:44:59] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:44:59,775 - INFO - 127.0.0.1 - - [30/Jan/2025 12:44:59] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:44:59,776 - INFO - 127.0.0.1 - - [30/Jan/2025 12:44:59] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:44:59,778 - INFO - 127.0.0.1 - - [30/Jan/2025 12:44:59] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:44:59,792 - INFO - 127.0.0.1 - - [30/Jan/2025 12:44:59] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:45:10,792 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:10] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:45:29,417 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:29] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:45:29,433 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:45:29,434 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:29] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:45:29,434 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:29] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:45:29,435 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:29] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:45:29,436 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:45:29,436 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:29] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:45:29,440 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:29] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:45:29,440 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:29] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:45:29,453 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:29] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:45:40,281 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:40] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:45:42,928 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:42] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:45:42,943 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:45:42,943 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:45:42,943 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:42] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:45:42,944 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:42] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:45:42,945 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:42] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:45:42,946 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:42] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:45:42,950 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:42] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:45:42,950 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:42] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:45:42,963 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:42] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:45:48,212 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:48] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:45:53,119 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:53] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:45:53,134 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:45:53,134 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:45:53,136 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:53] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:45:53,137 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:53] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:45:53,137 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:53] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:45:53,139 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:53] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:45:53,139 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:53] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:45:53,140 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:53] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:45:53,154 - INFO - 127.0.0.1 - - [30/Jan/2025 12:45:53] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:46:05,032 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:05] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:46:05,047 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:46:05,047 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:46:05,048 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:05] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:46:05,048 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:05] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:46:05,049 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:05] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:46:05,050 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:05] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:46:05,054 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:05] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:46:05,054 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:05] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:46:05,067 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:05] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:46:15,794 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:15] "POST /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:46:17,418 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:17] "GET /testar_llms HTTP/1.1" 200 -
+2025-01-30 12:46:17,433 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 12:46:17,434 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:17] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-01-30 12:46:17,434 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:17] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-01-30 12:46:17,435 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:17] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-01-30 12:46:17,435 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:17] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-01-30 12:46:17,436 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-30 12:46:17,439 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:17] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-01-30 12:46:17,440 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:17] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-01-30 12:46:17,453 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:17] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-01-30 12:46:27,872 - INFO - 127.0.0.1 - - [30/Jan/2025 12:46:27] "POST /testar_llms HTTP/1.1" 200 -

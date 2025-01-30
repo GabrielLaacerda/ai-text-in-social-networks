@@ -1,7 +1,7 @@
 import os
 import cohere
 
-API_KEY = os.getenv('COHERE_API_KEY')
+API_KEY = 'S4vp9N6QNo4lJzzSn6KYV0w17w52VCoJePtSt0nu'
 co = cohere.ClientV2(api_key=os.getenv('COHERE_API_KEY'))
 
 def gerar_comentarios(persona, post, tema):

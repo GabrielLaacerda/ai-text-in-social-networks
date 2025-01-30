@@ -10,6 +10,7 @@ from LLMs.MaritacaIA import gerar_comentarios_para_posts as maritaca
 from LLMs.Mistral import gerar_comentarios_para_posts as mistral
 from IAText_Detectors.Roberta import probabilidade_IA as roberta_prob
 from IAText_Detectors.Sapling import probabilidade_IA as sapling_prob
+from IAText_Detectors.huggingface import probabilidade_IA as hugging_prob
 
 
 # Configuração de logging
@@ -165,12 +166,14 @@ def testar_llms():
                 for item in result
             ]
 
-            with open(f"teste.txt", 'w', encoding='utf-8') as json_file:
+            with open(f"Resultados/Resultados_Roberta/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data, json_file, ensure_ascii=False, indent=4)
+
+            print(result)
 
             return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
 
-        if ai_choice == "sapling":
+        elif ai_choice == "sapling":
             theme_choice = request.form.get('themes')
             lista_comentarios = []
 
@@ -192,7 +195,36 @@ def testar_llms():
             ]
 
             # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados_Sapling/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+            with open(f"Resultados/Resultados_Sapling/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+                json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
+
+            # Retornar uma resposta JSON indicando sucesso
+            return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
+
+        elif ai_choice == "huggingface":
+            theme_choice = request.form.get('themes')
+            lista_comentarios = []
+
+            for llm in lista_llms:
+                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
+                          encoding='utf-8') as file:
+                    content = file.read()
+                    lista_comentarios.append({'llm': llm, 'comentarios': content})
+
+            result_huggingface = hugging_prob(lista_comentarios, lista_llms)
+
+            processed_data_sap = [
+                {
+                    'llm': item['llm'],
+                    'comentario': item['comentario'],
+                    'prob_humano': item['prob_humano'],
+                    'prob_IA': item['prob_IA']
+                }
+                for item in result_huggingface
+            ]
+
+            # Salvar os resultados em um arquivo JSON
+            with open(f"Resultados/Resultados_HuggingFace/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
             # Retornar uma resposta JSON indicando sucesso

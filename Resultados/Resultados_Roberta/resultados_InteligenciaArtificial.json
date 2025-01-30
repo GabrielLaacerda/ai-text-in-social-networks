@@ -1,0 +1,218 @@
+[
+    {
+        "llm": "Cohere",
+        "comentario": "Interessante! A IA pode ser uma ferramenta poderosa na educação, mas é importante ter cautela e garantir que o conteúdo seja sempre revisado por especialistas.",
+        "prob_humano": 0.69,
+        "prob_IA": 99.31
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Caramba! É impressionante o que a IA é capaz de fazer hoje em dia. Fico imaginando o futuro da indústria criativa com essas tecnologias. Muita coisa vai mudar, mas também temos que ficar de olho nos possíveis impactos negativos. É importante ter um uso responsável e consciente da IA.",
+        "prob_humano": 0.05,
+        "prob_IA": 99.95
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Dublagem já é uma arte questionável, agora com IA? Tô fora!",
+        "prob_humano": 28.87,
+        "prob_IA": 71.13
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Concordo que a IA é só mais uma ferramenta, e como qualquer tecnologia, pode ser usada pra exploração. Mas também acho que tem potencial pra nos ajudar a otimizar processos e até mesmo negociar melhores condições de trabalho, se usada de forma estratégica. É uma aliada ou inimiga dependendo de quem tá no controle.",
+        "prob_humano": 0.06,
+        "prob_IA": 99.94
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Caramba! A evolução da IA é impressionante! Dá até um frio na barriga pensar no futuro.",
+        "prob_humano": 1.0,
+        "prob_IA": 99.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Caramba! Essa IA do YouTube criando músicas com as vozes desses artistas é incrível! Curioso pra ouvir o que vai sair disso.",
+        "prob_humano": 0.51,
+        "prob_IA": 99.49
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Muito legal! Se usada com cuidado, a IA pode fazer uma baita diferença na educação. Mas espero que o governo pense bem nas éticas envolvidas! #FicaDica",
+        "prob_humano": 0.13,
+        "prob_IA": 99.87
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Impressionante, né? A IA tá revolucionando tudo! Já pensou como vai ser comum ver essas \"pessoas\" em propagandas e até em filmes? Mal posso esperar pra ver a onde isso vai levar! 😲✨",
+        "prob_humano": 3.66,
+        "prob_IA": 96.34
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Concordo demais! Dublagem gerada por IA pode ser meio estranho. Gosto da autenticidade da voz humana, sabe? 🎤✨",
+        "prob_humano": 15.54,
+        "prob_IA": 84.46
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Concordo contigo! A IA pode ser só mais um jeito de explorar a galera. Sem cuidados, a gente acaba virando máquina também. É preciso discutir essa relação com mais profundidade! 🤔✨",
+        "prob_humano": 1.28,
+        "prob_IA": 98.72
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Uau, a evolução foi absurda! Essas IAs têm gerado cada vez mais realismo. Tô curioso pra ver aonde isso vai chegar! 🤖🔍 #TransformaçãoDigital",
+        "prob_humano": 0.51,
+        "prob_IA": 99.49
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Caraca, isso é incrível! 🤯 A IA criando músicas com vozes de artistas que já amamos? Mal posso esperar pra ver como vai ser isso! Mas, e a autenticidade? Espero que façam isso de um jeito responsável. 🎶✨ #FuturoDaMúsica",
+        "prob_humano": 0.12,
+        "prob_IA": 99.88
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "\"Hummm, IA na escola... Interessante! 🤔 Será que vai ser tipo um 'professor turbo' ou uma máquina de redação genérica? 👀 Tomara que a gente não perca a criatividade no processo. #IAnaEducação #FuturoDaEscola\"",
+        "prob_humano": 0.14,
+        "prob_IA": 99.86
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "\"Mano, bizarro demais! Essa parada de IA tá surreal, né? Imagina daqui a uns anos... vai virar tudo Matrix, kkkk. 🤔\"",
+        "prob_humano": 3.67,
+        "prob_IA": 96.33
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Ah, dublagem por IA ainda não me pegou também não. Prefiro o bom e velho dublador de verdade, sabe? 😄",
+        "prob_humano": 11.97,
+        "prob_IA": 88.03
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Concordo total! A IA pode até ser legal pra algumas coisas, mas no fim das contas, quem se beneficia mesmo é sempre quem tá no topo. Pra gente que tá na correria, não muda muita coisa, só mais trabalho pra entregar. 😕",
+        "prob_humano": 0.08,
+        "prob_IA": 99.92
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Cara, que salto absurdo! Parece que a gente pulou uns 10 anos em 4. A de 2018 parece muito real, impressionante e meio assustador ao mesmo tempo. 🤯",
+        "prob_humano": 3.02,
+        "prob_IA": 96.98
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Caraca, que viagem! Imagina fazer um feat com o John Legend sem nem sair de casa? 🤯 Mas e a treta dos direitos autorais? 🤔 Essa IA vai dar o que falar...",
+        "prob_humano": 1.26,
+        "prob_IA": 98.74
+    },
+    {
+        "llm": "Llama",
+        "comentario": "\"Uau, acho legal que eles estão explorando essa ideia. É importante ter certeza de que a IA não vai acabar criando conteúdo que só serve para ensinar lixo\" #IAeConteúdo",
+        "prob_humano": 0.25,
+        "prob_IA": 99.75
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Essa é a questão, né? Se a IA pode criar conteúdo tão realista e convincente, como vamos saber o que é real e o que não é? É um desafio, mas também uma oportunidade de mudar o jogo!",
+        "prob_humano": 0.12,
+        "prob_IA": 99.88
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Não me parece justo! A IA pode ser super útil, mas não queria que os conteúdos se tornassem como na TV deles pra cima e baixo...",
+        "prob_humano": 2.06,
+        "prob_IA": 97.94
+    },
+    {
+        "llm": "Llama",
+        "comentario": "E aí, Rafael tem razão mesmo! A IA pode ser util, mas não resolve tudo. É como se fosse uma ferramenta que nos ajuda a criar, mas não muda o fato de que estamos sendo explorados pelo que produzimos, sabe?",
+        "prob_humano": 0.66,
+        "prob_IA": 99.34
+    },
+    {
+        "llm": "Llama",
+        "comentario": "\"Que pensamento sombrio! A IA está cada vez mais próxima de criar uma realidade virtual sem regras. É hora de pensar na regulamentação, não só em tecnologia!\"",
+        "prob_humano": 0.12,
+        "prob_IA": 99.88
+    },
+    {
+        "llm": "Llama",
+        "comentario": "\"É louco de grande! E se a IA vai fazer música com vozes reais? Qual é o sentido de criar som artificial?\" #DreamTrack #IAeMusica",
+        "prob_humano": 0.17,
+        "prob_IA": 99.83
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Legal ver o governo de SP pensando em IA pra educação! Pode acelerar mto a produção de conteúdo e deixar as coisas mais dinâmicas. Só temos que ficar de olho pra garantir que a autenticidade e a qualidade não se percam no meio do caminho. #IAeducação #futuro #responsabilidade",
+        "prob_humano": 0.09,
+        "prob_IA": 99.91
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Surreal, né? A IA tá avançando a passos largos! Imagina só filmes inteiros com personagens gerados por IA, ou propagandas superpersonalizadas. Ainda bem que a gente tá de olho nas questões éticas também. Vai ser uma revolução, mas temos que garantir que seja usada da maneira certa! 🤖👀 #IA #FuturoCriativo",
+        "prob_humano": 0.06,
+        "prob_IA": 99.94
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Entendo sua preocupação! Dublagens feitas por IA ainda não capturam aquele toque humano, né? A tecnologia avança, mas a autenticidade e emoção de uma boa voz profissional são insubstituíveis. #IA #CriaçãoDeConteúdo",
+        "prob_humano": 0.12,
+        "prob_IA": 99.88
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Concordo em partes, mano. A IA pode sim ser uma mão na roda pra agilizar a criação, mas se não tivermos cuidado, vira só mais uma forma de nos sugar sem trazer benefícios reais. Precisamos de regulamentação pra garantir que ela seja usada de maneira justa e não só pra encher os bolsos de quem já tá no lucro. #IAResponsável",
+        "prob_humano": 0.14,
+        "prob_IA": 99.86
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Cara, a evolução da IA em criar rostos é surreal! Comparar 2014 com 2018 mostra o quão rápido tá tudo avançando. A da direita parece de verdade, né? Bizarro e incrível ao mesmo tempo. Mas, ó, temos que ficar ligados nas questões éticas aí, viu? Imagina o potencial pra desinformação! #IA #Tecnologia #ÉticaNaIA",
+        "prob_humano": 0.17,
+        "prob_IA": 99.82
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Cara, essa novidade do Dream Track no YouTube é surreal! Imagina poder criar músicas com a voz de artistas como Demi Lovato ou John Legend? Muito potencial pra inovar na produção musical. Só espero que a galera pense bem nas questões éticas, né? Tipo, preservar a autenticidade e evitar desinformação. Seria top ter uma regulamentação pra isso. Ansioso pra testar quando liberar! 🎶🤖 #IA #Musica #InovaçãoResponsável",
+        "prob_humano": 0.08,
+        "prob_IA": 99.92
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Legal ver o governo se interessando por IA na educação! Mas é essencial garantir que o conteúdo seja autêntico e de qualidade. Vamos acompanhar de perto!",
+        "prob_humano": 3.54,
+        "prob_IA": 96.46
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Cara, isso é demais! A IA vai mudar tudo mesmo. Mas precisamos pensar nas questões éticas também, né? Regulamentação é essencial pra não virar uma bagunça.",
+        "prob_humano": 0.44,
+        "prob_IA": 99.56
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Entendo, mas e se a IA for usada para tornar o conteúdo mais acessível para pessoas com deficiência auditiva? Aí muda a perspectiva, né?",
+        "prob_humano": 0.25,
+        "prob_IA": 99.75
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Entendo seu ponto, mas acho que a IA pode ser uma aliada se usada de forma responsável. Regulamentação é chave pra garantir que a tecnologia beneficie todos, não só uns poucos. Vamos continuar debatendo e buscando o melhor caminho! 💡🤝",
+        "prob_humano": 0.08,
+        "prob_IA": 99.92
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Cara, impressionante como a IA evoluiu rápido! Esses avanços são demais, mas precisamos ficar de olho nas questões éticas.",
+        "prob_humano": 0.89,
+        "prob_IA": 99.11
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Uau, isso é incrível! Mas será que vai soar tão autêntico quanto a voz real dos artistas? #DreamTrack #IAnaMúsica",
+        "prob_humano": 9.46,
+        "prob_IA": 90.54
+    }
+]
