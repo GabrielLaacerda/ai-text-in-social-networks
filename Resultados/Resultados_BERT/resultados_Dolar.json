@@ -122,8 +122,8 @@
     {
         "llm": "Llama",
         "comentario": "Que barulho! E aí Lula vai resolver? Nada parece funcionar...",
-        "prob_humano": 99.99,
-        "prob_IA": 0.01
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
     },
     {
         "llm": "Llama",
@@ -206,8 +206,8 @@
     {
         "llm": "Mistral",
         "comentario": "\"Gente, sério? Notícias falsas? Aqui na loja, a gente sente o impacto na pele. Precisamos de soluções reais, não de desculpas.\"",
-        "prob_humano": 99.99,
-        "prob_IA": 0.01
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
     },
     {
         "llm": "Mistral",

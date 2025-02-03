@@ -206,8 +206,8 @@
     {
         "llm": "Mistral",
         "comentario": "Isso é um absurdo! Precisamos de regulamentação urgente pra proteger nossas crianças e adolescentes dessa armadilha.",
-        "prob_humano": 99.99,
-        "prob_IA": 0.01
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
     },
     {
         "llm": "Mistral",

@@ -258,7 +258,7 @@ def testar_llms():
             ]
 
             # Salvar os resultados em um arquivo JSON
-            with open(f"teste.json", 'w', encoding='utf-8') as json_file:
+            with open(f"Resultados/Resultados_BERT/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
             # Retornar uma resposta JSON indicando sucesso

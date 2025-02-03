@@ -14,8 +14,8 @@
     {
         "llm": "Cohere",
         "comentario": "Dublagem já é uma arte questionável, agora com IA? Tô fora!",
-        "prob_humano": 99.99,
-        "prob_IA": 0.01
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
     },
     {
         "llm": "Cohere",
@@ -26,8 +26,8 @@
     {
         "llm": "Cohere",
         "comentario": "Caramba! A evolução da IA é impressionante! Dá até um frio na barriga pensar no futuro.",
-        "prob_humano": 99.99,
-        "prob_IA": 0.01
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
     },
     {
         "llm": "Cohere",
