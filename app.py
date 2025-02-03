@@ -12,6 +12,7 @@ from IAText_Detectors.Roberta import probabilidade_IA as roberta_prob
 from IAText_Detectors.Sapling import probabilidade_IA as sapling_prob
 from IAText_Detectors.huggingface import probabilidade_IA as prob_hugging
 from IAText_Detectors.BERT import probabilidade_IA as bert_prob
+from IAText_Detectors.Radar import probabilidade_IA as radar_prob
 
 
 # Configuração de logging
@@ -211,7 +212,10 @@ def testar_llms():
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
 
+            print(lista_comentarios)
+            print(lista_llms)
             result_hugging = prob_hugging(lista_comentarios, lista_llms)
+
 
             processed_data_sap = [
                 {
@@ -231,7 +235,7 @@ def testar_llms():
             return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
 
         elif ai_choice == "bert":
-            print('teste')
+
             theme_choice = request.form.get('themes')
             lista_comentarios = []
 
@@ -254,7 +258,37 @@ def testar_llms():
             ]
 
             # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados/Resultados_BERT/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+            with open(f"teste.json", 'w', encoding='utf-8') as json_file:
+                json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
+
+            # Retornar uma resposta JSON indicando sucesso
+            return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
+
+        elif ai_choice == "radar":
+
+            theme_choice = request.form.get('themes')
+            lista_comentarios = []
+
+            for llm in lista_llms:
+                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
+                          encoding='utf-8') as file:
+                    content = file.read()
+                    lista_comentarios.append({'llm': llm, 'comentarios': content})
+
+            result_radar = radar_prob(lista_comentarios, lista_llms)
+
+            processed_data_sap = [
+                {
+                    'llm': item['llm'],
+                    'comentario': item['comentario'],
+                    'prob_humano': item['prob_humano'],
+                    'prob_IA': item['prob_IA']
+                }
+                for item in result_radar
+            ]
+
+            # Salvar os resultados em um arquivo JSON
+            with open(f"Resultados/Resultados_Radar/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
             # Retornar uma resposta JSON indicando sucesso

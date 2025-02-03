@@ -7,6 +7,10 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv2" />
       <excludeFolder url="file://$MODULE_DIR$/myenv/bin/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/Binoculars/.venv/bin/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/TuringBench" />
+      <excludeFolder url="file://$MODULE_DIR$/trained_model_ArguGPT" />
+      <excludeFolder url="file://$MODULE_DIR$/trained_model_HC3" />
+      <excludeFolder url="file://$MODULE_DIR$/tweepfake_deepfake_text_detection-master" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (TCC_GabrielVncs) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

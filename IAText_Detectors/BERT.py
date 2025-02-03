@@ -1,5 +1,5 @@
 import torch
-from transformers import BertTokenizer, BertForSequenceClassification, logging
+from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, logging
 import torch.nn.functional as F
 import warnings
 
@@ -10,11 +10,11 @@ def probabilidade_IA(comentarios, modelos):
     logging.set_verbosity_error()
 
     # Caminho para o modelo treinado
-    model_path = '/home/gabriel/TCC_GabrielVncs/Bert/trained_model'
+    model_path = '/home/gabriel/TCC_GabrielVncs/trained_model_HC3'
 
-    # Carregar o modelo e o tokenizer
-    model = BertForSequenceClassification.from_pretrained(model_path)
-    tokenizer = BertTokenizer.from_pretrained(model_path)
+    # Carregar o modelo e o tokenizer do DistilBERT
+    model = DistilBertForSequenceClassification.from_pretrained(model_path)
+    tokenizer = DistilBertTokenizer.from_pretrained(model_path)
 
     if not isinstance(comentarios, list):
         raise ValueError("O argumento 'comentarios' deve ser uma lista.")

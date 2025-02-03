@@ -1,3 +1,6 @@
 .venv/
-Bert/
+trained_model_ArguGPT/
+trained_model_HC3/
+TuringBench/
+tweepfake_deepfake_text_detection-master/
 

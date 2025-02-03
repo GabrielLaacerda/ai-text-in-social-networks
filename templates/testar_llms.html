@@ -82,18 +82,25 @@
         <!-- Escolha da LLM -->
         <label for="ai" class="choice">Escolha a ferramenta de detecção:</label>
         <div class="ia-options">
-    <div class="ia-option">
-        <input type="radio" id="bert" name="ai" value="bert" required>
-        <label for="bert">
-            <img src="{{ url_for('static', filename='images/bert.png') }}" alt="bert">
-            <p>BERT - dataset (LLM-Detect AI-Generated Text by kaggle)</p>
-        </label>
-    </div>
+            <div class="ia-option">
+            <input type="radio" id="radar" name="ai" value="radar" required>
+            <label for="radar">
+                <img src="{{ url_for('static', filename='images/radar.jpg') }}" alt="radar">
+                <p>RADAR: Robust AI-text Detection</p>
+            </label>
+        </div>
         <div class="ia-option">
             <input type="radio" id="huggingface" name="ai" value="huggingface" required>
             <label for="huggingface">
                 <img src="{{ url_for('static', filename='images/roberta.png') }}" alt="huggingface">
                 <p>AI-Content-Detector by PirateXX (HuggingFace)</p>
+            </label>
+        </div>
+            <div class="ia-option">
+            <input type="radio" id="bert" name="ai" value="bert" required>
+            <label for="bert">
+                <img src="{{ url_for('static', filename='images/bert.png') }}" alt="bert">
+                <p>BERT</p>
             </label>
         </div>
         <div class="ia-option">
