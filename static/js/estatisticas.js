@@ -125,6 +125,7 @@ function testar_llms() {
 
 $(document).ready(function () {
 
+    // Inicializa o DataTable
     $('#dataTable').DataTable({
         language: {
             sEmptyTable: "Nenhum dado disponível na tabela",
@@ -151,8 +152,9 @@ $(document).ready(function () {
         autoWidth: true,
         paging: true,
         order: [[1, 'asc']],
-
     });
+
 });
+
 
 
