@@ -66,6 +66,12 @@
         "prob_IA": 0.0
     },
     {
+       "llm": "ChatGPT",
+        "comentario": "Totalmente! 🤦‍♀️ Cada vez mais caro e com menos opções. Para que eu pago tanto, se no fim é tudo repetido e cheio de anúncios? Tô quase voltando pra TV a cabo! 😂📺",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
         "llm": "Gemini",
         "comentario": "\"Mano, juro, não entra na minha cabeça essa de pagar pra alugar filme DENTRO do streaming. Tipo, já não pago a mensalidade? 🙄\"",
         "prob_humano": 100.0,

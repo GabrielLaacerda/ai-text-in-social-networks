@@ -1,3 +1,17 @@
+/* Estilo global */
+html, body {
+    height: 100%; /* Garante que o gradiente cubra toda a altura da tela */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #ffffff); /* Exemplo de gradiente suave */
+    color: black; /* Cor do texto */
+    min-height: 100vh;
+}
+
 .ia-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de tamanho igual */

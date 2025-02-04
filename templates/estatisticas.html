@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Estatisticas</title>
@@ -8,8 +9,8 @@
 
     <!-- DataTables -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-       <script src="{{ url_for('static', filename='js/estatisticas.js') }}"></script>
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/estatisticas.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estatisticas.css') }}">
     <link href="{{ url_for('static', filename='css/datatables.min.css') }}" rel="stylesheet">
     <script src="{{ url_for('static', filename='js/datatables.min.js') }}"></script>
 
@@ -21,177 +22,98 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <style>
-      /* Estilo para o ícone de hambúrguer */
-      .sidebar-toggle {
-        position: fixed;
-        top: 10px;
-        left: 20px;
-        font-size: 30px;
-        background: none;
-        border: none;
-        cursor: pointer;
-      }
-      .sidebar-toggle:hover {
-        opacity: 0.7;
-      }
+</head>
 
-      /* Ajuste do tamanho do gráfico de pizza */
-      #pieChart {
-        width: 100% !important;
-        height: auto !important;
-        max-width: 370px; /* Ajuste de tamanho máximo */
-        margin-left: auto;
-        margin-right: auto;
-      }
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
-      /* Estilo para o fundo branco onde os gráficos e tabela serão exibidos */
-      .content-area {
-        background-color: white; /* Fundo branco */
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        margin-top: 20px;
-      }
-
-      /* Estilo para os gráficos e tabela dentro da área */
-      .chart-container {
-        display: flex;
-        flex-wrap: wrap; /* Permite que os gráficos se ajustem quando necessário */
-        justify-content: space-between;
-        margin-bottom: 20px;
-      }
-
-      .chart-container > div {
-        width: 48%;
-        margin-bottom: 20px;
-      }
-
-      /* Ajuste para telas menores */
-      @media (max-width: 768px) {
-        .chart-container > div {
-          width: 100%;
-        }
-      }
-
-      .table-container {
-        margin-top: 20px;
-      }
-
-    </style>
-  </head>
-  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
-
-    <span class="sidebar-toggle" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-      <i class="fa-solid fa-bars" style="color: #000000;"></i>
+    <span class="sidebar-toggle" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop">
+        <i class="fa-solid fa-bars" style="color: #000000;"></i>
     </span>
 
     <!-- Sidebar -->
-    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="staticBackdropLabel">Escolha uma funcionalidade</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="list-group">
-            <li class="list-group-item">
-                <a href="/" class="d-flex align-items-center">
-                    <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
-                    Gerar Comentários
-                </a>
-            </li>
-            <li class="list-group-item">
-                <a class="d-flex align-items-center" onclick="testar_llms()">
-                    <i class="fa-solid fa-brain"></i>
-                    Testar LLMs
-                </a>
-            </li>
-            <li class="list-group-item">
-                <a class="d-flex align-items-center" onclick="gerarEstatisticas()">
-                    <i class="fas fa-chart-line me-2"></i> <!-- Ícone -->
-                    Visualizar Estatisticas
-                </a>
-            </li>
-        </ul>
-      </div>
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Escolha uma funcionalidade</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="/" class="d-flex align-items-center">
+                        <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
+                        Gerar Comentários
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="d-flex align-items-center" onclick="testar_llms()">
+                        <i class="fa-solid fa-brain"></i>
+                        Testar LLMs
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="d-flex align-items-center" onclick="gerarEstatisticas()">
+                        <i class="fas fa-chart-line me-2"></i> <!-- Ícone -->
+                        Visualizar Estatisticas
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <!-- Área para gráficos e tabela com fundo branco -->
     <h1 class="m3-4 mb-3 text-center" style="color:black">Estatisticas completas sobre as LLMs</h1>
 
-    <div class="container content-area">
+    <div class="container-fluid content-area" style="width:95%">
 
-      <!-- Div para exibir os gráficos lado a lado -->
-      <div class="chart-container">
-        <!-- Gráfico de barras -->
-        <div>
-          <canvas id="barChart"></canvas>
+        <!-- Div para exibir os gráficos lado a lado -->
+        <div class="chart-container">
+            <!-- Gráfico de barras -->
+            <div>
+                <canvas id="barChart"></canvas>
+            </div>
+            <!-- Gráfico de pizza -->
+            <div>
+                <canvas id="pieChart"></canvas>
+            </div>
         </div>
-        <!-- Gráfico de pizza -->
-        <div>
-          <canvas id="pieChart"></canvas>
-        </div>
-      </div>
 
-      <!-- Tabela de dados -->
-      <div class="table-container">
-        <table id="dataTable" class="table table-striped">
-          <thead>
-            <tr>
-              <th>LLM Geradora</th>
-              <th>Detector</th>
-              <th>Comentário</th>
-              <th>%Humano</th>
-              <th>%IA</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Cohere</td>
-              <td>30</td>
-              <td>Brasil</td>
-              <td>30</td>
-              <td>Brasil</td>
-            </tr>
-            <tr>
-              <td>ChatGPT</td>
-              <td>25</td>
-              <td>EUA</td>
-              <td>30</td>
-              <td>Brasil</td>
-            </tr>
-            <tr>
-              <td>Gemini</td>
-              <td>28</td>
-              <td>Portugal</td>
-              <td>30</td>
-              <td>Brasil</td>
-            </tr>
-          <tr>
-              <td>Llama</td>
-              <td>28</td>
-              <td>Portugal</td>
-              <td>30</td>
-              <td>Brasil</td>
-            </tr>
-          <tr>
-              <td>MaritacaIA</td>
-              <td>28</td>
-              <td>Portugal</td>
-              <td>30</td>
-              <td>MaritacaIA</td>
-            </tr>
-          <tr>
-              <td>MistralAI</td>
-              <td>28</td>
-              <td>Portugal</td>
-              <td>30</td>
-              <td>Brasil</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <!-- Tabela de dados -->
+        <div class="table-container">
+            <table id="dataTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Detector</th>
+                        <th>LLM Geradora</th>
+                        <th>Tema</th>
+                        <th>%Humano</th>
+                        <th>%IA</th>
+                        <th>Comentário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in resultados %}
+                    <tr>
+                        <td>{{ item.detector }}</td>
+                        <td>{{ item.llm }}</td>
+                        <td>{{ item.tema }}</td>
+                        <td>{{ item.prob_humano }}%</td>
+                        <td>{{ item.prob_IA }}%</td>
+                        <td>{{ item.comentario }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
+    <div style="height:30px"></div>
 
-  </body>
+<script>
+    var estatisticas = {{ resultados_graficos | tojson }};
+</script>
+
+
+</body>
+
 </html>

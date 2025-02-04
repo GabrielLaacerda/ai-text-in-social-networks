@@ -1,6 +1,7 @@
 import os
 import json
 import logging
+import Funcoes.Retornar_Estatisticas as re
 from flask import Flask, render_template, request, send_file, session, jsonify
 from LLMs.Cohere import gerar_comentarios_para_posts as cohere
 from LLMs.ChatGPT import gerar_comentarios_para_posts as chatGpt
@@ -135,15 +136,18 @@ def download():
 
 @app.route("/estatisticas", methods=["GET", "POST"])
 def estatisticas():
-    if request.method == "POST":
-        print("Olá, mundo!")
 
-    return render_template("estatisticas.html")
+    llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
+    dir_base = "./Resultados"
+    resultados = re.calcular_estatisticas_tabela(llms,dir_base)
+    resultados_graficos = re.calcular_acerto_por_detector(resultados)
+
+    return render_template("estatisticas.html", resultados=resultados, resultados_graficos=resultados_graficos)
 
 
 @app.route("/testar_llms", methods=["GET", "POST"])
 def testar_llms():
-    if request.method == 'POST':
+    if request.method== 'POST':
         ai_choice = request.form.get('ai')
         lista_llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
 
