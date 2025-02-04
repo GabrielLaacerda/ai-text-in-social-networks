@@ -15425,3 +15425,592 @@
 2025-02-03 18:15:29,921 - INFO - 127.0.0.1 - - [03/Feb/2025 18:15:29] "POST /testar_llms HTTP/1.1" 200 -
 2025-02-03 18:15:32,326 - INFO - 127.0.0.1 - - [03/Feb/2025 18:15:32] "POST /testar_llms HTTP/1.1" 200 -
 2025-02-03 18:15:36,200 - INFO - 127.0.0.1 - - [03/Feb/2025 18:15:36] "POST /testar_llms HTTP/1.1" 200 -
+2025-02-03 18:17:02,646 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "GET / HTTP/1.1" 200 -
+2025-02-03 18:17:02,661 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-03 18:17:02,661 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-03 18:17:02,662 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-03 18:17:02,663 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-03 18:17:02,664 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-03 18:17:02,664 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-03 18:17:02,668 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-03 18:17:02,668 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-03 18:17:02,672 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-03 18:17:02,672 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:02] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-03 18:17:04,381 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "GET /testar_llms HTTP/1.1" 200 -
+2025-02-03 18:17:04,398 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-03 18:17:04,399 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-02-03 18:17:04,399 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-02-03 18:17:04,399 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-03 18:17:04,399 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-03 18:17:04,400 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-03 18:17:04,401 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "[36mGET /static/images/radar.jpg HTTP/1.1[0m" 304 -
+2025-02-03 18:17:04,406 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-02-03 18:17:04,449 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "[36mGET /static/images/bert.png HTTP/1.1[0m" 304 -
+2025-02-03 18:17:04,450 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:04] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-02-03 18:17:06,543 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:06] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:17:06,559 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:06] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-03 18:17:06,560 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-03 18:17:06,560 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:06] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-03 18:17:06,560 - INFO - 127.0.0.1 - - [03/Feb/2025 18:17:06] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-03 18:25:47,487 - INFO - 127.0.0.1 - - [03/Feb/2025 18:25:47] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:25:48,760 - INFO - 127.0.0.1 - - [03/Feb/2025 18:25:48] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:25:48,803 - INFO - 127.0.0.1 - - [03/Feb/2025 18:25:48] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:27:01,267 - INFO - 127.0.0.1 - - [03/Feb/2025 18:27:01] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:27:01,666 - INFO - 127.0.0.1 - - [03/Feb/2025 18:27:01] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:28:21,381 - INFO - 127.0.0.1 - - [03/Feb/2025 18:28:21] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:28:21,431 - INFO - 127.0.0.1 - - [03/Feb/2025 18:28:21] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:30:47,062 - INFO - 127.0.0.1 - - [03/Feb/2025 18:30:47] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:30:47,142 - INFO - 127.0.0.1 - - [03/Feb/2025 18:30:47] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:32:14,212 - INFO - 127.0.0.1 - - [03/Feb/2025 18:32:14] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:32:14,253 - INFO - 127.0.0.1 - - [03/Feb/2025 18:32:14] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:32:17,084 - INFO - 127.0.0.1 - - [03/Feb/2025 18:32:17] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:32:17,107 - INFO - 127.0.0.1 - - [03/Feb/2025 18:32:17] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:32:29,424 - INFO - 127.0.0.1 - - [03/Feb/2025 18:32:29] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:32:29,455 - INFO - 127.0.0.1 - - [03/Feb/2025 18:32:29] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:32:43,955 - INFO - 127.0.0.1 - - [03/Feb/2025 18:32:43] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:32:44,004 - INFO - 127.0.0.1 - - [03/Feb/2025 18:32:44] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:33:54,924 - INFO - 127.0.0.1 - - [03/Feb/2025 18:33:54] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:33:54,973 - INFO - 127.0.0.1 - - [03/Feb/2025 18:33:54] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:34:17,908 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:17] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:34:17,996 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:17] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:34:46,894 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "GET / HTTP/1.1" 200 -
+2025-02-03 18:34:46,908 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-03 18:34:46,909 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-03 18:34:46,909 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-03 18:34:46,909 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-03 18:34:46,910 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-03 18:34:46,911 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-03 18:34:46,920 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-03 18:34:46,920 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-03 18:34:46,925 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-03 18:34:46,928 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:46] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-03 18:34:48,351 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:48] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:34:56,061 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:56] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:34:56,106 - INFO - 127.0.0.1 - - [03/Feb/2025 18:34:56] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:35:37,294 - INFO - 127.0.0.1 - - [03/Feb/2025 18:35:37] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:35:37,319 - INFO - 127.0.0.1 - - [03/Feb/2025 18:35:37] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:35:58,809 - INFO - 127.0.0.1 - - [03/Feb/2025 18:35:58] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:35:58,834 - INFO - 127.0.0.1 - - [03/Feb/2025 18:35:58] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:35:59,402 - INFO - 127.0.0.1 - - [03/Feb/2025 18:35:59] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:35:59,426 - INFO - 127.0.0.1 - - [03/Feb/2025 18:35:59] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:35:59,834 - INFO - 127.0.0.1 - - [03/Feb/2025 18:35:59] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:35:59,859 - INFO - 127.0.0.1 - - [03/Feb/2025 18:35:59] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:37:02,703 - INFO - 127.0.0.1 - - [03/Feb/2025 18:37:02] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:37:02,738 - INFO - 127.0.0.1 - - [03/Feb/2025 18:37:02] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:37:07,681 - INFO - 127.0.0.1 - - [03/Feb/2025 18:37:07] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:37:07,731 - INFO - 127.0.0.1 - - [03/Feb/2025 18:37:07] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:37:36,990 - INFO - 127.0.0.1 - - [03/Feb/2025 18:37:36] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:37:37,022 - INFO - 127.0.0.1 - - [03/Feb/2025 18:37:37] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:37:41,517 - INFO - 127.0.0.1 - - [03/Feb/2025 18:37:41] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:37:41,563 - INFO - 127.0.0.1 - - [03/Feb/2025 18:37:41] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:37:49,248 - INFO - 127.0.0.1 - - [03/Feb/2025 18:37:49] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:37:49,284 - INFO - 127.0.0.1 - - [03/Feb/2025 18:37:49] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:38:01,936 - INFO - 127.0.0.1 - - [03/Feb/2025 18:38:01] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:38:01,985 - INFO - 127.0.0.1 - - [03/Feb/2025 18:38:01] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-03 18:54:40,609 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-03 18:54:40,609 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-03 18:54:40,612 - INFO -  * Restarting with watchdog (inotify)
+2025-02-03 18:54:44,306 - WARNING -  * Debugger is active!
+2025-02-03 18:54:44,307 - INFO -  * Debugger PIN: 533-491-372
+2025-02-03 18:54:44,636 - INFO - 127.0.0.1 - - [03/Feb/2025 18:54:44] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-03 18:54:44,692 - INFO - 127.0.0.1 - - [03/Feb/2025 18:54:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-03 18:54:44,700 - INFO - 127.0.0.1 - - [03/Feb/2025 18:54:44] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-03 18:54:44,702 - INFO - 127.0.0.1 - - [03/Feb/2025 18:54:44] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-03 18:54:44,702 - INFO - 127.0.0.1 - - [03/Feb/2025 18:54:44] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:38:58,044 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 09:38:58,044 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-04 09:38:58,048 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 09:39:01,983 - WARNING -  * Debugger is active!
+2025-02-04 09:39:02,096 - INFO -  * Debugger PIN: 546-248-335
+2025-02-04 09:39:25,618 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "GET / HTTP/1.1" 200 -
+2025-02-04 09:39:25,637 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 09:39:25,637 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 09:39:25,638 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-04 09:39:25,639 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:39:25,641 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-04 09:39:25,641 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-04 09:39:25,647 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-04 09:39:25,647 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-04 09:39:25,650 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-04 09:39:25,728 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:25] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-04 09:39:28,240 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "GET /testar_llms HTTP/1.1" 200 -
+2025-02-04 09:39:28,253 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 09:39:28,254 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 09:39:28,254 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-04 09:39:28,255 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:39:28,255 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-02-04 09:39:28,255 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-02-04 09:39:28,260 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "[36mGET /static/images/radar.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:39:28,261 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-02-04 09:39:28,269 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "[36mGET /static/images/bert.png HTTP/1.1[0m" 304 -
+2025-02-04 09:39:28,269 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:28] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:39:37,094 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:37] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 09:39:37,107 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:37] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 09:39:37,107 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 09:39:37,107 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:37] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:39:37,108 - INFO - 127.0.0.1 - - [04/Feb/2025 09:39:37] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 09:40:02,675 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/bin/activate_this.py', reloading
+2025-02-04 09:40:02,677 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/distro/distro.py', reloading
+2025-02-04 09:40:02,678 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/distro/__init__.py', reloading
+2025-02-04 09:40:02,679 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/distro/__main__.py', reloading
+2025-02-04 09:40:02,680 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/_setuptools_logging.py', reloading
+2025-02-04 09:40:02,680 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/cli/pack.py', reloading
+2025-02-04 09:40:02,681 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/cli/convert.py', reloading
+2025-02-04 09:40:02,682 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/cli/unpack.py', reloading
+2025-02-04 09:40:02,682 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/cli/__init__.py', reloading
+2025-02-04 09:40:02,683 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/cli/tags.py', reloading
+2025-02-04 09:40:02,684 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/wheelfile.py', reloading
+2025-02-04 09:40:02,684 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/metadata.py', reloading
+2025-02-04 09:40:02,685 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/__init__.py', reloading
+2025-02-04 09:40:02,685 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/_parser.py', reloading
+2025-02-04 09:40:02,686 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/requirements.py', reloading
+2025-02-04 09:40:02,686 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/__init__.py', reloading
+2025-02-04 09:40:02,687 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/utils.py', reloading
+2025-02-04 09:40:02,687 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/specifiers.py', reloading
+2025-02-04 09:40:02,687 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/tags.py', reloading
+2025-02-04 09:40:02,688 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/_tokenizer.py', reloading
+2025-02-04 09:40:02,688 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/version.py', reloading
+2025-02-04 09:40:02,689 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/_manylinux.py', reloading
+2025-02-04 09:40:02,690 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/_musllinux.py', reloading
+2025-02-04 09:40:02,690 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/markers.py', reloading
+2025-02-04 09:40:02,691 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/_structures.py', reloading
+2025-02-04 09:40:02,691 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/vendored/packaging/_elffile.py', reloading
+2025-02-04 09:40:02,692 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/__init__.py', reloading
+2025-02-04 09:40:02,692 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/__main__.py', reloading
+2025-02-04 09:40:02,693 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/macosx_libfile.py', reloading
+2025-02-04 09:40:02,693 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/bdist_wheel.py', reloading
+2025-02-04 09:40:02,694 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/wheel/util.py', reloading
+2025-02-04 09:40:02,694 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/blueprints.py', reloading
+2025-02-04 09:40:02,695 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/testing.py', reloading
+2025-02-04 09:40:02,695 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/logging.py', reloading
+2025-02-04 09:40:02,696 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/sessions.py', reloading
+2025-02-04 09:40:02,696 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/wrappers.py', reloading
+2025-02-04 09:40:02,697 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/debughelpers.py', reloading
+2025-02-04 09:40:02,697 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/config.py', reloading
+2025-02-04 09:40:02,698 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/json/provider.py', reloading
+2025-02-04 09:40:02,698 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/json/__init__.py', reloading
+2025-02-04 09:40:02,699 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/json/tag.py', reloading
+2025-02-04 09:40:02,700 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/templating.py', reloading
+2025-02-04 09:40:02,700 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/__init__.py', reloading
+2025-02-04 09:40:02,700 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/__main__.py', reloading
+2025-02-04 09:40:02,700 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/helpers.py', reloading
+2025-02-04 09:40:02,702 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/typing.py', reloading
+2025-02-04 09:40:02,702 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/cli.py', reloading
+2025-02-04 09:40:02,702 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/globals.py', reloading
+2025-02-04 09:40:02,702 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/app.py', reloading
+2025-02-04 09:40:02,702 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/sansio/blueprints.py', reloading
+2025-02-04 09:40:02,704 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/sansio/app.py', reloading
+2025-02-04 09:40:02,705 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/sansio/scaffold.py', reloading
+2025-02-04 09:40:02,707 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/signals.py', reloading
+2025-02-04 09:40:02,709 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/views.py', reloading
+2025-02-04 09:40:02,710 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/flask/ctx.py', reloading
+2025-02-04 09:40:02,712 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/ollama/_utils.py', reloading
+2025-02-04 09:40:02,713 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/ollama/_client.py', reloading
+2025-02-04 09:40:02,714 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/ollama/__init__.py', reloading
+2025-02-04 09:40:02,716 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/ollama/_types.py', reloading
+2025-02-04 09:40:02,718 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/google_auth_httplib2.py', reloading
+2025-02-04 09:40:02,719 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/_virtualenv.py', reloading
+2025-02-04 09:40:02,720 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/_yaml/__init__.py', reloading
+2025-02-04 09:40:02,722 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/element.py', reloading
+2025-02-04 09:40:02,723 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/formatter.py', reloading
+2025-02-04 09:40:02,724 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/css.py', reloading
+2025-02-04 09:40:02,725 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/__init__.py', reloading
+2025-02-04 09:40:02,726 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/builder/__init__.py', reloading
+2025-02-04 09:40:02,727 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/builder/_lxml.py', reloading
+2025-02-04 09:40:02,729 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/builder/_html5lib.py', reloading
+2025-02-04 09:40:02,730 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/builder/_htmlparser.py', reloading
+2025-02-04 09:40:02,731 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/diagnose.py', reloading
+2025-02-04 09:40:02,733 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_navigablestring.py', reloading
+2025-02-04 09:40:02,734 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_tree.py', reloading
+2025-02-04 09:40:02,735 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_builder.py', reloading
+2025-02-04 09:40:02,736 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_element.py', reloading
+2025-02-04 09:40:02,738 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_tag.py', reloading
+2025-02-04 09:40:02,739 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_pageelement.py', reloading
+2025-02-04 09:40:02,740 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_soup.py', reloading
+2025-02-04 09:40:02,741 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/__init__.py', reloading
+2025-02-04 09:40:02,744 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_htmlparser.py', reloading
+2025-02-04 09:40:02,746 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_docs.py', reloading
+2025-02-04 09:40:02,748 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_formatter.py', reloading
+2025-02-04 09:40:02,750 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_fuzz.py', reloading
+2025-02-04 09:40:02,752 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_lxml.py', reloading
+2025-02-04 09:40:02,754 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_html5lib.py', reloading
+2025-02-04 09:40:02,756 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_dammit.py', reloading
+2025-02-04 09:40:02,757 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_css.py', reloading
+2025-02-04 09:40:02,758 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/tests/test_builder_registry.py', reloading
+2025-02-04 09:40:02,759 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/bs4/dammit.py', reloading
+2025-02-04 09:40:02,760 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/_readers.py', reloading
+2025-02-04 09:40:02,761 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/_headers.py', reloading
+2025-02-04 09:40:02,762 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/_receivebuffer.py', reloading
+2025-02-04 09:40:02,763 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/_connection.py', reloading
+2025-02-04 09:40:02,764 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/__init__.py', reloading
+2025-02-04 09:40:02,765 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/_state.py', reloading
+2025-02-04 09:40:02,766 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/_version.py', reloading
+2025-02-04 09:40:02,767 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/_abnf.py', reloading
+2025-02-04 09:40:02,768 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/test_connection.py', reloading
+2025-02-04 09:40:02,769 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/test_against_stdlib_http.py', reloading
+2025-02-04 09:40:02,769 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/test_headers.py', reloading
+2025-02-04 09:40:02,770 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/test_helpers.py', reloading
+2025-02-04 09:40:02,771 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/test_util.py', reloading
+2025-02-04 09:40:02,771 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/test_state.py', reloading
+2025-02-04 09:40:02,772 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/test_events.py', reloading
+2025-02-04 09:40:02,772 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/__init__.py', reloading
+2025-02-04 09:40:02,773 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/helpers.py', reloading
+2025-02-04 09:40:02,774 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/test_io.py', reloading
+2025-02-04 09:40:02,774 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/tests/test_receivebuffer.py', reloading
+2025-02-04 09:40:02,775 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/_events.py', reloading
+2025-02-04 09:40:02,776 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/_writers.py', reloading
+2025-02-04 09:40:02,777 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/h11/_util.py', reloading
+2025-02-04 09:40:02,779 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/idna/package_data.py', reloading
+2025-02-04 09:40:02,780 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/idna/compat.py', reloading
+2025-02-04 09:40:02,781 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/idna/__init__.py', reloading
+2025-02-04 09:40:02,782 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/idna/intranges.py', reloading
+2025-02-04 09:40:02,783 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/idna/core.py', reloading
+2025-02-04 09:40:02,784 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/idna/idnadata.py', reloading
+2025-02-04 09:40:02,785 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/idna/codec.py', reloading
+2025-02-04 09:40:02,786 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/idna/uts46data.py', reloading
+2025-02-04 09:40:02,786 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/blinker/_utilities.py', reloading
+2025-02-04 09:40:02,787 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/blinker/__init__.py', reloading
+2025-02-04 09:40:02,787 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/blinker/base.py', reloading
+2025-02-04 09:40:02,787 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/jiter/__init__.py', reloading
+2025-02-04 09:40:02,790 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/routing/matcher.py', reloading
+2025-02-04 09:40:02,790 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/routing/__init__.py', reloading
+2025-02-04 09:40:02,792 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/routing/map.py', reloading
+2025-02-04 09:40:02,793 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/routing/rules.py', reloading
+2025-02-04 09:40:02,795 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/routing/exceptions.py', reloading
+2025-02-04 09:40:02,797 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/routing/converters.py', reloading
+2025-02-04 09:40:02,799 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/serving.py', reloading
+2025-02-04 09:40:02,800 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/formparser.py', reloading
+2025-02-04 09:40:02,801 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/wrappers/request.py', reloading
+2025-02-04 09:40:02,802 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/wrappers/__init__.py', reloading
+2025-02-04 09:40:02,803 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/wrappers/response.py', reloading
+2025-02-04 09:40:02,804 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/_reloader.py', reloading
+2025-02-04 09:40:02,805 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/test.py', reloading
+2025-02-04 09:40:02,805 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/__init__.py', reloading
+2025-02-04 09:40:02,806 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/utils.py', reloading
+2025-02-04 09:40:02,806 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/wsgi.py', reloading
+2025-02-04 09:40:02,807 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/_internal.py', reloading
+2025-02-04 09:40:02,808 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/debug/repr.py', reloading
+2025-02-04 09:40:02,808 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/debug/tbtools.py', reloading
+2025-02-04 09:40:02,809 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/debug/__init__.py', reloading
+2025-02-04 09:40:02,809 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/debug/console.py', reloading
+2025-02-04 09:40:02,810 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/sansio/multipart.py', reloading
+2025-02-04 09:40:02,811 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/sansio/request.py', reloading
+2025-02-04 09:40:02,811 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/sansio/__init__.py', reloading
+2025-02-04 09:40:02,811 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/sansio/utils.py', reloading
+2025-02-04 09:40:02,812 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/sansio/http.py', reloading
+2025-02-04 09:40:02,813 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/sansio/response.py', reloading
+2025-02-04 09:40:02,813 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/security.py', reloading
+2025-02-04 09:40:02,813 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/user_agent.py', reloading
+2025-02-04 09:40:02,813 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/structures.py', reloading
+2025-02-04 09:40:02,813 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/headers.py', reloading
+2025-02-04 09:40:02,813 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/cache_control.py', reloading
+2025-02-04 09:40:02,813 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/range.py', reloading
+2025-02-04 09:40:02,813 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/__init__.py', reloading
+2025-02-04 09:40:02,814 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/auth.py', reloading
+2025-02-04 09:40:02,814 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/csp.py', reloading
+2025-02-04 09:40:02,814 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/etag.py', reloading
+2025-02-04 09:40:02,814 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/accept.py', reloading
+2025-02-04 09:40:02,814 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/mixins.py', reloading
+2025-02-04 09:40:02,815 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/datastructures/file_storage.py', reloading
+2025-02-04 09:40:02,815 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/middleware/lint.py', reloading
+2025-02-04 09:40:02,815 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/middleware/__init__.py', reloading
+2025-02-04 09:40:02,815 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/middleware/proxy_fix.py', reloading
+2025-02-04 09:40:02,815 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/middleware/http_proxy.py', reloading
+2025-02-04 09:40:02,815 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/middleware/profiler.py', reloading
+2025-02-04 09:40:02,816 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/middleware/dispatcher.py', reloading
+2025-02-04 09:40:02,816 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/middleware/shared_data.py', reloading
+2025-02-04 09:40:02,816 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/testapp.py', reloading
+2025-02-04 09:40:02,816 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/exceptions.py', reloading
+2025-02-04 09:40:02,816 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/http.py', reloading
+2025-02-04 09:40:02,816 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/local.py', reloading
+2025-02-04 09:40:02,816 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/werkzeug/urls.py', reloading
+2025-02-04 09:40:02,817 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/testing.py', reloading
+2025-02-04 09:40:02,817 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/actions.py', reloading
+2025-02-04 09:40:02,817 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/results.py', reloading
+2025-02-04 09:40:02,817 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/unicode.py', reloading
+2025-02-04 09:40:02,817 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/diagram/__init__.py', reloading
+2025-02-04 09:40:02,817 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/__init__.py', reloading
+2025-02-04 09:40:02,817 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/helpers.py', reloading
+2025-02-04 09:40:02,818 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/common.py', reloading
+2025-02-04 09:40:02,818 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/core.py', reloading
+2025-02-04 09:40:02,819 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/util.py', reloading
+2025-02-04 09:40:02,819 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/pyparsing/exceptions.py', reloading
+2025-02-04 09:40:02,819 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/uritemplate/orderedset.py', reloading
+2025-02-04 09:40:02,819 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/uritemplate/variable.py', reloading
+2025-02-04 09:40:02,819 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/uritemplate/api.py', reloading
+2025-02-04 09:40:02,819 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/uritemplate/__init__.py', reloading
+2025-02-04 09:40:02,820 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/uritemplate/template.py', reloading
+2025-02-04 09:40:02,820 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/filelock/_soft.py', reloading
+2025-02-04 09:40:02,820 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/filelock/_windows.py', reloading
+2025-02-04 09:40:02,820 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/filelock/_api.py', reloading
+2025-02-04 09:40:02,820 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/filelock/_unix.py', reloading
+2025-02-04 09:40:02,820 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/filelock/__init__.py', reloading
+2025-02-04 09:40:02,821 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/filelock/_error.py', reloading
+2025-02-04 09:40:02,821 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/filelock/version.py', reloading
+2025-02-04 09:40:02,821 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/filelock/asyncio.py', reloading
+2025-02-04 09:40:02,821 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/filelock/_util.py', reloading
+2025-02-04 09:40:02,821 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/fuse.py', reloading
+2025-02-04 09:40:02,821 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/caching.py', reloading
+2025-02-04 09:40:02,822 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/asyn.py', reloading
+2025-02-04 09:40:02,822 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/config.py', reloading
+2025-02-04 09:40:02,822 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/registry.py', reloading
+2025-02-04 09:40:02,822 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/callbacks.py', reloading
+2025-02-04 09:40:02,822 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/generic.py', reloading
+2025-02-04 09:40:02,822 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/tar.py', reloading
+2025-02-04 09:40:02,822 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/jupyter.py', reloading
+2025-02-04 09:40:02,822 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/cache_mapper.py', reloading
+2025-02-04 09:40:02,822 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/libarchive.py', reloading
+2025-02-04 09:40:02,822 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/webhdfs.py', reloading
+2025-02-04 09:40:02,823 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/dbfs.py', reloading
+2025-02-04 09:40:02,823 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/cache_metadata.py', reloading
+2025-02-04 09:40:02,823 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/arrow.py', reloading
+2025-02-04 09:40:02,823 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/memory.py', reloading
+2025-02-04 09:40:02,823 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/data.py', reloading
+2025-02-04 09:40:02,823 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/__init__.py', reloading
+2025-02-04 09:40:02,824 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/smb.py', reloading
+2025-02-04 09:40:02,824 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/zip.py', reloading
+2025-02-04 09:40:02,825 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/git.py', reloading
+2025-02-04 09:40:02,825 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/reference.py', reloading
+2025-02-04 09:40:02,825 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/dirfs.py', reloading
+2025-02-04 09:40:02,825 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/ftp.py', reloading
+2025-02-04 09:40:02,825 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/asyn_wrapper.py', reloading
+2025-02-04 09:40:02,825 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/github.py', reloading
+2025-02-04 09:40:02,825 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/http.py', reloading
+2025-02-04 09:40:02,825 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/sftp.py', reloading
+2025-02-04 09:40:02,825 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/local.py', reloading
+2025-02-04 09:40:02,826 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/cached.py', reloading
+2025-02-04 09:40:02,826 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/implementations/dask.py', reloading
+2025-02-04 09:40:02,826 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/conftest.py', reloading
+2025-02-04 09:40:02,826 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/archive.py', reloading
+2025-02-04 09:40:02,826 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/__init__.py', reloading
+2025-02-04 09:40:02,826 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/transaction.py', reloading
+2025-02-04 09:40:02,826 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/json.py', reloading
+2025-02-04 09:40:02,826 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/utils.py', reloading
+2025-02-04 09:40:02,827 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/gui.py', reloading
+2025-02-04 09:40:02,828 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/dircache.py', reloading
+2025-02-04 09:40:02,828 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/parquet.py', reloading
+2025-02-04 09:40:02,828 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/_version.py', reloading
+2025-02-04 09:40:02,828 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/core.py', reloading
+2025-02-04 09:40:02,828 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/spec.py', reloading
+2025-02-04 09:40:02,828 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/tests/abstract/open.py', reloading
+2025-02-04 09:40:02,828 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/tests/abstract/__init__.py', reloading
+2025-02-04 09:40:02,829 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/tests/abstract/pipe.py', reloading
+2025-02-04 09:40:02,829 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/tests/abstract/put.py', reloading
+2025-02-04 09:40:02,829 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/tests/abstract/copy.py', reloading
+2025-02-04 09:40:02,829 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/tests/abstract/common.py', reloading
+2025-02-04 09:40:02,829 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/tests/abstract/mv.py', reloading
+2025-02-04 09:40:02,829 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/tests/abstract/get.py', reloading
+2025-02-04 09:40:02,829 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/exceptions.py', reloading
+2025-02-04 09:40:02,830 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/mapping.py', reloading
+2025-02-04 09:40:02,830 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/fsspec/compression.py', reloading
+2025-02-04 09:40:02,830 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_sync/http2.py', reloading
+2025-02-04 09:40:02,830 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_sync/socks_proxy.py', reloading
+2025-02-04 09:40:02,830 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py', reloading
+2025-02-04 09:40:02,830 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_sync/__init__.py', reloading
+2025-02-04 09:40:02,831 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_sync/interfaces.py', reloading
+2025-02-04 09:40:02,831 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_sync/http_proxy.py', reloading
+2025-02-04 09:40:02,831 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_sync/http11.py', reloading
+2025-02-04 09:40:02,831 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_sync/connection.py', reloading
+2025-02-04 09:40:02,831 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_trace.py', reloading
+2025-02-04 09:40:02,831 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_backends/sync.py', reloading
+2025-02-04 09:40:02,831 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_backends/mock.py', reloading
+2025-02-04 09:40:02,831 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_backends/anyio.py', reloading
+2025-02-04 09:40:02,831 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_backends/trio.py', reloading
+2025-02-04 09:40:02,832 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_backends/__init__.py', reloading
+2025-02-04 09:40:02,832 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_backends/base.py', reloading
+2025-02-04 09:40:02,832 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_backends/auto.py', reloading
+2025-02-04 09:40:02,832 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_utils.py', reloading
+2025-02-04 09:40:02,832 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_models.py', reloading
+2025-02-04 09:40:02,832 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_async/http2.py', reloading
+2025-02-04 09:40:02,833 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_async/socks_proxy.py', reloading
+2025-02-04 09:40:02,833 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_async/connection_pool.py', reloading
+2025-02-04 09:40:02,833 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_async/__init__.py', reloading
+2025-02-04 09:40:02,833 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_async/interfaces.py', reloading
+2025-02-04 09:40:02,833 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_async/http_proxy.py', reloading
+2025-02-04 09:40:02,834 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_async/http11.py', reloading
+2025-02-04 09:40:02,834 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_async/connection.py', reloading
+2025-02-04 09:40:02,834 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_api.py', reloading
+2025-02-04 09:40:02,834 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/__init__.py', reloading
+2025-02-04 09:40:02,834 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_exceptions.py', reloading
+2025-02-04 09:40:02,835 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_synchronization.py', reloading
+2025-02-04 09:40:02,835 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/httpcore/_ssl.py', reloading
+2025-02-04 09:40:02,835 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/sniffio/_tests/test_sniffio.py', reloading
+2025-02-04 09:40:02,835 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/sniffio/_tests/__init__.py', reloading
+2025-02-04 09:40:02,835 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/sniffio/__init__.py', reloading
+2025-02-04 09:40:02,836 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/sniffio/_impl.py', reloading
+2025-02-04 09:40:02,836 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/sniffio/_version.py', reloading
+2025-02-04 09:40:02,836 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/types.py', reloading
+2025-02-04 09:40:02,836 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/testing.py', reloading
+2025-02-04 09:40:02,836 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/parser.py', reloading
+2025-02-04 09:40:02,836 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/_termui_impl.py', reloading
+2025-02-04 09:40:02,836 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/shell_completion.py', reloading
+2025-02-04 09:40:02,836 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/decorators.py', reloading
+2025-02-04 09:40:02,837 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/_winconsole.py', reloading
+2025-02-04 09:40:02,837 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/__init__.py', reloading
+2025-02-04 09:40:02,837 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/utils.py', reloading
+2025-02-04 09:40:02,838 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/globals.py', reloading
+2025-02-04 09:40:02,838 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/_textwrap.py', reloading
+2025-02-04 09:40:02,838 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/core.py', reloading
+2025-02-04 09:40:02,838 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/_compat.py', reloading
+2025-02-04 09:40:02,838 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/termui.py', reloading
+2025-02-04 09:40:02,838 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/exceptions.py', reloading
+2025-02-04 09:40:02,838 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/click/formatting.py', reloading
+2025-02-04 09:40:02,838 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/channel.py', reloading
+2025-02-04 09:40:02,839 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/_auth.py', reloading
+2025-02-04 09:40:02,839 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/model.py', reloading
+2025-02-04 09:40:02,839 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/mimeparse.py', reloading
+2025-02-04 09:40:02,839 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/errors.py', reloading
+2025-02-04 09:40:02,839 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/__init__.py', reloading
+2025-02-04 09:40:02,840 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/schema.py', reloading
+2025-02-04 09:40:02,840 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/_helpers.py', reloading
+2025-02-04 09:40:02,840 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/sample_tools.py', reloading
+2025-02-04 09:40:02,840 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/discovery.py', reloading
+2025-02-04 09:40:02,840 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/version.py', reloading
+2025-02-04 09:40:02,840 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/http.py', reloading
+2025-02-04 09:40:02,856 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/discovery_cache/__init__.py', reloading
+2025-02-04 09:40:02,856 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/discovery_cache/base.py', reloading
+2025-02-04 09:40:02,856 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/discovery_cache/file_cache.py', reloading
+2025-02-04 09:40:02,857 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/googleapiclient/discovery_cache/appengine_memcache.py', reloading
+2025-02-04 09:40:02,857 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/fields.py', reloading
+2025-02-04 09:40:02,857 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/_package_info.py', reloading
+2025-02-04 09:40:02,857 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/primitives.py', reloading
+2025-02-04 09:40:02,857 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/message.py', reloading
+2025-02-04 09:40:02,858 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/datetime_helpers.py', reloading
+2025-02-04 09:40:02,858 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/__init__.py', reloading
+2025-02-04 09:40:02,858 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/_file_info.py', reloading
+2025-02-04 09:40:02,858 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/utils.py', reloading
+2025-02-04 09:40:02,859 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/modules.py', reloading
+2025-02-04 09:40:02,860 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/rules/wrappers.py', reloading
+2025-02-04 09:40:02,861 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/rules/message.py', reloading
+2025-02-04 09:40:02,863 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/rules/__init__.py', reloading
+2025-02-04 09:40:02,863 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/rules/dates.py', reloading
+2025-02-04 09:40:02,863 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/rules/stringy_numbers.py', reloading
+2025-02-04 09:40:02,864 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/rules/field_mask.py', reloading
+2025-02-04 09:40:02,865 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/rules/bytes.py', reloading
+2025-02-04 09:40:02,865 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/rules/enums.py', reloading
+2025-02-04 09:40:02,866 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/rules/struct.py', reloading
+2025-02-04 09:40:02,867 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/compat.py', reloading
+2025-02-04 09:40:02,867 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/__init__.py', reloading
+2025-02-04 09:40:02,868 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/marshal.py', reloading
+2025-02-04 09:40:02,868 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/collections/maps.py', reloading
+2025-02-04 09:40:02,868 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/collections/__init__.py', reloading
+2025-02-04 09:40:02,869 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/marshal/collections/repeated.py', reloading
+2025-02-04 09:40:02,869 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/version.py', reloading
+2025-02-04 09:40:02,870 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/proto/enums.py', reloading
+2025-02-04 09:40:02,871 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/contrib/itertools.py', reloading
+2025-02-04 09:40:02,871 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/contrib/logging.py', reloading
+2025-02-04 09:40:02,871 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/contrib/discord.py', reloading
+2025-02-04 09:40:02,872 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/contrib/slack.py', reloading
+2025-02-04 09:40:02,872 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/contrib/utils_worker.py', reloading
+2025-02-04 09:40:02,873 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/contrib/__init__.py', reloading
+2025-02-04 09:40:02,873 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/contrib/bells.py', reloading
+2025-02-04 09:40:02,874 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/contrib/telegram.py', reloading
+2025-02-04 09:40:02,874 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/contrib/concurrent.py', reloading
+2025-02-04 09:40:02,875 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/_tqdm.py', reloading
+2025-02-04 09:40:02,875 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/_utils.py', reloading
+2025-02-04 09:40:02,875 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/_tqdm_gui.py', reloading
+2025-02-04 09:40:02,876 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/_dist_ver.py', reloading
+2025-02-04 09:40:02,876 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/std.py', reloading
+2025-02-04 09:40:02,876 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/__init__.py', reloading
+2025-02-04 09:40:02,876 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/utils.py', reloading
+2025-02-04 09:40:02,877 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/myenv/bin/.venv/lib/python3.11/site-packages/tqdm/__main__.py', reloading
+2025-02-04 09:40:03,887 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 09:40:15,548 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 09:40:15,549 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-04 09:40:15,551 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 09:40:19,511 - WARNING -  * Debugger is active!
+2025-02-04 09:40:19,511 - INFO -  * Debugger PIN: 546-248-335
+2025-02-04 09:54:28,244 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 09:54:28,244 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-04 09:54:28,246 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 09:54:32,206 - WARNING -  * Debugger is active!
+2025-02-04 09:54:32,206 - INFO -  * Debugger PIN: 546-248-335
+2025-02-04 09:54:32,506 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "GET /testar_llms HTTP/1.1" 200 -
+2025-02-04 09:54:32,564 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-04 09:54:32,568 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 09:54:32,570 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-02-04 09:54:32,575 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 09:54:32,578 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-02-04 09:54:32,660 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:54:32,663 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/images/radar.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:54:32,664 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-02-04 09:54:32,668 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:54:32,669 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/images/bert.png HTTP/1.1[0m" 304 -
+2025-02-04 09:54:32,747 - INFO - 127.0.0.1 - - [04/Feb/2025 09:54:32] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,422 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "GET /testar_llms HTTP/1.1" 200 -
+2025-02-04 09:55:07,434 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,435 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,435 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,436 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,437 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,437 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,442 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,442 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "[36mGET /static/images/radar.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,451 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,451 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "[36mGET /static/images/bert.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:07,461 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:07] "GET /static/images/logo.png HTTP/1.1" 200 -
+2025-02-04 09:55:31,894 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "GET /testar_llms HTTP/1.1" 200 -
+2025-02-04 09:55:31,915 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:31,915 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:31,916 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:31,916 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:31,916 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:31,918 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:31,918 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "[36mGET /static/images/radar.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:55:31,923 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:31,925 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "[36mGET /static/images/bert.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:31,926 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:55:31,937 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:31] "GET /static/images/logo.png HTTP/1.1" 200 -
+2025-02-04 09:55:38,879 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "GET /testar_llms HTTP/1.1" 200 -
+2025-02-04 09:55:38,891 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:38,891 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:38,891 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:38,892 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:38,892 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:38,892 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:38,897 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:38,898 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "[36mGET /static/images/radar.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:55:38,905 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "[36mGET /static/images/bert.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:38,905 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:38] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:55:41,031 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "GET / HTTP/1.1" 200 -
+2025-02-04 09:55:41,043 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:41,043 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:41,044 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:41,044 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:41,045 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:41,046 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:41,050 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:41,055 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:41,056 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-04 09:55:41,057 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:41] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:43,204 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:43] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 09:55:43,221 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:43,221 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:43] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:43,222 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:43] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:43,223 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:43] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:45,054 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "GET /testar_llms HTTP/1.1" 200 -
+2025-02-04 09:55:45,071 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:45,072 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:45,072 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:45,074 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:45,074 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-02-04 09:55:45,074 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "[36mGET /static/js/testar_llms.js HTTP/1.1[0m" 304 -
+2025-02-04 09:55:45,078 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "[36mGET /static/images/radar.jpg HTTP/1.1[0m" 304 -
+2025-02-04 09:55:45,079 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "[36mGET /static/images/roberta.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:45,085 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "[36mGET /static/images/bert.png HTTP/1.1[0m" 304 -
+2025-02-04 09:55:45,085 - INFO - 127.0.0.1 - - [04/Feb/2025 09:55:45] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-02-04 10:07:48,729 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/teste.py', reloading
+2025-02-04 10:07:48,729 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/teste.py', reloading
+2025-02-04 10:07:49,772 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 10:07:54,011 - WARNING -  * Debugger is active!
+2025-02-04 10:07:54,011 - INFO -  * Debugger PIN: 546-248-335
+2025-02-04 10:09:03,110 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/teste.py', reloading
+2025-02-04 10:09:03,110 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/teste.py', reloading
+2025-02-04 10:09:03,110 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/teste.py', reloading
+2025-02-04 10:09:04,902 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 10:09:08,838 - WARNING -  * Debugger is active!
+2025-02-04 10:09:08,838 - INFO -  * Debugger PIN: 546-248-335
