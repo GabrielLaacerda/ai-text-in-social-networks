@@ -57,6 +57,34 @@ def calcular_estatisticas_tabela(llms, dir_base):
     return lista_geral
 
 
+def calcular_acerto_por_llm(registros):
+    acertos_por_llm = defaultdict(float)
+    erros_por_llm = defaultdict(float)
+    total_por_llm = defaultdict(int)
+
+    for registro in registros:
+        llm = registro['llm']
+        prob_humano = registro['prob_humano']
+        prob_IA = registro['prob_IA']
+
+        # Soma os valores de probabilidade para cada LLM
+        acertos_por_llm[llm] += prob_humano  # Quanto maior, mais eficaz a LLM
+        erros_por_llm[llm] += prob_IA
+        total_por_llm[llm] += 1
+
+    # Calcula a média de acerto e erro para cada LLM
+    medias_por_llm = {
+        llm: {
+            "acerto": acertos_por_llm[llm] / total_por_llm[llm],
+            "erro": erros_por_llm[llm] / total_por_llm[llm]
+        }
+        for llm in acertos_por_llm
+    }
+
+    return medias_por_llm
+
+
+
 def calcular_acerto_por_detector(registros):
     acertos_por_detector = defaultdict(float)
     erros_por_detector = defaultdict(float)
@@ -67,18 +95,18 @@ def calcular_acerto_por_detector(registros):
         prob_humano = registro['prob_humano']
         prob_IA = registro['prob_IA']
 
-        # A acurácia do detector é baseada na probabilidade atribuída à IA
-        acertos_por_detector[detector] += prob_IA
+        # Soma os valores de probabilidade para cada detector
+        acertos_por_detector[detector] += prob_IA  # Quanto maior, mais eficaz o detector
         erros_por_detector[detector] += prob_humano
         total_por_detector[detector] += 1
 
-    # Calcula a porcentagem de acerto e erro média de cada detector
-    resultado = {
+    # Calcula a média de acerto e erro para cada detector
+    medias_por_detector = {
         detector: {
-            "acerto": (acertos_por_detector[detector] / total_por_detector[detector]),
-            "erro": (erros_por_detector[detector] / total_por_detector[detector])
+            "acerto": acertos_por_detector[detector] / total_por_detector[detector],
+            "erro": erros_por_detector[detector] / total_por_detector[detector]
         }
         for detector in acertos_por_detector
     }
 
-    return resultado
+    return medias_por_detector

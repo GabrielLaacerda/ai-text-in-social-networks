@@ -140,9 +140,10 @@ def estatisticas():
     llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
     dir_base = "./Resultados"
     resultados = re.calcular_estatisticas_tabela(llms,dir_base)
-    resultados_graficos = re.calcular_acerto_por_detector(resultados)
+    resultados_graficos = re.calcular_acerto_por_llm(resultados)
+    resultados_barras = re.calcular_acerto_por_detector(resultados)
 
-    return render_template("estatisticas.html", resultados=resultados, resultados_graficos=resultados_graficos)
+    return render_template("estatisticas.html", resultados=resultados, resultados_graficos=resultados_graficos,resultados_barras=resultados_barras)
 
 
 @app.route("/testar_llms", methods=["GET", "POST"])
