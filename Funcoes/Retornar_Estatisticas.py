@@ -1,4 +1,3 @@
-
 from collections import defaultdict
 
 import os
@@ -83,5 +82,3 @@ def calcular_acerto_por_detector(registros):
     }
 
     return resultado
-
-

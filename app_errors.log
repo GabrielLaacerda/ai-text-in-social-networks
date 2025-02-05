@@ -2428,3 +2428,344 @@
 2025-02-04 20:23:23,681 - INFO - 127.0.0.1 - - [04/Feb/2025 20:23:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-02-04 20:23:23,681 - INFO - 127.0.0.1 - - [04/Feb/2025 20:23:23] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
 2025-02-04 20:23:23,681 - INFO - 127.0.0.1 - - [04/Feb/2025 20:23:23] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 20:32:37,552 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 20:32:37,587 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 20:32:37,588 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 20:32:38,476 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 20:32:42,981 - WARNING -  * Debugger is active!
+2025-02-04 20:32:42,981 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 20:32:48,380 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 20:32:48,415 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 20:32:48,415 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 20:32:49,380 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 20:32:53,698 - WARNING -  * Debugger is active!
+2025-02-04 20:32:53,699 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 20:33:17,671 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 20:33:17,707 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 20:33:17,708 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 20:33:19,499 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 20:33:23,544 - WARNING -  * Debugger is active!
+2025-02-04 20:33:23,545 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 20:33:23,917 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:23] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:33:23,928 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:33:23,928 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:23] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:33:23,929 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:23] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:33:23,930 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:23] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 20:33:23,930 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:23] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:33:24,436 - INFO - 127.0.0.1 - - [04/Feb/2025 20:33:24] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:34:23,699 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 20:34:23,734 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 20:34:23,735 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 20:34:25,267 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 20:34:29,273 - WARNING -  * Debugger is active!
+2025-02-04 20:34:29,273 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 20:35:31,573 - INFO - 127.0.0.1 - - [04/Feb/2025 20:35:31] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:35:31,589 - INFO - 127.0.0.1 - - [04/Feb/2025 20:35:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:35:31,590 - INFO - 127.0.0.1 - - [04/Feb/2025 20:35:31] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:35:31,591 - INFO - 127.0.0.1 - - [04/Feb/2025 20:35:31] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:35:31,592 - INFO - 127.0.0.1 - - [04/Feb/2025 20:35:31] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-04 20:35:31,592 - INFO - 127.0.0.1 - - [04/Feb/2025 20:35:31] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:35:31,842 - INFO - 127.0.0.1 - - [04/Feb/2025 20:35:31] "[33mGET /api/efetividade HTTP/1.1[0m" 404 -
+2025-02-04 20:35:31,996 - INFO - 127.0.0.1 - - [04/Feb/2025 20:35:31] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:36:04,415 - INFO - 127.0.0.1 - - [04/Feb/2025 20:36:04] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:36:04,434 - INFO - 127.0.0.1 - - [04/Feb/2025 20:36:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:36:04,434 - INFO - 127.0.0.1 - - [04/Feb/2025 20:36:04] "GET /static/css/estatisticas.css HTTP/1.1" 200 -
+2025-02-04 20:36:04,436 - INFO - 127.0.0.1 - - [04/Feb/2025 20:36:04] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:36:04,436 - INFO - 127.0.0.1 - - [04/Feb/2025 20:36:04] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 20:36:04,436 - INFO - 127.0.0.1 - - [04/Feb/2025 20:36:04] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:36:04,691 - INFO - 127.0.0.1 - - [04/Feb/2025 20:36:04] "[33mGET /api/efetividade HTTP/1.1[0m" 404 -
+2025-02-04 20:36:04,832 - INFO - 127.0.0.1 - - [04/Feb/2025 20:36:04] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:40:21,546 - INFO - 127.0.0.1 - - [04/Feb/2025 20:40:21] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:40:21,560 - INFO - 127.0.0.1 - - [04/Feb/2025 20:40:21] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:40:21,561 - INFO - 127.0.0.1 - - [04/Feb/2025 20:40:21] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:40:21,562 - INFO - 127.0.0.1 - - [04/Feb/2025 20:40:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:40:21,563 - INFO - 127.0.0.1 - - [04/Feb/2025 20:40:21] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-04 20:40:21,563 - INFO - 127.0.0.1 - - [04/Feb/2025 20:40:21] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:40:22,030 - INFO - 127.0.0.1 - - [04/Feb/2025 20:40:22] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:42:19,116 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:19] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:42:19,128 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:42:19,128 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:19] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:42:19,131 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:19] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:42:19,131 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:19] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:42:19,132 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:19] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-04 20:42:19,626 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:19] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:42:28,527 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:28] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:42:28,539 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:42:28,539 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:28] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:42:28,540 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:28] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:42:28,541 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:28] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:42:28,541 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:28] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-04 20:42:28,921 - INFO - 127.0.0.1 - - [04/Feb/2025 20:42:28] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:43:06,724 - INFO - 127.0.0.1 - - [04/Feb/2025 20:43:06] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:43:06,735 - INFO - 127.0.0.1 - - [04/Feb/2025 20:43:06] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:43:06,736 - INFO - 127.0.0.1 - - [04/Feb/2025 20:43:06] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:43:06,737 - INFO - 127.0.0.1 - - [04/Feb/2025 20:43:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:43:06,738 - INFO - 127.0.0.1 - - [04/Feb/2025 20:43:06] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-04 20:43:06,739 - INFO - 127.0.0.1 - - [04/Feb/2025 20:43:06] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:43:07,265 - INFO - 127.0.0.1 - - [04/Feb/2025 20:43:07] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:44:28,864 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:28] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:44:28,874 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:28] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:44:28,875 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:28] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:44:28,876 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:28] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-04 20:44:28,877 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:44:28,877 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:28] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:44:29,395 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:29] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:44:34,765 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:34] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:44:34,776 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:34] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:44:34,776 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:34] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:44:34,777 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:44:34,778 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:34] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:44:34,778 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:34] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-04 20:44:35,242 - INFO - 127.0.0.1 - - [04/Feb/2025 20:44:35] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:45:21,180 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:21] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:45:21,194 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:21] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:45:21,194 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:21] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:45:21,195 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:21] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 20:45:21,196 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:45:21,197 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:21] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:45:21,638 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:21] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:45:51,623 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:51] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:45:51,637 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:51] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:45:51,637 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:51] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 20:45:51,637 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:45:51,637 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:51] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:45:51,638 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:51] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:45:52,154 - INFO - 127.0.0.1 - - [04/Feb/2025 20:45:52] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:46:08,316 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:08] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:46:08,328 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:08] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:46:08,329 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:08] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:46:08,329 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:46:08,331 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:08] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 20:46:08,331 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:08] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:46:08,842 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:08] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:46:13,029 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:13] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:46:13,038 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:46:13,039 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:13] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:46:13,040 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:13] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:46:13,041 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:13] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 20:46:13,041 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:13] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:46:13,496 - INFO - 127.0.0.1 - - [04/Feb/2025 20:46:13] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:57:09,567 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:09] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:57:09,578 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:09] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:57:09,578 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:57:09,579 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:09] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:57:09,580 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:09] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 20:57:09,581 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:09] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:57:10,013 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:10] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 20:57:55,384 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:55] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 20:57:55,397 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:55] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 20:57:55,397 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:55] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 20:57:55,397 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 20:57:55,399 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:55] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 20:57:55,399 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:55] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-04 20:57:55,949 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:55] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 21:03:22,251 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:03:22,286 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:03:22,286 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:03:23,821 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:03:27,932 - WARNING -  * Debugger is active!
+2025-02-04 21:03:27,932 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:04:42,368 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:04:42,403 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:04:42,403 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:04:43,921 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:04:48,297 - WARNING -  * Debugger is active!
+2025-02-04 21:04:48,297 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:04:48,653 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:04:48,653 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:04:48,654 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:04:49,624 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:04:53,845 - WARNING -  * Debugger is active!
+2025-02-04 21:04:53,845 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:04:54,195 - INFO - 127.0.0.1 - - [04/Feb/2025 21:04:54] "[35m[1mGET /estatisticas HTTP/1.1[0m" 500 -
+2025-02-04 21:04:54,208 - INFO - 127.0.0.1 - - [04/Feb/2025 21:04:54] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:04:54,210 - INFO - 127.0.0.1 - - [04/Feb/2025 21:04:54] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-04 21:04:54,288 - INFO - 127.0.0.1 - - [04/Feb/2025 21:04:54] "GET /estatisticas?__debugger__=yes&cmd=resource&f=console.png&s=QI5XwDMoUuCSegARGY7I HTTP/1.1" 200 -
+2025-02-04 21:04:54,302 - INFO - 127.0.0.1 - - [04/Feb/2025 21:04:54] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-04 21:05:01,420 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:05:01,456 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:05:01,456 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:05:03,240 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:05:07,470 - WARNING -  * Debugger is active!
+2025-02-04 21:05:07,470 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:05:07,832 - INFO - 127.0.0.1 - - [04/Feb/2025 21:05:07] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 21:05:07,845 - INFO - 127.0.0.1 - - [04/Feb/2025 21:05:07] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 21:05:07,847 - INFO - 127.0.0.1 - - [04/Feb/2025 21:05:07] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 21:05:07,848 - INFO - 127.0.0.1 - - [04/Feb/2025 21:05:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:05:07,848 - INFO - 127.0.0.1 - - [04/Feb/2025 21:05:07] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 21:05:07,849 - INFO - 127.0.0.1 - - [04/Feb/2025 21:05:07] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 21:05:08,275 - INFO - 127.0.0.1 - - [04/Feb/2025 21:05:08] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 21:06:12,075 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:06:12,111 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:06:12,111 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:06:13,249 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:06:17,361 - WARNING -  * Debugger is active!
+2025-02-04 21:06:17,362 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:07:45,531 - INFO - 127.0.0.1 - - [04/Feb/2025 21:07:45] "[35m[1mGET /estatisticas HTTP/1.1[0m" 500 -
+2025-02-04 21:07:45,541 - INFO - 127.0.0.1 - - [04/Feb/2025 21:07:45] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:07:45,542 - INFO - 127.0.0.1 - - [04/Feb/2025 21:07:45] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-04 21:07:45,552 - INFO - 127.0.0.1 - - [04/Feb/2025 21:07:45] "GET /estatisticas?__debugger__=yes&cmd=resource&f=console.png&s=LB9h8YI6Pmj6FRJghmEc HTTP/1.1" 200 -
+2025-02-04 21:07:45,564 - INFO - 127.0.0.1 - - [04/Feb/2025 21:07:45] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-04 21:07:47,050 - INFO - 127.0.0.1 - - [04/Feb/2025 21:07:47] "[35m[1mGET /estatisticas HTTP/1.1[0m" 500 -
+2025-02-04 21:07:47,061 - INFO - 127.0.0.1 - - [04/Feb/2025 21:07:47] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:07:47,061 - INFO - 127.0.0.1 - - [04/Feb/2025 21:07:47] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-04 21:07:47,068 - INFO - 127.0.0.1 - - [04/Feb/2025 21:07:47] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=console.png&s=LB9h8YI6Pmj6FRJghmEc HTTP/1.1[0m" 304 -
+2025-02-04 21:07:47,074 - INFO - 127.0.0.1 - - [04/Feb/2025 21:07:47] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-04 21:08:27,888 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:08:27,924 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:08:27,924 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:08:29,551 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:08:33,547 - WARNING -  * Debugger is active!
+2025-02-04 21:08:33,547 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:08:33,900 - INFO - 127.0.0.1 - - [04/Feb/2025 21:08:33] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 21:08:33,915 - INFO - 127.0.0.1 - - [04/Feb/2025 21:08:33] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 21:08:33,916 - INFO - 127.0.0.1 - - [04/Feb/2025 21:08:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:08:33,917 - INFO - 127.0.0.1 - - [04/Feb/2025 21:08:33] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 21:08:33,918 - INFO - 127.0.0.1 - - [04/Feb/2025 21:08:33] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-04 21:08:33,918 - INFO - 127.0.0.1 - - [04/Feb/2025 21:08:33] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 21:08:34,409 - INFO - 127.0.0.1 - - [04/Feb/2025 21:08:34] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 21:11:15,280 - INFO - 127.0.0.1 - - [04/Feb/2025 21:11:15] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 21:11:15,292 - INFO - 127.0.0.1 - - [04/Feb/2025 21:11:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:11:15,293 - INFO - 127.0.0.1 - - [04/Feb/2025 21:11:15] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 21:11:15,293 - INFO - 127.0.0.1 - - [04/Feb/2025 21:11:15] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 21:11:15,293 - INFO - 127.0.0.1 - - [04/Feb/2025 21:11:15] "GET /static/js/estatisticas.js HTTP/1.1" 200 -
+2025-02-04 21:11:15,294 - INFO - 127.0.0.1 - - [04/Feb/2025 21:11:15] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 21:11:15,766 - INFO - 127.0.0.1 - - [04/Feb/2025 21:11:15] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 21:12:17,744 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:12:17,780 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:12:17,781 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:12:19,020 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:12:23,323 - WARNING -  * Debugger is active!
+2025-02-04 21:12:23,324 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:12:26,996 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:26] "[35m[1mGET /estatisticas HTTP/1.1[0m" 500 -
+2025-02-04 21:12:27,006 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:27] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:12:27,009 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:27] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-04 21:12:27,016 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:27] "GET /estatisticas?__debugger__=yes&cmd=resource&f=console.png&s=1v172He1rxBXIKmI1oVt HTTP/1.1" 200 -
+2025-02-04 21:12:27,031 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:27] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-04 21:12:35,580 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:12:35,615 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:12:35,616 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:12:37,000 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:12:41,064 - WARNING -  * Debugger is active!
+2025-02-04 21:12:41,064 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:12:41,423 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:41] "[35m[1mGET /estatisticas HTTP/1.1[0m" 500 -
+2025-02-04 21:12:41,434 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:41] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:12:41,434 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:41] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-04 21:12:41,441 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:41] "GET /estatisticas?__debugger__=yes&cmd=resource&f=console.png&s=XcjAojbe6bPHL9pHOQlW HTTP/1.1" 200 -
+2025-02-04 21:12:41,447 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:41] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-04 21:12:56,788 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:56] "[35m[1mGET /estatisticas HTTP/1.1[0m" 500 -
+2025-02-04 21:12:56,801 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:56] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:12:56,801 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:56] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-04 21:12:56,807 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:56] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=console.png&s=XcjAojbe6bPHL9pHOQlW HTTP/1.1[0m" 304 -
+2025-02-04 21:12:56,817 - INFO - 127.0.0.1 - - [04/Feb/2025 21:12:56] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-04 21:13:15,961 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:13:15,997 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:13:15,997 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:13:17,232 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:13:21,194 - WARNING -  * Debugger is active!
+2025-02-04 21:13:21,195 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:13:21,565 - INFO - 127.0.0.1 - - [04/Feb/2025 21:13:21] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 21:13:21,580 - INFO - 127.0.0.1 - - [04/Feb/2025 21:13:21] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 21:13:21,581 - INFO - 127.0.0.1 - - [04/Feb/2025 21:13:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:13:21,582 - INFO - 127.0.0.1 - - [04/Feb/2025 21:13:21] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 21:13:21,583 - INFO - 127.0.0.1 - - [04/Feb/2025 21:13:21] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 21:13:21,584 - INFO - 127.0.0.1 - - [04/Feb/2025 21:13:21] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 21:13:22,042 - INFO - 127.0.0.1 - - [04/Feb/2025 21:13:22] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 21:14:08,326 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:14:08,362 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:14:08,362 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/Funcoes/Retornar_Estatisticas.py', reloading
+2025-02-04 21:14:09,520 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:14:13,537 - WARNING -  * Debugger is active!
+2025-02-04 21:14:13,538 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:14:13,901 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:13] "[35m[1mGET /estatisticas HTTP/1.1[0m" 500 -
+2025-02-04 21:14:13,914 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:13] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:14:13,915 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:13] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-04 21:14:13,924 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:13] "GET /estatisticas?__debugger__=yes&cmd=resource&f=console.png&s=nezbFqbIb4eLbWSxWibl HTTP/1.1" 200 -
+2025-02-04 21:14:13,936 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:13] "[36mGET /estatisticas?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-04 21:14:32,227 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:14:32,262 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:14:32,262 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-04 21:14:33,337 - INFO -  * Restarting with watchdog (inotify)
+2025-02-04 21:14:37,333 - WARNING -  * Debugger is active!
+2025-02-04 21:14:37,333 - INFO -  * Debugger PIN: 127-656-971
+2025-02-04 21:14:37,699 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:37] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 21:14:37,712 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:37] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 21:14:37,714 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:14:37,714 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:37] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 21:14:37,720 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:37] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 21:14:37,720 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:37] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 21:14:38,135 - INFO - 127.0.0.1 - - [04/Feb/2025 21:14:38] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 21:15:04,206 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:04] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 21:15:04,217 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:04] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 21:15:04,218 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:15:04,218 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:04] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 21:15:04,219 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:04] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 21:15:04,220 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:04] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 21:15:04,681 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:04] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-04 21:15:32,261 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:32] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-04 21:15:32,276 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:32] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-04 21:15:32,276 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:15:32,276 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:32] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-04 21:15:32,277 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:32] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-04 21:15:32,277 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:32] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-04 21:15:32,658 - INFO - 127.0.0.1 - - [04/Feb/2025 21:15:32] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-05 08:32:01,853 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 08:32:01,854 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-05 08:32:01,859 - INFO -  * Restarting with watchdog (inotify)
+2025-02-05 08:32:06,003 - WARNING -  * Debugger is active!
+2025-02-05 08:32:06,106 - INFO -  * Debugger PIN: 121-269-204
+2025-02-05 08:32:06,483 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "GET / HTTP/1.1" 200 -
+2025-02-05 08:32:06,499 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-05 08:32:06,500 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:32:06,502 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:32:06,503 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:32:06,504 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-05 08:32:06,504 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-05 08:32:06,509 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-05 08:32:06,509 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-05 08:32:06,512 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-05 08:32:06,599 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-05 08:32:06,640 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:06] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-05 08:32:08,737 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "GET /testar_llms HTTP/1.1" 200 -
+2025-02-05 08:32:08,752 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "[36mGET /static/css/testar_llms.css HTTP/1.1[0m" 304 -
+2025-02-05 08:32:08,753 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:32:08,753 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:32:08,754 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-05 08:32:08,755 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:32:08,760 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "GET /static/js/testar_llms.js HTTP/1.1" 200 -
+2025-02-05 08:32:08,762 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "[36mGET /static/images/huggingface.png HTTP/1.1[0m" 304 -
+2025-02-05 08:32:08,762 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "[36mGET /static/images/radar.jpg HTTP/1.1[0m" 304 -
+2025-02-05 08:32:08,770 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "[36mGET /static/images/bert.png HTTP/1.1[0m" 304 -
+2025-02-05 08:32:08,770 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "GET /static/images/roberta.jpg HTTP/1.1" 200 -
+2025-02-05 08:32:08,771 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:08] "[36mGET /static/images/sapling.jpg HTTP/1.1[0m" 304 -
+2025-02-05 08:32:13,669 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:13] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-05 08:32:13,682 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:13] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-05 08:32:13,683 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:13] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:32:13,683 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:13] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-05 08:32:13,683 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:13] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:32:13,684 - INFO - 127.0.0.1 - - [05/Feb/2025 08:32:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:34:35,896 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 08:34:35,896 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-05 08:34:35,899 - INFO -  * Restarting with watchdog (inotify)
+2025-02-05 08:34:39,880 - WARNING -  * Debugger is active!
+2025-02-05 08:34:39,880 - INFO -  * Debugger PIN: 157-629-380
+2025-02-05 08:34:43,127 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:43] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-05 08:34:43,141 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:43] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-05 08:34:43,141 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:34:43,142 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:43] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:34:43,143 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:43] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-05 08:34:43,144 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:43] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:34:43,570 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:43] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-05 08:34:45,051 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "GET / HTTP/1.1" 200 -
+2025-02-05 08:34:45,065 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-05 08:34:45,065 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-05 08:34:45,065 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-05 08:34:45,066 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-05 08:34:45,066 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-05 08:34:45,067 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-05 08:34:45,073 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-05 08:34:45,077 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-05 08:34:45,077 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-05 08:34:45,077 - INFO - 127.0.0.1 - - [05/Feb/2025 08:34:45] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -

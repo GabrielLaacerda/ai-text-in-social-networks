@@ -1,17 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
     if (typeof estatisticas !== "undefined") {
-        var labels = Object.keys(estatisticas);
+        var labels = Object.keys(estatisticas);  // Extrai os nomes dos detectores
 
-        // Sumarizando os acertos e erros de todos os detectores
+        // Inicializa as variáveis para totalizar acertos e erros
         var totalAcertos = 0;
         var totalErros = 0;
 
+        // Calcular total de acertos e erros
         labels.forEach(detector => {
             totalAcertos += estatisticas[detector].acerto;
             totalErros += estatisticas[detector].erro;
         });
 
-        // Array com os acertos de cada detector
+        // Array de acertos e erros de cada detector
         var acertos = labels.map(detector => estatisticas[detector].acerto);
         var erros = labels.map(detector => estatisticas[detector].erro);
 
@@ -31,15 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 datasets: [
                     {
                         label: 'Acerto (%)',
-                        data: acertos, // Usando os acertos de cada detector
-                        backgroundColor: 'rgba(54, 162, 235, 0.6)', // Azul
+                        data: acertos,
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)',
                         borderColor: 'rgba(54, 162, 235, 1)',
                         borderWidth: 1
                     },
                     {
                         label: 'Erro (%)',
-                        data: erros, // Usando os erros de cada detector
-                        backgroundColor: 'rgba(255, 99, 132, 0.6)', // Vermelho
+                        data: erros,
+                        backgroundColor: 'rgba(255, 99, 132, 0.6)',
                         borderColor: 'rgba(255, 99, 132, 1)',
                         borderWidth: 1
                     }
@@ -49,15 +50,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 responsive: true,
                 plugins: {
                     legend: {
-                        position: 'top' // Posiciona a legenda no topo
+                        position: 'top'
                     }
                 },
                 scales: {
                     x: {
-                        stacked: false // Mantém as barras lado a lado
+                        stacked: false
                     },
                     y: {
-                        beginAtZero: true // Garante que os valores comecem do zero
+                        beginAtZero: true
                     }
                 }
             }
@@ -66,25 +67,25 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error("Elemento #barChart não encontrado.");
     }
 
-    // Gráfico de pizza para mostrar os acertos de cada detector
+    // Gráfico de pizza
     var ctxPie = document.getElementById('pieChart');
     if (ctxPie) {
         ctxPie = ctxPie.getContext('2d');
         new Chart(ctxPie, {
             type: 'pie',
             data: {
-                labels: labels, // Detectors as labels
+                labels: labels,
                 datasets: [{
                     label: 'Acertos por Detector',
-                    data: acertos, // Dados de acertos de cada detector
+                    data: acertos,
                     backgroundColor: [
-                        'rgba(54, 162, 235, 0.6)', // Azul
-                        'rgba(255, 99, 132, 0.6)', // Vermelho
-                        'rgba(75, 192, 192, 0.6)', // Verde
-                        'rgba(153, 102, 255, 0.6)', // Roxo
-                        'rgba(255, 159, 64, 0.6)', // Laranja
-                        'rgba(255, 205, 86, 0.6)', // Amarelo
-                        'rgba(201, 203, 207, 0.6)'  // Cinza
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
+                        'rgba(255, 159, 64, 0.6)',
+                        'rgba(255, 205, 86, 0.6)',
+                        'rgba(201, 203, 207, 0.6)'
                     ],
                     borderColor: [
                         'rgba(54, 162, 235, 1)',
@@ -102,12 +103,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 responsive: true,
                 plugins: {
                     legend: {
-                        position: 'top' // Legenda no topo
+                        position: 'top'
                     },
                     tooltip: {
                         callbacks: {
                             label: function(tooltipItem) {
-                                return tooltipItem.label + ': ' + tooltipItem.raw.toFixed(2) + '%'; // Mostrar a porcentagem com 2 casas decimais
+                                return tooltipItem.label + ': ' + tooltipItem.raw.toFixed(2) + '%';
                             }
                         }
                     }
@@ -118,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error("Elemento #pieChart não encontrado.");
     }
 });
+
 
 function testar_llms() {
     window.location.href = '/testar_llms';
@@ -155,6 +157,3 @@ $(document).ready(function () {
     });
 
 });
-
-
-
