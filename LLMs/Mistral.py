@@ -2,7 +2,7 @@ import os
 from mistralai import Mistral
 import time
 
-api_key = os.environ["MISTRAL_API_KEY"]
+api_key = os.getenv("MISTRAL_API_KEY")
 
 def gerar_comentarios(persona, post, tema):
 
