@@ -1,6 +1,7 @@
 import os
 import json
 import logging
+import glob
 import Funcoes.Retornar_Estatisticas as re
 from flask import Flask, render_template, request, send_file, session, jsonify
 from LLMs.Cohere import gerar_comentarios_para_posts as cohere
@@ -70,6 +71,10 @@ def load_json():
 def home():
     comentarios = []
     indices = [1,2,3,4,5,6]
+
+    for arquivo in glob.glob(os.path.join('./Arquivos_Temporarios', "*")):
+        if os.path.isfile(arquivo):
+            os.remove(arquivo)
 
     if request.method == "POST":
         ai_choice = request.form.get("ai")
@@ -157,7 +162,7 @@ def testar_llms():
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
+                with open(f"Comentarios_Gerados_SegundaEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
 
@@ -184,7 +189,7 @@ def testar_llms():
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
+                with open(f"Comentarios_Gerados_SegundaEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
 
@@ -212,7 +217,7 @@ def testar_llms():
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
+                with open(f"Comentarios_Gerados_SegundaEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
                           encoding='utf-8') as file:
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
@@ -245,7 +250,7 @@ def testar_llms():
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
+                with open(f"Comentarios_Gerados_SegundaEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
                           encoding='utf-8') as file:
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
@@ -275,7 +280,7 @@ def testar_llms():
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
+                with open(f"Comentarios_Gerados_SegundaEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
                           encoding='utf-8') as file:
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
