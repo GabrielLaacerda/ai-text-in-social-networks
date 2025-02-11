@@ -50,7 +50,7 @@
                 <li class="list-group-item">
                     <a class="d-flex align-items-center" onclick="detectores()">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        Testar Detectores
+                        Detectores
                     </a>
                 </li>
                 <li class="list-group-item">
@@ -64,19 +64,12 @@
     </div>
 
 
-    <h1 class="m3-4 mb-3" style="color:black">Testar Detecção</h1>
+    <h1 class="m3-4 mb-3" style="color:black">Realizar Detecção</h1>
 
     <form id="llm-form" method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
         <!-- Escolha da LLM -->
         <label for="ai" class="choice">Escolha a ferramenta de detecção:</label>
         <div class="ia-options">
-            <div class="ia-option">
-                <input type="radio" id="radar" name="ai" value="radar" required>
-                <label for="radar">
-                    <img src="{{ url_for('static', filename='images/radar.jpg') }}" alt="radar">
-                    <p>RADAR: Robust AI-text Detection</p>
-                </label>
-            </div>
             <div class="ia-option">
                 <input type="radio" id="huggingface" name="ai" value="huggingface" required>
                 <label for="huggingface">
@@ -85,10 +78,17 @@
                 </label>
             </div>
             <div class="ia-option">
-                <input type="radio" id="bert" name="ai" value="bert" required>
-                <label for="bert">
-                    <img src="{{ url_for('static', filename='images/bert.png') }}" alt="bert">
-                    <p>BERT (+HC3)</p>
+                <input type="radio" id="distbert" name="ai" value="distbert" required>
+                <label for="distbert">
+                    <img src="{{ url_for('static', filename='images/bert.png') }}" alt="distbert">
+                    <p>DistBERT (+HC3)</p>
+                </label>
+            </div>
+            <div class="ia-option">
+                <input type="radio" id="binoculars" name="ai" value="binoculars" required>
+                <label for="binoculars">
+                    <img src="{{ url_for('static', filename='images/binoculars.jpg') }}" alt="binoculars">
+                    <p>Binoculars</p>
                 </label>
             </div>
             <div class="ia-option">
@@ -106,10 +106,10 @@
                 </label>
             </div>
             <div class="ia-option">
-                <input type="radio" id="binoculars" name="ai" value="binoculars" required>
-                <label for="binoculars">
-                    <img src="{{ url_for('static', filename='images/binoculars.jpg') }}" alt="binoculars">
-                    <p>Binoculars</p>
+                <input type="radio" id="radar" name="ai" value="radar" required>
+                <label for="radar">
+                    <img src="{{ url_for('static', filename='images/radar.jpg') }}" alt="radar">
+                    <p>RADAR: Robust AI-text Detection</p>
                 </label>
             </div>
         </div>

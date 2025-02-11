@@ -13,7 +13,7 @@ from LLMs.Mistral import gerar_comentarios_para_posts as mistral
 from IAText_Detectors.Roberta import probabilidade_IA as roberta_prob
 from IAText_Detectors.Sapling import probabilidade_IA as sapling_prob
 from IAText_Detectors.huggingface import probabilidade_IA as prob_hugging
-from IAText_Detectors.BERT import probabilidade_IA as bert_prob
+from IAText_Detectors.DistBERT import probabilidade_IA as distbert_prob
 from IAText_Detectors.Radar import probabilidade_IA as radar_prob
 
 
@@ -245,7 +245,7 @@ def detectores():
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
 
-        elif ai_choice == "bert":
+        elif ai_choice == "distbert":
 
             theme_choice = request.form.get('themes')
             lista_comentarios = []
@@ -256,7 +256,7 @@ def detectores():
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
 
-            result_bert = bert_prob(lista_comentarios, lista_llms)
+            result_distbert = distbert_prob(lista_comentarios, lista_llms)
 
             processed_data_sap = [
                 {
@@ -265,11 +265,11 @@ def detectores():
                     'prob_humano': item['prob_humano'],
                     'prob_IA': item['prob_IA']
                 }
-                for item in result_bert
+                for item in result_distbert
             ]
 
             # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados/Resultados_BERT/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+            with open(f"Resultados/Resultados_DistBERT/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
 
