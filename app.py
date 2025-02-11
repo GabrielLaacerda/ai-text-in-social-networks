@@ -28,22 +28,23 @@ app = Flask(__name__)
 
 app.secret_key = os.urandom(24)
 
-# Diretório de saída
-output_directory = "Arquivos_Temporarios/"
-if not os.path.exists(output_directory):
-    os.makedirs(output_directory)
+arqs_temp = "Arquivos_Temporarios/"
+if not os.path.exists(arqs_temp):
+    os.makedirs(arqs_temp)
 
+#Carregar JSONs de tema e de personas após escolha do usuário
+#Salva os jsons na sessão
 @app.route("/load_json")
 def load_json():
-    file_name = request.args.get("file")
-    if not file_name:
+    arquivo = request.args.get("file")
+    if not arquivo:
         return {"error": "Nenhum arquivo especificado"}, 400
 
-    file_path_temas = os.path.join("JSONS/Temas", file_name)
-    file_path_persona = os.path.join("JSONS/Personas", file_name)
+    json_temas = os.path.join("JSONS/Temas", arquivo)
+    json_personas = os.path.join("JSONS/Personas", arquivo)
 
     try:
-        with open(file_path_temas, "r") as f:
+        with open(json_temas, "r") as f:
             tema_json = json.load(f)
     except FileNotFoundError:
         return {"error": "Arquivo de tema não encontrado"}, 404
@@ -51,7 +52,7 @@ def load_json():
         return {"error": "Erro ao decodificar o arquivo de tema"}, 400
 
     try:
-        with open(file_path_persona, "r") as f:
+        with open(json_personas, "r") as f:
             persona_json = json.load(f)
     except FileNotFoundError:
         return {"error": "Arquivo de persona não encontrado"}, 404
@@ -67,15 +68,18 @@ def load_json():
         "personas": persona_json
     }, 200
 
+#Rota principal para escolha do tema e ja LLM para geração dos comentários
 @app.route("/", methods=["GET", "POST"])
 def home():
     comentarios = []
     indices = [1,2,3,4,5,6]
 
+    #Remover arquivos temporários
     for arquivo in glob.glob(os.path.join('./Arquivos_Temporarios', "*")):
         if os.path.isfile(arquivo):
             os.remove(arquivo)
 
+    #Recebe a opção de LLM escolhida pelo usuario e chama a função para gerar os comentários
     if request.method == "POST":
         ai_choice = request.form.get("ai")
         if not ai_choice:
@@ -106,9 +110,9 @@ def home():
             logging.error(f"Erro ao gerar comentários: {str(e)}")
             return {"error": f"Erro ao gerar comentários: {str(e)}"}, 500
 
-        # Definindo o caminho do arquivo no novo diretório
+
         file_name = f"{ai_choice.capitalize()}_{tema_json['Tema']}.txt"
-        file_path = os.path.join(output_directory, file_name)
+        file_path = os.path.join(arqs_temp, file_name)
 
         try:
             with open(file_path, 'w') as f:
@@ -122,6 +126,7 @@ def home():
 
     return render_template("index.html", comentarios=comentarios)
 
+#Rota para baixar o arquivo após a geração dos comentários
 @app.route("/download")
 def download():
     file_path = request.args.get('file_path')
@@ -138,7 +143,7 @@ def download():
         return f"Erro ao enviar o arquivo: {str(e)}", 500
 
 
-
+#Rota para a página de resultados gerais sobre as LLMs e os detectores
 @app.route("/estatisticas", methods=["GET", "POST"])
 def estatisticas():
 
@@ -151,18 +156,22 @@ def estatisticas():
     return render_template("estatisticas.html", resultados=resultados, resultados_graficos=resultados_graficos,resultados_barras=resultados_barras)
 
 
+#Rota para testar os detectores (Os arquivos de resultados são armazenados em Resultados_{DetectorEscolhido})
 @app.route("/testar_llms", methods=["GET", "POST"])
 def testar_llms():
+
     if request.method== 'POST':
+
         ai_choice = request.form.get('ai')
         lista_llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
 
+        #Chama o detector escolhido pelo usuário
         if ai_choice == "roberta":
             theme_choice = request.form.get('themes')
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados_SegundaEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
+                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
 
@@ -178,18 +187,17 @@ def testar_llms():
                 for item in result_roberta
             ]
 
-            with open(f"Resultados/Resultados_Roberta/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+            #Diretório alterado para testes
+            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data, json_file, ensure_ascii=False, indent=4)
 
-
-            return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
 
         elif ai_choice == "sapling":
             theme_choice = request.form.get('themes')
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados_SegundaEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
+                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
 
@@ -206,26 +214,21 @@ def testar_llms():
             ]
 
             # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados/Resultados_Sapling/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
-            # Retornar uma resposta JSON indicando sucesso
-            return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
 
         elif ai_choice == "huggingface":
             theme_choice = request.form.get('themes')
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados_SegundaEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
+                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
                           encoding='utf-8') as file:
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
 
-            print(lista_comentarios)
-            print(lista_llms)
             result_hugging = prob_hugging(lista_comentarios, lista_llms)
-
 
             processed_data_sap = [
                 {
@@ -241,8 +244,6 @@ def testar_llms():
             with open(f"Resultados/Resultados_HuggingFace/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
-            # Retornar uma resposta JSON indicando sucesso
-            return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
 
         elif ai_choice == "bert":
 
@@ -250,7 +251,7 @@ def testar_llms():
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados_SegundaEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
+                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
                           encoding='utf-8') as file:
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
@@ -271,8 +272,6 @@ def testar_llms():
             with open(f"Resultados/Resultados_BERT/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
-            # Retornar uma resposta JSON indicando sucesso
-            return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
 
         elif ai_choice == "radar":
 
@@ -280,7 +279,7 @@ def testar_llms():
             lista_comentarios = []
 
             for llm in lista_llms:
-                with open(f"Comentarios_Gerados_SegundaEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
+                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
                           encoding='utf-8') as file:
                     content = file.read()
                     lista_comentarios.append({'llm': llm, 'comentarios': content})
@@ -301,11 +300,7 @@ def testar_llms():
             with open(f"Resultados/Resultados_Radar/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
-            # Retornar uma resposta JSON indicando sucesso
-            return jsonify({"success": True, "message": "Arquivo gerado com sucesso!"})
-
-        # Se nenhuma das condições foi atendida, retornar erro
-        return jsonify({"success": False, "message": "Erro ao processar."})
+        return render_template("testar_llms.html",msg="true")
 
     # Se for um GET, retorna o template
     return render_template("testar_llms.html")

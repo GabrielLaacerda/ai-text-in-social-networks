@@ -99,8 +99,8 @@
                         <td>{{ item.detector }}</td>
                         <td>{{ item.llm }}</td>
                         <td>{{ item.tema }}</td>
-                        <td>{{ item.prob_humano }}%</td>
-                        <td>{{ item.prob_IA }}%</td>
+                        <td>{{ "%.2f"|format(item.prob_humano) }}%</td>
+                        <td>{{ "%.2f"|format(item.prob_IA) }}%</td>
                         <td>{{ item.comentario }}</td>
                     </tr>
                     {% endfor %}

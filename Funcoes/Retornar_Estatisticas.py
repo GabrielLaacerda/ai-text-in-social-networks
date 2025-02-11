@@ -2,6 +2,9 @@ from collections import defaultdict
 import os
 import json
 
+import os
+import json
+
 def calcular_estatisticas_tabela(llms, dir_base):
     lista_geral = []
 
@@ -23,14 +26,19 @@ def calcular_estatisticas_tabela(llms, dir_base):
                         for llm in dados:
                             # Verifica se as chaves existem no item antes de acessar
                             if llm.get('llm') in llms and 'prob_humano' in llm and 'prob_IA' in llm:
+                                # Formatar as probabilidades para ter pelo menos 2 casas decimais
+                                prob_humano = round(llm['prob_humano'], 2)
+                                prob_IA = round(llm['prob_IA'], 2)
+                                acerto = prob_IA  # O acerto é a probabilidade de IA detectada
+
                                 item = {
-                                    "detector": nome_diretorio[11:],
+                                    "detector": nome_diretorio[11:],  # Exclui parte do nome do diretório conforme desejado
                                     "llm": llm['llm'],
-                                    "prob_humano": llm['prob_humano'],
-                                    "prob_IA": llm['prob_IA'],  # Quanto maior, melhor a detecção de IA
-                                    "tema": nome_arquivo[11:-5],
+                                    "prob_humano": prob_humano,
+                                    "prob_IA": prob_IA,  # Quanto maior, melhor a detecção de IA
+                                    "tema": nome_arquivo[11:-5],  # Exclui parte do nome do arquivo conforme desejado
                                     "comentario": llm['comentario'],
-                                    "acerto": llm['prob_IA']  # O acerto é a probabilidade de IA detectada
+                                    "acerto": acerto  # O acerto é a probabilidade de IA detectada
                                 }
 
                                 dados_llms[llm['llm']].append(item)
@@ -54,6 +62,8 @@ def calcular_estatisticas_tabela(llms, dir_base):
     lista_geral.sort(key=lambda x: x['acerto'], reverse=True)  # Ordena do maior para o menor acerto
 
     return lista_geral
+
+
 
 
 def calcular_acerto_por_llm(registros):

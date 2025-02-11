@@ -1,11 +1,8 @@
-from flask import Flask, request
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 from torch import cuda
 import os
 import re
-
-app = Flask(__name__)
 
 ACCESS_TOKEN = os.getenv('HUGGING_FACE_API_KEY')
 
@@ -90,19 +87,3 @@ def probabilidade_IA(comentarios, modelos):
                 })
 
     return result
-
-@app.route('/verificar_comentarios', methods=['POST'])
-def verificar_comentarios():
-    data = request.get_json()
-
-    if 'comentarios' not in data or 'modelos' not in data:
-        return {'error': 'Parâmetros inválidos!'}, 400
-
-    comentarios = data['comentarios']
-    modelos = data['modelos']
-
-    result = probabilidade_IA(comentarios, modelos)
-    return {'result': result}, 200
-
-if __name__ == '__main__':
-    app.run(debug=True)

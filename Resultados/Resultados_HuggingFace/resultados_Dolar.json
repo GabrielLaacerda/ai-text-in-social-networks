@@ -206,8 +206,8 @@
     {
         "llm": "Mistral",
         "comentario": "\"Gente, sério? Notícias falsas? Aqui na loja, a gente sente o impacto na pele. Precisamos de soluções reais, não de desculpas.\"",
-        "prob_humano": 90.66262245178223,
-        "prob_IA": 9.337377548217773
+        "prob_humano": 90.6626045703888,
+        "prob_IA": 9.337395429611206
     },
     {
         "llm": "Mistral",

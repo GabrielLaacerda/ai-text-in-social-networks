@@ -22,23 +22,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
-    <style>
-        /* Estilo para o ícone de hambúrguer */
-        .sidebar-toggle {
-            position: fixed;
-            top: 10px;
-            left: 20px;
-            font-size: 30px;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .sidebar-toggle:hover {
-            opacity: 0.7;
-        }
-    </style>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
@@ -83,7 +66,7 @@
 
     <h1 class="m3-4 mb-3" style="color:black">Testar detecção</h1>
 
-    <form id="llm-form" method="POST" enctype="multipart/form-data" onsubmit="sendFormData(event)">
+    <form id="llm-form" method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
         <!-- Escolha da LLM -->
         <label for="ai" class="choice">Escolha a ferramenta de detecção:</label>
         <div class="ia-options">
@@ -144,7 +127,7 @@
         </select>
 
         <!-- Botão de envio -->
-        <button type="submit" class="bt">Gerar Comentários</button>
+        <button type="submit" class="bt">Gerar Resultados</button>
     </form>
 
     <div id="modal" class="modal">
@@ -153,10 +136,9 @@
         </div>
     </div>
 
-    <div id="popupSucesso"
-        style="display:none; position: fixed; top: 20px; right: 20px; background-color: green; color: white; padding: 10px; border-radius: 5px;">
-        Sucesso ao gerar arquivo!
-    </div>
+    {% if msg %}
+        <script>showPopup("Arquivo gerado com sucesso", "success")</script>
+    {% endif %}
 
     {% if comentarios %}
     <h2 style="color:white">Comentários Gerados:</h2>
@@ -192,18 +174,6 @@
     {% endif %}
     {% endif %}
 
-    <script>
-        $(document).ready(function () {
-            $('#myTable').DataTable({
-                paging: false, // Desativa paginação
-                searching: false, // Remove o campo de busca
-                info: false, // Remove informações de exibição (ex.: "Mostrando X de Y")
-                language: {
-                    url: "//cdn.datatables.net/plug-ins/1.13.5/i18n/pt-BR.json"
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
