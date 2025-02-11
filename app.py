@@ -153,6 +153,8 @@ def estatisticas():
     resultados_graficos = re.calcular_acerto_por_llm(resultados)
     resultados_barras = re.calcular_acerto_por_detector(resultados)
 
+    re.exportar_excel(resultados_graficos, resultados_barras)
+
     return render_template("estatisticas.html", resultados=resultados, resultados_graficos=resultados_graficos,resultados_barras=resultados_barras)
 
 

@@ -3,12 +3,10 @@ function abrirModal() {
     modal.style.display = "block";
 }
 
-
 function fecharModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "none";
 }
-
 
 function iniciarDownload(file_path) {
     const novaJanela = window.open("", "_blank");
