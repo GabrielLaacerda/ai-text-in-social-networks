@@ -6584,3 +6584,14 @@
 2025-02-11 11:03:19,816 - INFO -  * Restarting with watchdog (inotify)
 2025-02-11 11:03:23,790 - WARNING -  * Debugger is active!
 2025-02-11 11:03:23,790 - INFO -  * Debugger PIN: 532-144-039
+2025-02-11 11:34:28,893 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "GET / HTTP/1.1" 200 -
+2025-02-11 11:34:28,911 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-11 11:34:28,912 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-11 11:34:28,914 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-11 11:34:28,915 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-11 11:34:28,917 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-11 11:34:28,917 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-11 11:34:28,922 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-11 11:34:28,923 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-11 11:34:28,926 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-11 11:34:28,992 - INFO - 127.0.0.1 - - [11/Feb/2025 11:34:28] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -

@@ -3,11 +3,11 @@
 ## 📌 Descrição
 Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários e detectores de IA para verificar a autenticidade do texto.
 
-![Tela Principal](imagens/nome-da-imagem.png)
+![Tela Principal](static/images/LLMS.png)
 
 ## 📂 Estrutura do Projeto
 📁 Projeto  
-│-- 📄 `app.py`                      # Arquivo principal  
+│-- 📄 `app.py`                      #- Arquivo principal  
 │-- 📁 `LLMs`                        # Scripts de geração de texto com LLMs  
 │-- 📁 `IAText_Detectors`            # Detectores de texto gerado por IA  
 │-- 📁 `Comentarios_Gerados_PrimeiraEtapa`  # Comentários gerados pelos LLMs  
