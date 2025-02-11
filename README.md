@@ -4,55 +4,53 @@
 Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários e detectores de IA para verificar a autenticidade do texto. O sistema processa entradas por meio de diversos scripts organizados em diretórios específicos.
 
 ## 📂 Estrutura do Projeto
-
-📁 Projeto
-│-- 📄 app.py                      # Arquivo principal
-│-- 📁 LLMs                        # Scripts de geração de texto com LLMs
-│-- 📁 IAText_Detectors            # Detectores de texto gerado por IA
-│-- 📁 Comentarios_Gerados_PrimeiraEtapa  # Comentários gerados pelos LLMs
-│-- 📄 requirements.txt             # Pacotes necessários
-
+📁 Projeto  
+│-- 📄 `app.py`                      # Arquivo principal  
+│-- 📁 `LLMs`                        # Scripts de geração de texto com LLMs  
+│-- 📁 `IAText_Detectors`            # Detectores de texto gerado por IA  
+│-- 📁 `Comentarios_Gerados_PrimeiraEtapa`  # Comentários gerados pelos LLMs  
+│-- 📄 `requirements.txt`             # Pacotes necessários  
 
 ## 🚀 Como Executar
 
 1. **Clone o repositório:**
    
-bash
+```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
    cd seu-repositorio
-
+```
 
 2. **Crie um ambiente virtual e ative-o:**
    
-bash
+```bash
    python3 -m venv .venv
    source .venv/bin/activate  # Linux/macOS
    .venv\Scripts\activate     # Windows
-
+```
 
 3. **Instale as dependências:**
    
-bash
+```bash
    pip install -r requirements.txt
-
+```
 
 4. **Configure as variáveis de ambiente:**
    
-bash
+```bash
    export COHERE_API_KEY="sua-chave-aqui"
-
+```
    Para definir permanentemente, adicione ao ~/.bashrc ou ~/.zshrc:
    
-bash
+```bash
    echo 'export COHERE_API_KEY="sua-chave-aqui"' >> ~/.bashrc
    source ~/.bashrc
-
+```
 
 5. **Execute o programa:**
    
-bash
+```bash
    python app.py
-
+```
 
 ## 🛠 Dependências Principais
 As dependências do projeto estão listadas no arquivo requirements.txt. Alguns dos pacotes principais incluem:
@@ -62,9 +60,10 @@ As dependências do projeto estão listadas no arquivo requirements.txt. Alguns 
 - numpy → Manipulação de arrays numéricos
 
 Para instalar todas as dependências, execute:
-bash
-pip install -r requirements.txt
 
+```bash
+pip install -r requirements.txt
+```
 
 ## 📝 Notas
 - Certifique-se de que o CUDA está corretamente instalado se estiver utilizando modelos acelerados por GPU.
