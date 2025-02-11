@@ -1,10 +1,9 @@
-📜 Projeto de Geração e Detecção de Texto com LLMs
+# 📜 Projeto de Geração e Detecção de Texto com LLMs
 
-📌 Descrição
-
+## 📌 Descrição
 Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários e detectores de IA para verificar a autenticidade do texto. O sistema processa entradas por meio de diversos scripts organizados em diretórios específicos.
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 📁 Projeto
 │-- 📄 app.py                      # Arquivo principal
@@ -13,64 +12,64 @@ Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários e detec
 │-- 📁 Comentarios_Gerados_PrimeiraEtapa  # Comentários gerados pelos LLMs
 │-- 📄 requirements.txt             # Pacotes necessários
 
-🚀 Como Executar
 
-Clone o repositório:
+## 🚀 Como Executar
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+1. **Clone o repositório:**
+   
+bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
 
-Crie um ambiente virtual e ative-o:
 
-python3 -m venv .venv
-source .venv/bin/activate  # Linux/macOS
-.venv\Scripts\activate     # Windows
+2. **Crie um ambiente virtual e ative-o:**
+   
+bash
+   python3 -m venv .venv
+   source .venv/bin/activate  # Linux/macOS
+   .venv\Scripts\activate     # Windows
 
-Instale as dependências:
 
-pip install -r requirements.txt
+3. **Instale as dependências:**
+   
+bash
+   pip install -r requirements.txt
 
-Configure as variáveis de ambiente:
 
-export COHERE_API_KEY="sua-chave-aqui"
+4. **Configure as variáveis de ambiente:**
+   
+bash
+   export COHERE_API_KEY="sua-chave-aqui"
 
-Para definir permanentemente, adicione ao ~/.bashrc ou ~/.zshrc:
+   Para definir permanentemente, adicione ao ~/.bashrc ou ~/.zshrc:
+   
+bash
+   echo 'export COHERE_API_KEY="sua-chave-aqui"' >> ~/.bashrc
+   source ~/.bashrc
 
-echo 'export COHERE_API_KEY="sua-chave-aqui"' >> ~/.bashrc
-source ~/.bashrc
 
-Execute o programa:
+5. **Execute o programa:**
+   
+bash
+   python app.py
 
-python app.py
 
-🛠 Dependências Principais
-
+## 🛠 Dependências Principais
 As dependências do projeto estão listadas no arquivo requirements.txt. Alguns dos pacotes principais incluem:
-
-transformers → Modelos de linguagem
-
-torch → Framework para aprendizado profundo
-
-cohere → API de geração de texto
-
-numpy → Manipulação de arrays numéricos
+- transformers → Modelos de linguagem
+- torch → Framework para aprendizado profundo
+- cohere → API de geração de texto
+- numpy → Manipulação de arrays numéricos
 
 Para instalar todas as dependências, execute:
-
+bash
 pip install -r requirements.txt
 
-📝 Notas
 
-Certifique-se de que o CUDA está corretamente instalado se estiver utilizando modelos acelerados por GPU.
+## 📝 Notas
+- Certifique-se de que o CUDA está corretamente instalado se estiver utilizando modelos acelerados por GPU.
+- Os comentários gerados pelos modelos serão armazenados em Comentarios_Gerados_PrimeiraEtapa.
+- O diretório IAText_Detectors contém scripts para identificar textos gerados por IA.
 
-Os comentários gerados pelos modelos serão armazenados em Comentarios_Gerados_PrimeiraEtapa.
-
-O diretório IAText_Detectors contém scripts para identificar textos gerados por IA.
-
-📜 Licença
-
-Este projeto está licenciado sob a MIT License.
-
-Se precisar de mais detalhes ou suporte, fique à vontade para contribuir! 🚀
-
-
+## 📜 Licença
+Este projeto está licenciado sob a [MIT License](LICENSE).
