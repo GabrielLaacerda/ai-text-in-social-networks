@@ -1,7 +1,9 @@
 # 📜 Projeto de Geração e Detecção de Texto com LLMs
 
 ## 📌 Descrição
-Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários e detectores de IA para verificar a autenticidade do texto. O sistema processa entradas por meio de diversos scripts organizados em diretórios específicos.
+Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários e detectores de IA para verificar a autenticidade do texto.
+
+![Tela Principal](imagens/nome-da-imagem.png)
 
 ## 📂 Estrutura do Projeto
 📁 Projeto  
