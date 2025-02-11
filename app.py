@@ -3,7 +3,7 @@ import json
 import logging
 import glob
 import Funcoes.Retornar_Estatisticas as re
-from flask import Flask, render_template, request, send_file, session, jsonify
+from flask import Flask, render_template, request, send_file, session
 from LLMs.Cohere import gerar_comentarios_para_posts as cohere
 from LLMs.ChatGPT import gerar_comentarios_para_posts as chatGpt
 from LLMs.Gemini import gerar_comentarios_para_posts as gemini
@@ -106,9 +106,9 @@ def home():
                 comentarios = mistral(persona_json, tema_json)
             else:
                 return {"error": "IA inválida especificada"}, 400
-        except Exception as e:
-            logging.error(f"Erro ao gerar comentários: {str(e)}")
-            return {"error": f"Erro ao gerar comentários: {str(e)}"}, 500
+        except Exception as error:
+            logging.error(f"Erro ao gerar comentários: {str(error)}")
+            return {"error": f"Erro ao gerar comentários: {str(error)}"}, 500
 
 
         file_name = f"{ai_choice.capitalize()}_{tema_json['Tema']}.txt"
@@ -118,9 +118,9 @@ def home():
             with open(file_path, 'w') as f:
                 for comentario in comentarios:
                     f.write(comentario + "\n")
-        except IOError as e:
-            logging.error(f"Erro ao salvar o arquivo: {str(e)}")
-            return {"error": f"Erro ao salvar o arquivo: {str(e)}"}, 500
+        except IOError as error:
+            logging.error(f"Erro ao salvar o arquivo: {str(error)}")
+            return {"error": f"Erro ao salvar o arquivo: {str(error)}"}, 500
 
         return render_template("index.html", comentarios=comentarios, file_path=file_path, ind=indices, zip=zip, tema = tema_json['Tema'])
 
@@ -138,8 +138,8 @@ def download():
 
     try:
         return send_file(file_path, as_attachment=True)
-    except Exception as e:
-        logging.error(f"Erro ao enviar o arquivo: {str(e)}")
+    except Exception as error:
+        logging.error(f"Erro ao enviar o arquivo: {str(error)}")
         return f"Erro ao enviar o arquivo: {str(e)}", 500
 
 
@@ -157,8 +157,8 @@ def estatisticas():
 
 
 #Rota para testar os detectores (Os arquivos de resultados são armazenados em Resultados_{DetectorEscolhido})
-@app.route("/testar_llms", methods=["GET", "POST"])
-def testar_llms():
+@app.route("/detectores", methods=["GET", "POST"])
+def detectores():
 
     if request.method== 'POST':
 
@@ -213,7 +213,7 @@ def testar_llms():
                 for item in result_sapling
             ]
 
-            # Salvar os resultados em um arquivo JSON
+            # Salvar os resultados em arquivo JSON
             with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
@@ -300,10 +300,10 @@ def testar_llms():
             with open(f"Resultados/Resultados_Radar/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
-        return render_template("testar_llms.html",msg="true")
+        return render_template("detectores.html",msg="true")
 
     # Se for um GET, retorna o template
-    return render_template("testar_llms.html")
+    return render_template("detectores.html")
 
 
 if __name__ == "__main__":

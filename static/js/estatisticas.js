@@ -119,14 +119,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-function testar_llms() {
-    window.location.href = '/testar_llms';
+function detectores() {
+    window.location.href = '/detectores';
 }
 
 $(document).ready(function () {
-
-    // Inicializa o DataTable
-    $('#dataTable').DataTable({
+    var table = $('#dataTable').DataTable({
         language: {
             sEmptyTable: "Nenhum dado disponível na tabela",
             sInfo: "Mostrando _START_ até _END_ de _TOTAL_ registros",

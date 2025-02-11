@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Testar LLMs</title>
+    <title>Detectores</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/testar_llms.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/detectores.css') }}">
     <link rel="icon" href="static/images/logo.png" type="image">
-    <script src="{{ url_for('static', filename='js/testar_llms.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/detectores.js') }}"></script>
 
     <!-- DataTables -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -48,9 +48,9 @@
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a class="d-flex align-items-center" onclick="testar_llms()">
-                        <i class="fa-solid fa-brain"></i>
-                        Testar LLMs
+                    <a class="d-flex align-items-center" onclick="detectores()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Testar Detectores
                     </a>
                 </li>
                 <li class="list-group-item">
@@ -64,7 +64,7 @@
     </div>
 
 
-    <h1 class="m3-4 mb-3" style="color:black">Testar detecção</h1>
+    <h1 class="m3-4 mb-3" style="color:black">Testar Detecção</h1>
 
     <form id="llm-form" method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
         <!-- Escolha da LLM -->

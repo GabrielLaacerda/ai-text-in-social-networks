@@ -16,7 +16,7 @@ utiliza detectores da literatura para verificar o quão efetivos eles são para 
 │-- 📁 `Comentarios_Gerados_PrimeiraEtapa`  # Comentários gerados pelos LLMs  
 │-- 📄 `requirements.txt`             # Pacotes necessários  
 │-- 📁 `Resultados`  # Resultados de detecção para cada ferramenta  
-│-- 📄 `Resultados`  # Templates das páginas principais
+│-- 📁 `templates`  # Templates das páginas principais
 
 ## Tecnologias Utilizadas
 

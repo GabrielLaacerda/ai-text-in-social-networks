@@ -64,8 +64,6 @@ def calcular_estatisticas_tabela(llms, dir_base):
     return lista_geral
 
 
-
-
 def calcular_acerto_por_llm(registros):
     acertos_por_llm = defaultdict(float)
     erros_por_llm = defaultdict(float)
