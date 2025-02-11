@@ -1,17 +1,21 @@
 # 📜 Projeto de Geração e Detecção de Texto com LLMs
 
 ## 📌 Descrição
-Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários e detectores de IA para verificar a autenticidade do texto.
+Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários com base em posts do twitter previamente selecionados e posteriormente
+utiliza detectores da literatura para verificar o quão efetivos eles são para detecção destes textos.
 
 ![Tela Principal](static/images/LLMS.png)
 
 ## 📂 Estrutura do Projeto
 📁 Projeto  
-│-- 📄 `app.py`                      #- Arquivo principal  
+│-- 📄 `app.py`                      #- Arquivo principal 
 │-- 📁 `LLMs`                        # Scripts de geração de texto com LLMs  
 │-- 📁 `IAText_Detectors`            # Detectores de texto gerado por IA  
 │-- 📁 `Comentarios_Gerados_PrimeiraEtapa`  # Comentários gerados pelos LLMs  
 │-- 📄 `requirements.txt`             # Pacotes necessários  
+│-- 📁 `Resultados`  # Resultados de detecção para cada ferramenta
+
+
 
 ## 🚀 Como Executar
 
