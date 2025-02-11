@@ -1,4 +1,4 @@
-# 📜 Projeto de Geração e Detecção de Texto com LLMs
+# 📜 Projeto de Geração e Detecção de Texto gerados por LLMs
 
 ## 📌 Descrição
 Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários com base em posts do twitter previamente selecionados e posteriormente
