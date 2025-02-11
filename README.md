@@ -8,13 +8,13 @@ utiliza detectores da literatura para verificar o quão efetivos eles são para 
 
 ## 📂 Estrutura do Projeto
 📁 Projeto  
-│-- 📄 `app.py`                      #- Arquivo principal 
+│-- 📄 `app.py`                      # Arquivo principal  
 │-- 📁 `LLMs`                        # Scripts de geração de texto com LLMs  
 │-- 📁 `IAText_Detectors`            # Detectores de texto gerado por IA  
 │-- 📁 `Comentarios_Gerados_PrimeiraEtapa`  # Comentários gerados pelos LLMs  
 │-- 📄 `requirements.txt`             # Pacotes necessários  
-│-- 📁 `Resultados`  # Resultados de detecção para cada ferramenta
-
+│-- 📁 `Resultados`  # Resultados de detecção para cada ferramenta  
+│-- 📄 `Resultados`  # Templates das páginas principais
 
 
 ## 🚀 Como Executar
