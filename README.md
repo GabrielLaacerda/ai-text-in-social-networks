@@ -5,6 +5,8 @@ Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários com bas
 utiliza detectores da literatura para verificar o quão efetivos eles são para detecção destes textos.
 
 ![Tela Principal](static/images/LLMS.png)
+![Tela Principal](static/images/LLMS2.png)
+![Tela Principal](static/images/LLMS3.png)
 
 ## 📂 Estrutura do Projeto
 📁 Projeto  
