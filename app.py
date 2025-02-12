@@ -6,7 +6,7 @@ import Funcoes.Retornar_Estatisticas as re
 import IAText_Detectors.Roberta as roberta
 import IAText_Detectors.Sapling as sapling
 import IAText_Detectors.Radar as radar
-import IAText_Detectors.huggingface as huggingface
+import IAText_Detectors.HuggingFace as huggingface
 import IAText_Detectors.DistBERT as distbert
 #import IAText_Detectors.Binoculars as binoc
 import LLMs.Cohere as cohereUnic
@@ -24,7 +24,7 @@ from LLMs.MaritacaIA import gerar_comentarios_para_posts as maritaca
 from LLMs.Mistral import gerar_comentarios_para_posts as mistral
 from IAText_Detectors.Roberta import probabilidade_IA as roberta_prob
 from IAText_Detectors.Sapling import probabilidade_IA as sapling_prob
-from IAText_Detectors.huggingface import probabilidade_IA as prob_hugging
+from IAText_Detectors.HuggingFace import probabilidade_IA as prob_hugging
 from IAText_Detectors.DistBERT import probabilidade_IA as distbert_prob
 from IAText_Detectors.Radar import probabilidade_IA as radar_prob
 

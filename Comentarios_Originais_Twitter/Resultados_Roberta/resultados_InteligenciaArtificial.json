@@ -1,0 +1,517 @@
+[
+    {
+        "comentario": "Se quiser ver como uma rede neural pode pegar o \"estilo\" de uma pessoa e aplicar sobre o rosto de outra, vale essa figura do artigo do segundo link. A coluna da esquerda e a primeira linha são pessoas reais. Todos os outros foram criados. https://t.co/M21eTIDruA",
+        "prob_humano": 0.18,
+        "prob_IA": 99.82
+    },
+    {
+        "comentario": "Eu acompanho essa tecnologia alguns anos, é incrível. Já viu o vídeo da Nvidia sobre?",
+        "prob_humano": 0.38,
+        "prob_IA": 99.62
+    },
+    {
+        "comentario": "Lucas, fala que isso é caô. Por favor @1iversoDiscreto",
+        "prob_humano": 31.21,
+        "prob_IA": 68.79
+    },
+    {
+        "comentario": "não deixa o j*ornal da c*idade o*line ver isso senão eles vão pegar a foto dos novos colunistas pra por no site 🤭",
+        "prob_humano": 3.1,
+        "prob_IA": 96.9
+    },
+    {
+        "comentario": "@suzyssantiago Skynet vem aí!",
+        "prob_humano": 42.01,
+        "prob_IA": 57.99
+    },
+    {
+        "comentario": "@EleonoraMend vem aqui...",
+        "prob_humano": 42.27,
+        "prob_IA": 57.73
+    },
+    {
+        "comentario": "Que a inteligência artificial está evoluindo muito, isso está na cara",
+        "prob_humano": 2.86,
+        "prob_IA": 97.14
+    },
+    {
+        "comentario": "Garota de programa",
+        "prob_humano": 66.68,
+        "prob_IA": 33.32
+    },
+    {
+        "comentario": "Vamos falar de uma ameaça à humanidade de cada vez, por favor? Obrigado",
+        "prob_humano": 30.21,
+        "prob_IA": 69.79
+    },
+    {
+        "comentario": "Coloca na listinha de 2020 a Skynet kkkkk",
+        "prob_humano": 58.82,
+        "prob_IA": 41.18
+    },
+    {
+        "comentario": "@sahdesaxa  @_marcosousa_",
+        "prob_humano": 51.73,
+        "prob_IA": 48.27
+    },
+    {
+        "comentario": "COM A MESMA TECHINOLOGIA FORJARAM O VIDEO DO PRESIDENTE FALANDO SOBRE A PF, JA ESTA SAINDO EM TODOS OS GRUPOS QUE FREQUENTAMOS NO ZAP. 🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷",
+        "prob_humano": 1.09,
+        "prob_IA": 98.91
+    },
+    {
+        "comentario": "GAN's são muito conhecidas por gerar imagens de domínios \"genéricos\" mas uma importante aplicação é utilizá-las para gerar amostras de dados médicos. Esses dados são escassos e amostras artificias ajudam no treinamento de outras redes de diagnóstico, por exemplo de melanoma.",
+        "prob_humano": 0.05,
+        "prob_IA": 99.95
+    },
+    {
+        "comentario": "É assim que vc calcula a área da curva, @oatila ? https://t.co/3AsGXGqsLY",
+        "prob_humano": 10.82,
+        "prob_IA": 89.18
+    },
+    {
+        "comentario": "Bolsonaro admitiu que falsificou a assinatura do Moro, galera? https://t.co/jASgcy7guy",
+        "prob_humano": 7.34,
+        "prob_IA": 92.66
+    },
+    {
+        "comentario": "Nos anos 60, havia um programa na Globo chamado Quem é Quem.  Eles faziam um retrato falado e, no programa seguinte, apareciam todas as pessoas que se parecessem com aquele retrato.  O mais parecido ganhava um prêmio qualquer.Poderiam fazer isso com esses rostos gerados por IA.",
+        "prob_humano": 0.07,
+        "prob_IA": 99.93
+    },
+    {
+        "comentario": "Meu que top, vejo um futuro de mts fakes kkkkk(Que o gabinete do ódio não tenha acesso à essa IA🙏)",
+        "prob_humano": 12.87,
+        "prob_IA": 87.13
+    },
+    {
+        "comentario": "Perfeita assimetria",
+        "prob_humano": 34.75,
+        "prob_IA": 65.25
+    },
+    {
+        "comentario": "Átila, você já viu o site This Person Does Not Exist, criado pela NVidia? https://t.co/t28crjniKA",
+        "prob_humano": 10.15,
+        "prob_IA": 89.85
+    },
+    {
+        "comentario": "Ja era hora",
+        "prob_humano": 57.96,
+        "prob_IA": 42.04
+    },
+    {
+        "comentario": "Ela tá com cara de quem tomou uns espumantes a mais",
+        "prob_humano": 11.54,
+        "prob_IA": 88.46
+    },
+    {
+        "comentario": "Rn tem justamente a função de reconhecer padrões. Qto mais padrões o algoritmo aprender, melhor será a resposta que ele vai obter.",
+        "prob_humano": 3.27,
+        "prob_IA": 96.73
+    },
+    {
+        "comentario": "Isso me lembrou s1m0ne (2002), muito legal os links. Bom pra estudar mais sobre o assunto. :)",
+        "prob_humano": 2.44,
+        "prob_IA": 97.56
+    },
+    {
+        "comentario": "A Virgem Velada é uma escultura em Mármore de Carrara talhada em Roma pelo escultor Italiano Giovanni Strazza (1815–1878),[1] retratando o busto de Virgem Maria sob um véu. A data exata da conclusão da obra é desconhecida, sendo provavelmente do início da década de 1850. https://t.co/d97EdPKgyE",
+        "prob_humano": 0.16,
+        "prob_IA": 99.84
+    },
+    {
+        "comentario": "Desde que eu ingressei na tecnologia, o objetivo é sempre \"desenvolver\" em um cenário outside à mente. Enquanto o foco não for utilizar o nosso próprio hardware genético, em minha opinião, continuará sendo apenas uma caríssima novela hi-tech.O que vc acha, Atila?",
+        "prob_humano": 0.09,
+        "prob_IA": 99.91
+    },
+    {
+        "comentario": "@CristianaFc Imagine a próxima eleição",
+        "prob_humano": 23.63,
+        "prob_IA": 76.37
+    },
+    {
+        "comentario": "Juro que estou acompanhando a Thread só pra ver alguém postando \"oxi, mas essa é minha webnamorada já faz 2 anos\"... 👀",
+        "prob_humano": 1.0,
+        "prob_IA": 99.0
+    },
+    {
+        "comentario": "@lobaoeletrico Linda !! Êta maquininha de bom gosto hein 😀😀",
+        "prob_humano": 16.01,
+        "prob_IA": 83.99
+    },
+    {
+        "comentario": "Se ela não está infectada com o Coronavírus, não mude de assunto. Rsrsrs",
+        "prob_humano": 10.34,
+        "prob_IA": 89.66
+    },
+    {
+        "comentario": "@danninhaa Será q assim são criadas as fotos dos robôs do Bolsonaro?",
+        "prob_humano": 0.78,
+        "prob_IA": 99.22
+    },
+    {
+        "comentario": "impossivel nao existir, go go tecnologia",
+        "prob_humano": 37.27,
+        "prob_IA": 62.73
+    },
+    {
+        "comentario": "Não cara, essa ai é a Mary Jane.",
+        "prob_humano": 59.24,
+        "prob_IA": 40.76
+    },
+    {
+        "comentario": "Assustador!",
+        "prob_humano": 60.96,
+        "prob_IA": 39.04
+    },
+    {
+        "comentario": "Ciência para o bem e para o mal",
+        "prob_humano": 17.27,
+        "prob_IA": 82.73
+    },
+    {
+        "comentario": "Já vi algumas coisas sobre esses rostos criados e sempre me perguntei. Como ter certeza que essa face não existe mesmo???",
+        "prob_humano": 0.25,
+        "prob_IA": 99.75
+    },
+    {
+        "comentario": "Novos tempos",
+        "prob_humano": 35.82,
+        "prob_IA": 64.18
+    },
+    {
+        "comentario": "@scorrotea",
+        "prob_humano": 60.04,
+        "prob_IA": 39.96
+    },
+    {
+        "comentario": "@LeticiaChiqueto",
+        "prob_humano": 60.58,
+        "prob_IA": 39.42
+    },
+    {
+        "comentario": "Cêtázuâno mano! Sério mesmo ou é fake news?! Sei la...vai saber! Rs...Sério agora: é perfeito demais a definição de imagem, as expressão do rosto...imagina o estrago que esta tecnologia vai fazer nas próximas eleições americanas!Jesus, volta logo...please!",
+        "prob_humano": 1.61,
+        "prob_IA": 98.39
+    },
+    {
+        "comentario": "@Suziesaldanha",
+        "prob_humano": 57.65,
+        "prob_IA": 42.35
+    },
+    {
+        "comentario": "A @nvidia é brabahttps://t.co/LbeuGzxFAc",
+        "prob_humano": 41.3,
+        "prob_IA": 58.7
+    },
+    {
+        "comentario": "Corram para as montanhas!!!",
+        "prob_humano": 14.48,
+        "prob_IA": 85.52
+    },
+    {
+        "comentario": "Ela na verdade são DUAS pessoas https://t.co/IHpTdQZFUT",
+        "prob_humano": 13.32,
+        "prob_IA": 86.68
+    },
+    {
+        "comentario": "Já vi ela num filme, isso aí é pegadinha",
+        "prob_humano": 9.37,
+        "prob_IA": 90.63
+    },
+    {
+        "comentario": "Essas são DeepFaces ou objetos criados a partir de outros por GANs. Tb têm trabalhos q buscam reconhecer se uma imagem (ou face) e verdadeira ou criada.",
+        "prob_humano": 0.62,
+        "prob_IA": 99.38
+    },
+    {
+        "comentario": "Caraca não tem uncanny valley nenhum",
+        "prob_humano": 30.18,
+        "prob_IA": 69.82
+    },
+    {
+        "comentario": "@vodkwick",
+        "prob_humano": 62.05,
+        "prob_IA": 37.95
+    },
+    {
+        "comentario": "@threader_app",
+        "prob_humano": 60.75,
+        "prob_IA": 39.25
+    },
+    {
+        "comentario": "@threadreaderapp compile",
+        "prob_humano": 56.25,
+        "prob_IA": 43.75
+    },
+    {
+        "comentario": "Em pouco tempo não precisarão mais de dublês, na verdade, nem de atores... Vão só entregar as falas pro computador e o estilo da atuação...",
+        "prob_humano": 1.84,
+        "prob_IA": 98.16
+    },
+    {
+        "comentario": "Tenho medo",
+        "prob_humano": 42.71,
+        "prob_IA": 57.29
+    },
+    {
+        "comentario": "Separando assim me pareceu pessoas diferentes 😅 https://t.co/VTaj9tHRGR",
+        "prob_humano": 12.32,
+        "prob_IA": 87.68
+    },
+    {
+        "comentario": "Muito curioso como adereços tal como brincos e outras coisas como maquiagem fazem parte da construção da imagem. É bem legal ver como comportamentos sociais moldam a essência humana também :)",
+        "prob_humano": 0.23,
+        "prob_IA": 99.77
+    },
+    {
+        "comentario": "ia eh uma coisa linda de deus, que nem nos programadores  entendemos....",
+        "prob_humano": 36.09,
+        "prob_IA": 63.91
+    },
+    {
+        "comentario": "Esse salto de qualidade deve-se muito ao artigo do Ian Goodfellow, @goodfellow_ian, sobre GANs",
+        "prob_humano": 7.79,
+        "prob_IA": 92.21
+    },
+    {
+        "comentario": "Não fale assim da minha namorada!",
+        "prob_humano": 28.01,
+        "prob_IA": 71.99
+    },
+    {
+        "comentario": "como desenhista de realismo, entendo perfeitamente como isso funciona, e acredito totalmente (mesmo q muitos discordem), e o avanço q essas tecnologias tão tendo é um treco absurdo demaisinclusive, se quiser ver alguns dos meus trabalhos, meu insta é desenhosdoberto :3",
+        "prob_humano": 6.36,
+        "prob_IA": 93.64
+    },
+    {
+        "comentario": "Wow",
+        "prob_humano": 71.24,
+        "prob_IA": 28.76
+    },
+    {
+        "comentario": "@_L_e_t_i_c_ia_ eu tô com medo",
+        "prob_humano": 34.08,
+        "prob_IA": 65.92
+    },
+    {
+        "comentario": "@oatila depois tenta dar uma olhada no canal do youtube Universo Programado, o cara tem uma didática ímpar para falar sobre IA, além de ser um ótimo editor! Acho que seria muito bacana tê-lo no @svbroficial",
+        "prob_humano": 8.58,
+        "prob_IA": 91.42
+    },
+    {
+        "comentario": "e eu já estava me apaixonando...",
+        "prob_humano": 15.23,
+        "prob_IA": 84.77
+    },
+    {
+        "comentario": "Tem todo um trabalho hoje sendo feito em busca de novas drogas com uso de IA e HPC. É um tempo lindo de se viver. Por outro lado, o Brasil está completamente fora desse universo sendo que IA no Brasil é chat bot tão somente...",
+        "prob_humano": 0.06,
+        "prob_IA": 99.94
+    },
+    {
+        "comentario": "O impressionante são as imperfeições como o lábio semi aberto como se estivesse prestes à falar, incrivel mesmo.",
+        "prob_humano": 10.33,
+        "prob_IA": 89.67
+    },
+    {
+        "comentario": "Isso deve ter um potencial sinistro pra dar merda",
+        "prob_humano": 9.23,
+        "prob_IA": 90.77
+    },
+    {
+        "comentario": "@jiroorij_ oia essa tred",
+        "prob_humano": 66.49,
+        "prob_IA": 33.51
+    },
+    {
+        "comentario": "E sem vale da estranheza!",
+        "prob_humano": 33.36,
+        "prob_IA": 66.64
+    },
+    {
+        "comentario": "Dêem boas-vindas à mais nova jornalista do Jornal da Cidade Online",
+        "prob_humano": 43.46,
+        "prob_IA": 56.54
+    },
+    {
+        "comentario": "Aaaaaaah paputakipariu, saporra vão dominar a gente! 🤯🤯😱😱😱",
+        "prob_humano": 39.35,
+        "prob_IA": 60.65
+    },
+    {
+        "comentario": "Gzuiz",
+        "prob_humano": 59.68,
+        "prob_IA": 40.32
+    },
+    {
+        "comentario": "@ops_analg a sophia é real!!",
+        "prob_humano": 41.25,
+        "prob_IA": 58.75
+    },
+    {
+        "comentario": "Recomendo esse canal para quem gosta de assuntos relacionados, em 2 minutos ele dá um overview:https://t.co/F2hfLydqiV",
+        "prob_humano": 1.62,
+        "prob_IA": 98.38
+    },
+    {
+        "comentario": "@InocencioLayse",
+        "prob_humano": 58.42,
+        "prob_IA": 41.58
+    },
+    {
+        "comentario": "Viva a ciência 😍",
+        "prob_humano": 35.85,
+        "prob_IA": 64.15
+    },
+    {
+        "comentario": "Será que ela já tá publicando notícias no Jornal da Cidade? hehe",
+        "prob_humano": 5.54,
+        "prob_IA": 94.46
+    },
+    {
+        "comentario": "Isso é tão Black Mirror",
+        "prob_humano": 40.43,
+        "prob_IA": 59.57
+    },
+    {
+        "comentario": "@Aestheticwindow",
+        "prob_humano": 56.85,
+        "prob_IA": 43.15
+    },
+    {
+        "comentario": "https://t.co/ScLN6EmxSy",
+        "prob_humano": 57.63,
+        "prob_IA": 42.37
+    },
+    {
+        "comentario": "Velho, q bruxaria é essa?! 😱",
+        "prob_humano": 18.77,
+        "prob_IA": 81.23
+    },
+    {
+        "comentario": "@ramonnadias olhaaaa",
+        "prob_humano": 62.61,
+        "prob_IA": 37.39
+    },
+    {
+        "comentario": "@Honeygesoficial corre aqui, olha q doido",
+        "prob_humano": 45.46,
+        "prob_IA": 54.54
+    },
+    {
+        "comentario": "Ela já pode ser usada como colunista do jornal da cidade online.",
+        "prob_humano": 6.99,
+        "prob_IA": 93.01
+    },
+    {
+        "comentario": "ela pode ter sido criada mas nada impede nem garante que não haja uma pessoa idêntica a esta; aí é que mora o perigo da IA",
+        "prob_humano": 5.79,
+        "prob_IA": 94.21
+    },
+    {
+        "comentario": "Tenho muito medo disso",
+        "prob_humano": 21.68,
+        "prob_IA": 78.32
+    },
+    {
+        "comentario": "@oatila É errado se apaixonar por ela???",
+        "prob_humano": 42.59,
+        "prob_IA": 57.41
+    },
+    {
+        "comentario": "Eu sinceramente não acredito que num universo de mais de 2 bilhões de pessoas, uma mulher com esse rosto não exista.",
+        "prob_humano": 0.14,
+        "prob_IA": 99.86
+    },
+    {
+        "comentario": "Impressionado com a tecnologia e ao mesmo tempo assustado. Só consigo pensar na quantidade de gente mal intencionada que usaria essa tecnologia pra propagar notícias falsas e praticar outras formas de crime envolvendo imagem.",
+        "prob_humano": 0.06,
+        "prob_IA": 99.94
+    },
+    {
+        "comentario": "Se ele calcular agora pra 2220Vai sair um grande borrão, fomos aniquilados por nós mesmos",
+        "prob_humano": 6.03,
+        "prob_IA": 93.97
+    },
+    {
+        "comentario": "https://t.co/T9S2TI0Mf8",
+        "prob_humano": 59.21,
+        "prob_IA": 40.79
+    },
+    {
+        "comentario": "Assustador",
+        "prob_humano": 64.24,
+        "prob_IA": 35.76
+    },
+    {
+        "comentario": "Medo",
+        "prob_humano": 68.22,
+        "prob_IA": 31.78
+    },
+    {
+        "comentario": "O avanço na tecnologia de sintetização de voz tá assustador também. Essa IA só precisa de 5 segundos, https://t.co/x2kQHeXssH Os deepfakes dessa década serão verdadeiramente verossímeis.",
+        "prob_humano": 1.07,
+        "prob_IA": 98.93
+    },
+    {
+        "comentario": "@7Ferlin @larixtop aaaa",
+        "prob_humano": 53.03,
+        "prob_IA": 46.97
+    },
+    {
+        "comentario": "@ks_araujo",
+        "prob_humano": 63.41,
+        "prob_IA": 36.59
+    },
+    {
+        "comentario": "@LaercioMonte",
+        "prob_humano": 57.68,
+        "prob_IA": 42.32
+    },
+    {
+        "comentario": "Como não existe? Já vi varias vezes nos barzinhos de Juiz de Fora.",
+        "prob_humano": 2.11,
+        "prob_IA": 97.89
+    },
+    {
+        "comentario": "You're freaking me out, man!",
+        "prob_humano": 47.42,
+        "prob_IA": 52.58
+    },
+    {
+        "comentario": "@brunnosarttori  isso é obra sua?",
+        "prob_humano": 10.99,
+        "prob_IA": 89.01
+    },
+    {
+        "comentario": "Que medo Atila",
+        "prob_humano": 49.51,
+        "prob_IA": 50.49
+    },
+    {
+        "comentario": "Será que evoluiu?? Rsrs",
+        "prob_humano": 48.17,
+        "prob_IA": 51.83
+    },
+    {
+        "comentario": "Ela existe sim, tem um perfil com bandeira do Brasil, é conservadora, cristã e odeia comunismo",
+        "prob_humano": 4.89,
+        "prob_IA": 95.11
+    },
+    {
+        "comentario": "PAR CERO",
+        "prob_humano": 54.3,
+        "prob_IA": 45.7
+    },
+    {
+        "comentario": "Isso me lembra o Carluxo e seus bots",
+        "prob_humano": 9.16,
+        "prob_IA": 90.84
+    },
+    {
+        "comentario": "Sério, isso dá medo.Pq o uso para métodos nada éticos será enorme 😔",
+        "prob_humano": 13.78,
+        "prob_IA": 86.22
+    }
+]

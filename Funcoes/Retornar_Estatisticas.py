@@ -196,7 +196,7 @@ def calcular_media_prob_humano_por_tema(resultado):
 def exportar_excel(dados_llm, dados_detector, nome_arquivo="relatorio_geral.xlsx"):
     wb = openpyxl.Workbook()
     ws = wb.active
-    ws.title = "Resultados"
+    ws.title = "Resultados_Roberta"
 
     # Estilos
     header_fill = PatternFill(start_color="D9D9D9", end_color="D9D9D9", fill_type="solid")  # Cinza Claro
@@ -208,7 +208,7 @@ def exportar_excel(dados_llm, dados_detector, nome_arquivo="relatorio_geral.xlsx
     center_align = Alignment(horizontal="center", vertical="center")
 
     # Criar título principal
-    ws.append(["Resultados Gerais LLMs vs Detectores"])
+    ws.append(["Resultados_Roberta Gerais LLMs vs Detectores"])
     ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=3)  # Mesclar células
     title_cell = ws["A1"]
     title_cell.font = Font(bold=True, size=14)
