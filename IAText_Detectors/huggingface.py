@@ -90,7 +90,7 @@ def probabilidade_IA(comentarios, modelos):
 
 
 # Função adicional para processar apenas um comentário
-def probabilidade_frase_unica(comentario, modelo):
+def probabilidade_frase_unica(comentario):
     device = 'cuda' if cuda.is_available() else 'cpu'
     tokenizer = AutoTokenizer.from_pretrained("PirateXX/AI-Content-Detector", token=ACCESS_TOKEN)
     model = AutoModelForSequenceClassification.from_pretrained("PirateXX/AI-Content-Detector", token=ACCESS_TOKEN)
@@ -146,13 +146,12 @@ def probabilidade_frase_unica(comentario, modelo):
 
     # Processa o único comentário
     probabilidade = findRealProb(comentario)  # Obtém a probabilidade de ser "real"
-    real_prob = probabilidade[0]['Real']  # A probabilidade "real"
-    fake_prob = 1 - real_prob  # A probabilidade de ser "fake"
+    real_prob = round(probabilidade[0]['Real'] * 100, 2)  # Arredondado para 2 casas decimais
+    fake_prob = round(100 - real_prob, 2)  # Garantindo que soma 100% e arredondando
 
     # Retorna o comentário e as probabilidades
     return {
-        "llm": modelo,
         "comentario": comentario,
-        "prob_humano": real_prob * 100,  # Multiplicado por 100 para porcentagem
-        "prob_IA": fake_prob * 100  # Multiplicado por 100 para porcentagem
+        "prob_humano": real_prob,
+        "prob_IA": fake_prob
     }

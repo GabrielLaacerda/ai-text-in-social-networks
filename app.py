@@ -4,6 +4,17 @@ import logging
 import glob
 import Funcoes.Retornar_Estatisticas as re
 import IAText_Detectors.Roberta as roberta
+import IAText_Detectors.Sapling as sapling
+import IAText_Detectors.Radar as radar
+import IAText_Detectors.huggingface as huggingface
+import IAText_Detectors.DistBERT as distbert
+#import IAText_Detectors.Binoculars as binoc
+import LLMs.Cohere as cohereUnic
+import LLMs.Llama as llamaUnic
+import LLMs.ChatGPT as gptUnic
+import LLMs.MaritacaIA as maritacaIAUnic
+import LLMs.Gemini as geminiIAUnic
+import LLMs.Mistral as mistralUnic
 from flask import Flask, render_template, request, send_file, session
 from LLMs.Cohere import gerar_comentarios_para_posts as cohere
 from LLMs.ChatGPT import gerar_comentarios_para_posts as chatGpt
@@ -313,6 +324,47 @@ def detectores():
 
 @app.route("/gerarComentario", methods=["GET", "POST"])
 def gerarComentario():
+
+    if request.method == 'POST':
+
+        ai_choice = request.form.get('ai')
+        tema = request.form['tema']
+        persona = request.form['persona']
+        post = request.form['post']
+
+
+        if ai_choice == "cohere":
+            resposta = cohereUnic.gerar_comentarios(persona,post,tema)
+
+            return render_template("gerar_comentario.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+
+        if ai_choice == "llama":
+            resposta = llamaUnic.gerar_comentarios(persona,post,tema)
+
+            return render_template("gerar_comentario.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+
+        if ai_choice == "chatgpt":
+            resposta = gptUnic.gerar_comentarios(persona,post,tema)
+
+            return render_template("gerar_comentario.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+
+        if ai_choice == "maritacaIA":
+            resposta = maritacaIAUnic.gerar_comentarios(persona,post,tema)
+
+            return render_template("gerar_comentario.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+
+        if ai_choice == "gemini":
+            resposta = geminiIAUnic.gerar_comentarios(persona,post,tema)
+
+            return render_template("gerar_comentario.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+
+        if ai_choice == "mistral":
+            resposta = mistralUnic.gerar_comentarios(persona,post,tema)
+
+            return render_template("gerar_comentario.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+
+
+
     return render_template("gerar_comentario.html")
 
 @app.route("/analisarComentario", methods=["GET", "POST"])
@@ -329,6 +381,32 @@ def analisar_comentario():
 
            return render_template("analisar_comentario.html", resposta=resposta, llm=ai_choice.capitalize())
 
+        elif ai_choice == "sapling":
+           resposta = sapling.probabilidade_frase_unica(comentario)
+
+           return render_template("analisar_comentario.html", resposta=resposta, llm=ai_choice.capitalize())
+
+        elif ai_choice == "radar":
+           resposta = radar.probabilidade_frase_unica(comentario)
+
+           return render_template("analisar_comentario.html", resposta=resposta, llm=ai_choice.capitalize())
+
+        elif ai_choice == "huggingface":
+           resposta = huggingface.probabilidade_frase_unica(comentario)
+
+           return render_template("analisar_comentario.html", resposta=resposta, llm=ai_choice.capitalize())
+
+        elif ai_choice == "distbert":
+           resposta = distbert.probabilidade_IA_frase(comentario)
+
+           return render_template("analisar_comentario.html", resposta=resposta, llm=ai_choice.capitalize())
+
+        """
+        elif ai_choice == "binoculars":
+           resposta = binoc.probabilidade_IA_frase(comentario)
+
+           return render_template("analisar_comentario.html", resposta=resposta, llm=ai_choice.capitalize())
+        """
     return render_template("analisar_comentario.html")
 
 if __name__ == "__main__":

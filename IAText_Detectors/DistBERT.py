@@ -57,10 +57,11 @@ def probabilidade_IA(comentarios, modelos):
     return resultados  # Retorna os resultados no formato desejado
 
 
-def probabilidade_IA_frase(frase, modelo_path='/home/gabriel/TCC_GabrielVncs/trained_model_HC3'):
+def probabilidade_IA_frase(frase):
 
     warnings.filterwarnings("ignore")
     logging.set_verbosity_error()
+    modelo_path = "/home/gabriel/TCC_GabrielVncs/trained_model_HC3"
 
     # Carregar o modelo e o tokenizer do DistilBERT
     model = DistilBertForSequenceClassification.from_pretrained(modelo_path)
@@ -85,5 +86,6 @@ def probabilidade_IA_frase(frase, modelo_path='/home/gabriel/TCC_GabrielVncs/tra
     # Retorna as probabilidades
     return {
         'prob_humano': round(prob_humano, 2),
-        'prob_IA': round(prob_ia, 2)
+        'prob_IA': round(prob_ia, 2),
+        'comentario': frase
     }

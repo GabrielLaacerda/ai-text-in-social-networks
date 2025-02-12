@@ -43,9 +43,10 @@ def probabilidade_IA(comentarios, modelos):
     return resultados  # Retorna os resultados no formato desejado
 
 
-def probabilidade_IA_frase(frase, modelo_binoculars=Binoculars()):
+def probabilidade_IA_frase(frase):
 
     warnings.filterwarnings("ignore")
+    modelo_binoculars = Binoculars()
 
     if not isinstance(frase, str):
         raise ValueError("O argumento 'frase' deve ser uma string.")
