@@ -67,5 +67,11 @@ body {
     height: auto !important;
 }
 
+#barChart {
+    width: 100% !important;
+    height: 400px !important;
+    max-width: 100% !important;
+}
+
 
 

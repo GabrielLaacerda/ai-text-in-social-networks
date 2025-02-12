@@ -31,7 +31,6 @@
         <i class="fa-solid fa-bars" style="color: #000000;"></i>
     </span>
 
-
     <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
         aria-labelledby="staticBackdropLabel">
         <div class="offcanvas-header">
@@ -40,7 +39,7 @@
         </div>
         <div class="offcanvas-body">
             <!-- Lista de Itens no Sidebar com ícones -->
-            <ul class="list-group">
+           <ul class="list-group">
             <li class="list-group-item">
                 <a href="/" class="d-flex align-items-center">
                     <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
@@ -74,7 +73,6 @@
         </ul>
         </div>
     </div>
-
 
     <h1 class="m3-4 mb-3" style="color:black">Realizar Detecção</h1>
 
@@ -126,20 +124,14 @@
             </div>
         </div>
 
-
-        <!-- Escolha do Tema -->
-        <label for="themes">Escolha um tema:</label>
-        <select id="themes" name="themes" class="dropdown" required>
-            <option value="" selected disabled>Clique para listar os temas disponíveis</option>
-            <option value="Streaming.json">Aluguel de Filmes em Plataformas de Streaming</option>
-            <option value="InteligenciaArtificial.json">Inteligência Artificial na criação de conteúdo</option>
-            <option value="Dolar.json">Alta do dólar</option>
-            <option value="CasasDeApostas.json">Polêmicas de casas de apostas e cassino online</option>
-            <option value="Impostos.json">Impostos/Taxas na importação de produtos</option>
-        </select>
+        <!-- Campo de comentário -->
+        <div class="mb-3">
+            <label for="comentario" class="form-label">Escreva seu comentário:</label>
+            <textarea class="form-control" id="comentario" name="comentario" rows="4" required></textarea>
+        </div>
 
         <!-- Botão de envio -->
-        <button type="submit" class="bt">Gerar Resultados</button>
+        <button type="submit" class="btn btn-primary">Analisar Comentário</button>
     </form>
 
     <div id="modal" class="modal">
@@ -155,7 +147,7 @@
     {% if comentarios %}
     <h2 style="color:white">Comentários Gerados:</h2>
     <div class="comentarios">
-        <table id="myTable" class="display">
+        <table id="myTable" class="display table table-striped">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -178,7 +170,7 @@
     {% if file_path %}
     <div class="space">
         <div class="divisao">
-            <button class="botoes bt" onclick="iniciarDownload('{{ file_path }}')">Baixar Comentários</button>
+            <button class="btn btn-success" onclick="iniciarDownload('{{ file_path }}')">Baixar Comentários</button>
         </div>
         <div style="margin-bottom:20px"></div>
     </div>

@@ -41,25 +41,37 @@
         </div>
         <div class="offcanvas-body">
             <ul class="list-group">
-                <li class="list-group-item">
-                    <a href="/" class="d-flex align-items-center">
-                        <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
-                        Gerar Comentários
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a class="d-flex align-items-center" onclick="detectores()">
-                       <i class="fa-solid fa-magnifying-glass"></i>
-                        Detectores
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a class="d-flex align-items-center" onclick="gerarEstatisticas()">
-                        <i class="fas fa-chart-line me-2"></i> <!-- Ícone -->
-                        Visualizar Estatisticas
-                    </a>
-                </li>
-            </ul>
+            <li class="list-group-item">
+                <a href="/" class="d-flex align-items-center">
+                    <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
+                    Gerar Comentários via LLM
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="d-flex align-items-center" onclick="gerar_comentario()">
+                    <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
+                    Gerar Comentários Prórios
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="d-flex align-items-center" onclick="analisar_comentario()">
+                    <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
+                    Analisar Comentario
+                </a>
+            </li>
+             <li class="list-group-item">
+                <a class="d-flex align-items-center" onclick="detectores()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Detectores
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="d-flex align-items-center" onclick="gerarEstatisticas()">
+                    <i class="fas fa-chart-line me-2"></i> <!-- Ícone -->
+                    Visualizar Estatisticas
+                </a>
+            </li>
+        </ul>
         </div>
     </div>
 
@@ -72,13 +84,27 @@
         <div class="chart-container">
             <!-- Gráfico de barras -->
             <div>
-                <canvas id="barChart"></canvas>
+                <h4>Efetividade geral dos detectores</h4>
+                <canvas id="barChartBarras"></canvas>
             </div>
             <!-- Gráfico de pizza -->
             <div>
-                <canvas id="pieChart"></canvas>
+                <h4>Efetividade geral das LLMs se passando por humano</h4>
+                <canvas id="barChartLLMs"></canvas>
             </div>
         </div>
+
+        <div class="chart-container" style="width: 100%; padding: 20px 0; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+             <h4>Efetividade de cada detector em relação a cada tema</h4>
+             <canvas id="barChart" style="width: 100%; height: 400px;"></canvas>
+        </div>
+
+        <div class="chart-container mb-2" style="width: 100%; padding: 20px 0; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <h4>Efetividade de cada llm se passando por humano em relação a cada tema</h4>
+            <canvas id="barChartLLM" style="width: 100%; height: 400px;"></canvas>
+        </div>
+
+
 
         <!-- Tabela de dados -->
         <div class="table-container">
@@ -109,11 +135,14 @@
 
         </div>
     </div>
+
     <div style="height:30px"></div>
 
 <script>
     var estatisticas = {{ resultados_graficos | tojson }};
     var estatisticas_barras = {{ resultados_barras | tojson }};
+    var estatisticas_desempenho_detector = {{ resultados_detector_tema | tojson }};
+    var resultados_llm_tema = {{ resultados_llm_tema | tojson }};
 </script>
 
 

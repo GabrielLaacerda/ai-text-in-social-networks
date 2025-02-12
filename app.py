@@ -152,10 +152,11 @@ def estatisticas():
     resultados = re.calcular_estatisticas_tabela(llms,dir_base)
     resultados_graficos = re.calcular_acerto_por_llm(resultados)
     resultados_barras = re.calcular_acerto_por_detector(resultados)
+    resultados_detector_tema = re.calcular_detector_tema(resultados)
+    resultados_llm_tema = re.calcular_media_prob_humano_por_tema(resultados)
 
-    re.exportar_excel(resultados_graficos, resultados_barras)
-
-    return render_template("estatisticas.html", resultados=resultados, resultados_graficos=resultados_graficos,resultados_barras=resultados_barras)
+    return render_template("estatisticas.html", resultados=resultados, resultados_graficos=resultados_graficos,resultados_barras=resultados_barras,
+                           resultados_detector_tema=resultados_detector_tema,resultados_llm_tema=resultados_llm_tema)
 
 
 #Rota para testar os detectores (Os arquivos de resultados são armazenados em Resultados_{DetectorEscolhido})
@@ -305,8 +306,16 @@ def detectores():
         return render_template("detectores.html",msg="true")
 
     # Se for um GET, retorna o template
+
     return render_template("detectores.html")
 
+@app.route("/gerarComentario", methods=["GET", "POST"])
+def gerarComentario():
+    return render_template("gerar_comentario.html")
+
+@app.route("/analisarComentario", methods=["GET", "POST"])
+def analisar_comentario():
+    return render_template("analisar_comentario.html")
 
 if __name__ == "__main__":
     try:

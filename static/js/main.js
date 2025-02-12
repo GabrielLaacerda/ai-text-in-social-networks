@@ -26,6 +26,13 @@ function detectores(){
      window.location.href = '/detectores';
 }
 
+function gerar_comentario(){
+     window.location.href = '/gerarComentario';
+}
+
+function analisar_comentario(){
+     window.location.href = '/analisarComentario';
+}
 document.addEventListener("DOMContentLoaded", () => {
 
     const selectElement = document.getElementById('themes');

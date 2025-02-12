@@ -6,6 +6,7 @@ from openpyxl.styles import PatternFill, Font, Border, Side, Alignment
 import os
 import json
 
+
 def calcular_estatisticas_tabela(llms, dir_base):
     lista_geral = []
 
@@ -27,19 +28,19 @@ def calcular_estatisticas_tabela(llms, dir_base):
                         for llm in dados:
                             # Verifica se as chaves existem no item antes de acessar
                             if llm.get('llm') in llms and 'prob_humano' in llm and 'prob_IA' in llm:
-                                # Formatar as probabilidades para ter pelo menos 2 casas decimais
-                                prob_humano = round(llm['prob_humano'], 2)
-                                prob_IA = round(llm['prob_IA'], 2)
+                                prob_humano = llm['prob_humano']  # Mantém a precisão exata
+                                prob_IA = llm['prob_IA']  # Mantém a precisão exata
                                 acerto = prob_IA  # O acerto é a probabilidade de IA detectada
 
                                 item = {
-                                    "detector": nome_diretorio[11:],  # Exclui parte do nome do diretório conforme desejado
+                                    "detector": nome_diretorio[11:],
+                                    # Exclui parte do nome do diretório conforme desejado
                                     "llm": llm['llm'],
-                                    "prob_humano": prob_humano,
-                                    "prob_IA": prob_IA,  # Quanto maior, melhor a detecção de IA
+                                    "prob_humano": prob_humano,  # Sem arredondamento
+                                    "prob_IA": prob_IA,  # Sem arredondamento
                                     "tema": nome_arquivo[11:-5],  # Exclui parte do nome do arquivo conforme desejado
                                     "comentario": llm['comentario'],
-                                    "acerto": acerto  # O acerto é a probabilidade de IA detectada
+                                    "acerto": acerto  # Sem arredondamento
                                 }
 
                                 dados_llms[llm['llm']].append(item)
@@ -47,9 +48,6 @@ def calcular_estatisticas_tabela(llms, dir_base):
                 except Exception as e:
                     print(f"Erro ao processar o arquivo {caminho_completo}: {e}")
 
-    # Agora, ordenamos os itens dentro de cada LLM por tema
-    for llm in dados_llms:
-        dados_llms[llm].sort(key=lambda x: x['tema'])  # Ordena por 'tema' dentro de cada LLM
 
     # Agora, reordenamos a lista geral para garantir a ordem de LLMs: ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
     lista_geral = []
@@ -58,9 +56,6 @@ def calcular_estatisticas_tabela(llms, dir_base):
         if llm in dados_llms:
             lista_geral.extend(dados_llms[llm])
 
-    # Ordena a lista geral primeiro por detector, depois por LLM e por maior acerto (prob_IA)
-    lista_geral.sort(key=lambda x: (x['detector'], llms.index(x['llm'])), reverse=False)
-    lista_geral.sort(key=lambda x: x['acerto'], reverse=True)  # Ordena do maior para o menor acerto
 
     return lista_geral
 
@@ -119,7 +114,86 @@ def calcular_acerto_por_detector(registros):
 
     return medias_por_detector
 
-def exportar_excel(dados_llm, dados_detector, nome_arquivo="relatorio.xlsx"):
+
+def calcular_detector_tema(lista_geral):
+    # Cria um dicionário para armazenar a soma dos acertos e total por detector e tema
+    acertos_por_detector = {}
+
+    # Preenche o dicionário com os dados de acertos por detector e tema
+    for item in lista_geral:
+        detector = item['detector']
+        tema = item['tema']
+        acerto = item['acerto']
+
+        if detector not in acertos_por_detector:
+            acertos_por_detector[detector] = {}
+
+        if tema not in acertos_por_detector[detector]:
+            acertos_por_detector[detector][tema] = {'total': 0, 'soma_acertos': 0}
+
+        acertos_por_detector[detector][tema]['total'] += 1
+        acertos_por_detector[detector][tema]['soma_acertos'] += acerto  # Soma a probabilidade de acerto
+
+    # Agora, cria a lista de médias de efetividade por detector e tema
+    lista_acertos = []
+    for detector, temas in acertos_por_detector.items():
+        for tema, dados in temas.items():
+            total = dados['total']
+            soma_acertos = dados['soma_acertos']
+            media_efetividade = soma_acertos / total if total > 0 else 0
+            lista_acertos.append({
+                'detector': detector,
+                'tema': tema,
+                'media_efetividade': media_efetividade  # Média das probabilidades de acerto
+            })
+
+    # Ordena a lista por detector e depois por tema
+    lista_acertos.sort(key=lambda x: (x['detector'], -x['media_efetividade']))
+
+
+    return lista_acertos
+
+def calcular_media_prob_humano_por_tema(resultado):
+    # Dicionário para armazenar somatórios e contagens
+    soma_prob_humano = {}
+    contagem = {}
+
+    # Itera sobre os registros
+    for item in resultado:
+        llm = item['llm']
+        tema = item['tema']
+        prob_humano = item['prob_humano']
+
+        # Chave para o par (llm, tema)
+        chave = (llm, tema)
+
+        # Se a chave já existe, somamos e incrementamos a contagem
+        if chave in soma_prob_humano:
+            soma_prob_humano[chave] += prob_humano
+            contagem[chave] += 1
+        else:
+            soma_prob_humano[chave] = prob_humano
+            contagem[chave] = 1
+
+    # Calcula a média de prob_humano para cada combinação de (llm, tema)
+    medias = []
+    for chave, soma in soma_prob_humano.items():
+        llm, tema = chave
+        media_prob_humano = soma / contagem[chave]
+        medias.append({
+            'llm': llm,
+            'tema': tema,
+            'media_prob_humano': media_prob_humano
+        })
+
+    # Ordena a lista pela LLM
+    medias.sort(key=lambda x: x['llm'])
+
+    return medias
+
+
+
+def exportar_excel(dados_llm, dados_detector, nome_arquivo="relatorio_geral.xlsx"):
     wb = openpyxl.Workbook()
     ws = wb.active
     ws.title = "Resultados"
