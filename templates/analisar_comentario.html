@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Detectores</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/estatisticas.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/detectores.css') }}">
     <link rel="icon" href="static/images/logo.png" type="image">
@@ -140,42 +140,30 @@
         </div>
     </div>
 
-    {% if msg %}
-        <script>showPopup("Arquivo gerado com sucesso", "success")</script>
-    {% endif %}
 
-    {% if comentarios %}
-    <h2 style="color:white">Comentários Gerados:</h2>
+    {% if resposta and llm  %}
+    <h2 style="color:black">Resultado da Detecção:</h2>
     <div class="comentarios">
-        <table id="myTable" class="display table table-striped">
+        <table id="dataTable" class="display table table-striped">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Tema</th>
-                    <th>Comentário Gerado</th>
+                    <th>Detector</th>
+                    <th>Comentario</th>
+                    <th>Probabilidade Humano</th>
+                    <th>Probabilidade IA</th>
                 </tr>
             </thead>
             <tbody>
-                {% for comentario, indice in zip(comentarios, ind) %}
                 <tr>
-                    <td>{{ indice }}</td>
-                    <td>{{ tema }}</td>
-                    <td>{{ comentario }}</td>
+                    <td>{{ llm }}</td>
+                    <td>{{ resposta.get('comentario') }}</td>
+                    <td>{{ resposta.get('prob_humano') }}</td>
+                    <td>{{ resposta.get('prob_IA') }}</td>
                 </tr>
-                {% endfor %}
             </tbody>
         </table>
     </div>
 
-    {% if file_path %}
-    <div class="space">
-        <div class="divisao">
-            <button class="btn btn-success" onclick="iniciarDownload('{{ file_path }}')">Baixar Comentários</button>
-        </div>
-        <div style="margin-bottom:20px"></div>
-    </div>
-
-    {% endif %}
     {% endif %}
 
 </body>

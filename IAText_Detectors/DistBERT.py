@@ -55,3 +55,35 @@ def probabilidade_IA(comentarios, modelos):
                 })
 
     return resultados  # Retorna os resultados no formato desejado
+
+
+def probabilidade_IA_frase(frase, modelo_path='/home/gabriel/TCC_GabrielVncs/trained_model_HC3'):
+
+    warnings.filterwarnings("ignore")
+    logging.set_verbosity_error()
+
+    # Carregar o modelo e o tokenizer do DistilBERT
+    model = DistilBertForSequenceClassification.from_pretrained(modelo_path)
+    tokenizer = DistilBertTokenizer.from_pretrained(modelo_path)
+
+    if not isinstance(frase, str):
+        raise ValueError("O argumento 'frase' deve ser uma string.")
+
+    # Tokeniza a frase
+    inputs = tokenizer(frase, return_tensors="pt", truncation=True, max_length=64, padding=True)
+    outputs = model(**inputs)
+
+    logits = outputs.logits
+
+    # Aplica softmax para obter as probabilidades
+    probabilities = F.softmax(logits, dim=-1)
+
+    # Obtém a probabilidade de ser IA e de ser humano em porcentagem
+    prob_ia = probabilities[0][1].item() * 100  # Probabilidade de ser IA em porcentagem
+    prob_humano = probabilities[0][0].item() * 100  # Probabilidade de ser humano em porcentagem
+
+    # Retorna as probabilidades
+    return {
+        'prob_humano': round(prob_humano, 2),
+        'prob_IA': round(prob_ia, 2)
+    }

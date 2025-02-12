@@ -3,6 +3,7 @@ import json
 import logging
 import glob
 import Funcoes.Retornar_Estatisticas as re
+import IAText_Detectors.Roberta as roberta
 from flask import Flask, render_template, request, send_file, session
 from LLMs.Cohere import gerar_comentarios_para_posts as cohere
 from LLMs.ChatGPT import gerar_comentarios_para_posts as chatGpt
@@ -15,6 +16,7 @@ from IAText_Detectors.Sapling import probabilidade_IA as sapling_prob
 from IAText_Detectors.huggingface import probabilidade_IA as prob_hugging
 from IAText_Detectors.DistBERT import probabilidade_IA as distbert_prob
 from IAText_Detectors.Radar import probabilidade_IA as radar_prob
+
 
 
 # Configuração de logging
@@ -244,7 +246,7 @@ def detectores():
             ]
 
             # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados/Resultados_HuggingFace/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
 
@@ -272,7 +274,7 @@ def detectores():
             ]
 
             # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados/Resultados_DistBERT/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
 
@@ -300,7 +302,7 @@ def detectores():
             ]
 
             # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados/Resultados_Radar/resultados_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
                 json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
 
         return render_template("detectores.html",msg="true")
@@ -315,6 +317,18 @@ def gerarComentario():
 
 @app.route("/analisarComentario", methods=["GET", "POST"])
 def analisar_comentario():
+
+    if request.method == 'POST':
+
+        ai_choice = request.form.get('ai')
+        comentario = request.form['comentario']
+        resposta = []
+
+        if ai_choice == "roberta":
+           resposta = roberta.probabilidade_frase_unica(comentario)
+
+           return render_template("analisar_comentario.html", resposta=resposta, llm=ai_choice.capitalize())
+
     return render_template("analisar_comentario.html")
 
 if __name__ == "__main__":
