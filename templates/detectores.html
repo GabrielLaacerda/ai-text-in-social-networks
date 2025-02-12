@@ -26,21 +26,21 @@
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
-    <span class="sidebar-toggle" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-        aria-controls="staticBackdrop">
+<span class="sidebar-toggle" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+      aria-controls="staticBackdrop">
         <i class="fa-solid fa-bars" style="color: #000000;"></i>
     </span>
 
 
-    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-        aria-labelledby="staticBackdropLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="staticBackdropLabel">Escolha uma funcionalidade</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <!-- Lista de Itens no Sidebar com ícones -->
-            <ul class="list-group">
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+     aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Escolha uma funcionalidade</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <!-- Lista de Itens no Sidebar com ícones -->
+        <ul class="list-group">
             <li class="list-group-item">
                 <a href="/" class="d-flex align-items-center">
                     <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
@@ -59,7 +59,7 @@
                     Analisar Comentario
                 </a>
             </li>
-             <li class="list-group-item">
+            <li class="list-group-item">
                 <a class="d-flex align-items-center" onclick="detectores()">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     Detectores
@@ -72,119 +72,119 @@
                 </a>
             </li>
         </ul>
+    </div>
+</div>
+
+
+<h1 class="m3-4 mb-3" style="color:black">Realizar Detecção</h1>
+
+<form id="llm-form" method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
+    <!-- Escolha da LLM -->
+    <label for="ai" class="choice">Escolha a ferramenta de detecção:</label>
+    <div class="ia-options">
+        <div class="ia-option">
+            <input type="radio" id="huggingface" name="ai" value="huggingface" required>
+            <label for="huggingface">
+                <img src="{{ url_for('static', filename='images/huggingface.png') }}" alt="huggingface">
+                <p>AI Content Detector - PirateXX</p>
+            </label>
+        </div>
+        <div class="ia-option">
+            <input type="radio" id="binoculars" name="ai" value="binoculars" required>
+            <label for="binoculars">
+                <img src="{{ url_for('static', filename='images/binoculars.jpg') }}" alt="binoculars">
+                <p>Binoculars</p>
+            </label>
+        </div>
+        <div class="ia-option">
+            <input type="radio" id="distbert" name="ai" value="distbert" required>
+            <label for="distbert">
+                <img src="{{ url_for('static', filename='images/bert.png') }}" alt="distbert">
+                <p>DistBERT (+HC3)</p>
+            </label>
+        </div>
+        <div class="ia-option">
+            <input type="radio" id="roberta" name="ai" value="roberta" required>
+            <label for="roberta">
+                <img src="{{ url_for('static', filename='images/roberta.jpg') }}" alt="roberta">
+                <p>Roberta Large Openai Detector</p>
+            </label>
+        </div>
+        <div class="ia-option">
+            <input type="radio" id="sapling" name="ai" value="sapling" required>
+            <label for="sapling">
+                <img src="{{ url_for('static', filename='images/sapling.jpg') }}" alt="sapling">
+                <p>Sapling</p>
+            </label>
+        </div>
+        <div class="ia-option">
+            <input type="radio" id="radar" name="ai" value="radar" required>
+            <label for="radar">
+                <img src="{{ url_for('static', filename='images/radar.jpg') }}" alt="radar">
+                <p>RADAR: Robust AI-text Detection</p>
+            </label>
         </div>
     </div>
 
 
-    <h1 class="m3-4 mb-3" style="color:black">Realizar Detecção</h1>
+    <!-- Escolha do Tema -->
+    <label for="themes">Escolha um tema:</label>
+    <select id="themes" name="themes" class="dropdown" required>
+        <option value="" selected disabled>Clique para listar os temas disponíveis</option>
+        <option value="Streaming.json">Aluguel de Filmes em Plataformas de Streaming</option>
+        <option value="InteligenciaArtificial.json">Inteligência Artificial na criação de conteúdo</option>
+        <option value="Dolar.json">Alta do dólar</option>
+        <option value="CasasDeApostas.json">Polêmicas de casas de apostas e cassino online</option>
+        <option value="Impostos.json">Impostos/Taxas na importação de produtos</option>
+    </select>
 
-    <form id="llm-form" method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
-        <!-- Escolha da LLM -->
-        <label for="ai" class="choice">Escolha a ferramenta de detecção:</label>
-        <div class="ia-options">
-            <div class="ia-option">
-                <input type="radio" id="huggingface" name="ai" value="huggingface" required>
-                <label for="huggingface">
-                    <img src="{{ url_for('static', filename='images/huggingface.png') }}" alt="huggingface">
-                    <p>AI Content Detector - PirateXX</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="binoculars" name="ai" value="binoculars" required>
-                <label for="binoculars">
-                    <img src="{{ url_for('static', filename='images/binoculars.jpg') }}" alt="binoculars">
-                    <p>Binoculars</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="distbert" name="ai" value="distbert" required>
-                <label for="distbert">
-                    <img src="{{ url_for('static', filename='images/bert.png') }}" alt="distbert">
-                    <p>DistBERT (+HC3)</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="roberta" name="ai" value="roberta" required>
-                <label for="roberta">
-                    <img src="{{ url_for('static', filename='images/roberta.jpg') }}" alt="roberta">
-                    <p>Roberta Large Openai Detector</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="sapling" name="ai" value="sapling" required>
-                <label for="sapling">
-                    <img src="{{ url_for('static', filename='images/sapling.jpg') }}" alt="sapling">
-                    <p>Sapling</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="radar" name="ai" value="radar" required>
-                <label for="radar">
-                    <img src="{{ url_for('static', filename='images/radar.jpg') }}" alt="radar">
-                    <p>RADAR: Robust AI-text Detection</p>
-                </label>
-            </div>
-        </div>
+    <!-- Botão de envio -->
+    <button type="submit" class="bt">Gerar Resultados</button>
+</form>
 
-
-        <!-- Escolha do Tema -->
-        <label for="themes">Escolha um tema:</label>
-        <select id="themes" name="themes" class="dropdown" required>
-            <option value="" selected disabled>Clique para listar os temas disponíveis</option>
-            <option value="Streaming.json">Aluguel de Filmes em Plataformas de Streaming</option>
-            <option value="InteligenciaArtificial.json">Inteligência Artificial na criação de conteúdo</option>
-            <option value="Dolar.json">Alta do dólar</option>
-            <option value="CasasDeApostas.json">Polêmicas de casas de apostas e cassino online</option>
-            <option value="Impostos.json">Impostos/Taxas na importação de produtos</option>
-        </select>
-
-        <!-- Botão de envio -->
-        <button type="submit" class="bt">Gerar Resultados</button>
-    </form>
-
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <p>Processamento iniciado... Por favor, aguarde!</p>
-        </div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <p>Processamento iniciado... Por favor, aguarde!</p>
     </div>
+</div>
 
-    {% if msg %}
-        <script>showPopup("Arquivo gerado com sucesso", "success")</script>
-    {% endif %}
+{% if msg %}
+<script>showPopup("Arquivo gerado com sucesso", "success")</script>
+{% endif %}
 
-    {% if comentarios %}
-    <h2 style="color:white">Comentários Gerados:</h2>
-    <div class="comentarios">
-        <table id="myTable" class="display">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Tema</th>
-                    <th>Comentário Gerado</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for comentario, indice in zip(comentarios, ind) %}
-                <tr>
-                    <td>{{ indice }}</td>
-                    <td>{{ tema }}</td>
-                    <td>{{ comentario }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+{% if comentarios %}
+<h2 style="color:white">Comentários Gerados:</h2>
+<div class="comentarios">
+    <table id="myTable" class="display">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tema</th>
+            <th>Comentário Gerado</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for comentario, indice in zip(comentarios, ind) %}
+        <tr>
+            <td>{{ indice }}</td>
+            <td>{{ tema }}</td>
+            <td>{{ comentario }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% if file_path %}
+<div class="space">
+    <div class="divisao">
+        <button class="botoes bt" onclick="iniciarDownload('{{ file_path }}')">Baixar Comentários</button>
     </div>
+    <div style="margin-bottom:20px"></div>
+</div>
 
-    {% if file_path %}
-    <div class="space">
-        <div class="divisao">
-            <button class="botoes bt" onclick="iniciarDownload('{{ file_path }}')">Baixar Comentários</button>
-        </div>
-        <div style="margin-bottom:20px"></div>
-    </div>
-
-    {% endif %}
-    {% endif %}
+{% endif %}
+{% endif %}
 
 </body>
 

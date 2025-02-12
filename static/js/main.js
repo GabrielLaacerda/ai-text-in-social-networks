@@ -93,7 +93,3 @@ function showPopup(message, type) {
     }, 3000); // Desaparece após 3 segundos
 }
 
-document.getElementById("principal").addEventListener("click", function(event) {
-        event.preventDefault();  // Impede o comportamento padrão (navegação)
-        location.reload();       // Recarrega a página atual
-    });

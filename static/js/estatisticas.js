@@ -217,23 +217,22 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error("Dados estatísticos para o gráfico de barras não disponíveis.");
     }
 
-    // Gráfico de LLM por Tema
     if (typeof resultados_llm_tema !== "undefined") {
-        // Extrai as LLMs e temas únicos
-        var llms = [...new Set(resultados_llm_tema.map(item => item.llm))];
-        var temas = [...new Set(resultados_llm_tema.map(item => item.tema))];
+    // Extrai as LLMs e temas únicos
+    var llms = [...new Set(resultados_llm_tema.map(item => item.llm))];
+    var temas = [...new Set(resultados_llm_tema.map(item => item.tema))];
 
-        // Organiza os dados para o gráfico
-        var estatisticasPorTemaPorLLM = {};
+    // Organiza os dados para o gráfico
+    var estatisticasPorTemaPorLLM = {};
 
-        resultados_llm_tema.forEach(item => {
-            if (!estatisticasPorTemaPorLLM[item.llm]) {
-                estatisticasPorTemaPorLLM[item.llm] = {};
-            }
-            estatisticasPorTemaPorLLM[item.llm][item.tema] = item.media_prob_humano || 0;
-        });
+    resultados_llm_tema.forEach(item => {
+        if (!estatisticasPorTemaPorLLM[item.llm]) {
+            estatisticasPorTemaPorLLM[item.llm] = {};
+        }
+        estatisticasPorTemaPorLLM[item.llm][item.tema] = item.media_prob_humano || 0;
+    });
 
-        // Mapeamento de cores para cada tema
+    // Mapeamento de cores para cada tema
         const coresDisponiveis = [
             'rgba(54, 162, 235, 0.6)',  // Azul
             'rgba(255, 99, 132, 0.6)',  // Rosa
@@ -243,63 +242,88 @@ document.addEventListener('DOMContentLoaded', function () {
             'rgba(255, 159, 64, 0.6)'   // Laranja
         ];
 
-        const corPorTema = {};
+        const corPorTema2 = {};
         temas.forEach((tema, index) => {
-            corPorTema[tema] = coresDisponiveis[index % coresDisponiveis.length];
+            corPorTema2[tema] = coresDisponiveis[index % coresDisponiveis.length];
         });
 
-        var ctxLLM = document.getElementById('barChartLLM');
-        if (ctxLLM) {
-            ctxLLM = ctxLLM.getContext('2d');
 
-            var datasets = temas.map(tema => {
-                return {
-                    label: tema,
-                    data: llms.map(llm => estatisticasPorTemaPorLLM[llm][tema] || 0),
-                    backgroundColor: corPorTema[tema],
-                    borderColor: corPorTema[tema].replace('0.6', '1'),
-                    borderWidth: 1,
-                    barPercentage: 0.5,
-                    categoryPercentage: 0.8
-                };
-            });
+    // Ordenação em blocos de 5
+    function ordenarEmBlocos(llms, estatisticas, bloco = 5) {
+        let ordenado = [];
+        let novosLabels = [];
 
-            new Chart(ctxLLM, {
-                type: 'bar',
-                data: {
-                    labels: llms,
-                    datasets: datasets
+        for (let i = 0; i < llms.length; i += bloco) {
+            let subArray = llms.slice(i, i + bloco).map(llm => ({
+                llm: llm,
+                valores: temas.map(tema => estatisticas[llm][tema] || 0)
+            }));
+
+            subArray.sort((a, b) => b.valores.reduce((x, y) => x + y, 0) - a.valores.reduce((x, y) => x + y, 0));
+
+            ordenado.push(...subArray);
+            novosLabels.push(...subArray.map(item => item.llm));
+        }
+
+        return { ordenado, novosLabels };
+    }
+
+    // Ordena os LLMs em blocos de 5
+    let { ordenado, novosLabels } = ordenarEmBlocos(llms, estatisticasPorTemaPorLLM);
+
+    // Criar datasets ordenados
+    var datasets = temas.map((tema, index) => ({
+        label: tema,
+        data: ordenado.map(item => item.valores[index]),
+        backgroundColor: corPorTema2[tema],
+        borderColor: corPorTema2[tema].replace('0.6', '1'),
+        borderWidth: 1,
+        barPercentage: 0.5,
+        categoryPercentage: 0.8
+    }));
+
+    // Criar gráfico apenas se o elemento existir
+    var ctxLLM = document.getElementById('barChartLLM');
+    if (ctxLLM) {
+        ctxLLM = ctxLLM.getContext('2d');
+
+        new Chart(ctxLLM, {
+            type: 'bar',
+            data: {
+                labels: novosLabels,
+                datasets: datasets
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' }
                 },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: { position: 'top' }
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'LLMs',
+                            font: { size: 14, weight: 'bold' }
+                        }
                     },
-                    scales: {
-                        x: {
-                            title: {
-                                display: true,
-                                text: 'LLMs',
-                                font: { size: 14, weight: 'bold' }
-                            }
-                        },
-                        y: {
-                            beginAtZero: true,
-                            title: {
-                                display: true,
-                                text: 'Probabilidade de passar por humano (%)',
-                                font: { size: 14, weight: 'bold' }
-                            }
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Probabilidade de passar por humano (%)',
+                            font: { size: 14, weight: 'bold' }
                         }
                     }
                 }
-            });
-        } else {
-            console.error("Elemento #barChartLLM não encontrado.");
-        }
+            }
+        });
     } else {
-        console.error("Dados estatísticos para o gráfico de LLM por tema não disponíveis.");
+        console.error("Elemento #barChartLLM não encontrado.");
     }
+} else {
+    console.error("Dados estatísticos para o gráfico de LLM por tema não disponíveis.");
+}
+
 });
 
 function detectores() {
