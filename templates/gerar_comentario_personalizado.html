@@ -32,7 +32,7 @@
 
     <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
         <!-- Escolha da LLM -->
-        <label for="ai" class="choice">Escolha a LLM que irá gerar os comentários:</label>
+        <label for="ai" class="choice">Escolha a LLM que irá gerar o comentário:</label>
         <div class="ia-options">
             <div class="ia-option">
                 <input type="radio" id="cohere" name="ai" value="cohere" required>
@@ -79,16 +79,16 @@
         </div>
 
         <!-- Campo de Tema -->
-        <label for="theme" class="mb-1">Tema:</label>
-        <textarea id="theme" name="tema" class="form-control" placeholder="Digite o tema" rows="2" required></textarea>
+        <label for="theme" class="mb-1">Digite o tema do comentário:</label>
+        <textarea id="theme" name="tema" class="form-control" rows="2" placeholder="Digite aqui" required></textarea>
 
         <!-- Campo de Persona -->
-        <label for="persona" class="mt-3 mb-1">Persona:</label>
-        <textarea id="persona" name="persona" class="form-control" placeholder="Digite a persona" rows="2"
+        <label for="persona" class="mt-3 mb-1">Digite a persona a ser utilizada na geração:</label>
+        <textarea id="persona" placeholder="Digite aqui" name="persona" class="form-control" rows="2"
             required></textarea>
 
-        <label for="post" class="mt-3 mb-1">Post:</label>
-        <textarea id="post" name="post" class="form-control" placeholder="Digite o post base" rows="2"
+        <label for="post" class="mt-3 mb-1">Digite o texto do Post base:</label>
+        <textarea id="post" name="post" placeholder="Digite aqui" class="form-control" rows="2"
             required></textarea>
 
 

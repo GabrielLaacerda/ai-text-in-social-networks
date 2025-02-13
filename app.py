@@ -336,36 +336,36 @@ def gerarComentario():
         if ai_choice == "cohere":
             resposta = cohereUnic.gerar_comentarios(persona,post,tema)
 
-            return render_template("gerar_comentario_avulso.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
 
         if ai_choice == "llama":
             resposta = llamaUnic.gerar_comentarios(persona,post,tema)
 
-            return render_template("gerar_comentario_avulso.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
 
         if ai_choice == "chatgpt":
             resposta = gptUnic.gerar_comentarios(persona,post,tema)
 
-            return render_template("gerar_comentario_avulso.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
 
         if ai_choice == "maritacaIA":
             resposta = maritacaIAUnic.gerar_comentarios(persona,post,tema)
 
-            return render_template("gerar_comentario_avulso.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
 
         if ai_choice == "gemini":
             resposta = geminiIAUnic.gerar_comentarios(persona,post,tema)
 
-            return render_template("gerar_comentario_avulso.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
 
         if ai_choice == "mistral":
             resposta = mistralUnic.gerar_comentarios(persona,post,tema)
 
-            return render_template("gerar_comentario_avulso.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
+            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
 
 
 
-    return render_template("gerar_comentario_avulso.html")
+    return render_template("gerar_comentario_personalizado.html")
 
 @app.route("/analisarAutenticidade", methods=["GET", "POST"])
 def analisar_comentario():

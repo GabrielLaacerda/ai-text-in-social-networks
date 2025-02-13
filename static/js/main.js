@@ -3,11 +3,6 @@ function abrirModal() {
     modal.style.display = "block";
 }
 
-function fecharModal() {
-    var modal = document.getElementById("modal");
-    modal.style.display = "none";
-}
-
 function iniciarDownload(file_path) {
     const novaJanela = window.open("", "_blank");
     novaJanela.document.write("<h1>Download em andamento...</h1>");
