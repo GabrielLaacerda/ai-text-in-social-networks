@@ -326,10 +326,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-function detectores() {
-    window.location.href = '/detectores';
-}
-
 $(document).ready(function () {
     var table = $('#dataTable').DataTable({
 

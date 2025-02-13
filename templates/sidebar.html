@@ -1,0 +1,46 @@
+<span class="sidebar-toggle" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop">
+        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+    </span>
+
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Escolha uma funcionalidade</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Lista de Itens no Sidebar com ícones -->
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="/" class="d-flex align-items-center">
+                        <i class="fas fa-solid fa-cogs" style="color: #2b3c4f;"></i> <!-- Ícone -->
+                        Gerar Comentários a partir de Posts
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="d-flex align-items-center" href="/gerarComentario">
+                        <i class="fas fa-solid fa-brain" style="color: #2b3c4f;"></i> <!-- Ícone -->
+                        Gerar Comentário Personalizado
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="d-flex align-items-center" href="/analisarAutenticidade">
+                        <i class="fas fa-solid fa-magnifying-glass" style="color: #2b3c4f;"></i>                        Analisar autenticidade de comentário
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="d-flex align-items-center" href="/analisarAutenticidadeGeral">
+                        <i class="fas fa-solid fa-robot" style="color: #2b3c4f;"></i>
+                        Analisar autenticidade de comentário gerados por LLMs
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="d-flex align-items-center" href="/estatisticas">
+                        <i class="fas fa-solid fa-chart-line" style="color: #2b3c4f;"></i> <!-- Ícone -->
+                        Visualizar estatísticas gerais
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>

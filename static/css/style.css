@@ -1,14 +1,18 @@
 /* Estilo global */
-html, body {
-    height: 100%; /* Garante que o gradiente cubra toda a altura da tela */
+html,
+body {
+    height: 100%;
+    /* Garante que o gradiente cubra toda a altura da tela */
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #f0f0f0, #ffffff); /* Exemplo de gradiente suave */
-    color: black; /* Cor do texto */
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    /* Exemplo de gradiente suave */
+    color: black;
+    /* Cor do texto */
     min-height: 100vh;
 }
 
@@ -18,12 +22,17 @@ h1 {
 }
 
 form {
-  width: 80%;
-  margin: 20px auto; /* Centraliza o formulário na tela */
-  background-color: white; /* Se você quiser um fundo branco */
-  padding: 20px;   /* Adiciona um pouco de preenchimento dentro do formulário */
-  border-radius: 8px; /* Bordas arredondadas, para um visual mais suave */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+    width: 80%;
+    margin: 20px auto;
+    /* Centraliza o formulário na tela */
+    background-color: white;
+    /* Se você quiser um fundo branco */
+    padding: 20px;
+    /* Adiciona um pouco de preenchimento dentro do formulário */
+    border-radius: 8px;
+    /* Bordas arredondadas, para um visual mais suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra */
 }
 }
 
@@ -76,11 +85,13 @@ button {
 }
 
 button:hover {
-    transform: translateY(-2px); /* Efeito de elevação */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras suaves */
+    transform: translateY(-2px);
+    /* Efeito de elevação */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombras suaves */
 }
 
-.bt{
+.bt {
     background-image: linear-gradient(to bottom, #3a556f, #4c6a82);
 }
 
@@ -101,13 +112,14 @@ button:hover {
     margin: 0 auto;
 }
 
-ul li a{
-    cursor:pointer;
+ul li a {
+    cursor: pointer;
 }
 
 /* Escondendo o input de rádio e personalizando o label */
 .ia-option input[type="radio"] {
-    display: none; /* Esconde o botão de rádio padrão */
+    display: none;
+    /* Esconde o botão de rádio padrão */
 }
 
 /* Estilizando o label como um botão clicável */
@@ -131,7 +143,7 @@ ul li a{
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.ia-option input[type="radio"]:checked + label {
+.ia-option input[type="radio"]:checked+label {
     border-color: #007bff;
     background-color: white;
 }
@@ -141,7 +153,8 @@ ul li a{
     width: 50px;
     height: 50px;
     object-fit: cover;
-    margin-right: 10px; /* Removido para adicionar 'gap' no lugar */
+    margin-right: 10px;
+    /* Removido para adicionar 'gap' no lugar */
     border-radius: 8px;
 }
 
@@ -164,23 +177,28 @@ ul li a{
 
 .space {
     display: flex;
-    justify-content: center; /* Centraliza a div.divisao horizontalmente */
+    justify-content: center;
+    /* Centraliza a div.divisao horizontalmente */
     max-width: 100%;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 /* Ajustando a classe .divisao */
 .divisao {
     display: flex;
-    justify-content: space-between; /* Distribui os botões com espaço entre eles */
-    gap: 20px; /* Espaçamento entre os botões */
-    width:98%;
+    justify-content: space-between;
+    /* Distribui os botões com espaço entre eles */
+    gap: 20px;
+    /* Espaçamento entre os botões */
+    width: 98%;
 }
 
 /* Ajustando a classe .botoes */
 .botoes {
-    flex: 1; /* Faz com que os botões ocupem o máximo de espaço disponível */
-    margin: 0; /* Remove a margem para um alinhamento mais preciso */
+    flex: 1;
+    /* Faz com que os botões ocupem o máximo de espaço disponível */
+    margin: 0;
+    /* Remove a margem para um alinhamento mais preciso */
     padding: 12px;
     color: white;
     border: none;
@@ -190,13 +208,14 @@ ul li a{
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: auto; /* Ajuste para que a largura dos botões seja proporcional */
+    width: auto;
+    /* Ajuste para que a largura dos botões seja proporcional */
 }
 
 
 
-.abrirEstatisticas{
-    margin-bottom:30px;
+.abrirEstatisticas {
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -211,7 +230,8 @@ h2 {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Alterado para ocultar o overflow */
+    overflow: hidden;
+    /* Alterado para ocultar o overflow */
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -279,6 +299,7 @@ select:focus {
 .choice {
     margin-bottom: 25px;
 }
+
 /* Centralizar a tabela */
 .comentarios {
     display: flex;
@@ -288,12 +309,14 @@ select:focus {
 
 
 .offcanvas-body {
-        background-image: white;  /* Cor escura para o fundo */
-        color: #ecf0f1;  /* Texto claro */
-        padding: 20px;
-    }
+    background-image: white;
+    /* Cor escura para o fundo */
+    color: #ecf0f1;
+    /* Texto claro */
+    padding: 20px;
+}
 
-    /* Efeito de hover: quando o usuário passar o mouse sobre um item */
+/* Efeito de hover: quando o usuário passar o mouse sobre um item */
 .list-group-item:hover {
     background-image: linear-gradient(to bottom, #2c3e50, #34495e);
 
@@ -301,9 +324,12 @@ select:focus {
 
 /* Estilo para os ícones */
 .list-group-item i {
-    font-size: 22px;  /* Tamanho do ícone */
-    color: #ecf0f1;  /* Cor do ícone */
-    margin-right: 10px;  /* Espaçamento entre o ícone e o texto */
+    font-size: 22px;
+    /* Tamanho do ícone */
+    color: #ecf0f1;
+    /* Cor do ícone */
+    margin-right: 10px;
+    /* Espaçamento entre o ícone e o texto */
 }
 
 /* Ícones à esquerda dos itens */
@@ -314,14 +340,16 @@ select:focus {
     align-items: center;
 }
 
-.list-group-item a:hover{
-    color:white;
+.list-group-item a:hover {
+    color: white;
 }
 
 /* Estilo para o botão */
 .btn-custom {
-    background-color: #3498db; /* Azul claro para contraste suave */
-    color: #fff; /* Texto branco */
+    background-color: #3498db;
+    /* Azul claro para contraste suave */
+    color: #fff;
+    /* Texto branco */
     border: none;
     padding: 12px 24px;
     border-radius: 6px;
@@ -330,4 +358,16 @@ select:focus {
     transition: background-color 0.3s ease;
 }
 
+.sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
+.sidebar-toggle:hover {
+    opacity: 0.7;
+}

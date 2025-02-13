@@ -27,53 +27,7 @@
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
-    <span class="sidebar-toggle" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-        aria-controls="staticBackdrop">
-        <i class="fa-solid fa-bars" style="color: #000000;"></i>
-    </span>
-
-    <!-- Sidebar -->
-    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-        aria-labelledby="staticBackdropLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="staticBackdropLabel">Escolha uma funcionalidade</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="list-group">
-            <li class="list-group-item">
-                <a href="/" class="d-flex align-items-center">
-                    <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
-                    Gerar Comentários via LLM
-                </a>
-            </li>
-            <li class="list-group-item">
-                <a class="d-flex align-items-center" onclick="gerar_comentario()">
-                    <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
-                    Gerar Comentários Prórios
-                </a>
-            </li>
-            <li class="list-group-item">
-                <a class="d-flex align-items-center" onclick="analisar_comentario()">
-                    <i class="fas fa-cogs me-2"></i> <!-- Ícone -->
-                    Analisar Comentario
-                </a>
-            </li>
-             <li class="list-group-item">
-                <a class="d-flex align-items-center" onclick="detectores()">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    Detectores
-                </a>
-            </li>
-            <li class="list-group-item">
-                <a class="d-flex align-items-center" onclick="gerarEstatisticas()">
-                    <i class="fas fa-chart-line me-2"></i> <!-- Ícone -->
-                    Visualizar Estatisticas
-                </a>
-            </li>
-        </ul>
-        </div>
-    </div>
+    {% include 'sidebar.html' %}
 
     <!-- Área para gráficos e tabela com fundo branco -->
     <h1 class="m3-4 mb-3 text-center" style="color:black">Estatísticas Gerais</h1>

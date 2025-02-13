@@ -18,21 +18,6 @@ function iniciarDownload(file_path) {
     novaJanela.document.close();
 }
 
-function gerarEstatisticas(){
-     window.location.href = '/estatisticas';
-}
-
-function detectores(){
-     window.location.href = '/detectores';
-}
-
-function gerar_comentario(){
-     window.location.href = '/gerarComentario';
-}
-
-function analisar_comentario(){
-     window.location.href = '/analisarComentario';
-}
 document.addEventListener("DOMContentLoaded", () => {
 
     const selectElement = document.getElementById('themes');
@@ -93,3 +78,13 @@ function showPopup(message, type) {
     }, 3000); // Desaparece após 3 segundos
 }
 
+$(document).ready(function () {
+    $('#myTable').DataTable({
+        paging: false, // Desativa paginação
+        searching: false, // Remove o campo de busca
+        info: false, // Remove informações de exibição (ex.: "Mostrando X de Y")
+        language: {
+            url: "//cdn.datatables.net/plug-ins/1.13.5/i18n/pt-BR.json"
+        }
+    });
+});
