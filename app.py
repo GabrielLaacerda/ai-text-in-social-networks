@@ -172,242 +172,103 @@ def estatisticas():
                            resultados_detector_tema=resultados_detector_tema,resultados_llm_tema=resultados_llm_tema)
 
 
-#Rota para testar os detectores (Os arquivos de resultados são armazenados em Resultados_{DetectorEscolhido})
 @app.route("/analisarAutenticidadeGeral", methods=["GET", "POST"])
 def analisarAutenticidadeGeral():
+    if request.method == "POST":
+        ai_choice = request.form.get("ai")
+        theme_choice = request.form.get("themes")
+        lista_llms = ["Cohere", "ChatGPT", "Gemini", "Llama", "MaritacaIA", "Mistral"]
 
-    if request.method== 'POST':
+        # Mapeamento dos detectores para suas funções correspondentes
+        ai_map = {
+            "roberta": roberta_prob,
+            "sapling": sapling_prob,
+            "huggingface": prob_hugging,
+            "distbert": distbert_prob,
+            "radar": radar_prob,
+        }
 
-        ai_choice = request.form.get('ai')
-        lista_llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
+        if ai_choice in ai_map:
+            # Carregar comentários
+            lista_comentarios = [
+                {"llm": llm, "comentarios": open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", "r", encoding="utf-8").read()}
+                for llm in lista_llms
+            ]
 
-        #Chama o detector escolhido pelo usuário
-        if ai_choice == "roberta":
-            theme_choice = request.form.get('themes')
-            lista_comentarios = []
+            # Processar os comentários com o detector escolhido
+            resultados = ai_map[ai_choice](lista_comentarios, lista_llms)
 
-            for llm in lista_llms:
-                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
-                    content = file.read()
-                    lista_comentarios.append({'llm': llm, 'comentarios': content})
-
-            result_roberta = roberta_prob(lista_comentarios, lista_llms)
-
+            # Estruturar os dados para o JSON
             processed_data = [
                 {
-                    'llm': item['llm'],
-                    'comentario': item['comentario'],
-                    'prob_humano': item['prob_humano'],
-                    'prob_IA': item['prob_IA']
+                    "llm": item["llm"],
+                    "comentario": item["comentario"],
+                    "prob_humano": item["prob_humano"],
+                    "prob_IA": item["prob_IA"],
                 }
-                for item in result_roberta
+                for item in resultados
             ]
 
-            #Diretório alterado para testes
-            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
+            # Salvar os resultados em um arquivo JSON
+            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", "w", encoding="utf-8") as json_file:
                 json.dump(processed_data, json_file, ensure_ascii=False, indent=4)
 
-
-        elif ai_choice == "sapling":
-            theme_choice = request.form.get('themes')
-            lista_comentarios = []
-
-            for llm in lista_llms:
-                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r', encoding='utf-8') as file:
-                    content = file.read()
-                    lista_comentarios.append({'llm': llm, 'comentarios': content})
-
-            result_sapling = sapling_prob(lista_comentarios, lista_llms)
-
-            processed_data_sap = [
-                {
-                    'llm': item['llm'],
-                    'comentario': item['comentario'],
-                    'prob_humano': item['prob_humano'],
-                    'prob_IA': item['prob_IA']
-                }
-                for item in result_sapling
-            ]
-
-            # Salvar os resultados em arquivo JSON
-            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
-                json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
-
-
-        elif ai_choice == "huggingface":
-            theme_choice = request.form.get('themes')
-            lista_comentarios = []
-
-            for llm in lista_llms:
-                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
-                          encoding='utf-8') as file:
-                    content = file.read()
-                    lista_comentarios.append({'llm': llm, 'comentarios': content})
-
-            result_hugging = prob_hugging(lista_comentarios, lista_llms)
-
-            processed_data_sap = [
-                {
-                    'llm': item['llm'],
-                    'comentario': item['comentario'],
-                    'prob_humano': item['prob_humano'],
-                    'prob_IA': item['prob_IA']
-                }
-                for item in result_hugging
-            ]
-
-            # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
-                json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
-
-
-        elif ai_choice == "distbert":
-
-            theme_choice = request.form.get('themes')
-            lista_comentarios = []
-
-            for llm in lista_llms:
-                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
-                          encoding='utf-8') as file:
-                    content = file.read()
-                    lista_comentarios.append({'llm': llm, 'comentarios': content})
-
-            result_distbert = distbert_prob(lista_comentarios, lista_llms)
-
-            processed_data_sap = [
-                {
-                    'llm': item['llm'],
-                    'comentario': item['comentario'],
-                    'prob_humano': item['prob_humano'],
-                    'prob_IA': item['prob_IA']
-                }
-                for item in result_distbert
-            ]
-
-            # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
-                json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
-
-
-        elif ai_choice == "radar":
-
-            theme_choice = request.form.get('themes')
-            lista_comentarios = []
-
-            for llm in lista_llms:
-                with open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", 'r',
-                          encoding='utf-8') as file:
-                    content = file.read()
-                    lista_comentarios.append({'llm': llm, 'comentarios': content})
-
-            result_radar = radar_prob(lista_comentarios, lista_llms)
-
-            processed_data_sap = [
-                {
-                    'llm': item['llm'],
-                    'comentario': item['comentario'],
-                    'prob_humano': item['prob_humano'],
-                    'prob_IA': item['prob_IA']
-                }
-                for item in result_radar
-            ]
-
-            # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", 'w', encoding='utf-8') as json_file:
-                json.dump(processed_data_sap, json_file, ensure_ascii=False, indent=4)
-
-        return render_template("analisar_comentarios_gerais.html",msg="true")
-
-    # Se for um GET, retorna o template
+        return render_template("analisar_comentarios_gerais.html", msg="true")
 
     return render_template("analisar_comentarios_gerais.html")
 
+
 @app.route("/gerarComentario", methods=["GET", "POST"])
 def gerarComentario():
-
     if request.method == 'POST':
-
         ai_choice = request.form.get('ai')
         tema = request.form['tema']
         persona = request.form['persona']
         post = request.form['post']
 
+        ai_map = {
+            "cohere": cohereUnic,
+            "llama": llamaUnic,
+            "chatgpt": gptUnic,
+            "maritacaIA": maritacaIAUnic,
+            "gemini": geminiIAUnic,
+            "mistral": mistralUnic
+        }
 
-        if ai_choice == "cohere":
-            resposta = cohereUnic.gerar_comentarios(persona,post,tema)
-
-            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
-
-        if ai_choice == "llama":
-            resposta = llamaUnic.gerar_comentarios(persona,post,tema)
-
-            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
-
-        if ai_choice == "chatgpt":
-            resposta = gptUnic.gerar_comentarios(persona,post,tema)
-
-            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
-
-        if ai_choice == "maritacaIA":
-            resposta = maritacaIAUnic.gerar_comentarios(persona,post,tema)
-
-            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
-
-        if ai_choice == "gemini":
-            resposta = geminiIAUnic.gerar_comentarios(persona,post,tema)
-
-            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
-
-        if ai_choice == "mistral":
-            resposta = mistralUnic.gerar_comentarios(persona,post,tema)
-
-            return render_template("gerar_comentario_personalizado.html",comentario=resposta, tema=tema, llm=ai_choice.capitalize(),post=post)
-
-
+        if ai_choice in ai_map:
+            resposta = ai_map[ai_choice].gerar_comentarios(persona, post, tema)
+            print(ai_map[ai_choice])
+            return render_template("gerar_comentario_personalizado.html",
+                                   comentario=resposta,
+                                   tema=tema,
+                                   llm=ai_choice.capitalize(),
+                                   post=post)
 
     return render_template("gerar_comentario_personalizado.html")
 
+
 @app.route("/analisarAutenticidade", methods=["GET", "POST"])
 def analisar_comentario():
+    if request.method == "POST":
+        ai_choice = request.form.get("ai")
+        comentario = request.form["comentario"]
 
-    if request.method == 'POST':
+        # Dicionário mapeando cada IA ao seu respectivo método
+        ai_map = {
+            "roberta": roberta.probabilidade_frase_unica,
+            "sapling": sapling.probabilidade_frase_unica,
+            "radar": radar.probabilidade_frase_unica,
+            "huggingface": huggingface.probabilidade_frase_unica,
+            "distbert": distbert.probabilidade_IA_frase,
+            # "binoculars": binoc.probabilidade_IA_frase  # Descomentando essa linha, a IA será incluída automaticamente
+        }
 
-        ai_choice = request.form.get('ai')
-        comentario = request.form['comentario']
-        resposta = []
+        if ai_choice in ai_map:
+            resposta = ai_map[ai_choice](comentario)
+            return render_template("analisar_comentario_personalizado.html", resposta=resposta, llm=ai_choice.capitalize())
 
-        if ai_choice == "roberta":
-           resposta = roberta.probabilidade_frase_unica(comentario)
-
-           return render_template("analisar_comentario_personalizado.html", resposta=resposta, llm=ai_choice.capitalize())
-
-        elif ai_choice == "sapling":
-           resposta = sapling.probabilidade_frase_unica(comentario)
-
-           return render_template("analisar_comentario_personalizado.html", resposta=resposta, llm=ai_choice.capitalize())
-
-        elif ai_choice == "radar":
-           resposta = radar.probabilidade_frase_unica(comentario)
-
-           return render_template("analisar_comentario_personalizado.html", resposta=resposta, llm=ai_choice.capitalize())
-
-        elif ai_choice == "huggingface":
-           resposta = huggingface.probabilidade_frase_unica(comentario)
-
-           return render_template("analisar_comentario_personalizado.html", resposta=resposta, llm=ai_choice.capitalize())
-
-        elif ai_choice == "distbert":
-           resposta = distbert.probabilidade_IA_frase(comentario)
-
-           return render_template("analisar_comentario_personalizado.html", resposta=resposta, llm=ai_choice.capitalize())
-
-        """
-        elif ai_choice == "binoculars":
-           resposta = binoc.probabilidade_IA_frase(comentario)
-
-           return render_template("analisar_comentario_personalizado.html", resposta=resposta, llm=ai_choice.capitalize())
-        """
     return render_template("analisar_comentario_personalizado.html")
+
 
 if __name__ == "__main__":
     try:

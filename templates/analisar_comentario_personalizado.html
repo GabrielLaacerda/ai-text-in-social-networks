@@ -80,7 +80,7 @@
         <!-- Campo de comentário -->
         <div class="mb-3">
             <label for="comentario" class="form-label">Escreva seu comentário:</label>
-            <textarea class="form-control" id="comentario" name="comentario" rows="4" required></textarea>
+            <textarea class="form-control" id="comentario" name="comentario" rows="2" required></textarea>
         </div>
 
         <!-- Botão de envio -->
@@ -118,6 +118,17 @@
     </div>
 
     {% endif %}
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll("textarea").forEach(textarea => {
+                textarea.addEventListener("input", function () {
+                    this.style.height = "auto"; // Reseta a altura para calcular corretamente
+                    this.style.height = (this.scrollHeight) + "px"; // Ajusta a altura automaticamente
+                });
+            });
+        });
+    </script>
 
 </body>
 
