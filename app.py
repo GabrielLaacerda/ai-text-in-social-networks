@@ -42,8 +42,13 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
 arqs_temp = "Arquivos_Temporarios_LLMs/"
+arqs_temp2 = "Arquivos_Temporarios_Detect/"
+
 if not os.path.exists(arqs_temp):
     os.makedirs(arqs_temp)
+
+if not os.path.exists(arqs_temp2):
+    os.makedirs(arqs_temp2)
 
 #Carregar JSONs de tema e de personas após escolha do usuário
 #Salva os jsons na sessão
@@ -92,7 +97,7 @@ def home():
         if os.path.isfile(arquivo):
             os.remove(arquivo)
 
-    for arquivo in glob.glob(os.path.join('./Arquivos_Temporarios_Detecção', "*")):
+    for arquivo in glob.glob(os.path.join('./Arquivos_Temporarios_Detect', "*")):
         if os.path.isfile(arquivo):
             os.remove(arquivo)
 

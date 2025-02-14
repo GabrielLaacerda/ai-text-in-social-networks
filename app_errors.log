@@ -18625,3 +18625,123 @@
 2025-02-13 22:38:10,608 - INFO - 127.0.0.1 - - [13/Feb/2025 22:38:10] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
 2025-02-13 22:38:10,608 - INFO - 127.0.0.1 - - [13/Feb/2025 22:38:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-02-13 22:38:10,609 - INFO - 127.0.0.1 - - [13/Feb/2025 22:38:10] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-13 22:42:15,456 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:42:15,456 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:42:15,457 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:42:18,495 - INFO -  * Restarting with watchdog (inotify)
+2025-02-13 22:42:22,461 - WARNING -  * Debugger is active!
+2025-02-13 22:42:22,461 - INFO -  * Debugger PIN: 969-385-226
+2025-02-13 22:43:40,588 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:43:40,623 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:43:40,623 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:43:41,674 - INFO -  * Restarting with watchdog (inotify)
+2025-02-13 22:43:45,582 - WARNING -  * Debugger is active!
+2025-02-13 22:43:45,582 - INFO -  * Debugger PIN: 969-385-226
+2025-02-13 22:43:52,238 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:43:52,274 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:43:52,274 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:43:53,949 - INFO -  * Restarting with watchdog (inotify)
+2025-02-13 22:43:58,043 - WARNING -  * Debugger is active!
+2025-02-13 22:43:58,043 - INFO -  * Debugger PIN: 969-385-226
+2025-02-13 22:44:53,799 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:44:53,835 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:44:53,835 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/ChatGPT.py', reloading
+2025-02-13 22:44:55,627 - INFO -  * Restarting with watchdog (inotify)
+2025-02-13 22:44:59,667 - WARNING -  * Debugger is active!
+2025-02-13 22:44:59,667 - INFO -  * Debugger PIN: 969-385-226
+2025-02-13 22:45:36,639 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/Cohere.py', reloading
+2025-02-13 22:45:36,639 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/Cohere.py', reloading
+2025-02-13 22:45:36,640 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/Cohere.py', reloading
+2025-02-13 22:45:37,833 - INFO -  * Restarting with watchdog (inotify)
+2025-02-13 22:45:41,948 - WARNING -  * Debugger is active!
+2025-02-13 22:45:41,948 - INFO -  * Debugger PIN: 969-385-226
+2025-02-13 22:45:43,218 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/Cohere.py', reloading
+2025-02-13 22:45:43,254 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/Cohere.py', reloading
+2025-02-13 22:45:43,254 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/LLMs/Cohere.py', reloading
+2025-02-13 22:45:44,271 - INFO -  * Restarting with watchdog (inotify)
+2025-02-13 22:45:48,360 - WARNING -  * Debugger is active!
+2025-02-13 22:45:48,361 - INFO -  * Debugger PIN: 969-385-226
+2025-02-13 22:47:29,956 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "GET / HTTP/1.1" 200 -
+2025-02-13 22:47:29,970 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 22:47:29,973 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-13 22:47:29,973 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-13 22:47:29,975 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-13 22:47:29,977 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:29,977 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:29,987 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:29,987 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:29,993 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-13 22:47:29,993 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:29] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:30,665 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "GET / HTTP/1.1" 200 -
+2025-02-13 22:47:30,681 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 22:47:30,682 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-13 22:47:30,682 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:30,682 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-13 22:47:30,684 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-13 22:47:30,684 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:30,690 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:30,690 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:30,695 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-13 22:47:30,695 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:30] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:36,022 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "GET / HTTP/1.1" 200 -
+2025-02-13 22:47:36,042 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 22:47:36,043 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-13 22:47:36,044 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-13 22:47:36,044 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:36,044 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-13 22:47:36,045 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:36,051 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:36,051 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-13 22:47:36,054 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-13 22:47:36,055 - INFO - 127.0.0.1 - - [13/Feb/2025 22:47:36] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-13 22:48:14,437 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-13 22:48:14,472 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-13 22:48:14,473 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-13 22:48:16,059 - INFO -  * Restarting with watchdog (inotify)
+2025-02-13 22:48:20,021 - WARNING -  * Debugger is active!
+2025-02-13 22:48:20,022 - INFO -  * Debugger PIN: 969-385-226
+2025-02-13 22:48:22,480 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "GET / HTTP/1.1" 200 -
+2025-02-13 22:48:22,493 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 22:48:22,494 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-13 22:48:22,495 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-13 22:48:22,497 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-13 22:48:22,497 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-13 22:48:22,499 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-13 22:48:22,505 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-13 22:48:22,505 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-13 22:48:22,508 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-13 22:48:22,508 - INFO - 127.0.0.1 - - [13/Feb/2025 22:48:22] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-13 22:48:40,715 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-13 22:48:40,715 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-13 22:48:40,717 - INFO -  * Restarting with watchdog (inotify)
+2025-02-13 22:48:44,577 - WARNING -  * Debugger is active!
+2025-02-13 22:48:44,577 - INFO -  * Debugger PIN: 969-385-226
+2025-02-13 22:49:13,674 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "GET / HTTP/1.1" 200 -
+2025-02-13 22:49:13,690 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 22:49:13,691 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-13 22:49:13,693 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-13 22:49:13,693 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-13 22:49:13,694 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-13 22:49:13,696 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-13 22:49:13,698 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-13 22:49:13,702 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-13 22:49:13,702 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-13 22:49:13,703 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:13] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
+2025-02-13 22:49:35,972 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-13 22:49:36,007 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-13 22:49:36,008 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/app.py', reloading
+2025-02-13 22:49:37,051 - INFO -  * Restarting with watchdog (inotify)
+2025-02-13 22:49:41,038 - WARNING -  * Debugger is active!
+2025-02-13 22:49:41,038 - INFO -  * Debugger PIN: 969-385-226
+2025-02-13 22:49:41,394 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "GET / HTTP/1.1" 200 -
+2025-02-13 22:49:41,409 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 22:49:41,411 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-13 22:49:41,412 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-13 22:49:41,413 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-13 22:49:41,415 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "[36mGET /static/images/cohere.png HTTP/1.1[0m" 304 -
+2025-02-13 22:49:41,415 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "[36mGET /static/images/chatgpt.png HTTP/1.1[0m" 304 -
+2025-02-13 22:49:41,422 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "[36mGET /static/images/llama.png HTTP/1.1[0m" 304 -
+2025-02-13 22:49:41,422 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "[36mGET /static/images/maritacaIA.jpeg HTTP/1.1[0m" 304 -
+2025-02-13 22:49:41,423 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "[36mGET /static/images/gemini.png HTTP/1.1[0m" 304 -
+2025-02-13 22:49:41,425 - INFO - 127.0.0.1 - - [13/Feb/2025 22:49:41] "[36mGET /static/images/mistral.png HTTP/1.1[0m" 304 -
