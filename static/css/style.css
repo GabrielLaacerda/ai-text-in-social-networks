@@ -40,6 +40,9 @@ td{
     white-space: normal;
 }
 
+.navbar-expand-lg, .footer{
+    background-color: #2b3c4f;
+}
 /* Estilo dos labels */
 label {
     display: block;

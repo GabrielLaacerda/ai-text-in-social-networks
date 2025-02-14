@@ -285,6 +285,9 @@ def analisar_comentario():
 
     return render_template("analisar_comentario_personalizado.html")
 
+@app.route("/teste", methods=["GET", "POST"])
+def teste():
+    return render_template("teste.html")
 
 if __name__ == "__main__":
     try:
