@@ -8,7 +8,7 @@ import IAText_Detectors.Sapling as sapling
 import IAText_Detectors.Radar as radar
 import IAText_Detectors.HuggingFace as huggingface
 import IAText_Detectors.DistBERT as distbert
-#import IAText_Detectors.Binoculars as binoc
+import IAText_Detectors.Binoculars as binoc
 import LLMs.Cohere as cohereUnic
 import LLMs.Llama as llamaUnic
 import LLMs.ChatGPT as gptUnic
@@ -27,8 +27,7 @@ from IAText_Detectors.Sapling import probabilidade_IA as sapling_prob
 from IAText_Detectors.HuggingFace import probabilidade_IA as prob_hugging
 from IAText_Detectors.DistBERT import probabilidade_IA as distbert_prob
 from IAText_Detectors.Radar import probabilidade_IA as radar_prob
-
-
+import warnings
 
 # Configuração de logging
 logging.basicConfig(
@@ -100,6 +99,8 @@ def home():
     for arquivo in glob.glob(os.path.join('./Arquivos_Temporarios_Detect', "*")):
         if os.path.isfile(arquivo):
             os.remove(arquivo)
+
+    os.remove('app_errors.log')
 
     if request.method == "POST":
         ai_choice = request.form.get("ai")
@@ -276,7 +277,7 @@ def analisar_comentario():
             "radar": radar.probabilidade_frase_unica,
             "huggingface": huggingface.probabilidade_frase_unica,
             "distbert": distbert.probabilidade_IA_frase,
-            # "binoculars": binoc.probabilidade_IA_frase  # Descomentando essa linha, a IA será incluída automaticamente
+            "binoculars": binoc.probabilidade_IA_frase  # Descomentando essa linha, a IA será incluída automaticamente
         }
 
         if ai_choice in ai_map:

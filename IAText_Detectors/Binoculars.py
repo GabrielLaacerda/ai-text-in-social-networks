@@ -1,5 +1,12 @@
+import warnings
+
+warnings.filterwarnings("ignore", category=UserWarning, module="torch.cuda")
+
 from Binoculars.binoculars.detector import Binoculars
 import warnings
+import os
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 def probabilidade_IA(comentarios, modelos):
     # Desabilitar avisos desnecessários
