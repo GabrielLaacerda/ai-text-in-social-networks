@@ -26,82 +26,38 @@
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
+    <!--Inclui o menu lateral de opções-->
     {% include 'sidebar.html' %}
 
     <h1 class="m3-4 mb-3" style="color:black">Gerar Comentário Personalizado</h1>
 
+    <!--Formulário para escolher as caracteristicas para geração de comentário personalizado-->
     <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
-        <!-- Escolha da LLM -->
-        <label for="ai" class="choice">Escolha a LLM que irá gerar o comentário:</label>
-        <div class="ia-options">
-            <div class="ia-option">
-                <input type="radio" id="cohere" name="ai" value="cohere" required>
-                <label for="cohere">
-                    <img src="{{ url_for('static', filename='images/cohere.png') }}" alt="Cohere">
-                    <p>Cohere</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="chatgpt" name="ai" value="chatgpt">
-                <label for="chatgpt">
-                    <img src="{{ url_for('static', filename='images/chatgpt.png') }}" alt="ChatGPT">
-                    <p>ChatGPT</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="gemini" name="ai" value="gemini">
-                <label for="gemini">
-                    <img src="{{ url_for('static', filename='images/gemini.png') }}" alt="Gemini">
-                    <p>Gemini</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="llama" name="ai" value="llama">
-                <label for="llama">
-                    <img src="{{ url_for('static', filename='images/llama.png') }}" alt="Llama">
-                    <p>Llama</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="maritacaIA" name="ai" value="maritacaIA">
-                <label for="maritacaIA">
-                    <img src="{{ url_for('static', filename='images/maritacaIA.jpeg') }}" alt="MaritacaIA">
-                    <p>MaritacaIA</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="mistral" name="ai" value="mistral">
-                <label for="mistral">
-                    <img src="{{ url_for('static', filename='images/mistral.png') }}" alt="Mistral">
-                    <p>Mistral</p>
-                </label>
-            </div>
-        </div>
 
-        <!-- Campo de Tema -->
+        <!--Inclui os modelos de IA disponíveis-->
+        {% include 'llms.html' %}
+
         <label for="theme" class="mb-1">Digite o tema do comentário:</label>
         <textarea id="theme" name="tema" class="form-control" rows="1" placeholder="Digite aqui" required></textarea>
 
-        <!-- Campo de Persona -->
         <label for="persona" class="mt-3 mb-1">Digite a persona a ser utilizada na geração:</label>
         <textarea id="persona" placeholder="Digite aqui" name="persona" class="form-control" rows="1"
             required></textarea>
 
         <label for="post" class="mt-3 mb-1">Digite o texto do Post base:</label>
-        <textarea id="post" name="post" placeholder="Digite aqui" class="form-control" rows="1"
-            required></textarea>
+        <textarea id="post" name="post" placeholder="Digite aqui" class="form-control" rows="1" required></textarea>
 
-        <!-- Botão de envio -->
         <button type="submit" class="btn btn-primary mt-3">Gerar Comentário</button>
     </form>
 
-    <!-- Modal de Carregamento -->
+    <!--Modal aberto ao iniciar a geração dos comentários, o mesmo é fechado ao final-->
     <div id="modal" class="modal">
         <div class="modal-content">
             <p>Processamento iniciado... Por favor, aguarde!</p>
         </div>
     </div>
 
+    <!--Caso exista a variavel comentarios, os mesmos foram gerados e assim são exibidos em formato de tabela na tela-->
     {% if comentario %}
     <h2 class="mt-5">Comentário Gerado:</h2>
     <div class="comentarios">
@@ -129,6 +85,7 @@
     <div style="height: 20px"></div>
     {% endif %}
 
+    <!--Script para aumentar dinamicamente o tamanho dos textareas caso ocorram entradas de dados extensos-->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll("textarea").forEach(textarea => {
@@ -139,8 +96,6 @@
             });
         });
     </script>
-
-
 
 </body>
 

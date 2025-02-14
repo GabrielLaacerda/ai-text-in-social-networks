@@ -1,0 +1,45 @@
+<label for="ai" class="choice">Escolha a LLM que irá gerar o comentário:</label>
+<div class="ia-options">
+    <div class="ia-option">
+        <input type="radio" id="cohere" name="ai" value="cohere" required>
+        <label for="cohere">
+            <img src="{{ url_for('static', filename='images/cohere.png') }}" alt="Cohere">
+            <p>Cohere</p>
+        </label>
+    </div>
+    <div class="ia-option">
+        <input type="radio" id="chatgpt" name="ai" value="chatgpt">
+        <label for="chatgpt">
+            <img src="{{ url_for('static', filename='images/chatgpt.png') }}" alt="ChatGPT">
+            <p>ChatGPT</p>
+        </label>
+    </div>
+    <div class="ia-option">
+        <input type="radio" id="gemini" name="ai" value="gemini">
+        <label for="gemini">
+            <img src="{{ url_for('static', filename='images/gemini.png') }}" alt="Gemini">
+            <p>Gemini</p>
+        </label>
+    </div>
+    <div class="ia-option">
+        <input type="radio" id="llama" name="ai" value="llama">
+        <label for="llama">
+            <img src="{{ url_for('static', filename='images/llama.png') }}" alt="Llama">
+            <p>Llama</p>
+        </label>
+    </div>
+    <div class="ia-option">
+        <input type="radio" id="maritacaIA" name="ai" value="maritacaIA">
+        <label for="maritacaIA">
+            <img src="{{ url_for('static', filename='images/maritacaIA.jpeg') }}" alt="MaritacaIA">
+            <p>MaritacaIA</p>
+        </label>
+    </div>
+    <div class="ia-option">
+        <input type="radio" id="mistral" name="ai" value="mistral">
+        <label for="mistral">
+            <img src="{{ url_for('static', filename='images/mistral.png') }}" alt="Mistral">
+            <p>Mistral</p>
+        </label>
+    </div>
+</div>

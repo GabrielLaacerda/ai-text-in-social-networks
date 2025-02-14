@@ -15,6 +15,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="{{ url_for('static', filename='css/datatables.min.css') }}" rel="stylesheet">
     <script src="{{ url_for('static', filename='js/datatables.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dataTable.js') }}"></script>
+
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,117 +28,74 @@
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
+    <!--Inclui o menu lateral de opções-->
     {% include 'sidebar.html' %}
 
     <h1 class="m3-4 mb-3" style="color:black">Realizar Detecção Geral por LLM/Tema</h1>
 
+    <!-- Formulário para escolha do detector e o tema queserá analisado -->
     <form id="llm-form" method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
-        <!-- Escolha da LLM -->
-        <label for="ai" class="choice">Escolha a ferramenta de detecção:</label>
-        <div class="ia-options">
-            <div class="ia-option">
-                <input type="radio" id="huggingface" name="ai" value="huggingface" required>
-                <label for="huggingface">
-                    <img src="{{ url_for('static', filename='images/huggingface.png') }}" alt="huggingface">
-                    <p>AI Content Detector - PirateXX</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="binoculars" name="ai" value="binoculars" required>
-                <label for="binoculars">
-                    <img src="{{ url_for('static', filename='images/binoculars.jpg') }}" alt="binoculars">
-                    <p>Binoculars</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="distbert" name="ai" value="distbert" required>
-                <label for="distbert">
-                    <img src="{{ url_for('static', filename='images/bert.png') }}" alt="distbert">
-                    <p>DistBERT (+HC3)</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="roberta" name="ai" value="roberta" required>
-                <label for="roberta">
-                    <img src="{{ url_for('static', filename='images/roberta.jpg') }}" alt="roberta">
-                    <p>Roberta Large Openai Detector</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="sapling" name="ai" value="sapling" required>
-                <label for="sapling">
-                    <img src="{{ url_for('static', filename='images/sapling.jpg') }}" alt="sapling">
-                    <p>Sapling</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="radar" name="ai" value="radar" required>
-                <label for="radar">
-                    <img src="{{ url_for('static', filename='images/radar.jpg') }}" alt="radar">
-                    <p>RADAR: Robust AI-text Detection</p>
-                </label>
-            </div>
-        </div>
 
+        <!--Inclui os detectores disponiveis para verificar se os comentarios são de IA ou humano
+        e abaixo inclui os temas que podem ser escolhidos para a detecção -->
+        {% include 'detectores.html' %}
+        {% include 'temas.html' %}
 
-        <!-- Escolha do Tema -->
-        <label for="themes">Escolha um tema:</label>
-        <select id="themes" name="themes" class="dropdown" required>
-            <option value="" selected disabled>Clique para listar os temas disponíveis</option>
-            <option value="Streaming.json">Aluguel de Filmes em Plataformas de Streaming</option>
-            <option value="InteligenciaArtificial.json">Inteligência Artificial na criação de conteúdo</option>
-            <option value="Dolar.json">Alta do dólar</option>
-            <option value="CasasDeApostas.json">Polêmicas de casas de apostas e cassino online</option>
-            <option value="Impostos.json">Impostos/Taxas na importação de produtos</option>
-        </select>
-
-        <!-- Botão de envio -->
         <button type="submit" class="bt">Gerar Resultados</button>
     </form>
 
+    <!--Modal aberto ao iniciar a detecção dos comentários, o mesmo é fechado ao final-->
     <div id="modal" class="modal">
         <div class="modal-content">
             <p>Processamento iniciado... Por favor, aguarde!</p>
         </div>
     </div>
 
+    <!--Script para chamar pop up de sucesso na detecção no canto superior direito-->
     {% if msg %}
     <script>showPopup("Arquivo gerado com sucesso", "success")</script>
     {% endif %}
 
-    {% if comentarios %}
-    <h2 style="color:white">Comentários Gerados:</h2>
+    <!-- Se a variavel resultados existe é pq os comentários já foram analisados
+    e os mesmos são exibidos em tabela -->
+    {% if resultados %}
+    <h2 style="color:black">Análise dos Resultados:</h2>
     <div class="comentarios">
-        <table id="myTable" class="display">
+        <table id="dataTable" class="display">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Tema</th>
-                    <th>Comentário Gerado</th>
+                    <th>Detector</th>
+                    <th>LLM Geradora</th>
+                    <th>Comentario</th>
+                    <th>Probabilidade IA</th>
+                    <th>Probabilidade Humano</th>
                 </tr>
             </thead>
             <tbody>
-                {% for comentario, indice in zip(comentarios, ind) %}
+                {% for resultado in resultados %}
                 <tr>
-                    <td>{{ indice }}</td>
-                    <td>{{ tema }}</td>
-                    <td>{{ comentario }}</td>
+                    <td>{{ resultado.detector }}</td>
+                    <td>{{ resultado.llm }}</td>
+                    <td>{{ resultado.comentario }}</td>
+                    <td>{{ resultado.prob_IA }}</td>
+                    <td>{{ resultado.prob_humano }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
 
+    <!-- Após arquivo temporário gerado, o botão para baixar fica visível -->
     {% if file_path %}
     <div class="space">
         <div class="divisao">
-            <button class="botoes bt" onclick="iniciarDownload('{{ file_path }}')">Baixar Comentários</button>
+            <button class="botoes bt" onclick="iniciarDownload('{{ file_path }}')">Baixar Resultados</button>
         </div>
         <div style="margin-bottom:20px"></div>
     </div>
-
     {% endif %}
     {% endif %}
+    <div style="height: 20px"></div>
 
 </body>
 

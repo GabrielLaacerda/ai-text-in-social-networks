@@ -23,74 +23,22 @@
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
+    <!--Inclui o menu de opções lateral-->
     {% include 'sidebar.html' %}
 
     <h1 class="m3-4 mb-3" style="color:black">Gerar Comentários para Posts</h1>
 
+    <!--Formulário para geração de comentários a partir de uma LLM e um tema escolhidos pelo usuário-->
     <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
-        <!-- Escolha da LLM -->
-        <label for="ai" class="choice">Escolha a LLM que irá gerar os comentários:</label>
-        <div class="ia-options">
-            <div class="ia-option">
-                <input type="radio" id="cohere" name="ai" value="cohere" required>
-                <label for="cohere">
-                    <img src="{{ url_for('static', filename='images/cohere.png') }}" alt="Cohere">
-                    <p>Cohere</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="chatgpt" name="ai" value="chatgpt">
-                <label for="chatgpt">
-                    <img src="{{ url_for('static', filename='images/chatgpt.png') }}" alt="ChatGPT">
-                    <p>ChatGPT</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="gemini" name="ai" value="gemini">
-                <label for="gemini">
-                    <img src="{{ url_for('static', filename='images/gemini.png') }}" alt="Gemini">
-                    <p>Gemini</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="llama" name="ai" value="llama">
-                <label for="llama">
-                    <img src="{{ url_for('static', filename='images/llama.png') }}" alt="Llama">
-                    <p>Llama</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="maritacaIA" name="ai" value="maritacaIA">
-                <label for="maritacaIA">
-                    <img src="{{ url_for('static', filename='images/maritacaIA.jpeg') }}" alt="MaritacaIA">
-                    <p>MaritacaIA</p>
-                </label>
-            </div>
-            <div class="ia-option">
-                <input type="radio" id="mistral" name="ai" value="mistral">
-                <label for="mistral">
-                    <img src="{{ url_for('static', filename='images/mistral.png') }}" alt="Mistral">
-                    <p>Mistral</p>
-                </label>
-            </div>
-        </div>
 
-        <!-- Escolha do Tema -->
-        <label for="themes">Escolha um tema:</label>
-        <select id="themes" name="themes" class="dropdown" onchange="handleThemeSelection(this)">
-            <option value="" selected disabled>Clique para listar os temas disponíveis</option>
-            <option value="Streaming.json">Aluguel de Filmes em Plataformas de Streaming</option>
-            <option value="InteligenciaArtificial.json">Inteligência Artificial na criação de conteúdo</option>
-            <option value="Dolar.json">Alta do dólar</option>
-            <option value="CasasDeApostas.json">Polêmicas de casas de apostas e cassino online</option>
-            <option value="Impostos.json">Impostos/Taxas na importação de produtos</option>
-        </select>
+        <!--Inclui os modelos de IA disponiveis para gerar os comentários e abaixo os temas propostos-->
+        {% include 'llms.html' %}
+        {% include 'temas.html' %}
 
-        <!-- Botão de envio -->
         <button type="submit" class="bt">Gerar Comentários</button>
     </form>
 
-    <!-- Modal de Carregamento -->
+    <!--Modal aberto ao iniciar a geração dos comentários, o mesmo é fechado ao final-->
     <div id="modal" class="modal">
         <div class="modal-content">
             <p>Processamento iniciado... Por favor, aguarde!</p>
@@ -98,6 +46,7 @@
     </div>
 
 
+    <!--Caso exista a variavel comentarios, os mesmos foram gerados e assim são exibidos em formato de tabela na tela-->
     {% if comentarios %}
     <h2 class="mt-5">Comentários Gerados:</h2>
     <div class="comentarios">
@@ -121,13 +70,13 @@
         </table>
     </div>
 
+    <!--Com os comentários gerados e o arquivo temporário disponível, o botão para baixar fica visível-->
     {% if file_path %}
     <div class="space">
         <div class="divisao">
             <button class="botoes bt" onclick="iniciarDownload('{{ file_path }}')">Baixar Comentários</button>
         </div>
     </div>
-
     <div style="height: 20px"></div>
 
     {% endif %}

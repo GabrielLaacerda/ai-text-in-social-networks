@@ -41,7 +41,7 @@ app = Flask(__name__)
 
 app.secret_key = os.urandom(24)
 
-arqs_temp = "Arquivos_Temporarios/"
+arqs_temp = "Arquivos_Temporarios_LLMs/"
 if not os.path.exists(arqs_temp):
     os.makedirs(arqs_temp)
 
@@ -88,7 +88,11 @@ def home():
     indices = list(range(1, 7))  # Lista de índices [1, 2, 3, 4, 5, 6]
 
     # Remover arquivos temporários
-    for arquivo in glob.glob(os.path.join('./Arquivos_Temporarios', "*")):
+    for arquivo in glob.glob(os.path.join('./Arquivos_Temporarios_LLMs', "*")):
+        if os.path.isfile(arquivo):
+            os.remove(arquivo)
+
+    for arquivo in glob.glob(os.path.join('./Arquivos_Temporarios_Detecção', "*")):
         if os.path.isfile(arquivo):
             os.remove(arquivo)
 
@@ -178,6 +182,8 @@ def analisarAutenticidadeGeral():
         ai_choice = request.form.get("ai")
         theme_choice = request.form.get("themes")
         lista_llms = ["Cohere", "ChatGPT", "Gemini", "Llama", "MaritacaIA", "Mistral"]
+        processed_data = []
+        file_path = ""
 
         # Mapeamento dos detectores para suas funções correspondentes
         ai_map = {
@@ -203,17 +209,24 @@ def analisarAutenticidadeGeral():
                 {
                     "llm": item["llm"],
                     "comentario": item["comentario"],
+                    "detector": ai_choice.capitalize(),
                     "prob_humano": item["prob_humano"],
                     "prob_IA": item["prob_IA"],
                 }
                 for item in resultados
             ]
 
-            # Salvar os resultados em um arquivo JSON
-            with open(f"Resultados_Temp/{ai_choice}_{theme_choice[:-5]}.json", "w", encoding="utf-8") as json_file:
-                json.dump(processed_data, json_file, ensure_ascii=False, indent=4)
+            file_path = f"Arquivos_Temporarios_Detect/{ai_choice.capitalize()}_{theme_choice}"
+            print(file_path)
 
-        return render_template("analisar_comentarios_gerais.html", msg="true")
+            try:
+                with open(file_path, 'w', encoding="utf-8") as f:
+                    json.dump(processed_data, f, ensure_ascii=False, indent=4)  # Salva como JSON formatado
+            except IOError as error:
+                logging.error(f"Erro ao salvar o arquivo ({file_path}): {error}")
+                response = {"error": f"Erro ao salvar o arquivo: {str(error)}"}, 500
+
+        return render_template("analisar_comentarios_gerais.html", msg="true", resultados=processed_data, file_path=file_path)
 
     return render_template("analisar_comentarios_gerais.html")
 
