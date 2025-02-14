@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <title>Gerador de Comentários</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/scrool.js') }}"></script>
     <link rel="icon" href="static/images/logo.png" type="image">
 
     <!-- DataTables -->
@@ -21,12 +23,15 @@
 
 </head>
 
-<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+<body>
 
     <!--Inclui o menu de opções lateral-->
     {% include 'sidebar.html' %}
 
-    <h1 class="m3-4 mb-3" style="color:black">Gerar Comentários para Posts</h1>
+    <header class="header-content-personalizado">
+        <h1>Gerar Comentários para Posts</h1>
+    </header>
+
 
     <!--Formulário para geração de comentários a partir de uma LLM e um tema escolhidos pelo usuário-->
     <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">

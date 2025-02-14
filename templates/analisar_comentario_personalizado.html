@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <title>Autenticar Comentário</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="{{ url_for('static', filename='js/scrool.js') }}"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script src="{{ url_for('static', filename='js/estatisticas.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" href="static/images/logo.png" type="image">
 
@@ -23,12 +25,14 @@
 
 </head>
 
-<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+<body>
 
     <!--Inclui o menu lateral de opções-->
     {% include 'sidebar.html' %}
 
-    <h1 class="m3-4 mb-3" style="color:black">Analisar se comentário é real ou gerado por IA</h1>
+     <header class="header-content-personalizado">
+        <h1>Analisar se comentário é real ou gerado por IA</h1>
+    </header>
 
     <!-- Formulário para escolher o detector e escrever o comentário para análise -->
     <form id="llm-form" method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">

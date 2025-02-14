@@ -41,7 +41,6 @@ def gerar_comentarios_para_posts(personas_file, posts_file):
     if not personas_file or not posts_file:
         exit(1)
 
-    print(f'Comentários:\n\n')
     save = []
 
     # Passa as informações para a função gerar_comentarios, responsável pela geração
@@ -49,7 +48,6 @@ def gerar_comentarios_para_posts(personas_file, posts_file):
         comentario = gerar_comentarios(personas_file["Persona"]["Descrição"], posts_file["Posts"][i]["Descrição"], personas_file["Persona"]["Descrição"])
 
         if comentario:
-            print(f"[{i + 1}]: {comentario}\n")
             save.append(f"{comentario}\n")
 
     # Retorna os comentários gerados

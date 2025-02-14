@@ -45,7 +45,6 @@ def gerar_comentarios_para_posts(personas_file, posts_file):
     if not personas_file or not posts_file:
         exit(1)
 
-    print(f'Comentários:\n\n')
     save = []
 
     limite_requisicoes_por_minuto = 3
@@ -54,7 +53,6 @@ def gerar_comentarios_para_posts(personas_file, posts_file):
     #Passa as informações para a função gerar_comentarios, responsável pela geração
     for i in range(len(posts_file["Posts"])):
         if requisicoes_realizadas >= limite_requisicoes_por_minuto:
-            print(f"Limite de requisições atingido. Aguardando...")
             time.sleep(60)  # Aguardar 60 segundos (ajuste conforme o limite da API)
             requisicoes_realizadas = 0  # Reseta a contagem de requisições
 
@@ -63,8 +61,6 @@ def gerar_comentarios_para_posts(personas_file, posts_file):
                                            personas_file["Persona"]["Descrição"])
 
             if comentario:
-                print(f"[{i+1}]: {comentario}\n\n")
-
                 #Após cada retorno de comentário, este é adicionado a lista (save)
                 save.append(f"{comentario}\n")
 

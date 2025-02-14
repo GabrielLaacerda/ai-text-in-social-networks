@@ -10,6 +10,8 @@
     <!-- DataTables -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/estatisticas.css') }}">
+    <script src="{{ url_for('static', filename='js/scrool.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <script src="{{ url_for('static', filename='js/estatisticas.js') }}"></script>
     <link href="{{ url_for('static', filename='css/datatables.min.css') }}" rel="stylesheet">
@@ -25,13 +27,14 @@
 
 </head>
 
-<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+<body>
 
     <!--Inclui o menu lateral de opções-->
     {% include 'sidebar.html' %}
 
-
-    <h1 class="m3-4 mb-3 text-center" style="color:black">Estatísticas Gerais</h1>
+    <header class="header-content-personalizado">
+       <h1>Estatísticas Gerais</h1>
+    </header>
 
     <!-- Área para os gráficos/tabela -->
     <div class="container-fluid content-area" style="width:95%">

@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <title>Autenticar comentários gerais</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="{{ url_for('static', filename='js/scrool.js') }}"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/detectores.css') }}">
     <link rel="icon" href="static/images/logo.png" type="image">
     <script src="{{ url_for('static', filename='js/detectores.js') }}"></script>
 
@@ -26,12 +27,15 @@
 
 </head>
 
-<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+<body>
 
     <!--Inclui o menu lateral de opções-->
     {% include 'sidebar.html' %}
 
-    <h1 class="m3-4 mb-3" style="color:black">Realizar Detecção Geral por LLM/Tema</h1>
+    <header class="header-content-personalizado">
+        <h1>Realizar Detecção Geral por LLM/Tema</h1>
+    </header>
+
 
     <!-- Formulário para escolha do detector e o tema queserá analisado -->
     <form id="llm-form" method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
@@ -59,7 +63,7 @@
     <!-- Se a variavel resultados existe é pq os comentários já foram analisados
     e os mesmos são exibidos em tabela -->
     {% if resultados %}
-    <h2 class="mt-5" style="color:black;">Análise dos Resultados:</h2>
+    <h2 class="mt-3" style="color:black;">Análise dos Resultados:</h2>
     <div class="comentarios container-fluid content-area" style="width:95%">
         <table id="dataTable" class="display">
             <thead>

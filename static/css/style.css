@@ -2,7 +2,6 @@
 html,
 body {
     height: 100%;
-    /* Garante que o gradiente cubra toda a altura da tela */
     margin: 0;
     padding: 0;
 }
@@ -10,16 +9,35 @@ body {
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #f0f0f0, #ffffff);
-    /* Exemplo de gradiente suave */
     color: black;
-    /* Cor do texto */
     min-height: 100vh;
 }
 
-h1 {
+.header-content-personalizado {
+    display: flex;
+    flex-direction: column;
+    /* Organiza os itens em coluna */
+    justify-content: center;
+    /* Alinha o conteúdo verticalmente no centro */
+    align-items: center;
+    /* Alinha o conteúdo horizontalmente no centro */
     text-align: center;
-    margin-bottom: 30px;
+    /* Garante que o texto dentro dos elementos será centralizado */
+    padding: 40px 20px;
+    background: linear-gradient(to right, #2b3c4f, #3e5c76);
+    color: white;
+    height: 100px;
 }
+
+.header-content-personalizado h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.header-content-personalizado p {
+    font-size: 1.3rem;
+}
+
 
 form {
     width: 80%;
@@ -35,15 +53,11 @@ form {
     /* Adiciona uma sombra */
 }
 
-td{
+td {
     word-wrap: break-word;
     white-space: normal;
 }
 
-.navbar-expand-lg, .footer{
-    background-color: #2b3c4f;
-}
-/* Estilo dos labels */
 label {
     display: block;
     font-size: 16px;
@@ -180,7 +194,7 @@ ul li a {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 98%;
-    overflow-x: auto;
+    table-layout: fixed;
 }
 
 .space {
@@ -256,19 +270,6 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
     .ia-options {
@@ -316,29 +317,22 @@ select:focus {
     margin-top: 20px;
 }
 
-
-.offcanvas-body {
-    background-image: white;
-    /* Cor escura para o fundo */
-    color: #ecf0f1;
-    /* Texto claro */
-    padding: 20px;
-}
-
 /* Efeito de hover: quando o usuário passar o mouse sobre um item */
 .list-group-item:hover {
     background-image: linear-gradient(to bottom, #2c3e50, #34495e);
-
+    color: white;
+    cursor:pointer;
 }
 
 /* Estilo para os ícones */
 .list-group-item i {
     font-size: 22px;
-    /* Tamanho do ícone */
-    color: #ecf0f1;
-    /* Cor do ícone */
+    color: #2b3c4f;
     margin-right: 10px;
-    /* Espaçamento entre o ícone e o texto */
+}
+
+.list-group-item:hover i {
+    color: white !important;
 }
 
 /* Ícones à esquerda dos itens */
@@ -349,9 +343,6 @@ select:focus {
     align-items: center;
 }
 
-.list-group-item a:hover {
-    color: white;
-}
 
 /* Estilo para o botão */
 .btn-custom {
@@ -370,7 +361,7 @@ select:focus {
 .sidebar-toggle {
     position: fixed;
     top: 10px;
-    left: 20px;
+    left: 10px;
     font-size: 30px;
     background: none;
     border: none;
@@ -379,4 +370,30 @@ select:focus {
 
 .sidebar-toggle:hover {
     opacity: 0.7;
+}
+
+.sidebar-toggle {
+    color: #2b3c4f;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.offcanvas {
+    background-color: #f8f9fa;
+    width: 250px;
+}
+
+.offcanvas-header {
+    background-color: #2b3c4f;
+    color: #fff;
+    text-align: center;
+}
+
+.offcanvas-body {
+    padding-top: 20px;
+}
+
+.btn-close {
+    filter: invert(1) !important; /* Inverte as cores, tornando o "X" branco */
 }

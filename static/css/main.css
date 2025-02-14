@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex: 1;
+}
+
+.header-content {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #2b3c4f, #3e5c76);
+    color: white;
+}
+
+
+.header-content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.header-content p {
+    font-size: 1.3rem;
+}
+
+.funcionalidades {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.funcionalidade-box {
+    text-align: center;
+    padding: 30px;
+    background: #eef1f6;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.funcionalidade-box:hover {
+    transform: translateY(-5px);
+}
+
+.sobre {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+footer {
+    background-color: #2b3c4f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.funcionalidade-box:hover {
+    cursor: pointer;
+}
+
+.fa-bars {
+    color: white !important;  /* Cor inicial do ícone */
+    position: fixed;          /* Fixa o ícone na tela */
+    z-index: 1000;            /* Garante que o ícone fique acima de outros elementos */
+}
+
+
+.texto-sobre {
+    width: 95%; /* Ocupa 95% da largura da tela */
+    max-width: 95vw; /* Garante que não ultrapasse a tela */
+    margin: 0 auto; /* Centraliza */
+    text-align: justify; /* Alinha o texto */
+}
+
+.titulo-sobre {
+    margin-bottom: 20px; /* Espaço entre o título e o texto */
+}

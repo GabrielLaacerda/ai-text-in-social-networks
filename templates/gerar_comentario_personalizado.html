@@ -6,6 +6,8 @@
     <title>Gerador de comentário Personalizado</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scrool.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" href="static/images/logo.png" type="image">
 
@@ -24,12 +26,14 @@
 
 </head>
 
-<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+<body>
 
     <!--Inclui o menu lateral de opções-->
     {% include 'sidebar.html' %}
 
-    <h1 class="m3-4 mb-3" style="color:black">Gerar Comentário Personalizado</h1>
+    <header class="header-content-personalizado">
+        <h1>Gerar Comentário Personalizado</h1>
+    </header>
 
     <!--Formulário para escolher as caracteristicas para geração de comentário personalizado-->
    <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">

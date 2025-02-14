@@ -87,7 +87,7 @@ def load_json():
     }, 200
 
 # Rota principal para escolha do tema e LLM para geração dos comentários
-@app.route("/", methods=["GET", "POST"])
+@app.route("/gerarComentarios", methods=["GET", "POST"])
 def home():
     comentarios = []
     indices = list(range(1, 7))  # Lista de índices [1, 2, 3, 4, 5, 6]
@@ -285,9 +285,9 @@ def analisar_comentario():
 
     return render_template("analisar_comentario_personalizado.html")
 
-@app.route("/teste", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def teste():
-    return render_template("teste.html")
+    return render_template("main.html")
 
 if __name__ == "__main__":
     try:

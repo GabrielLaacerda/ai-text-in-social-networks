@@ -1,5 +1,6 @@
+<!-- Sidebar Toggle -->
 <span class="sidebar-toggle" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-    <i class="fa-solid fa-bars" style="color: #2b3c4f;"></i>
+    <i class="fa-solid fa-bars"></i>
 </span>
 
 <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
@@ -13,31 +14,32 @@
         <ul class="list-group">
             <li class="list-group-item">
                 <a href="/" class="d-flex align-items-center">
-                    <i class="fas fa-solid fa-cogs" style="color: #2b3c4f;"></i> <!-- Ícone -->
-                    Gerar Comentários a partir de Posts
+                    <i class="fa-solid fa-house"></i> Início
                 </a>
             </li>
             <li class="list-group-item">
-                <a class="d-flex align-items-center" href="/gerarComentario">
-                    <i class="fas fa-solid fa-brain" style="color: #2b3c4f;"></i> <!-- Ícone -->
-                    Gerar Comentário Personalizado
+                <a href="/gerarComentarios" class="d-flex align-items-center">
+                    <i class="fas fa-cogs"></i> Gerar Comentários a partir de Posts
                 </a>
             </li>
             <li class="list-group-item">
-                <a class="d-flex align-items-center" href="/analisarAutenticidadeGeral">
-                    <i class="fas fa-solid fa-robot" style="color: #2b3c4f;"></i>
-                    Analisar comentários gerados por IA
+                <a href="/gerarComentario" class="d-flex align-items-center">
+                    <i class="fas fa-brain"></i> Gerar Comentário Personalizado
                 </a>
             </li>
             <li class="list-group-item">
-                <a class="d-flex align-items-center" href="/analisarAutenticidade">
-                    <i class="fas fa-solid fa-magnifying-glass" style="color: #2b3c4f;"></i> Analisar comentário (real ou IA)
+                <a href="/analisarAutenticidadeGeral" class="d-flex align-items-center">
+                    <i class="fas fa-robot"></i> Analisar Comentários feitos por IA
                 </a>
             </li>
             <li class="list-group-item">
-                <a class="d-flex align-items-center" href="/estatisticas">
-                    <i class="fas fa-solid fa-chart-line" style="color: #2b3c4f;"></i> <!-- Ícone -->
-                    Visualizar estatísticas gerais
+                <a href="/analisarAutenticidade" class="d-flex align-items-center">
+                    <i class="fas fa-magnifying-glass"></i> Analisar Comentário (Real ou IA)
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="/estatisticas" class="d-flex align-items-center">
+                    <i class="fas fa-chart-line"></i> Visualizar Estatísticas Gerais
                 </a>
             </li>
         </ul>
