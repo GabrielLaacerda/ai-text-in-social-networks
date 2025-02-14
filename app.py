@@ -222,7 +222,6 @@ def analisarAutenticidadeGeral():
             ]
 
             file_path = f"Arquivos_Temporarios_Detect/{ai_choice.capitalize()}_{theme_choice}"
-            print(file_path)
 
             try:
                 with open(file_path, 'w', encoding="utf-8") as f:
@@ -255,7 +254,6 @@ def gerarComentario():
 
         if ai_choice in ai_map:
             resposta = ai_map[ai_choice].gerar_comentarios(persona, post, tema)
-            print(ai_map[ai_choice])
             return render_template("gerar_comentario_personalizado.html",
                                    comentario=resposta,
                                    tema=tema,

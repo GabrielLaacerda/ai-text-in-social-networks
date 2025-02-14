@@ -59,7 +59,7 @@
     <!-- Se a variavel resultados existe é pq os comentários já foram analisados
     e os mesmos são exibidos em tabela -->
     {% if resultados %}
-    <h2 style="color:black; margin-left:2.5%;">Análise dos Resultados:</h2>
+    <h2 class="mt-5" style="color:black;">Análise dos Resultados:</h2>
     <div class="comentarios container-fluid content-area" style="width:95%">
         <table id="dataTable" class="display">
             <thead>
@@ -77,8 +77,8 @@
                     <td>{{ resultado.detector }}</td>
                     <td>{{ resultado.llm }}</td>
                     <td>{{ resultado.comentario }}</td>
-                    <td>{{ resultado.prob_IA }}</td>
-                    <td>{{ resultado.prob_humano }}</td>
+                    <td>{{ "%.2f"|format(resultado.prob_IA) }}</td>
+                    <td>{{ "%.2f"|format(resultado.prob_humano) }}</td>
                 </tr>
                 {% endfor %}
             </tbody>

@@ -38,18 +38,18 @@
 
     <div class="row mb-3">
         <div class="col-md-6">
-            <label for="theme" class="form-label fw-bold">Digite o tema do comentário:</label>
+            <label for="theme" class="form-label">Digite o tema do comentário:</label>
             <textarea id="theme" name="tema" class="form-control" rows="1" placeholder="Digite aqui" required></textarea>
         </div>
 
         <div class="col-md-6">
-            <label for="post" class="form-label fw-bold">Digite o texto do Post base:</label>
+            <label for="post" class="form-label">Digite o texto do Post base:</label>
             <textarea id="post" name="post" class="form-control" rows="1" placeholder="Digite aqui" required></textarea>
         </div>
     </div>
 
     <div class="mb-3">
-        <label for="persona" class="form-label fw-bold">Digite a persona a ser utilizada na geração:</label>
+        <label for="persona" class="form-label">Digite a persona a ser utilizada na geração:</label>
         <textarea id="persona" name="persona" class="form-control" rows="1" placeholder="Digite aqui" required></textarea>
     </div>
 
@@ -66,7 +66,7 @@
 
     <!--Caso exista a variavel comentarios, os mesmos foram gerados e assim são exibidos em formato de tabela na tela-->
     {% if comentario %}
-    <h2 class="mt-5">Comentário Gerado:</h2>
+    <h2 class="mt-5">Comentário Gerado</h2>
     <div class="comentarios">
         <table id="dataTable" class="display" style="table-layout: auto;width:100%">
             <thead>
