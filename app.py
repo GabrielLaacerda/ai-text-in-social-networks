@@ -81,18 +81,17 @@ def load_json():
         "personas": persona_json
     }, 200
 
-#Rota principal para escolha do tema e ja LLM para geração dos comentários
+# Rota principal para escolha do tema e LLM para geração dos comentários
 @app.route("/", methods=["GET", "POST"])
 def home():
     comentarios = []
-    indices = [1,2,3,4,5,6]
+    indices = list(range(1, 7))  # Lista de índices [1, 2, 3, 4, 5, 6]
 
-    #Remover arquivos temporários
+    # Remover arquivos temporários
     for arquivo in glob.glob(os.path.join('./Arquivos_Temporarios', "*")):
         if os.path.isfile(arquivo):
             os.remove(arquivo)
 
-    #Recebe a opção de LLM escolhida pelo usuario e chama a função para gerar os comentários
     if request.method == "POST":
         ai_choice = request.form.get("ai")
         if not ai_choice:
@@ -104,38 +103,39 @@ def home():
         if not tema_json or not persona_json:
             return {"error": "JSONs não carregados na sessão"}, 400
 
+        # Mapeamento das funções das LLMs
+        llm_functions = {
+            "cohere": cohere,
+            "chatgpt": chatGpt,
+            "gemini": gemini,
+            "llama": llama,
+            "maritacaIA": maritaca,
+            "mistral": mistral
+        }
+
+        # Verifica se a IA escolhida é válida
+        llm_function = llm_functions.get(ai_choice)
+        if not llm_function:
+            return {"error": "IA inválida especificada"}, 400
+
         try:
-            if ai_choice == "cohere":
-                comentarios = cohere(persona_json, tema_json)
-            elif ai_choice == "chatgpt":
-                comentarios = chatGpt(persona_json, tema_json)
-            elif ai_choice == "gemini":
-                comentarios = gemini(persona_json, tema_json)
-            elif ai_choice == "llama":
-                comentarios = llama(persona_json, tema_json)
-            elif ai_choice == "maritacaIA":
-                comentarios = maritaca(persona_json, tema_json)
-            elif ai_choice == "mistral":
-                comentarios = mistral(persona_json, tema_json)
-            else:
-                return {"error": "IA inválida especificada"}, 400
+            comentarios = llm_function(persona_json, tema_json)
         except Exception as error:
-            logging.error(f"Erro ao gerar comentários: {str(error)}")
+            logging.error(f"Erro ao gerar comentários ({ai_choice}): {error}")
             return {"error": f"Erro ao gerar comentários: {str(error)}"}, 500
 
-
+        # Criação do arquivo de saída
         file_name = f"{ai_choice.capitalize()}_{tema_json['Tema']}.txt"
         file_path = os.path.join(arqs_temp, file_name)
 
         try:
-            with open(file_path, 'w') as f:
-                for comentario in comentarios:
-                    f.write(comentario + "\n")
+            with open(file_path, 'w', encoding="utf-8") as f:
+                f.writelines(comentario + "\n" for comentario in comentarios)
         except IOError as error:
-            logging.error(f"Erro ao salvar o arquivo: {str(error)}")
+            logging.error(f"Erro ao salvar o arquivo ({file_name}): {error}")
             return {"error": f"Erro ao salvar o arquivo: {str(error)}"}, 500
 
-        return render_template("index.html", comentarios=comentarios, file_path=file_path, ind=indices, zip=zip, tema = tema_json['Tema'])
+        return render_template("index.html", comentarios=comentarios, file_path=file_path, ind=indices, zip=zip, tema=tema_json['Tema'])
 
     return render_template("index.html", comentarios=comentarios)
 
