@@ -143,7 +143,7 @@ def home():
             logging.error(f"Erro ao salvar o arquivo ({file_name}): {error}")
             return {"error": f"Erro ao salvar o arquivo: {str(error)}"}, 500
 
-        return render_template("gerar_comentarios_llm.html", comentarios=comentarios, file_path=file_path, ind=indices, zip=zip, tema=tema_json['Tema'])
+        return render_template("gerar_comentarios_llm.html", comentarios=comentarios, file_path=file_path, ind=indices, zip=zip, tema=tema_json['Tema'],posts=tema_json['Posts'],llm=ai_choice.capitalize())
 
     return render_template("gerar_comentarios_llm.html", comentarios=comentarios)
 
