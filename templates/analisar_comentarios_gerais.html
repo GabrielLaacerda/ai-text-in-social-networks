@@ -53,14 +53,14 @@
 
     <!--Script para chamar pop up de sucesso na detecção no canto superior direito-->
     {% if msg %}
-    <script>showPopup("Arquivo gerado com sucesso", "success")</script>
+        <script>showPopup("Arquivo gerado com sucesso", "success")</script>
     {% endif %}
 
     <!-- Se a variavel resultados existe é pq os comentários já foram analisados
     e os mesmos são exibidos em tabela -->
     {% if resultados %}
-    <h2 style="color:black">Análise dos Resultados:</h2>
-    <div class="comentarios">
+    <h2 style="color:black; margin-left:2.5%;">Análise dos Resultados:</h2>
+    <div class="comentarios container-fluid content-area" style="width:95%">
         <table id="dataTable" class="display">
             <thead>
                 <tr>

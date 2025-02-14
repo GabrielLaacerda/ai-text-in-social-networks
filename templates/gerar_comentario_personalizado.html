@@ -32,23 +32,30 @@
     <h1 class="m3-4 mb-3" style="color:black">Gerar Comentário Personalizado</h1>
 
     <!--Formulário para escolher as caracteristicas para geração de comentário personalizado-->
-    <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
+   <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
+    <!-- Inclui os modelos de IA disponíveis -->
+    {% include 'llms.html' %}
 
-        <!--Inclui os modelos de IA disponíveis-->
-        {% include 'llms.html' %}
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="theme" class="form-label fw-bold">Digite o tema do comentário:</label>
+            <textarea id="theme" name="tema" class="form-control" rows="1" placeholder="Digite aqui" required></textarea>
+        </div>
 
-        <label for="theme" class="mb-1">Digite o tema do comentário:</label>
-        <textarea id="theme" name="tema" class="form-control" rows="1" placeholder="Digite aqui" required></textarea>
+        <div class="col-md-6">
+            <label for="post" class="form-label fw-bold">Digite o texto do Post base:</label>
+            <textarea id="post" name="post" class="form-control" rows="1" placeholder="Digite aqui" required></textarea>
+        </div>
+    </div>
 
-        <label for="persona" class="mt-3 mb-1">Digite a persona a ser utilizada na geração:</label>
-        <textarea id="persona" placeholder="Digite aqui" name="persona" class="form-control" rows="1"
-            required></textarea>
+    <div class="mb-3">
+        <label for="persona" class="form-label fw-bold">Digite a persona a ser utilizada na geração:</label>
+        <textarea id="persona" name="persona" class="form-control" rows="1" placeholder="Digite aqui" required></textarea>
+    </div>
 
-        <label for="post" class="mt-3 mb-1">Digite o texto do Post base:</label>
-        <textarea id="post" name="post" placeholder="Digite aqui" class="form-control" rows="1" required></textarea>
+    <button type="submit" class="btn btn-primary w-100">Gerar Comentário</button>
+</form>
 
-        <button type="submit" class="btn btn-primary mt-3">Gerar Comentário</button>
-    </form>
 
     <!--Modal aberto ao iniciar a geração dos comentários, o mesmo é fechado ao final-->
     <div id="modal" class="modal">
