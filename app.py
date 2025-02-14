@@ -100,8 +100,6 @@ def home():
         if os.path.isfile(arquivo):
             os.remove(arquivo)
 
-    os.remove('app_errors.log')
-
     if request.method == "POST":
         ai_choice = request.form.get("ai")
         if not ai_choice:
