@@ -4,9 +4,12 @@
 Este projeto utiliza Modelos de Linguagem (LLMs) para gerar comentários com base em posts do twitter previamente selecionados e posteriormente
 utiliza detectores da literatura para verificar o quão efetivos eles são para detecção destes textos.
 
-![Tela Principal](static/images/LLMS.png)
-![Tela Principal](static/images/LLMS2.png)
-![Tela Principal](static/images/LLMS3.png)
+![Tela Principal](static/images/1.png)
+![Tela Principal](static/images/2.png)
+![Tela Principal](static/images/3.png)
+![Tela Principal](static/images/4.png)
+![Tela Principal](static/images/5.png)
+![Tela Principal](static/images/6.png)
 
 ## 📂 Estrutura do Projeto
 📁 Projeto  
