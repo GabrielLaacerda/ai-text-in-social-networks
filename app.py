@@ -144,9 +144,9 @@ def home():
             logging.error(f"Erro ao salvar o arquivo ({file_name}): {error}")
             return {"error": f"Erro ao salvar o arquivo: {str(error)}"}, 500
 
-        return render_template("index.html", comentarios=comentarios, file_path=file_path, ind=indices, zip=zip, tema=tema_json['Tema'])
+        return render_template("gerar_comentarios_llm.html", comentarios=comentarios, file_path=file_path, ind=indices, zip=zip, tema=tema_json['Tema'])
 
-    return render_template("index.html", comentarios=comentarios)
+    return render_template("gerar_comentarios_llm.html", comentarios=comentarios)
 
 #Rota para baixar o arquivo após a geração dos comentários
 @app.route("/download")
@@ -287,7 +287,7 @@ def analisar_comentario():
 
 @app.route("/", methods=["GET", "POST"])
 def teste():
-    return render_template("main.html")
+    return render_template("index.html")
 
 if __name__ == "__main__":
     try:

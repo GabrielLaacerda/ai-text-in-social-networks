@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gerador de Comentários</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/scrool.js') }}"></script>
+    <link rel="icon" href="static/images/logo.png" type="image">
+
+    <!-- DataTables -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="{{ url_for('static', filename='css/datatables.min.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/datatables.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--Inclui o menu de opções lateral-->
+    {% include 'sidebar.html' %}
+
+    <header class="header-content-personalizado">
+        <h1>Gerar Comentários para Posts</h1>
+    </header>
+
+
+    <!--Formulário para geração de comentários a partir de uma LLM e um tema escolhidos pelo usuário-->
+    <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
+
+        <!--Inclui os modelos de IA disponiveis para gerar os comentários e abaixo os temas propostos-->
+        {% include 'llms.html' %}
+        {% include 'temas.html' %}
+
+        <button type="submit" class="bt">Gerar Comentários</button>
+    </form>
+
+    <!--Modal aberto ao iniciar a geração dos comentários, o mesmo é fechado ao final-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Processamento iniciado... Por favor, aguarde!</p>
+        </div>
+    </div>
+
+
+    <!--Caso exista a variavel comentarios, os mesmos foram gerados e assim são exibidos em formato de tabela na tela-->
+    {% if comentarios %}
+    <h2 class="mt-5" style="color:black;">Comentários Gerados:</h2>
+    <div class="comentarios" style="width:95%">
+        <table id="myTable" class="display">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tema</th>
+                    <th>Comentário Gerado</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for comentario, indice in zip(comentarios, ind) %}
+                <tr>
+                    <td>{{ indice }}</td>
+                    <td>{{ tema }}</td>
+                    <td>{{ comentario }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!--Com os comentários gerados e o arquivo temporário disponível, o botão para baixar fica visível-->
+    {% if file_path %}
+    <div class="space">
+        <div class="divisao">
+            <button class="botoes bt" onclick="iniciarDownload('{{ file_path }}')">Baixar Comentários</button>
+        </div>
+    </div>
+    <div style="height: 20px"></div>
+
+    {% endif %}
+    {% endif %}
+
+</body>
+
+</html>

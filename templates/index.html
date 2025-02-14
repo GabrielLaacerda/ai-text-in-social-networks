@@ -1,22 +1,17 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
     <title>Gerador de Comentários</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+     <script src="{{ url_for('static', filename='js/scrool.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <script src="{{ url_for('static', filename='js/scrool.js') }}"></script>
-    <link rel="icon" href="static/images/logo.png" type="image">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="icon" href="static/images/logo.png" type="image/png">
 
-    <!-- DataTables -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="{{ url_for('static', filename='css/datatables.min.css') }}" rel="stylesheet">
-    <script src="{{ url_for('static', filename='js/datatables.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap & Font Awesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -25,68 +20,104 @@
 
 <body>
 
-    <!--Inclui o menu de opções lateral-->
     {% include 'sidebar.html' %}
 
-    <header class="header-content-personalizado">
-        <h1>Gerar Comentários para Posts</h1>
-    </header>
+    <main>
+        <header class="header-content">
+            <h1>Gere Comentários Inteligentes e Detecte IA com Facilidade!</h1>
+            <p>Escolha modelos de IA para criar comentários envolventes ou analise a autenticidade de textos em
+                segundos.</p>
+        </header>
 
 
-    <!--Formulário para geração de comentários a partir de uma LLM e um tema escolhidos pelo usuário-->
-    <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
+        <section class="funcionalidades">
+            <div class="container">
+                <h2 class="text-center mb-5">Funcionalidades</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="funcionalidade-box" onclick="window.location.href='/gerarComentarios';">
+                            <i class="fas fa-solid fa-cogs fa-3x" style="color: #2b3c4f;"></i>
+                            <h4 class="mt-3">Geração Automática</h4>
+                            <p>Gere comentários automaticamente a partir de posts pré-definidos utilizando uma das LLMs
+                                e os temas disponíveis.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="funcionalidade-box" onclick="window.location.href='/gerarComentario';">
+                            <i class="fas fa-solid fa-brain fa-3x" style="color: #2b3c4f;"></i>
+                            <h4 class="mt-3">Geração Personalizada</h4>
+                            <p>Gere comentários personalizados a partir das caracteristicas da sua preferência, tais
+                                como tema, persona e post.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="funcionalidade-box" onclick="window.location.href='/analisarAutenticidadeGeral';">
+                            <i class="fas fa-solid fa-robot fa-3x" style="color: #2b3c4f;"></i>
+                            <h4 class="mt-3">Detecção Automática</h4>
+                            <p>Com base em arquivos pré-definidos, faça a detecção de comentários reais vs IA,
+                                utilizando a ferramenta que preferir.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="funcionalidade-box" onclick="window.location.href='/analisarAutenticidade';">
+                            <i class="fas fa-solid fa-magnifying-glass fa-3x" style="color: #2b3c4f;"></i>
+                            <h4 class="mt-3">Detecção Personalizada</h4>
+                            <p>Detecte se um comentário é gerado por humano ou IA a partir de um texto e detector de sua
+                                preferência. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="funcionalidade-box" onclick="window.location.href='/estatisticas';">
+                            <i class="fas fa-solid fa-chart-line fa-3x" style="color: #2b3c4f;"></i>
+                            <h4 class="mt-3">Estatísticas Gerais</h4>
+                            <p>A partir de arquivos gerados nas outras funcionalidades, gere gráficos de efetividade das
+                                LLMs e dos detectores.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="sobre" class="funcionalidade-box">
+                            <i class="fas fa-solid fa-info-circle fa-3x" style="color: #2b3c4f;"></i>
+                            <h4 class="mt-3">Sobre a Ferramenta</h4>
+                            <p>Veja um pouco sobre o propósito da ferramenta e quais foram as motivações para
+                                desenvolvimento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!--Inclui os modelos de IA disponiveis para gerar os comentários e abaixo os temas propostos-->
-        {% include 'llms.html' %}
-        {% include 'temas.html' %}
+        <section class="sobre">
+            <div class="container-fluid text-center"> <!-- Centraliza o conteúdo -->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10"> <!-- Limita a largura em telas grandes -->
+                        <h2 class="titulo-sobre">Sobre o Gerador de Comentários</h2>
+                        <p class="texto-sobre">
+                            O sistema foi desenvolvido como trabalho de conclusão de curso e tem como motivação central
+                            a evolução da inteligência artificial e os desafios em
+                            distinguir entre dados gerados por humanos ou por IA. Visando isso, a ferramenta tem como
+                            objetivo gerar e detectar comentários gerados por LLMs e exibir
+                            essas informações de maneira gráfica e simples.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <button type="submit" class="bt">Gerar Comentários</button>
-    </form>
 
-    <!--Modal aberto ao iniciar a geração dos comentários, o mesmo é fechado ao final-->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <p>Processamento iniciado... Por favor, aguarde!</p>
-        </div>
-    </div>
+    </main>
 
+    <footer>
+        <p>&copy; 2025 Gerador de Comentários. Todos os direitos reservados.</p>
+    </footer>
 
-    <!--Caso exista a variavel comentarios, os mesmos foram gerados e assim são exibidos em formato de tabela na tela-->
-    {% if comentarios %}
-    <h2 class="mt-5" style="color:black;">Comentários Gerados:</h2>
-    <div class="comentarios" style="width:95%">
-        <table id="myTable" class="display">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Tema</th>
-                    <th>Comentário Gerado</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for comentario, indice in zip(comentarios, ind) %}
-                <tr>
-                    <td>{{ indice }}</td>
-                    <td>{{ tema }}</td>
-                    <td>{{ comentario }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-
-    <!--Com os comentários gerados e o arquivo temporário disponível, o botão para baixar fica visível-->
-    {% if file_path %}
-    <div class="space">
-        <div class="divisao">
-            <button class="botoes bt" onclick="iniciarDownload('{{ file_path }}')">Baixar Comentários</button>
-        </div>
-    </div>
-    <div style="height: 20px"></div>
-
-    {% endif %}
-    {% endif %}
-
+    <script>
+        document.getElementById("sobre").addEventListener("click", function () {
+            const target = document.querySelector(".sobre");
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    </script>
 </body>
 
 </html>
