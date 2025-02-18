@@ -1,3 +1,15 @@
+$(document).ready(function () {
+    $('#myTable').DataTable({
+        paging: false, // Desativa paginação
+        searching: false, // Remove o campo de busca
+        info: false, // Remove informações de exibição (ex.: "Mostrando X de Y")
+        language: {
+            url: "//cdn.datatables.net/plug-ins/1.13.5/i18n/pt-BR.json"
+        }
+    });
+});
+
+
 function abrirModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "block";
@@ -62,17 +74,5 @@ function showPopup(message, type) {
         setTimeout(() => popup.remove(), 1000); // Remove após desaparecer
     }, 3000); // Desaparece após 3 segundos
 }
-
-$(document).ready(function () {
-    $('#myTable').DataTable({
-        paging: false, // Desativa paginação
-        searching: false, // Remove o campo de busca
-        info: false, // Remove informações de exibição (ex.: "Mostrando X de Y")
-        language: {
-            url: "//cdn.datatables.net/plug-ins/1.13.5/i18n/pt-BR.json"
-        }
-    });
-});
-
 
 

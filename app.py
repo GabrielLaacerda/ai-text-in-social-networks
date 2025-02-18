@@ -2,6 +2,8 @@ import os
 import json
 import logging
 import glob
+from logging import exception
+
 import Funcoes.Retornar_Estatisticas as re
 import IAText_Detectors.Roberta as roberta
 import IAText_Detectors.Sapling as sapling
@@ -15,6 +17,7 @@ import LLMs.ChatGPT as gptUnic
 import LLMs.MaritacaIA as maritacaIAUnic
 import LLMs.Gemini as geminiIAUnic
 import LLMs.Mistral as mistralUnic
+
 from flask import Flask, render_template, request, send_file, session
 from LLMs.Cohere import gerar_comentarios_para_posts as cohere
 from LLMs.ChatGPT import gerar_comentarios_para_posts as chatGpt
@@ -170,6 +173,7 @@ def estatisticas():
 
     llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
     dir_base = "./Resultados"
+
     resultados = re.calcular_estatisticas_tabela(llms,dir_base)
     resultados_graficos = re.calcular_acerto_por_llm(resultados)
     resultados_barras = re.calcular_acerto_por_detector(resultados)
@@ -178,7 +182,6 @@ def estatisticas():
 
     return render_template("estatisticas.html", resultados=resultados, resultados_graficos=resultados_graficos,resultados_barras=resultados_barras,
                            resultados_detector_tema=resultados_detector_tema,resultados_llm_tema=resultados_llm_tema)
-
 
 @app.route("/analisarAutenticidadeGeral", methods=["GET", "POST"])
 def analisarAutenticidadeGeral():
@@ -285,8 +288,12 @@ def analisar_comentario():
     return render_template("analisar_comentario_personalizado.html")
 
 @app.route("/", methods=["GET", "POST"])
-def teste():
-    return render_template("index.html")
+def index():
+    try:
+        return render_template("index.html")
+
+    except Exception as error:
+       logging.error(f"{error}")
 
 if __name__ == "__main__":
     try:

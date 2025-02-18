@@ -326,6 +326,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+
 $(document).ready(function () {
     var table = $('#dataTable').DataTable({
 
@@ -352,5 +353,4 @@ $(document).ready(function () {
         }
     });
 });
-
 
