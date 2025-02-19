@@ -75,4 +75,3 @@ function showPopup(message, type) {
     }, 3000); // Desaparece após 3 segundos
 }
 
-

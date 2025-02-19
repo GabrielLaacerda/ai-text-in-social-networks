@@ -243,11 +243,49 @@ def analisarAutenticidadeGeral():
 
 @app.route("/gerarComentario", methods=["GET", "POST"])
 def gerarComentario():
-    if request.method == 'POST':
+    arquivo = "JSONS/Personas_Para_Comentarios_Personalizados/personas.json"
+
+    if request.method == 'GET':
+        try:
+            with open(arquivo, "r") as f:
+                data = json.load(f)
+                if 'Personas' in data and isinstance(data['Personas'], list):
+                    personas = [
+                        {
+                            'Tema': persona.get('Tema'),
+                            'Nome': persona.get('Nome'),
+                            'Descrição': persona.get('Descrição')
+                        }
+                        for persona in data['Personas']
+                        if 'Tema' in persona and 'Nome' in persona and 'Descrição' in persona
+                    ]
+                    # Renderiza com os dados coletados
+                    return render_template("gerar_comentario_personalizado.html", personas=personas, zip=zip)
+                else:
+                    print("'Personas' não encontrada ou não é uma lista.")
+        except FileNotFoundError:
+            print(f"Arquivo não encontrado: {arquivo}")
+        except json.JSONDecodeError:
+            print("Erro ao decodificar o JSON.")
+
+    elif request.method == 'POST':
         ai_choice = request.form.get('ai')
         tema = request.form['tema']
         persona = request.form['persona']
         post = request.form['post']
+
+        with open(arquivo, "r") as f:
+            data = json.load(f)
+            if 'Personas' in data and isinstance(data['Personas'], list):
+                personas = [
+                    {
+                        'Tema': persona.get('Tema'),
+                        'Nome': persona.get('Nome'),
+                        'Descrição': persona.get('Descrição')
+                    }
+                    for persona in data['Personas']
+                    if 'Tema' in persona and 'Nome' in persona and 'Descrição' in persona
+                ]
 
         ai_map = {
             "cohere": cohereUnic,
@@ -264,7 +302,7 @@ def gerarComentario():
                                    comentario=resposta,
                                    tema=tema,
                                    llm=ai_choice.capitalize(),
-                                   post=post)
+                                   post=post,personas=personas)
 
     return render_template("gerar_comentario_personalizado.html")
 

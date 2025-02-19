@@ -36,9 +36,22 @@
     </header>
 
     <!--Formulário para escolher as caracteristicas para geração de comentário personalizado-->
-   <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()">
-    <!-- Inclui os modelos de IA disponíveis -->
+   <form method="POST" enctype="multipart/form-data" onsubmit="abrirModal()" onchange="handleThemeSelection(this)">
     {% include 'llms.html' %}
+
+       <div class="mb-3">
+        <label for="persona" class="form-label">Escolha uma persona ou digite a sua:</label>
+        <select id="personaSelect" class="form-control" onchange="preencherPersona()">
+            <option value="" data-tema="">Selecione uma persona</option> <!-- Opção inicial, sem descrição nem tema -->
+            {% for persona in personas %}
+                <option value="{{ persona['Descrição'] }}" data-tema="{{ persona['Tema'] }}">
+                    {{ persona['Nome'] }} - {{ persona['Tema'] }}
+                </option>
+            {% endfor %}
+        </select>
+        <textarea id="persona" name="persona" class="form-control mt-2" rows="2" placeholder="Ou digite aqui" required></textarea>
+        </div>
+
 
     <div class="row mb-3">
         <div class="col-md-6">
@@ -50,16 +63,10 @@
             <label for="post" class="form-label">Digite o texto do Post base:</label>
             <textarea id="post" name="post" class="form-control" rows="1" placeholder="Digite aqui" required></textarea>
         </div>
-    </div>
+        </div>
 
-    <div class="mb-3">
-        <label for="persona" class="form-label">Digite a persona a ser utilizada na geração:</label>
-        <textarea id="persona" name="persona" class="form-control" rows="1" placeholder="Digite aqui" required></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-primary w-100">Gerar Comentário</button>
-</form>
-
+        <button type="submit" class="btn btn-primary w-100">Gerar Comentário</button>
+    </form>
 
     <!--Modal aberto ao iniciar a geração dos comentários, o mesmo é fechado ao final-->
     <div id="modal" class="modal">
@@ -96,17 +103,44 @@
     <div style="height: 20px"></div>
     {% endif %}
 
-    <!--Script para aumentar dinamicamente o tamanho dos textareas caso ocorram entradas de dados extensos-->
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            // Ajusta a altura de todos os textareas ao digitar
             document.querySelectorAll("textarea").forEach(textarea => {
                 textarea.addEventListener("input", function () {
-                    this.style.height = "auto"; // Reseta a altura para calcular corretamente
-                    this.style.height = (this.scrollHeight) + "px"; // Ajusta a altura automaticamente
+                    ajustarAltura(this); // Chama a função para ajustar a altura
                 });
             });
         });
+
+        function preencherPersona() {
+            var select = document.getElementById("personaSelect"); // Obtém o elemento select
+            var textarea = document.getElementById("persona"); // Obtém o textarea da persona
+            var tema = document.getElementById("theme"); // Obtém o textarea do tema
+            var selectedOption = select.options[select.selectedIndex]; // Pega a opção selecionada
+            var descricao = selectedOption.value; // Pega o valor da descrição da opção selecionada
+            var temaValue = selectedOption.getAttribute("data-tema"); // Pega o valor do tema da persona
+
+            // Preenche o textarea com a descrição da persona
+            textarea.value = descricao;
+
+            // Preenche o campo de tema com o valor da persona
+            tema.value = temaValue;
+
+            // Ajusta a altura dos textareas para exibir o conteúdo corretamente
+            ajustarAltura(textarea);
+            ajustarAltura(tema);
+        }
+
+        // Função para ajustar a altura do textarea
+        function ajustarAltura(textarea) {
+            textarea.style.height = "auto"; // Reseta a altura para calcular corretamente
+            textarea.style.height = (textarea.scrollHeight) + "px"; // Ajusta a altura automaticamente
+        }
+
     </script>
+
 
 </body>
 

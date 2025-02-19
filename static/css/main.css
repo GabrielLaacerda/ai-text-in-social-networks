@@ -16,7 +16,9 @@ main {
     background: linear-gradient(to right, #2b3c4f, #3e5c76);
     color: white;
 }
-
+#personaSelect:hover {
+    cursor: pointer;
+}
 
 .header-content h1 {
     font-size: 2.8rem;
