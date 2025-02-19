@@ -9388,3 +9388,61 @@
 2025-02-19 12:16:28,112 - INFO - 127.0.0.1 - - [19/Feb/2025 12:16:28] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
 2025-02-19 12:16:28,112 - INFO - 127.0.0.1 - - [19/Feb/2025 12:16:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-02-19 12:16:28,113 - INFO - 127.0.0.1 - - [19/Feb/2025 12:16:28] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-19 12:44:21,091 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-19 12:44:21,091 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-19 12:44:21,094 - INFO -  * Restarting with watchdog (inotify)
+2025-02-19 12:44:25,098 - WARNING -  * Debugger is active!
+2025-02-19 12:44:25,098 - INFO -  * Debugger PIN: 101-987-400
+2025-02-19 12:44:26,620 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:26] "GET / HTTP/1.1" 200 -
+2025-02-19 12:44:26,633 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-19 12:44:26,634 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-02-19 12:44:26,635 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:26] "[36mGET /static/js/scrool.js HTTP/1.1[0m" 304 -
+2025-02-19 12:44:26,636 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:26] "[36mGET /static/js/baixar_arquivos.js HTTP/1.1[0m" 304 -
+2025-02-19 12:44:26,739 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:26] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-02-19 12:44:29,120 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:29] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-19 12:44:29,133 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-02-19 12:44:29,134 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:29] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-19 12:44:29,135 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-19 12:44:29,135 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:29] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-19 12:44:29,136 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:29] "[36mGET /static/js/scrool.js HTTP/1.1[0m" 304 -
+2025-02-19 12:44:29,139 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:29] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-19 12:44:29,140 - INFO - 127.0.0.1 - - [19/Feb/2025 12:44:29] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-19 12:55:40,620 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/teste.py', reloading
+2025-02-19 12:55:40,621 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/teste.py', reloading
+2025-02-19 12:55:40,621 - INFO -  * Detected change in '/home/gabriel/TCC_GabrielVncs/teste.py', reloading
+2025-02-19 12:55:42,100 - INFO -  * Restarting with watchdog (inotify)
+2025-02-19 12:55:46,413 - WARNING -  * Debugger is active!
+2025-02-19 12:55:46,413 - INFO -  * Debugger PIN: 101-987-400
+2025-02-19 12:56:25,281 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:25] "GET / HTTP/1.1" 200 -
+2025-02-19 12:56:25,295 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:25] "[36mGET /static/js/scrool.js HTTP/1.1[0m" 304 -
+2025-02-19 12:56:25,295 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:25] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-02-19 12:56:25,297 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:25] "[36mGET /static/js/baixar_arquivos.js HTTP/1.1[0m" 304 -
+2025-02-19 12:56:25,299 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-19 12:56:26,799 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:26] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-19 12:56:26,813 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:26] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-19 12:56:26,815 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:26] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-19 12:56:26,816 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:26] "[36mGET /static/js/scrool.js HTTP/1.1[0m" 304 -
+2025-02-19 12:56:26,816 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-19 12:56:26,816 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-02-19 12:56:26,817 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:26] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-19 12:56:26,818 - INFO - 127.0.0.1 - - [19/Feb/2025 12:56:26] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -
+2025-02-19 13:07:00,880 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-19 13:07:00,880 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-19 13:07:00,882 - INFO -  * Restarting with watchdog (inotify)
+2025-02-19 13:07:04,859 - WARNING -  * Debugger is active!
+2025-02-19 13:07:04,860 - INFO -  * Debugger PIN: 101-987-400
+2025-02-19 13:07:15,794 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:15] "GET / HTTP/1.1" 200 -
+2025-02-19 13:07:15,812 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-02-19 13:07:15,814 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:15] "[36mGET /static/js/scrool.js HTTP/1.1[0m" 304 -
+2025-02-19 13:07:15,816 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:15] "[36mGET /static/js/baixar_arquivos.js HTTP/1.1[0m" 304 -
+2025-02-19 13:07:15,816 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-19 13:07:17,368 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:17] "GET /estatisticas HTTP/1.1" 200 -
+2025-02-19 13:07:17,383 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-02-19 13:07:17,383 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:17] "[36mGET /static/css/datatables.min.css HTTP/1.1[0m" 304 -
+2025-02-19 13:07:17,384 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:17] "[36mGET /static/css/estatisticas.css HTTP/1.1[0m" 304 -
+2025-02-19 13:07:17,385 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:17] "[36mGET /static/js/scrool.js HTTP/1.1[0m" 304 -
+2025-02-19 13:07:17,386 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-19 13:07:17,387 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:17] "[36mGET /static/js/estatisticas.js HTTP/1.1[0m" 304 -
+2025-02-19 13:07:17,388 - INFO - 127.0.0.1 - - [19/Feb/2025 13:07:17] "[36mGET /static/js/datatables.min.js HTTP/1.1[0m" 304 -

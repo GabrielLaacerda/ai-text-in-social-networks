@@ -38,4 +38,4 @@ def parse_file(input_file, output_file):
 
 
 # Exemplo de uso
-parse_file('apostas.txt', 'resultados_CasasDeApostas.json')
+parse_file('base.txt', 'resultados_Impostos.json')
