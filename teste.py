@@ -1,34 +1,41 @@
-import os
-from ollama import chat, ChatResponse
+import json
+import re
 
 
-def interagir_com_modelo():
-    # Mensagem inicial para o modelo
-    prompt = "Oi, como você está? Responda em português, por favor."
+def parse_file(input_file, output_file):
+    llm_sequence = ['Cohere', 'ChatGPT', 'DeepSeek', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
+    llm_index = 0
+    comments = []
 
-    try:
-        # Envia a requisição para o modelo "deepseek-r1:7b" com o prompt
-        response: ChatResponse = chat(model='deepseek-coder-v2', messages=[
-            {
-                "role": "system",
-                "content": "Você deve responder sempre em português, independentemente do idioma da pergunta."
-            },
-            {"role": "user", "content": prompt}
-        ])
+    with open(input_file, 'r', encoding='utf-8') as file:
+        lines = [line.strip() for line in file if line.strip()]
 
-        # Verifica se a resposta existe e extrai somente o conteúdo da resposta (ignorando <think>)
-        if response and 'message' in response:
-            resposta = response['message']['content']
-            # Filtra e retorna apenas a parte relevante da resposta
-            resposta_filtrada = ''.join([linha for linha in resposta.split('\n') if not linha.startswith('<think>')])
-            # Exibe apenas a resposta sem a parte de pensamento
-            print("Resposta do modelo:", resposta_filtrada.strip().split("\n")[-1])
+    i = 0
+    while i < len(lines) - 1:
+        comentario = lines[i].strip()
+        match = re.search(r'(\d+\.?\d*)%?IA', lines[i + 1])
+
+        if match:
+            prob_ia = float(match.group(1))
+            prob_humano = 100.0 - prob_ia
+
+            comments.append({
+                "llm": llm_sequence[llm_index],
+                "comentario": comentario,
+                "prob_humano": prob_humano,
+                "prob_IA": prob_ia
+            })
+
+            if len(comments) % 6 == 0:
+                llm_index = (llm_index + 1) % len(llm_sequence)
+
+            i += 2  # Pula para o próximo comentário
         else:
-            print("Erro: Não foi possível gerar a resposta.")
+            i += 1  # Se não encontrar um match, continua para a próxima linha
 
-    except Exception as erro:
-        print(f"Erro na interação com o modelo: {erro}")
+    with open(output_file, 'w', encoding='utf-8') as out_file:
+        json.dump(comments, out_file, indent=4, ensure_ascii=False)
 
 
-# Chama a função para interagir com o modelo
-interagir_com_modelo()
+# Exemplo de uso
+parse_file('apostas.txt', 'resultados_CasasDeApostas.json')

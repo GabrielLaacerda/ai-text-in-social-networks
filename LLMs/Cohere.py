@@ -45,7 +45,7 @@ def gerar_comentarios_para_posts(personas_file, posts_file):
 
     # Passa as informações para a função gerar_comentarios, responsável pela geração
     for i in range(len(posts_file["Posts"])):
-        comentario = gerar_comentarios(personas_file["Persona"]["Descrição"], posts_file["Posts"][i]["Descrição"], personas_file["Persona"]["Descrição"])
+        comentario = gerar_comentarios(personas_file["Persona"]["Descrição"], posts_file["Posts"][i]["Descrição"], personas_file["Persona"]["Tema"])
 
         if comentario:
             save.append(f"{comentario}\n")

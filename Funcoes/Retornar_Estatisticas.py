@@ -1,8 +1,6 @@
 from collections import defaultdict
 import os
 import json
-import openpyxl
-from openpyxl.styles import PatternFill, Font, Border, Side, Alignment
 import os
 import json
 
@@ -48,8 +46,6 @@ def calcular_estatisticas_tabela(llms, dir_base):
                 except Exception as e:
                     print(f"Erro ao processar o arquivo {caminho_completo}: {e}")
 
-
-    # Agora, reordenamos a lista geral para garantir a ordem de LLMs: ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
     lista_geral = []
 
     for llm in llms:
@@ -193,86 +189,3 @@ def calcular_media_prob_humano_por_tema(resultado):
 
 
 
-def exportar_excel(dados_llm, dados_detector, nome_arquivo="relatorio_geral.xlsx"):
-    wb = openpyxl.Workbook()
-    ws = wb.active
-    ws.title = "Resultados_Roberta"
-
-    # Estilos
-    header_fill = PatternFill(start_color="D9D9D9", end_color="D9D9D9", fill_type="solid")  # Cinza Claro
-    llm_fill = PatternFill(start_color="E6F2FF", end_color="E6F2FF", fill_type="solid")  # Azul Pastel
-    detector_fill = PatternFill(start_color="E6FFE6", end_color="E6FFE6", fill_type="solid")  # Verde Pastel
-    bold_font = Font(bold=True)
-    thin_border = Border(left=Side(style="thin"), right=Side(style="thin"),
-                         top=Side(style="thin"), bottom=Side(style="thin"))
-    center_align = Alignment(horizontal="center", vertical="center")
-
-    # Criar título principal
-    ws.append(["Resultados_Roberta Gerais LLMs vs Detectores"])
-    ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=3)  # Mesclar células
-    title_cell = ws["A1"]
-    title_cell.font = Font(bold=True, size=14)
-    title_cell.alignment = center_align
-    title_cell.fill = header_fill
-
-    ws.append([])  # Linha em branco
-
-    # Ordenar os dados por maior taxa de acerto
-    llm_ordenado = sorted(dados_llm.items(), key=lambda x: x[1]["acerto"], reverse=True)
-    detector_ordenado = sorted(dados_detector.items(), key=lambda x: x[1]["acerto"], reverse=True)
-
-    # Cabeçalho para LLM
-    ws.append(["LLM", "Média de Acerto", "Média de Erro"])
-    for cell in ws[ws.max_row]:  # Aplicar estilo ao cabeçalho
-        cell.fill = header_fill
-        cell.font = bold_font
-        cell.border = thin_border
-        cell.alignment = center_align
-
-    # Dados dos LLMs
-    for llm, valores in llm_ordenado:
-        ws.append([llm, valores["acerto"] / 100, valores["erro"] / 100])  # Converter para decimal
-        for cell in ws[ws.max_row]:
-            cell.fill = llm_fill
-            cell.border = thin_border
-            cell.alignment = center_align
-        # Aplicar formato de porcentagem
-        ws.cell(row=ws.max_row, column=2).number_format = "0.00%"
-        ws.cell(row=ws.max_row, column=3).number_format = "0.00%"
-
-    ws.append([])  # Linha em branco para separação
-
-    # Cabeçalho para Detectores
-    ws.append(["Detector", "Média de Acerto", "Média de Erro"])
-    for cell in ws[ws.max_row]:
-        cell.fill = header_fill
-        cell.font = bold_font
-        cell.border = thin_border
-        cell.alignment = center_align
-
-    # Dados dos Detectores
-    for detector, valores in detector_ordenado:
-        ws.append([detector, valores["acerto"] / 100, valores["erro"] / 100])  # Converter para decimal
-        for cell in ws[ws.max_row]:
-            cell.fill = detector_fill
-            cell.border = thin_border
-            cell.alignment = center_align
-        # Aplicar formato de porcentagem
-        ws.cell(row=ws.max_row, column=2).number_format = "0.00%"
-        ws.cell(row=ws.max_row, column=3).number_format = "0.00%"
-
-    # Ajusta largura das colunas ignorando células mescladas
-    for col in ws.iter_cols(min_row=3):  # Começa a partir da 3ª linha para evitar o título mesclado
-        max_length = 0
-        col_letter = col[0].column_letter  # Pega a letra da coluna
-        for cell in col:
-            if isinstance(cell, openpyxl.cell.cell.MergedCell):  # Ignorar células mescladas
-                continue
-            try:
-                if cell.value:
-                    max_length = max(max_length, len(str(cell.value)))
-            except:
-                pass
-        ws.column_dimensions[col_letter].width = max_length + 2
-
-    wb.save(nome_arquivo)

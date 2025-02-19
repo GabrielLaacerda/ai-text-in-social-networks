@@ -3,14 +3,12 @@ import json
 import logging
 import glob
 from logging import exception
-
-import Funcoes.Retornar_Estatisticas as re
+import Funcoes.Retornar_Estatisticas as res
 import IAText_Detectors.Roberta as roberta
 import IAText_Detectors.Sapling as sapling
 import IAText_Detectors.Radar as radar
 import IAText_Detectors.HuggingFace as huggingface
 import IAText_Detectors.DistBERT as distbert
-import IAText_Detectors.Binoculars as binoc
 import LLMs.Cohere as cohereUnic
 import LLMs.Llama as llamaUnic
 import LLMs.ChatGPT as gptUnic
@@ -30,6 +28,8 @@ from IAText_Detectors.Sapling import probabilidade_IA as sapling_prob
 from IAText_Detectors.HuggingFace import probabilidade_IA as prob_hugging
 from IAText_Detectors.DistBERT import probabilidade_IA as distbert_prob
 from IAText_Detectors.Radar import probabilidade_IA as radar_prob
+from IAText_Detectors.Binoculars import probabilidade_IA as binoculars
+from LLMs.DeepSeek import gerar_comentarios_para_posts as deepseek
 import warnings
 
 # Configuração de logging
@@ -64,7 +64,7 @@ def load_json():
     json_personas = os.path.join("JSONS/Personas", arquivo)
 
     try:
-        with open(json_temas, "r") as f:
+        with open(json_temas, "r", encoding="utf-8") as f:
             tema_json = json.load(f)
     except FileNotFoundError:
         return {"error": "Arquivo de tema não encontrado"}, 404
@@ -72,7 +72,7 @@ def load_json():
         return {"error": "Erro ao decodificar o arquivo de tema"}, 400
 
     try:
-        with open(json_personas, "r") as f:
+        with open(json_personas, "r", encoding="utf-8") as f:
             persona_json = json.load(f)
     except FileNotFoundError:
         return {"error": "Arquivo de persona não encontrado"}, 404
@@ -104,7 +104,9 @@ def home():
             os.remove(arquivo)
 
     if request.method == "POST":
+
         ai_choice = request.form.get("ai")
+
         if not ai_choice:
             return {"error": "Escolha de IA não especificada"}, 400
 
@@ -117,11 +119,12 @@ def home():
         # Mapeamento das funções das LLMs
         llm_functions = {
             "cohere": cohere,
-            "chatgpt": chatGpt,
+            "chatGpt": chatGpt,
             "gemini": gemini,
             "llama": llama,
             "maritacaIA": maritaca,
-            "mistral": mistral
+            "mistral": mistral,
+            "deepseek": deepseek
         }
 
         # Verifica se a IA escolhida é válida
@@ -132,7 +135,7 @@ def home():
         try:
             comentarios = llm_function(persona_json, tema_json)
         except Exception as error:
-            logging.error(f"Erro ao gerar comentários ({ai_choice}): {error}")
+            logging.error(f"Erro ao gerar comentarios ({ai_choice}): {error}")
             return {"error": f"Erro ao gerar comentários: {str(error)}"}, 500
 
         # Criação do arquivo de saída
@@ -171,14 +174,14 @@ def download():
 @app.route("/estatisticas", methods=["GET", "POST"])
 def estatisticas():
 
-    llms = ['Cohere', 'ChatGPT', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
+    llms = ['Cohere', 'ChatGPT', 'DeepSeek', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
     dir_base = "./Resultados"
 
-    resultados = re.calcular_estatisticas_tabela(llms,dir_base)
-    resultados_graficos = re.calcular_acerto_por_llm(resultados)
-    resultados_barras = re.calcular_acerto_por_detector(resultados)
-    resultados_detector_tema = re.calcular_detector_tema(resultados)
-    resultados_llm_tema = re.calcular_media_prob_humano_por_tema(resultados)
+    resultados = res.calcular_estatisticas_tabela(llms,dir_base)
+    resultados_graficos = res.calcular_acerto_por_llm(resultados)
+    resultados_barras = res.calcular_acerto_por_detector(resultados)
+    resultados_detector_tema = res.calcular_detector_tema(resultados)
+    resultados_llm_tema = res.calcular_media_prob_humano_por_tema(resultados)
 
     return render_template("estatisticas.html", resultados=resultados, resultados_graficos=resultados_graficos,resultados_barras=resultados_barras,
                            resultados_detector_tema=resultados_detector_tema,resultados_llm_tema=resultados_llm_tema)
@@ -188,7 +191,7 @@ def analisarAutenticidadeGeral():
     if request.method == "POST":
         ai_choice = request.form.get("ai")
         theme_choice = request.form.get("themes")
-        lista_llms = ["Cohere", "ChatGPT", "Gemini", "Llama", "MaritacaIA", "Mistral"]
+        lista_llms = ['Cohere', 'ChatGPT', 'DeepSeek', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
         processed_data = []
         file_path = ""
 
@@ -199,6 +202,7 @@ def analisarAutenticidadeGeral():
             "huggingface": prob_hugging,
             "distbert": distbert_prob,
             "radar": radar_prob,
+            "binoculars": binoculars
         }
 
         if ai_choice in ai_map:
@@ -223,7 +227,7 @@ def analisarAutenticidadeGeral():
                 for item in resultados
             ]
 
-            file_path = f"Arquivos_Temporarios_Detect/{ai_choice.capitalize()}_{theme_choice}"
+            file_path = f"Arquivos_Temporarios_Detect/resultados_{theme_choice}"
 
             try:
                 with open(file_path, 'w', encoding="utf-8") as f:
@@ -278,7 +282,7 @@ def analisar_comentario():
             "radar": radar.probabilidade_frase_unica,
             "huggingface": huggingface.probabilidade_frase_unica,
             "distbert": distbert.probabilidade_IA_frase,
-            "binoculars": binoc.probabilidade_IA_frase  # Descomentando essa linha, a IA será incluída automaticamente
+            "binoculars": binoculars.probabilidade_IA_frase  # Descomentando essa linha, a IA será incluída automaticamente
         }
 
         if ai_choice in ai_map:

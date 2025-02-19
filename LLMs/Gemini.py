@@ -4,6 +4,7 @@ import google.generativeai as genai
 api_key = os.getenv('OPENAI_API_KEY')
 
 def gerar_comentarios(persona, post, tema, stream=False):
+    print(tema)
     prompt = (
         f"Tema: {tema}\n"
         f"Você é {persona}. Seu papel é comentar postagens de forma breve, informal e natural."
@@ -43,7 +44,7 @@ def gerar_comentarios_para_posts(personas_file, posts_file):
     save = []
 
     for i in range(len(posts_file["Posts"])):
-        comentario = gerar_comentarios(personas_file["Persona"]["Descrição"], posts_file["Posts"][i]["Descrição"], personas_file["Persona"]["Descrição"])
+        comentario = gerar_comentarios(personas_file["Persona"]["Descrição"], posts_file["Posts"][i]["Descrição"], personas_file["Persona"]["Tema"])
 
         if comentario:
             save.append(f"{comentario}\n")

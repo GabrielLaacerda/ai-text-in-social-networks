@@ -397,3 +397,7 @@ select:focus {
 .btn-close {
     filter: invert(1) !important; /* Inverte as cores, tornando o "X" branco */
 }
+
+#deep { /* Estiliza o DeepSeek */
+    grid-column: span 3; /* Ocupa duas colunas */
+}

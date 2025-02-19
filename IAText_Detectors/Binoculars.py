@@ -44,7 +44,7 @@ def probabilidade_IA(comentarios, modelos):
                     'prob_humano': round(prob_human, 2),
                     'prob_IA': round(prob_ia, 2)
                 })
-                print(f"{i} de 36:  {resultados}")
+                print(f"{i} de 42:  {resultados}")
                 i = i + 1
 
     return resultados  # Retorna os resultados no formato desejado

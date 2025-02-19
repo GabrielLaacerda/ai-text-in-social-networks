@@ -1,218 +1,296 @@
 [
     {
         "llm": "Cohere",
-        "comentario": "\"Pois é, tá complicado! A alta do dólar impacta não só na gente, empresariado, mas também nos clientes. A gente tenta se virar, mas é difícil competir com os preços internos. E o governo não ajuda, né? Vamos torcer pra essa situação se resolver logo!\"",
-        "prob_humano": 8.33,
-        "prob_IA": 91.67
-    },
-    {
-        "llm": "Cohere",
-        "comentario": "É cada uma que a gente vê... Dólar nas alturas por causa de fake news! E ainda usam IA pra espalhar mentiras. Que país é esse?",
-        "prob_humano": 0,
-        "prob_IA": 100
-    },
-    {
-        "llm": "Cohere",
-        "comentario": "Meu Deus, de novo essa alta do dólar! Lula precisa fazer algo, isso afeta muito o meu negócio e o bolso dos meus clientes.",
-        "prob_humano": 0.76,
-        "prob_IA": 99.24
-    },
-    {
-        "llm": "Cohere",
-        "comentario": "Meu coração não aguenta mais essas altas! Estou sempre de olho nas notícias pra tentar me planejar, mas tá difícil. A gente tenta se adaptar, mas quando o dólar sobe, meu trabalho dobra. Vamos torcer pra que essa intervenção do Banco Central ajude a acalmar as coisas.",
-        "prob_humano": 9.43,
-        "prob_IA": 90.57
-    },
-    {
-        "llm": "Cohere",
-        "comentario": "\"Notícias falsas impactando a economia e o meu negócio? Não dá pra acreditar que o governo tenta justificar a alta do dólar assim. Enquanto isso, eu e outros empresários lutamos pra manter as coisas funcionando e acessíveis aos nossos clientes. #EconomiaReal #PequenosNegócios\"",
-        "prob_humano": 17.54,
-        "prob_IA": 82.46
-    },
-    {
-        "llm": "Cohere",
-        "comentario": "É isso aí! O dólar alto impacta todos nós, principalmente os mais pobres. E quando o governo age de forma irresponsável, quem paga o pato somos nós, empresários e consumidores. Reduzir impostos é ótimo, mas tem que ser feito com planejamento, senão vira uma bagunça e quem sofre são os brasileiros.",
+        "comentario": "É complicado, né? A alta do dólar já tava complicando, agora com esses impostos... Difícil manter a loja competitiva assim. Os clientes sentem o impacto também, é um ciclo.",
+        "detector": "Binoculars",
         "prob_humano": 4.76,
         "prob_IA": 95.24
     },
     {
+        "llm": "Cohere",
+        "comentario": "É cada uma que a gente vê, né? Fake news impactando diretamente na nossa economia. Dólar nas alturas e a gente quebrando a cabeça pra manter o negócio de pé. Essa turma não pensa nas consequências das mentiras que espalham. É um crime que afeta a todos nós!",
+        "detector": "Binoculars",
+        "prob_humano": 8.22,
+        "prob_IA": 91.78
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Meu Deus, de novo essa alta! É uma facada nas minhas importações, sem contar que os clientes sentem o impacto na hora de comprar. Difícil manter um negócio estável assim.",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Meu coração não aguenta essa montanha-russa do dólar! Toda hora fico de olho na cotação, mas parece que nada segura essa alta. Será que o Banco Central tá perdendo a batalha? Vamos torcer pra essa loucura dar uma acalmada, porque senão, meu negócio vai pro brejo! #DólarAlto #Economia #BCIntervindo",
+        "detector": "Binoculars",
+        "prob_humano": 1.98,
+        "prob_IA": 98.02
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Notícias falsas? Acho difícil acreditar nisso. A alta do dólar impacta diretamente no meu negócio e no bolso dos meus clientes. É uma pena ver como a instabilidade econômica afeta a todos nós, pequenos empresários. Vamos torcer por dias melhores e uma economia mais estável!",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "É isso aí! A alta do dólar impacta todos nós, principalmente os mais pobres. O governo precisa ser responsável e pensar nas consequências das suas ações. Reduzir impostos é ótimo, mas não quando a conta não fecha e quem paga o pato é a população. O resultado é inflação, menos crescimento e um país mais pobre.",
+        "detector": "Binoculars",
+        "prob_humano": 12.63,
+        "prob_IA": 87.37
+    },
+    {
         "llm": "ChatGPT",
-        "comentario": "Ih, não fala isso! 😩 A situação tá crítica mesmo! Importar tá virando uma missão impossível. A gente se vira como dá, né? #forçavariedade 💔",
+        "comentario": "Pois é, amigo! A situação tá difícil demais. Com esse dólar lá em cima e imposto nas alturas, só quem importa tá se ferrando. Chega a dar medo de olhar pro preço das mercadorias! 😩📉",
+        "detector": "Binoculars",
         "prob_humano": 0,
         "prob_IA": 100
     },
     {
         "llm": "ChatGPT",
-        "comentario": "Sério, galera? Essa situação com o dólar tá um caos! Não dá pra acreditar que ainda tem gente usando de tudo pra manipular a opinião. O povo aqui que se vire com esses preços abusivos! 😩💸 #desabafo",
-        "prob_humano": 2.61,
-        "prob_IA": 97.39
+        "comentario": "Sério, esse jogo sujo com a moeda é um saco! Enquanto isso, quem paga o preço somos nós, pequenos empresários... 🤦‍♀️ #AltoDólar #CadeOsClientes",
+        "detector": "Binoculars",
+        "prob_humano": 6.11,
+        "prob_IA": 93.89
     },
     {
         "llm": "ChatGPT",
-        "comentario": "Poxa, só falta isso pra complicar ainda mais! 😩 A alta do dólar tá machucando nossos negócios, hein? Vamos ver até onde isso vai... #Desabafo",
-        "prob_humano": 4.76,
-        "prob_IA": 95.24
+        "comentario": "Não aguento mais essa alta do dólar! 😩 A cada dia fica mais difícil pra gente que importa. Vamos ter que ajustar preços de novo, complica a vida do pequeno empresário e do consumidor!",
+        "detector": "Binoculars",
+        "prob_humano": 4.1,
+        "prob_IA": 95.9
     },
     {
         "llm": "ChatGPT",
-        "comentario": "Poxa, mais uma alta? Essa montanha-russa do dólar tá difícil, hein?! 😩 Precisamos encontrar maneiras de nos adaptar, mas é complicado! #ForçaEmpreendedor",
-        "prob_humano": 3.29,
-        "prob_IA": 96.71
+        "comentario": "Mais uma alta? 😩 O jeito vai ser adaptar os preços de novo! Como se não fosse difícil o suficiente… #sóquenão",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
     },
     {
         "llm": "ChatGPT",
-        "comentario": "Sério? Colocar a culpa em notícia falsa agora? Enquanto isso, a gente aqui na batalha com o dólar nas alturas. Que situação! 😅 #Socorro",
-        "prob_humano": 9.92,
-        "prob_IA": 90.08
+        "comentario": "Sério isso? 😒 A alta do dólar tá doendo no meu bolso, não vem com histórias! Essas \"notícias falsas\" esfriam minhas vendas e aquecem a conta do fornecedor. Cadê a solução, gente? #Desabafo",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
     },
     {
         "llm": "ChatGPT",
-        "comentario": "TOTALMENTE! 😩 E o que é pior, isso tudo acaba caindo nas costas do pequeno empresário e do consumidor. A conta não fecha nunca! Precisamos de soluções reais, não só promessas. Vamos cuidar do nosso país! 💔💰",
-        "prob_humano": 7.89,
-        "prob_IA": 92.11
+        "comentario": "Totalmente! A conta sempre chega pra quem tá no final da fila. É uma pena ver como essas decisões afetam quem menos tem. Precisamos de gestão responsável, não só de promessas! 😩💔 #DólarNasNuvens",
+        "detector": "Binoculars",
+        "prob_humano": 6.83,
+        "prob_IA": 93.17
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "É, cara, essa alta do dólar está complicando muita coisa pra gente! Importar produtos fica cada vez mais caro e difícil com impostos altos. Infelizmente, se o dólar não abaixar, pode ser que a importação acabe sofrendo mesmo...",
+        "detector": "Binoculars",
+        "prob_humano": 2.05,
+        "prob_IA": 97.95
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Ah, que vergonha! A gente vive assistindo a essa história de dólar todo tempo, e agora eles nem sabem parar de criar notícias falsas pra tentar influenciar as pessoas. É uma batalha inteira dessas fake news contra a verdade.",
+        "detector": "Binoculars",
+        "prob_humano": 10.22,
+        "prob_IA": 89.78
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Uau, essa alta do dólar é um verdadeiro desafio! É difícil acompanhar todos os impactos econômicos, mas como dono de uma loja de roupas, o aumento dos preços importados certamente afeta nossa margem de lucro. Afinal, precisamos manter nosso negócio competitivo e isso exige um bom planejamento financeiro. Já estou pensando em estratégias para minimizar esses custos adicionais e ainda tentar compensar os clientes com preços justos.",
+        "detector": "Binoculars",
+        "prob_humano": 8.43,
+        "prob_IA": 91.57
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Caramba! A alta do dólar de novo aí... Isso é um infortúnio, hein? Já vi tanta flutuação que nem acredito mais. É difícil para o bolso dos nossos clientes, já que isso afeta diretamente os preços das importações. Bom, temos de ver as mãos da fazenda pra ver como vamos lidar com essa situação.",
+        "detector": "Binoculars",
+        "prob_humano": 3.67,
+        "prob_IA": 96.33
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Uai, essa alta do dólar tá complicando a vida de várias empresas aqui no país! Afinal, com o dólar valendo R$ 6,20, os preços dos produtos importados aumentam e isso pode impactar diretamente na minha margem de lucro. Seria interessante ver mais ações do Governo para estabilizar essa situação econômica...",
+        "detector": "Binoculars",
+        "prob_humano": 10.95,
+        "prob_IA": 89.05
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Caramba, que dólar está fazendo mal no bolso dos brasileiros! O governo tem que parar com esses gastos sem conta pra não acabar com o pouco dinheiro do povo. Eu sei que reduzir impostos é uma boa ideia, mas quando o governo não sabe gerenciar bem as coisas, só empobrece todo mundo. O dólar alto está afetando diretamente os preços das coisas e a vida dos mais pobres fica cada vez mais difícil.",
+        "detector": "Binoculars",
+        "prob_humano": 8.56,
+        "prob_IA": 91.44
     },
     {
         "llm": "Gemini",
-        "comentario": "Pois é, amiga, bem por aí... 😥 Se continuar nesse ritmo, a gente vai ter que virar costureira e produzir tudo por aqui mesmo! #dolaralto #importaçãonuncamais",
-        "prob_humano": 5.22,
-        "prob_IA": 94.78
+        "comentario": "\"Pois é, amiga(o)! Complicado demais importar desse jeito. A gente se mata pra ter uns produtos diferentes e a conta não fecha! 😥\"",
+        "detector": "Binoculars",
+        "prob_humano": 3.6,
+        "prob_IA": 96.4
     },
     {
         "llm": "Gemini",
-        "comentario": "Puxa, que rolo! A gente se mata pra manter as contas em dia e vem essa gente com fake news pra bagunçar tudo... 🤦‍♀️ Não dá pra ter um minuto de paz com esse dólar, viu?",
-        "prob_humano": 7.23,
-        "prob_IA": 92.77
+        "comentario": "\"Sério isso? 🤯 Que loucura! A gente ralando pra manter as coisas em pé e vem essa galera sabotar tudo. Aff, haja paciência (e jogo de cintura com esses preços!).\"",
+        "detector": "Binoculars",
+        "prob_humano": 3.88,
+        "prob_IA": 96.12
     },
     {
         "llm": "Gemini",
-        "comentario": "Putz, de novo essa novela do dólar? 😩 A gente mal consegue respirar, parece que o negócio nunca vai ter paz. Mais uma semana pra quebrar a cabeça e ver como faz pra não repassar tudo pro cliente... 😥",
+        "comentario": "Eita, R$6,15 de novo?! 😥 Lá se vai minha margem de lucro... Alguém tem um plano B aí? 😅 #dólar #perrengue #lojista",
+        "detector": "Binoculars",
         "prob_humano": 0,
         "prob_IA": 100
     },
     {
         "llm": "Gemini",
-        "comentario": "Ai, gente, que sufoco! 😩 De novo essa alta do dólar? Parece que não tem fim... E a gente aqui, com a lojinha, tentando não repassar tudo pro cliente, mas tá osso viu? 😬 Bora pra luta que não tá fácil pra ninguém! #dólar #altadodólar #vidadoempreendedor",
+        "comentario": "Poxa vida, de novo essa novela? 🙄 A gente tenta respirar fundo, mas o dólar não colabora! 😩 Impacto direto nos preços, né? Bora pensar em alternativas pra não repassar tudo pro cliente... Difícil, viu? 😓 #dólar #altadodolar #pequenosnegócios #realidadedoempreendedor",
+        "detector": "Binoculars",
         "prob_humano": 0,
         "prob_IA": 100
     },
     {
         "llm": "Gemini",
-        "comentario": "Peraí, agora a culpa é da fake news?! 🤦‍♀️ O dólar tá nas alturas e a gente que lute pra não ter que repassar tudo pro cliente! #sójesusnacausa #altadodolar #empreendedorismo",
-        "prob_humano": 6.06,
-        "prob_IA": 93.94
+        "comentario": "Ah, fala sério, \"notícia falsa\"? 🙄 A gente que importa sabe bem que a alta do dólar não é fake news, é pesadelo real! 💸😭 Alguém avisa pra ele que a fatura da loja não aceita desculpa... #dólar #realidade #vidadeempresária",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
     },
     {
         "llm": "Gemini",
-        "comentario": "Pois é, amigo, parece que a gente tá num looping de notícias ruins! 😩 E o pior é que a gente, que batalha todo dia, é quem sente mais na pele essa bagunça toda. Dólar nas alturas, preço subindo... haja criatividade pra manter a loja funcionando! 🤯",
+        "comentario": "Pois é, gente! 🤦‍♀️ A gente batalha tanto pra fazer o negócio girar e vem o dólar pra bagunçar tudo. E o pior é que a gente sabe que quem mais sofre é o consumidor final, né? Cesta básica nas alturas, aí fica difícil pra todo mundo! 😩",
+        "detector": "Binoculars",
+        "prob_humano": 9.13,
+        "prob_IA": 90.87
+    },
+    {
+        "llm": "Llama",
+        "comentario": "E aí, o que vai acontecer com as nossas marcas nessa? Vão ter que parar de importar e pedir uma revolta no governo?!",
+        "detector": "Binoculars",
+        "prob_humano": 16.18,
+        "prob_IA": 83.82
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Não acredito nessa história de fakenews que vão fazer galipolo dizer o que não diz! A alta do dólar é uma realidade e precisamos parar essa falsa narrativa já, é um desrespeito aos consumidores e às empresas como a minha.",
+        "detector": "Binoculars",
+        "prob_humano": 2.63,
+        "prob_IA": 97.37
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Que merda! E aí o governo vai resolver isso?",
+        "detector": "Binoculars",
+        "prob_humano": 20.47,
+        "prob_IA": 79.53
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Essa é a vida! Alta do dólar novamente, e com isso meus custos aumentam ainda mais... Como eu vou manter a loja na competitividade?",
+        "detector": "Binoculars",
         "prob_humano": 0,
         "prob_IA": 100
     },
     {
         "llm": "Llama",
-        "comentario": "Pra que é isso? Aumentar o imposto pra aí só piora ainda mais a situação! Quem vai pagar esse preço pra importar coisas básicas?",
-        "prob_humano": 3.77,
-        "prob_IA": 96.23
-    },
-    {
-        "llm": "Llama",
-        "comentario": "Mal posso acreditar nessa porra! Quem é essa turma que usa inteligência artificial pra enganar as pessoas? É um crime contra a justiça, não é mesmo?",
-        "prob_humano": 1.78,
-        "prob_IA": 98.22
-    },
-    {
-        "llm": "Llama",
-        "comentario": "Que barulho! E aí Lula vai resolver? Nada parece funcionar...",
+        "comentario": "E aí Paulo Pimenta sabe exatamente como é que as notícias falsas afetam a economia? Essa não é uma explicação séria!",
+        "detector": "Binoculars",
         "prob_humano": 0,
         "prob_IA": 100
     },
     {
         "llm": "Llama",
-        "comentario": "\"Que desastre! Mais uma vez, a R$ é esmagada pelo dólar... Quem tem ideia de como o Banco Central vai lidar com isso? \"",
-        "prob_humano": 17.93,
-        "prob_IA": 82.07
-    },
-    {
-        "llm": "Llama",
-        "comentario": "Pff, o que é isso? Ministro diz que a alta do dólar foi resultado de notícias falsas? Isso pode ser ou um grande golpe de marketing ou alguém que não entende como o mundo funciona. A inflação, a política econômica... essa é uma questão complexa!",
-        "prob_humano": 5.91,
-        "prob_IA": 94.09
-    },
-    {
-        "llm": "Llama",
-        "comentario": "Eu paro de pensar nessa coisa e começo a me frustrar mesmo, você está certo, é um ciclo ruim que a gente não consegue sair, só se piora...",
-        "prob_humano": 7.75,
-        "prob_IA": 92.25
+        "comentario": "Eu não estou com a cabeça certa quando vejo essa situação. Se o Brasil está gastando mais do que tem, como vai crescer? É um ciclo ruim e vamos sofrer muito mais.",
+        "detector": "Binoculars",
+        "prob_humano": 7.38,
+        "prob_IA": 92.62
     },
     {
         "llm": "MaritacaIA",
-        "comentario": "Verdade, tá complicado demais! 😩 A gente tenta se virar como pode, mas se o dólar não der uma trégua, vai ser difícil manter os preços acessíveis. Tem que repensar estratégias, né? #VarejoSofre",
-        "prob_humano": 8.4,
-        "prob_IA": 91.6
+        "comentario": "Verdade, tá impossível! A gente já paga um monte de imposto, e com o dólar nas alturas, fica inviável importar. Vou ter que repensar toda a estratégia da loja pra não repassar tudo pro cliente. Complicado demais! #VidaDeEmpresário",
+        "detector": "Binoculars",
+        "prob_humano": 10.22,
+        "prob_IA": 89.78
     },
     {
         "llm": "MaritacaIA",
-        "comentario": "Que absurdo, né?! O dólar não para de subir e agora essa confusão toda por causa de fakenews. Tava achando que já tinha visto de tudo... Esses caras não têm noção do estrago que causam nos nossos negócios. A gente já luta tanto pra manter os preços justos! #chateada #economiaBR",
-        "prob_humano": 0.98,
-        "prob_IA": 99.02
+        "comentario": "Pô, é cada uma que a gente vê... Dólar nas alturas e ainda tem gente espalhando fake news pra tumultuar mais ainda. Vai ver a intenção é mesmo criar pânico e confusão. A gente que luta pra manter o negócio de pé, sofre com essa instabilidade toda. #ForaFakeNews #DolarAltoComplica",
+        "detector": "Binoculars",
+        "prob_humano": 10.97,
+        "prob_IA": 89.03
     },
     {
         "llm": "MaritacaIA",
-        "comentario": "🤦‍♀️ Essa alta do dólar tá de matar! Como que a gente vai segurar os preços assim, né? Lula precisa dar um jeito nessa bagunça econômica urgente. #DólarAlto #PequenosNegócios #Socorro",
-        "prob_humano": 9.73,
-        "prob_IA": 90.27
-    },
-    {
-        "llm": "MaritacaIA",
-        "comentario": "Ugh, essa alta do dólar não dá trégua! 😩 Já tá quase R$ 6,09 e olha que o Banco Central até tentou segurar... Complicado pra quem importa, né? Tô aqui tentando equilibrar os preços pra não assustar os clientes. #DólarAlto #EmpreendedorismoReal",
+        "comentario": "Cara, que sufoco! Dólar disparando de novo, e aí quem sofre somos nós, os pequenos empresários. Tá impossível manter os preços sem assustar os clientes. #SocorroLula #DólarAlto",
+        "detector": "Binoculars",
         "prob_humano": 0,
         "prob_IA": 100
     },
     {
         "llm": "MaritacaIA",
-        "comentario": "\"Gente, falou que o dólar tá nas alturas por causa de fake news? Complicado, né? Tá difícil aqui pra gente que importa, os preços sobem e o cliente sente no bolso. Precisamos de soluções reais, não de desculpas! #dolar #economia #pequenosnegócios\"",
-        "prob_humano": 13.91,
-        "prob_IA": 86.09
+        "comentario": "Essa alta do dólar não dá trégua, né? 😩 Tava até esperançosa quando o BC interveio, mas parece que não rolou muito efeito. Vou ter que repensar os preços das roupas de novo... #DifícilManterEstável",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
     },
     {
         "llm": "MaritacaIA",
-        "comentario": "Verdade, né? Esse dólar lá nas alturas tá complicando tudo. Quem sofre mais somos nós, os pequenos empresários, e os clientes, claro. A ideia de reduzir impostos é ótima, mas tem que ser feita com responsabilidade, não de qualquer jeito. Se o governo não se toca e continua gastando sem controle, só piora a situação. Aí fica difícil segurar os preços e manter a loja competitiva. É um ciclo que só prejudica quem tá tentando se virar e crescer. #SinceridadeBR #EmpreendedorismoReal",
-        "prob_humano": 14.98,
-        "prob_IA": 85.02
+        "comentario": "😳 Será que o ministro acha que a gente não vê o impacto real do dólar nas nossas importações? Difícil culpar só fake news quando a gente sente no bolso todo dia! #CNNArena",
+        "detector": "Binoculars",
+        "prob_humano": 1.35,
+        "prob_IA": 98.65
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Verdade, né? O dólar lá nas alturas tá complicando demais a vida de todo mundo. E esse governo, parece que vive no mundo da lua! Falam em ajudar, mas só fazem as coisas piorarem. Imposto baixo é ótimo, mas sem responsabilidade, só vira mais bagunça. Aí quem sofre somos nós, com preços nas alturas e o dinheiro valendo cada vez menos. Difícil demais! 🤷‍♀️",
+        "detector": "Binoculars",
+        "prob_humano": 7.31,
+        "prob_IA": 92.69
     },
     {
         "llm": "Mistral",
-        "comentario": "@fulano, verdade! Está cada vez mais difícil manter os preços acessíveis. A gente tem que se reinventar pra não passar essa conta toda pros clientes. 💸😫",
-        "prob_humano": 3.24,
-        "prob_IA": 96.76
+        "comentario": "É verdade, Juliana. Essa alta do dólar está acabando com a gente! Temos que ser criativos pra manter os preços acessíveis e o estoque cheio.",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
     },
     {
         "llm": "Mistral",
-        "comentario": "Nossa, que loucura! Essa instabilidade só piora nossa situação. Precisamos de mais responsabilidade e menos fake news. 😒 #Dólar #Economia",
-        "prob_humano": 8.18,
-        "prob_IA": 91.82
+        "comentario": "Nossa, só piora! Essa alta do dólar está acabando com a gente. Precisamos de soluções urgentes, senão vai ficar insustentável.",
+        "detector": "Binoculars",
+        "prob_humano": 4.11,
+        "prob_IA": 95.89
     },
     {
         "llm": "Mistral",
-        "comentario": "Ai, bateu de novo! Precisamos de soluções urgentes pra segurar essa moeda. Meu estoque tá sofrendo! 💸😫",
-        "prob_humano": 4.41,
-        "prob_IA": 95.59
+        "comentario": "Poxa, mais uma na conta! Essa alta do dólar tá acabando com o nosso planejamento financeiro. Vamos ter que ser ainda mais criativos pra manter os preços acessíveis pra nossos clientes.",
+        "detector": "Binoculars",
+        "prob_humano": 3.48,
+        "prob_IA": 96.52
     },
     {
         "llm": "Mistral",
-        "comentario": "Ah, mais essa não! A gente tenta se virar aqui e o dólar não colabora. Vamos ter que ser criativos de novo pra manter os preços acessíveis. 😫💸 #DesafioDiário",
-        "prob_humano": 1.28,
-        "prob_IA": 98.72
+        "comentario": "Ah, que saco! Essa alta do dólar não dá trégua. Minha loja já tá sentindo o baque, e os clientes também. Vamos ter que ser criativos pra segurar essa onda!",
+        "detector": "Binoculars",
+        "prob_humano": 5.51,
+        "prob_IA": 94.49
     },
     {
         "llm": "Mistral",
-        "comentario": "\"Gente, sério? Notícias falsas? Aqui na loja, a gente sente o impacto na pele. Precisamos de soluções reais, não de desculpas.\"",
-        "prob_humano": 12.4,
-        "prob_IA": 87.6
+        "comentario": "Ah, sério que ele acha que a culpa é de fake news? 🙄 A gente aqui na ponta, sofrendo com a alta do dólar, e ainda temos que lidar com essas desculpas. #RealidadeDiferente",
+        "detector": "Binoculars",
+        "prob_humano": 10.18,
+        "prob_IA": 89.82
     },
     {
         "llm": "Mistral",
-        "comentario": "Ah, concordo plenamente! Essa alta do dólar está acabando com a gente. Meu negócio de roupas online tá sentindo o baque, e meus clientes também. Precisamos de soluções que realmente funcionem, não só promessas vazias.",
-        "prob_humano": 13.04,
-        "prob_IA": 86.96
+        "comentario": "Ah, concordo plenamente! Essa alta do dólar está prejudicando tanto o meu negócio quanto o bolso dos meus clientes. Precisamos de mais responsabilidade nas contas públicas para estabilizar a economia.",
+        "detector": "Binoculars",
+        "prob_humano": 1.06,
+        "prob_IA": 98.94
     }
 ]

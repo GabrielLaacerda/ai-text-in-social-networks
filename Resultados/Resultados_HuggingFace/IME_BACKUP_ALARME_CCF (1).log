@@ -1,0 +1,39 @@
+DATA_INICIO#19/02/2025 11:31:58
+COMANDO#\"/home/producao/IME/sh/IME_Backup_Alarme_CCF.py\" 
+================================================================================
+
+19/02/2025-11:31:59 INICIO - Sistema..: IME
+                    INICIO - Script...: IME_Backup_Alarme_CCF
+                    --------------------------------------------------------------------------------
+19/02/2025-11:31:59    [E] Criando lock
+19/02/2025-11:31:59        [I] Lock criado
+19/02/2025-11:31:59    [E] ETAPA << INICIA >> :: INICIANDO
+19/02/2025-11:31:59            [I] Diretorio Nagios ...................................: None
+19/02/2025-11:31:59        [I] ETAPA << INICIA >> :: SUCESSO
+19/02/2025-11:31:59[E] ETAPA << BACKUP ARQUIVOS >> :: INICIANDO
+19/02/2025-11:31:59        [I] Backupeando arquivos do diretorio /workprod/ArqsOriginais/INPUT/ATS_IN/CCFULA1/ para /workprod/ArqsOriginais/PROCESS/ATS_IN/CCFULA1
+19/02/2025-11:31:59        [I] Backupeando arquivos do diretorio /workprod/ArqsOriginais/INPUT/ATS_IN/CCFFAC1/ para /workprod/ArqsOriginais/PROCESS/ATS_IN/CCFFAC1
+19/02/2025-11:31:59    [I] ETAPA << BACKUP ARQUIVOS >> :: SUCESSO
+19/02/2025-11:31:59[E] ETAPA << GERA LISTA >> :: INICIANDO
+19/02/2025-11:31:59    [E] Gerando Dicionario dos Arquivos a Processar.
+19/02/2025-11:31:59        [I] Diretorio .......: /workprod/ArqsOriginais/INPUT/ATS_IN/CCFULA1/, Tempo limite Diretorio  .....:600 minuto(s), Tempo Limite Arquivo .....: 120 minuto(s).
+19/02/2025-11:31:59        [I] Diretorio .......: /workprod/ArqsOriginais/INPUT/ATS_IN/CCFFAC1/, Tempo limite Diretorio  .....:600 minuto(s), Tempo Limite Arquivo .....: 120 minuto(s).
+19/02/2025-11:31:59    [I] ETAPA << GERA LISTA >> :: SUCESSO
+19/02/2025-11:31:59[E] ETAPA << CHECA DIRETORIOS >> :: INICIANDO
+('/workprod/ArqsOriginais/INPUT/ATS_IN/CCFULA1/MGULA_CN_2117_20250219084939_TZ', datetime.datetime(2025, 2, 19, 9, 20, 48, 172443))
+19/02/2025-11:31:59    [ERRO]############################################################
+                       [ERRO] Coleta Expirada para o Arquivo .......: /workprod/ArqsOriginais/INPUT/ATS_IN/CCFULA1/MGULA_CN_2117_20250219084939_TZ, em 131 minutos.
+                       [ERRO]############################################################
+('/workprod/ArqsOriginais/INPUT/ATS_IN/CCFFAC1/SPFAC_CN_8468_20250219084948_TZ', datetime.datetime(2025, 2, 19, 9, 20, 55, 968484))
+19/02/2025-11:31:59    [ERRO]############################################################
+                       [ERRO] Coleta Expirada para o Arquivo .......: /workprod/ArqsOriginais/INPUT/ATS_IN/CCFFAC1/SPFAC_CN_8468_20250219084948_TZ, em 131 minutos.
+                       [ERRO]############################################################
+19/02/2025-11:31:59    [I] ETAPA << CHECA DIRETORIOS >> :: ERRO
+19/02/2025-11:31:59 EMAIL ERRO .....: producao@algartelecom.com.br
+19/02/2025-11:31:59 --------------------------------------------------------------------------------
+                    FIM :: STATUS .....: ERRO
+
+================================================================================
+DATA_FIM#19/02/2025 11:32:00
+STATUS#ERRO
+
