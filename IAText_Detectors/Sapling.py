@@ -59,6 +59,31 @@ def probabilidade_IA(comentarios, modelos):
 
     return resultados  # Retorna os resultados no formato desejado
 
+def probabilidade_IA_comentarios_proprios(comentarios):
+    warnings.filterwarnings("ignore")
+
+    # Define a chave da API e o endpoint
+    api_key = "ELC1FVXZVPSCUJJB2N4P6WFHC9272EOO"
+    url = "https://api.sapling.ai/api/v1/aidetect"
+
+    if not isinstance(comentarios, list):
+        raise ValueError("O argumento 'comentarios' deve ser uma lista.")
+
+    resultados = []
+
+    for item in comentarios:
+        if item:
+            prob_human, prob_ia = calcular_probabilidade_api(item, api_key, url)
+
+            if prob_human is not None and prob_ia is not None:
+                # Adiciona os resultados no formato desejado
+                resultados.append({
+                    'prob_humano': prob_human,
+                    'prob_IA': prob_ia
+                })
+
+    return resultados  # Retorna os resultados no formato desejado
+
 # Função para processar uma única frase
 def probabilidade_frase_unica(frase):
     warnings.filterwarnings("ignore")

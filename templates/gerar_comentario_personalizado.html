@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Gerador de comentário Personalizado</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="{{ url_for('static', filename='js/gerar_comentarios_geral.js') }}"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script src="{{ url_for('static', filename='js/scrool.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
@@ -49,7 +50,7 @@
                 </option>
             {% endfor %}
         </select>
-        <textarea id="persona" name="persona" class="form-control mt-2" rows="2" placeholder="Ou digite aqui" required></textarea>
+            <textarea id="persona" name="persona" class="form-control mt-2" rows="2" placeholder="Ou digite aqui" required></textarea>
         </div>
 
 
@@ -75,33 +76,40 @@
         </div>
     </div>
 
-    <!--Caso exista a variavel comentarios, os mesmos foram gerados e assim são exibidos em formato de tabela na tela-->
-    {% if comentario %}
-    <h2 class="mt-3">Comentário Gerado</h2>
+    {% if comentario or full_comments %}
+    <h2 class="mt-3">Comentários Gerados</h2>
     <div class="comentarios">
-        <table id="dataTable" class="display" style="table-layout: auto;width:100%">
+        <table id="dataTable" class="display" style="table-layout: auto; width:100%">
             <thead>
                 <tr>
-                    <th>LLM Geradora</th>
+                    <th>LLM Gerador</th>
                     <th>Tema</th>
                     <th>Post</th>
                     <th>Comentário Gerado</th>
+                    <th>%IA (Roberta Detector)</th>
                 </tr>
             </thead>
             <tbody>
+                {% set all_comments = [{'llm': llm, 'comentario': comentario, 'probIA': probIA}] if comentario else [] %}
+                {% set all_comments = all_comments + (full_comments if full_comments else []) %}
+
+                {% for item in all_comments %}
                 <tr>
-                    <td>{{ llm }}</td>
+                    <td>{{ item.llm }}</td>
                     <td>{{ tema }}</td>
                     <td>{{ post }}</td>
-                    <td>{{ comentario }}</td>
+                    <td>{{ item.comentario }}</td>
+                    <td>{{ item.probIA }}</td>
                 </tr>
+                {% endfor %}
             </tbody>
         </table>
     </div>
 
-
     <div style="height: 20px"></div>
-    {% endif %}
+{% endif %}
+
+
 
 
     <script>

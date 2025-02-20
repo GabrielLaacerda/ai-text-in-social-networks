@@ -15,6 +15,7 @@ import LLMs.ChatGPT as gptUnic
 import LLMs.MaritacaIA as maritacaIAUnic
 import LLMs.Gemini as geminiIAUnic
 import LLMs.Mistral as mistralUnic
+import LLMs.DeepSeek as deepseekUnic
 
 from flask import Flask, render_template, request, send_file, session
 from LLMs.Cohere import gerar_comentarios_para_posts as cohere
@@ -244,67 +245,80 @@ def analisarAutenticidadeGeral():
 @app.route("/gerarComentario", methods=["GET", "POST"])
 def gerarComentario():
     arquivo = "JSONS/Personas_Para_Comentarios_Personalizados/personas.json"
+    personas = []
 
-    if request.method == 'GET':
+    # Função auxiliar para carregar personas do JSON
+    def carregar_personas():
         try:
             with open(arquivo, "r") as f:
                 data = json.load(f)
-                if 'Personas' in data and isinstance(data['Personas'], list):
-                    personas = [
+                if isinstance(data.get("Personas"), list):
+                    return [
                         {
-                            'Tema': persona.get('Tema'),
-                            'Nome': persona.get('Nome'),
-                            'Descrição': persona.get('Descrição')
+                            "Tema": p.get("Tema"),
+                            "Nome": p.get("Nome"),
+                            "Descrição": p.get("Descrição")
                         }
-                        for persona in data['Personas']
-                        if 'Tema' in persona and 'Nome' in persona and 'Descrição' in persona
+                        for p in data["Personas"]
+                        if all(k in p for k in ["Tema", "Nome", "Descrição"])
                     ]
-                    # Renderiza com os dados coletados
-                    return render_template("gerar_comentario_personalizado.html", personas=personas, zip=zip)
-                else:
-                    print("'Personas' não encontrada ou não é uma lista.")
-        except FileNotFoundError:
-            print(f"Arquivo não encontrado: {arquivo}")
-        except json.JSONDecodeError:
-            print("Erro ao decodificar o JSON.")
+                print("'Personas' não encontrada ou não é uma lista.")
+        except (FileNotFoundError, json.JSONDecodeError) as e:
+            print(f"Erro ao carregar JSON: {e}")
+        return []
 
-    elif request.method == 'POST':
-        ai_choice = request.form.get('ai')
-        tema = request.form['tema']
-        persona = request.form['persona']
-        post = request.form['post']
+    personas = carregar_personas()
 
-        with open(arquivo, "r") as f:
-            data = json.load(f)
-            if 'Personas' in data and isinstance(data['Personas'], list):
-                personas = [
-                    {
-                        'Tema': persona.get('Tema'),
-                        'Nome': persona.get('Nome'),
-                        'Descrição': persona.get('Descrição')
-                    }
-                    for persona in data['Personas']
-                    if 'Tema' in persona and 'Nome' in persona and 'Descrição' in persona
-                ]
+    if request.method == "POST":
+        ai_choice = request.form.get("ai")
+        tema = request.form.get("tema")
+        persona = request.form.get("persona")
+        post = request.form.get("post")
+        full_comments = []
 
         ai_map = {
             "cohere": cohereUnic,
-            "llama": llamaUnic,
             "chatgpt": gptUnic,
-            "maritacaIA": maritacaIAUnic,
             "gemini": geminiIAUnic,
+            "llama": llamaUnic,
+            #Desativado devido ao modelo não estar baixado
+            #"deepseek": deepseekUnic,
+            "maritacaIA": maritacaIAUnic,
             "mistral": mistralUnic
         }
 
+        if not ai_choice:
+            for llm in ai_map:
+                comment = ai_map[llm].gerar_comentarios(persona, post, tema)
+                probIA = roberta.probabilidade_frase_unica(comment)
+                full_comments.append({"llm": llm.capitalize(), "comentario": comment, "probIA":  probIA["prob_IA"]})
+
+            return render_template(
+                "gerar_comentario_personalizado.html",
+                full_comments=full_comments,
+                tema=tema,
+                post=post,
+                personas=personas,
+                zip=zip
+            )
+
+
         if ai_choice in ai_map:
             resposta = ai_map[ai_choice].gerar_comentarios(persona, post, tema)
-            return render_template("gerar_comentario_personalizado.html",
-                                   comentario=resposta,
-                                   tema=tema,
-                                   llm=ai_choice.capitalize(),
-                                   post=post,personas=personas)
+            prob_IA = roberta.probabilidade_frase_unica(resposta)
 
-    return render_template("gerar_comentario_personalizado.html")
+            return render_template(
+                "gerar_comentario_personalizado.html",
+                comentario=resposta,
+                tema=tema,
+                llm=ai_choice.capitalize(),
+                post=post,
+                personas=personas,
+                probIA = prob_IA["prob_IA"]
+            )
+
+    return render_template("gerar_comentario_personalizado.html", personas=personas)
+
 
 
 @app.route("/analisarAutenticidade", methods=["GET", "POST"])
@@ -320,7 +334,7 @@ def analisar_comentario():
             "radar": radar.probabilidade_frase_unica,
             "huggingface": huggingface.probabilidade_frase_unica,
             "distbert": distbert.probabilidade_IA_frase,
-            "binoculars": binoculars.probabilidade_IA_frase  # Descomentando essa linha, a IA será incluída automaticamente
+            #"binoculars": binoculars.probabilidade_IA_frase  # Descomentando essa linha, a IA será incluída automaticamente
         }
 
         if ai_choice in ai_map:
@@ -336,6 +350,67 @@ def index():
 
     except Exception as error:
        logging.error(f"{error}")
+
+
+def calcular_media_acerto_erro(dados):
+    total_acerto = 0
+    total_erro = 0
+    total_comentarios = len(dados)
+
+    for item in dados:
+        total_acerto += item['prob_humano']
+        total_erro += item['prob_IA']
+
+    media_acerto = total_acerto / total_comentarios if total_comentarios else 0
+    media_erro = total_erro / total_comentarios if total_comentarios else 0
+
+    return media_acerto, media_erro
+
+@app.route("/gerarEstatisticasPersonalizadas", methods=["GET", "POST"])
+def gerarEstatisticasPersonalizadas():
+
+    probabilidades = []
+
+    if request.method == "GET":
+        return render_template("gerar_estatisticas_personalizadas.html")  # Renderiza a página quando acessada via GET
+
+    if request.method == "POST":
+
+        detector_map = {
+            "roberta": roberta,
+            "radar": radar,
+            "sapling": sapling,
+            "huggingface": huggingface,
+            "distbert": distbert,
+            #"binoculars": binoculars
+        }
+
+        comentarios = []
+        file = request.files["txtFile"]
+        conteudo = file.read().decode("utf-8")
+        results = []
+
+        linhas_nao_vazias = [linha.strip() for linha in conteudo.splitlines() if linha.strip()]
+
+        for linha in linhas_nao_vazias:
+            comentarios.append(linha)
+
+        for chave, funcao in detector_map.items():
+            results.append([{"detector": str(chave) , "Probabilidades": funcao.probabilidade_IA_comentarios_proprios(comentarios)}])
+            
+        probabilidades = res.calcular_comentarios_proprios(results)
+
+        """
+        for detector, valores in probabilidades.items():
+            print(f"Detector: {detector}")
+            print(f"Acerto: {valores['acerto']}")
+            print(f"Erro: {valores['erro']}")
+            print()  # Imprime uma linha em branco para separar os detectores
+        """
+        return render_template("gerar_estatisticas_personalizadas.html", probabilidades=probabilidades)
+
+    return render_template("gerar_estatisticas_personalizadas.html", probabilidades=probabilidades)
+
 
 if __name__ == "__main__":
     try:

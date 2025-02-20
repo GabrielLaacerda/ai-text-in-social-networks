@@ -49,6 +49,35 @@ def probabilidade_IA(comentarios, modelos):
 
     return resultados  # Retorna os resultados no formato desejado
 
+def probabilidade_IA_comentarios_proprios(comentarios):
+    # Desabilitar avisos desnecessários
+    warnings.filterwarnings("ignore")
+
+    # Inicializa o Binoculars
+    bino = Binoculars()
+
+    if not isinstance(comentarios, list):
+        raise ValueError("O argumento 'comentarios' deve ser uma lista.")
+
+    resultados = []
+    i = 1
+
+    for item in comentarios:
+        if item:
+            score = bino.compute_score(item)  # Calcula a "probabilidade" com Binoculars
+
+            prob_ia = max(0, min(score * 100, 100))  # Garante que prob_IA não ultrapasse 100%
+            prob_human = max(0, 100 - prob_ia)  # Complemento correto de prob_IA
+
+            resultados.append({
+                'prob_humano': round(prob_human, 2),
+                'prob_IA': round(prob_ia, 2)
+            })
+
+            print(f"{i} de 42:  {resultados}")
+            i = i + 1
+
+    return resultados  # Retorna os resultados no formato desejado
 
 def probabilidade_IA_frase(frase):
 

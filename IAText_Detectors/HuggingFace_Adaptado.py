@@ -109,7 +109,7 @@ def salvar_resultados_json(resultados, nome_arquivo_saida):
 
 # Caminho para o arquivo de entrada
 arquivo_entrada = '/home/gabriel/TCC_GabrielVncs/Comentarios_Originais_Twitter/Comentarios_Filtrados/InteligenciaArtificial.txt'
-arquivo_saida = '/home/gabriel/TCC_GabrielVncs/Comentarios_Originais_Twitter/Resultados_HuggingFace/resultados_IneligenciaArtificial.json'
+arquivo_saida = '/home/gabriel/TCC_GabrielVncs/Comentarios_Originais_Twitter/Resultados_HuggingFace/resultados_InteligenciaArtificial.json'
 
 # Processar o arquivo e salvar os resultados
 resultados = processar_comentarios_arquivo(arquivo_entrada)

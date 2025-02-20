@@ -64,6 +64,37 @@ def probabilidade_IA(comentarios, modelos):
 
     return resultados  # Retorna os resultados no formato desejado
 
+def probabilidade_IA_comentarios_proprios(comentarios):
+    # Desabilitar avisos e logs desnecessários
+    warnings.filterwarnings("ignore")
+    logging.set_verbosity_error()
+
+    # Configuração do modelo
+    model_id = "TrustSafeAI/RADAR-Vicuna-7B"
+    device = "cpu"
+
+    # Carregar modelo e tokenizer
+    model = AutoModelForSequenceClassification.from_pretrained(model_id)
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+    model.eval()
+    model.to(device)
+
+    if not isinstance(comentarios, list):
+        raise ValueError("O argumento 'comentarios' deve ser uma lista.")
+
+    resultados = []
+
+    for item in comentarios:
+        if item:
+            prob_human, prob_ia = calcular_probabilidade(item, model, tokenizer, device)
+
+            resultados.append({
+                'prob_humano': prob_human,
+                'prob_IA': prob_ia
+            })
+
+    return resultados  # Retorna os resultados no formato desejado
+
 
 def probabilidade_frase_unica(frase):
     # Desabilitar avisos e logs desnecessários

@@ -188,4 +188,34 @@ def calcular_media_prob_humano_por_tema(resultado):
     return medias
 
 
+def calcular_comentarios_proprios(dados):
+    resultado = {}
+
+    # Itera sobre cada detector e suas probabilidades
+    for detector_data in dados:
+        for detector in detector_data:
+            nome_detector = detector['detector']
+            probabilidades = detector['Probabilidades']
+
+            # Inicializa as somas das probabilidades
+            soma_acertos = 0
+            soma_erros = 0
+
+            # Itera sobre as probabilidades para somar acertos e erros separadamente
+            for prob in probabilidades:
+                soma_acertos += prob['prob_humano']  # Agora prob_humano é o acerto
+                soma_erros += prob['prob_IA']  # Agora prob_IA é o erro
+
+            # Calcula as médias de acerto e erro
+            num_probabilidades = len(probabilidades)
+            media_acerto = soma_acertos / num_probabilidades
+            media_erro = soma_erros / num_probabilidades
+
+            # Adiciona o resultado final para cada detector
+            resultado[nome_detector] = {
+                'acerto': media_acerto,
+                'erro': media_erro
+            }
+
+    return resultado
 

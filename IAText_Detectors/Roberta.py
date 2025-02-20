@@ -63,6 +63,35 @@ def probabilidade_IA(comentarios, modelos):
 
     return resultados  # Retorna os resultados no formato desejado
 
+def probabilidade_IA_comentarios_proprios(comentarios):
+    warnings.filterwarnings("ignore")
+
+    # Desabilitar logs do transformers (Hugging Face)
+    logging.set_verbosity_error()
+
+    # Define o repositório do modelo
+    model_name = "roberta-large-openai-detector"
+
+    # Baixa o modelo e o tokenizer
+    model = AutoModelForSequenceClassification.from_pretrained(model_name)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+    if not isinstance(comentarios, list):
+        raise ValueError("O argumento 'comentarios' deve ser uma lista.")
+
+    resultados = []
+
+    for item in comentarios:
+        if item:
+            prob_human, prob_ia = calcular_probabilidade(item, model, tokenizer)
+
+            resultados.append({
+                'prob_humano': prob_human,
+                'prob_IA': prob_ia
+            })
+
+    return resultados  # Retorna os resultados no formato desejado
+
 # Função para processar uma única frase
 def probabilidade_frase_unica(frase):
     warnings.filterwarnings("ignore")
