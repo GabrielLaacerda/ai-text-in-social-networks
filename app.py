@@ -372,7 +372,7 @@ def gerarEstatisticasPersonalizadas():
     probabilidades = []
 
     if request.method == "GET":
-        return render_template("gerar_estatisticas_personalizadas.html")  # Renderiza a página quando acessada via GET
+        return render_template("estatisticas_personalizadas.html")  # Renderiza a página quando acessada via GET
 
     if request.method == "POST":
 
@@ -400,16 +400,9 @@ def gerarEstatisticasPersonalizadas():
             
         probabilidades = res.calcular_comentarios_proprios(results)
 
-        """
-        for detector, valores in probabilidades.items():
-            print(f"Detector: {detector}")
-            print(f"Acerto: {valores['acerto']}")
-            print(f"Erro: {valores['erro']}")
-            print()  # Imprime uma linha em branco para separar os detectores
-        """
-        return render_template("gerar_estatisticas_personalizadas.html", probabilidades=probabilidades)
+        return render_template("estatisticas_personalizadas.html", probabilidades=probabilidades)
 
-    return render_template("gerar_estatisticas_personalizadas.html", probabilidades=probabilidades)
+    return render_template("estatisticas_personalizadas.html", probabilidades=probabilidades)
 
 
 if __name__ == "__main__":

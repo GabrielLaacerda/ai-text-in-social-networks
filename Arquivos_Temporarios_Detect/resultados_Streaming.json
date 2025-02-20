@@ -1,0 +1,296 @@
+[
+    {
+        "llm": "Cohere",
+        "comentario": "Pois é, né? Já pago uma mensalidade, quero ver filme sem pagar mais nada!",
+        "detector": "Huggingface",
+        "prob_humano": 99.21632409095764,
+        "prob_IA": 0.7836759090423584
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "É muito sem noção isso, né? A gente já paga o serviço e ainda tem que desembolsar mais pra ver um filme. Parece que nunca vai ter fim essas cobranças extras.",
+        "detector": "Huggingface",
+        "prob_humano": 96.81366682052612,
+        "prob_IA": 3.186333179473877
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Poxa, tá difícil! A gente assina um monte de plataforma, paga uma nota, e ainda assim precisa alugar filme. Aí fica difícil competir com a pirataria, né? Mas vamos seguir na luta por um cinema em casa legítimo e acessível! #Streaming #FimDaPirataria",
+        "detector": "Huggingface",
+        "prob_humano": 99.93877410888672,
+        "prob_IA": 0.06122589111328125
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "É muito absurdo mesmo! A gente já paga uma mensalidade, né? Aí ainda vem com esses anúncios, parece que não respeitam o nosso tempo e dinheiro.",
+        "detector": "Huggingface",
+        "prob_humano": 97.85401821136475,
+        "prob_IA": 2.145981788635254
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "É verdade! Sinto falta dos tempos em que pagávamos apenas uma mensalidade e tínhamos acesso a tudo. Agora, é assinatura aqui, aluguel ali... E ainda tem os anúncios! Pirataria não é ideal, mas com tantas barreiras, as pessoas vão procurar alternativas mais baratas.",
+        "detector": "Huggingface",
+        "prob_humano": 99.78058934211731,
+        "prob_IA": 0.21941065788269043
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "É uma pena que as pessoas recorram à pirataria, mas com tantos serviços de streaming cobrando aluguel por filmes, além da mensalidade, fica difícil. A gente quer praticidade, um catálogo variado e acessível sem ter que pagar a mais por isso.",
+        "detector": "Huggingface",
+        "prob_humano": 99.79658126831055,
+        "prob_IA": 0.20341873168945312
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Sério?! Isso é um absurdo! Já pago a mensalidade, cadê a lógica? 😩🙄",
+        "detector": "Huggingface",
+        "prob_humano": 97.8671669960022,
+        "prob_IA": 2.1328330039978027
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Exatamente! Esse aluguel extra é um saco. Eu já tô pagando pra ter acesso a tudo, pra quê mais essa? 😒🙄",
+        "detector": "Huggingface",
+        "prob_humano": 99.74825978279114,
+        "prob_IA": 0.2517402172088623
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Sério, com esses preços e taxas de aluguel, é compreensível! 🙄 Disney+ e Prime, me ajudem! Cadê a inclusão de tudo no pacote? A galera tá buscando soluções, e a pirataria tá ganhando força por causa disso. #Complicado",
+        "detector": "Huggingface",
+        "prob_humano": 99.93839263916016,
+        "prob_IA": 0.06160736083984375
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Nossa, total! É um assalto à mão armada! Como assim pagar e ainda ter que encarar anúncio? A gente já rala pra juntar a grana do streaming, aí vem isso. Sério, tá complicado!! 😤",
+        "detector": "Huggingface",
+        "prob_humano": 99.91737008094788,
+        "prob_IA": 0.08262991905212402
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Totalmente! É um absurdo, né? Com tanto dinheiro pra nada, fica difícil resistir à tentação da pirataria. Saudade dos velhos tempos em que tudo era mais simples e acessível! 😩📺",
+        "detector": "Huggingface",
+        "prob_humano": 99.93444085121155,
+        "prob_IA": 0.06555914878845215
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Acho que bloqueiam mais sites de streaming do que as plataformas nos dão filmes de graça! 🙄 #ApenasDiga #CadêOsFilmes",
+        "detector": "Huggingface",
+        "prob_humano": 94.45439577102661,
+        "prob_IA": 5.545604228973389
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Isso aí é um absurdo! Eu pago uma mensalidade só pra ver filmes, mas tenho que pagar de novo pra alugá-los? Ninguém precisa disso, hein?",
+        "detector": "Huggingface",
+        "prob_humano": 99.83168840408325,
+        "prob_IA": 0.16831159591674805
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Nossa, ser pago pra ver filmes já é demais, mas alugar filmes dentro do streaming? Poxa, esses custos extras são chatos!",
+        "detector": "Huggingface",
+        "prob_humano": 99.89296793937683,
+        "prob_IA": 0.10703206062316895
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Man, eu sei que é complicado, mas essa história de plataformas de streaming pedindo caro pra ver só uns filmes... É realmente frustrante! Tanto faz onde assistimos, acho que o Brasil poderia exigir mais inclusão nos preços. Sabe, ser mais transparente com quem gasta tempo e dinheiro nessas plataformas.",
+        "detector": "Huggingface",
+        "prob_humano": 99.9580442905426,
+        "prob_IA": 0.04195570945739746
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Ainda pagando e vendo anúncios? É insuportável! Tem que ser algo de errado, hein? Não consigo acreditar na tolerância excessiva desses serviços...",
+        "detector": "Huggingface",
+        "prob_humano": 99.75243210792542,
+        "prob_IA": 0.24756789207458496
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Ah, essa é até uma história antiga! Antes, tinha só umas poucas plataformas e você pagava uns R$19,90 que dava acesso a tudo. Agora, com mais de 10 e o preço subindo pra quase R$40 por mês em média, é como se estivéssemos pagando para ver anúncios também. Tipo, parece que cada plataforma quer arrancar nosso bolso sem dar nada de novo ou melhor. Vai ser interessante ver o que acontece com a pirataria por causa disso.",
+        "detector": "Huggingface",
+        "prob_humano": 99.93357062339783,
+        "prob_IA": 0.06642937660217285
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Nossa, que batalha contra a pirataria digital! É bom ver plataformas tentando proteger seu conteúdo. Mas parece que essa luta é contínua mesmo.",
+        "detector": "Huggingface",
+        "prob_humano": 99.87530708312988,
+        "prob_IA": 0.12469291687011719
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Pois é, gente! Juro que não entra na minha cabeça isso de ter que ALUGAR filme no streaming que já pago! 🙄 Qual o sentido? Parece que tão querendo espremer cada centavo da gente. 😩",
+        "detector": "Huggingface",
+        "prob_humano": 99.94468092918396,
+        "prob_IA": 0.05531907081604004
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Mano, isso me irrita DEMAIS! Pago a mensalidade pra quê, então? 🙄 Podiam incluir tudo logo, né? #streaming #alugueldefilme #absurdo",
+        "detector": "Huggingface",
+        "prob_humano": 99.44949746131897,
+        "prob_IA": 0.5505025386810303
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Pois é, gente! 🙄 Assinatura virou quase aluguel turbinado, né? Pago um monte pra ter acesso a \"tudo\" e ainda tenho que alugar filme por fora? Aí fica difícil não entender pq a galera vai pro lado da pirataria... 💸",
+        "detector": "Huggingface",
+        "prob_humano": 99.94496703147888,
+        "prob_IA": 0.055032968521118164
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Mano, real! 🙄 Pago a mensalidade PRA NÃO TER anúncio! Que palhaçada é essa de ter que engolir propaganda? Já já tão cobrando pra dar pause no filme, só pode! 🤦‍♀️ #abusivo #streaming #cademeudinheiro",
+        "detector": "Huggingface",
+        "prob_humano": 99.70300197601318,
+        "prob_IA": 0.2969980239868164
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Nossa, real! Lembro dessa época de pagar baratinho e ter tudo... Agora assino um monte e ainda tenho que ALUGAR filme? 🙄 Desse jeito a gente volta pro torrent rapidinho, viu?",
+        "detector": "Huggingface",
+        "prob_humano": 99.81787204742432,
+        "prob_IA": 0.1821279525756836
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Bloquear site pirata tudo bem, agora podiam liberar uns filmes pra alugar DE GRAÇA nas plataformas que a gente JÁ PAGA, né? 😅 #aluguelabsurdo #streamings",
+        "detector": "Huggingface",
+        "prob_humano": 99.46069121360779,
+        "prob_IA": 0.5393087863922119
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Pensei que era só eu que estava louca pra isso... pq alugar filmes dentro de um serviço que já custa uma fortuna? Não entendo como é uma opção viável!",
+        "detector": "Huggingface",
+        "prob_humano": 99.88908171653748,
+        "prob_IA": 0.11091828346252441
+    },
+    {
+        "llm": "Llama",
+        "comentario": "E aí mesmo? Quem mais está cansada de pagar uma boa dose de dinheiro por uma assinatura e depois ter que alugar filmes novamente como se fosse algo normal, sabe? É um pouco demais, né?",
+        "detector": "Huggingface",
+        "prob_humano": 99.46284890174866,
+        "prob_IA": 0.5371510982513428
+    },
+    {
+        "llm": "Llama",
+        "comentario": "E aí, vocês acham que esses preços são legais? Eu sim pago uma faixa do meu salário mês por ano pra ter acesso ao catálogo da Netflix, mas só porque eu quero ver o mesmo filme 3 vezes não me faz sentir como se eu estivesse pagando por um aluguel de filmes.",
+        "detector": "Huggingface",
+        "prob_humano": 99.82010126113892,
+        "prob_IA": 0.17989873886108398
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Que loucura!!! Eles querem nos roubar dinheiro e depois nos vender anúncios. É basicamente roubo ao consumidor!",
+        "detector": "Huggingface",
+        "prob_humano": 99.4755506515503,
+        "prob_IA": 0.524449348449707
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Caram, é pra isso que estamos pagando? Vou ter que começar a procurar filmes na internet novamente...",
+        "detector": "Huggingface",
+        "prob_humano": 93.65650415420532,
+        "prob_IA": 6.343495845794678
+    },
+    {
+        "llm": "Llama",
+        "comentario": "\"É da hora de atras! Quando a pirataria é tão fácil que tem seus próprios sites? Como vão continuar sendo seguros se não alugam filmes? Alguém me diz como isso vai resolver?\"",
+        "detector": "Huggingface",
+        "prob_humano": 99.52206015586853,
+        "prob_IA": 0.4779398441314697
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Concordo demais! Tipo, já pagamos a mensalidade, né? Deveria ter tudo incluído. É chato ficar desembolsando mais grana a cada filme que queremos ver. #ChateadaComStreaming",
+        "detector": "Huggingface",
+        "prob_humano": 99.85520243644714,
+        "prob_IA": 0.14479756355285645
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Concordo demais! Pagar mensalidade e ainda ter que alugar filme extra é dose, né? Tipo, já não basta a assinatura? Quero maratonar sem dor de cabeça! #FrustraçãoTotal",
+        "detector": "Huggingface",
+        "prob_humano": 99.83848333358765,
+        "prob_IA": 0.16151666641235352
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Verdade, tá ficando difícil acompanhar esses preços. Pagamos a mensalidade e ainda tem que alugar filmes extras? Aí fica complicado! Eu mesma já fiquei tentada a olhar alternativas mais \"piratas\" só pra não gastar uma fortuna. Essas IPTVs tão bombando, né? Mas, ó, tem que ter cuidado com a qualidade e a legalidade, né. #CustoBenefícioQuestionável",
+        "detector": "Huggingface",
+        "prob_humano": 99.93690848350525,
+        "prob_IA": 0.06309151649475098
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Verdade, né? Ainda mais quando a gente paga caro pra ter um catálogo e sempre tem aquele filme que a gente quer ver, mas precisa alugar! Tipo, sério, já basta pagar a mensalidade. E esses anúncios são o fim! #chateada #consumidorabusado",
+        "detector": "Huggingface",
+        "prob_humano": 99.86065030097961,
+        "prob_IA": 0.13934969902038574
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Verdade, né? Tô gastando uma grana só pra ter um monte de plataformas e ainda assim parece que nunca tenho o que quero ver sem ter que pagar mais. Tipo, alugar filme extra depois de já ter assinado? Que saco! E esses anúncios no meio... a sensação é que tá tudo virando um parto. Se continuar assim, não duvido nada da pirataria voltar com tudo. 🤷‍♀️💸 #chateada #streamingproblems",
+        "detector": "Huggingface",
+        "prob_humano": 99.94231462478638,
+        "prob_IA": 0.05768537521362305
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Eita, mais uma operação contra pirataria, né? Só acho que as plataformas podiam facilitar mais, incluindo mais filmes no plano sem esses aluguéis extras chatos. 😒 Quem aí também acha que tá ficando caro manter todas essas assinaturas? #streaming #pirataria #custosaltos",
+        "detector": "Huggingface",
+        "prob_humano": 99.9440848827362,
+        "prob_IA": 0.055915117263793945
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Sério, né? Já pago a mensalidade, quero tudo incluído! 😤",
+        "detector": "Huggingface",
+        "prob_humano": 96.86211943626404,
+        "prob_IA": 3.137880563735962
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Ah, eu também odeio isso! Já pago a mensalidade, quero ver tudo sem pagar mais.",
+        "detector": "Huggingface",
+        "prob_humano": 99.2379903793335,
+        "prob_IA": 0.7620096206665039
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Ah, sério, né? Já pago um monte de assinatura e ainda tenho que alugar filme? Aí fica difícil não cair na tentação da pirataria, né? 😔",
+        "detector": "Huggingface",
+        "prob_humano": 99.47846531867981,
+        "prob_IA": 0.5215346813201904
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Sério, né? E ainda tem a cara de pau de cobrar aluguel de filme dentro do próprio streaming! Já tô pagando mensalidade, quero tudo incluído.",
+        "detector": "Huggingface",
+        "prob_humano": 99.88980293273926,
+        "prob_IA": 0.11019706726074219
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Sério, né? E ainda querem que a gente pague extra pra alugar filme dentro da própria plataforma? Cadê a praticidade? 😒",
+        "detector": "Huggingface",
+        "prob_humano": 99.20685291290283,
+        "prob_IA": 0.793147087097168
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Ah, se os serviços de streaming não cobrassem extra por filmes, talvez a gente não precisasse recorrer a esses sites, né? 🙄",
+        "detector": "Huggingface",
+        "prob_humano": 99.7082769870758,
+        "prob_IA": 0.29172301292419434
+    }
+]
