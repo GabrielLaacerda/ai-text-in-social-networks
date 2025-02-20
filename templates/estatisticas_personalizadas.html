@@ -64,7 +64,7 @@
         <div class="mb-4">
             <form id="txtUploadForm" enctype="multipart/form-data" method="POST" onsubmit="abrirModal()">
                 <div class="form-group">
-                    <label for="txtFile">Carregue um arquivo TXT com seus comentários:</label>
+                    <label for="txtFile">Carregue um arquivo TXT com seus comentários <b>(separe os comentarios por linhas):</b></label>
                     <input type="file" class="form-control" id="txtFile" name="txtFile" accept=".txt" required>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">Enviar</button>
@@ -81,6 +81,7 @@
 
     {% if probabilidades %}
     <div class="container-fluid content-area grafico">
+        <h1 class="mt-3 mb-2 text-center">Estatísticas Geradas</h1>
     <div class="chart-container">
         <canvas id="barChartBarras"></canvas>
     </div>
