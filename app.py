@@ -16,6 +16,7 @@ import LLMs.MaritacaIA as maritacaIAUnic
 import LLMs.Gemini as geminiIAUnic
 import LLMs.Mistral as mistralUnic
 import LLMs.DeepSeek as deepseekUnic
+import IAText_Detectors.Binoculars as binoc
 
 from flask import Flask, render_template, request, send_file, session
 from LLMs.Cohere import gerar_comentarios_para_posts as cohere
@@ -29,7 +30,6 @@ from IAText_Detectors.Sapling import probabilidade_IA as sapling_prob
 from IAText_Detectors.HuggingFace import probabilidade_IA as prob_hugging
 from IAText_Detectors.DistBERT import probabilidade_IA as distbert_prob
 from IAText_Detectors.Radar import probabilidade_IA as radar_prob
-from IAText_Detectors.Binoculars import probabilidade_IA as binoculars
 from LLMs.DeepSeek import gerar_comentarios_para_posts as deepseek
 import warnings
 
@@ -203,7 +203,7 @@ def analisarAutenticidadeGeral():
             "huggingface": prob_hugging,
             "distbert": distbert_prob,
             "radar": radar_prob,
-            "binoculars": binoculars
+            #"binoculars": binoc
         }
 
         if ai_choice in ai_map:
@@ -245,12 +245,13 @@ def analisarAutenticidadeGeral():
 @app.route("/gerarComentario", methods=["GET", "POST"])
 def gerarComentario():
     arquivo = "JSONS/Personas_Para_Comentarios_Personalizados/personas.json"
+
     personas = []
 
     # Função auxiliar para carregar personas do JSON
     def carregar_personas():
         try:
-            with open(arquivo, "r") as f:
+            with open(arquivo, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 if isinstance(data.get("Personas"), list):
                     return [
@@ -268,6 +269,8 @@ def gerarComentario():
         return []
 
     personas = carregar_personas()
+
+    print(personas)
 
     if request.method == "POST":
         ai_choice = request.form.get("ai")
@@ -334,7 +337,7 @@ def analisar_comentario():
             "radar": radar.probabilidade_frase_unica,
             "huggingface": huggingface.probabilidade_frase_unica,
             "distbert": distbert.probabilidade_IA_frase,
-            #"binoculars": binoculars.probabilidade_IA_frase  # Descomentando essa linha, a IA será incluída automaticamente
+            #"binoculars": binoc.probabilidade_IA_frase
         }
 
         if ai_choice in ai_map:
@@ -381,8 +384,8 @@ def gerarEstatisticasPersonalizadas():
             "radar": radar,
             "sapling": sapling,
             "huggingface": huggingface,
+            #"binoculars": binoc
             "distbert": distbert,
-            #"binoculars": binoculars
         }
 
         comentarios = []
@@ -397,6 +400,7 @@ def gerarEstatisticasPersonalizadas():
 
         for chave, funcao in detector_map.items():
             results.append([{"detector": str(chave) , "Probabilidades": funcao.probabilidade_IA_comentarios_proprios(comentarios)}])
+            print(results)
             
         probabilidades = res.calcular_comentarios_proprios(results)
 
