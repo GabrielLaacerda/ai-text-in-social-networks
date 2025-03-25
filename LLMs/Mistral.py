@@ -6,7 +6,7 @@ api_key = os.getenv("MISTRAL_API_KEY")
 
 def gerar_comentarios(persona, post, tema):
 
-    model = "mistral-large-latest"
+
     client = Mistral(api_key=api_key)
 
     prompt = (
@@ -17,6 +17,7 @@ def gerar_comentarios(persona, post, tema):
         "Não repita respostas"
     )
 
+    model = "mistral-large-latest"
     chat_response = client.chat.complete(
         model=model,
         messages=[
@@ -31,7 +32,7 @@ def gerar_comentarios(persona, post, tema):
         ]
     )
 
-
+    print("foi")
     return chat_response.choices[0].message.content
 
 

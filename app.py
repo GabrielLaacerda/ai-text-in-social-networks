@@ -120,7 +120,7 @@ def home():
         # Mapeamento das funções das LLMs
         llm_functions = {
             "cohere": cohere,
-            "chatGpt": chatGpt,
+            "chatgpt": chatGpt,
             "gemini": gemini,
             "llama": llama,
             "maritacaIA": maritaca,
@@ -207,6 +207,7 @@ def analisarAutenticidadeGeral():
         }
 
         if ai_choice in ai_map:
+            print("ok")
             # Carregar comentários
             lista_comentarios = [
                 {"llm": llm, "comentarios": open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", "r", encoding="utf-8").read()}
@@ -283,7 +284,7 @@ def gerarComentario():
             "cohere": cohereUnic,
             "chatgpt": gptUnic,
             "gemini": geminiIAUnic,
-            "llama": llamaUnic,
+            #"llama": llamaUnic,
             #Desativado devido ao modelo não estar baixado
             #"deepseek": deepseekUnic,
             "maritacaIA": maritacaIAUnic,
@@ -384,7 +385,6 @@ def gerarEstatisticasPersonalizadas():
             "radar": radar,
             "sapling": sapling,
             "huggingface": huggingface,
-            #"binoculars": binoc
             "distbert": distbert,
         }
 
@@ -400,11 +400,11 @@ def gerarEstatisticasPersonalizadas():
 
         for chave, funcao in detector_map.items():
             results.append([{"detector": str(chave) , "Probabilidades": funcao.probabilidade_IA_comentarios_proprios(comentarios)}])
-            print(results)
-            
-        probabilidades = res.calcular_comentarios_proprios(results)
 
-        return render_template("estatisticas_personalizadas.html", probabilidades=probabilidades)
+        probabilidades = res.calcular_comentarios_proprios(results)
+        prob_ordenadas = dict(sorted(probabilidades.items(), key=lambda x: x[1]['erro'], reverse=True))
+
+        return render_template("estatisticas_personalizadas.html", probabilidades=prob_ordenadas)
 
     return render_template("estatisticas_personalizadas.html", probabilidades=probabilidades)
 

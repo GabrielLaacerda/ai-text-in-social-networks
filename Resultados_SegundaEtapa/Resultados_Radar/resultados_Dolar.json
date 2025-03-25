@@ -2,295 +2,295 @@
     {
         "llm": "Cohere",
         "comentario": "É verdade, com o dólar nas alturas e esses impostos, importar vai ficar cada vez mais inviável. RIP mesmo!",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 0.12,
+        "prob_IA": 99.88
     },
     {
         "llm": "Cohere",
         "comentario": "É cada uma que vemos! A galera da direita tá apelando mesmo, né? Agora tão usando IA pra espalhar mentira. E o pior é que tem gente que acredita e compartilha sem nem pensar. Triste ver como a desinformação ganha força assim.",
-        "detector": "Binoculars",
-        "prob_humano": 9.05,
-        "prob_IA": 90.95
+        "detector": "Radar",
+        "prob_humano": 1.58,
+        "prob_IA": 98.42
     },
     {
         "llm": "Cohere",
         "comentario": "Lula nem assumiu e o dólar já tá nas alturas! É o fim do Brasil mesmo",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 6.41,
+        "prob_IA": 93.59
     },
     {
         "llm": "Cohere",
         "comentario": "O dólar tá que tá, hein! Subiu de novo, mesmo com o Banco Central tentando dar uma segurada. Fiquei curiosa pra entender o porquê dessa alta constante. Será que o Gustavo Ferreira consegue explicar de um jeito simples? Vamos ver o que ele tem a dizer! #Dólar #Economia #Notícias",
-        "detector": "Binoculars",
-        "prob_humano": 5.29,
-        "prob_IA": 94.71
+        "detector": "Radar",
+        "prob_humano": 6.24,
+        "prob_IA": 93.76
     },
     {
         "llm": "Cohere",
         "comentario": "É incrível como o governo sempre arruma um bode expiatório pra tudo, né? Agora a culpa da alta do dólar é das fake news! Será que eles acham que a gente vai acreditar nisso? #CNNArena",
-        "detector": "Binoculars",
-        "prob_humano": 1.42,
-        "prob_IA": 98.58
+        "detector": "Radar",
+        "prob_humano": 0.66,
+        "prob_IA": 99.34
     },
     {
         "llm": "Cohere",
         "comentario": "O dólar lá em cima, a culpa é de quem? Do governo gastador que agora quer reduzir imposto? Aí já é demais! O rombo vai ser maior, a dívida também, e quem paga o pato? O povo, claro! A inflação sobe, o país empobrece e os mais pobres sofrem. É a realidade, infelizmente.",
-        "detector": "Binoculars",
-        "prob_humano": 8.76,
-        "prob_IA": 91.24
+        "detector": "Radar",
+        "prob_humano": 91.02,
+        "prob_IA": 8.98
     },
     {
         "llm": "ChatGPT",
         "comentario": "Pois é, tá difícil! 😩 Já pensou na galera que depende de importação? Se o dólar não dá uma acalmada, vai ficar complicado demais...",
-        "detector": "Binoculars",
-        "prob_humano": 3.25,
-        "prob_IA": 96.75
+        "detector": "Radar",
+        "prob_humano": 0.5,
+        "prob_IA": 99.5
     },
     {
         "llm": "ChatGPT",
         "comentario": "Sério isso? Esses caras não têm limites! Usar IA pra espalhar fakenews é muita maldade. 🤦‍♂️ Cadê a responsabilidade?",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 0.26,
+        "prob_IA": 99.74
     },
     {
         "llm": "ChatGPT",
         "comentario": "Aê, tá complicado, hein? O dólar não para de subir e a sensação é que as coisas tão ficando cada vez mais difíceis! 😩💰",
-        "detector": "Binoculars",
-        "prob_humano": 9.39,
-        "prob_IA": 90.61
+        "detector": "Radar",
+        "prob_humano": 0.43,
+        "prob_IA": 99.57
     },
     {
         "llm": "ChatGPT",
         "comentario": "Poxa, a alta do dólar não dá trégua, né? 😩 Mesmo com o Banco Central na jogada, parece que a moeda gringa não quer saber de baixar. Vamos ver o que o Gustavo traz de novidade, espero que não seja só mais uma dor de cabeça! 💸🌎 #dólaralto",
-        "detector": "Binoculars",
-        "prob_humano": 3.59,
-        "prob_IA": 96.41
+        "detector": "Radar",
+        "prob_humano": 2.41,
+        "prob_IA": 97.59
     },
     {
         "llm": "ChatGPT",
         "comentario": "Sério isso? Culpar notícias falsas pela alta do dólar? Tá difícil entender essa lógica! 🤔💸 #SóRindo",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 2.74,
+        "prob_IA": 97.26
     },
     {
         "llm": "ChatGPT",
         "comentario": "Concordo total! O dólar tá nas alturas e a galera que mais sofre é a que menos merece. Se o governo não segurar a onda, vai ficar cada vez pior pra todo mundo. Reduzir impostos é legal, mas sem controle a conta vem pesada! 😩💸",
-        "detector": "Binoculars",
-        "prob_humano": 4.15,
-        "prob_IA": 95.85
+        "detector": "Radar",
+        "prob_humano": 5.39,
+        "prob_IA": 94.61
     },
     {
         "llm": "DeepSeek",
         "comentario": "É isso aí! Quando o dólar sobe, os preços dos produtos importados aumentam, então é um pouco difícil comprar coisas baratas daqui de fora, né? Tipo, se o imposto pago no Brasil for alto, o valor do dólar também influencia diretamente naquilo que conseguimos importar. É triste ver esses produtos importados sumindo dos mercados porque os custos ficam proibitivos para muitas pessoas. Bem, agora se o dólar cai, pode ser uma chance de economizar um pouco na hora de comprar coisas que antes eram caras. Então, tanto fazendo bom ou ruim, a situação do dólar afeta diretamente como nos vemos com as compras de fora!",
-        "detector": "Binoculars",
-        "prob_humano": 7.49,
-        "prob_IA": 92.51
+        "detector": "Radar",
+        "prob_humano": 98.77,
+        "prob_IA": 1.23
     },
     {
         "llm": "DeepSeek",
         "comentario": "Ah, essa fake news é doidice! É sempre bom estar atento às notícias, mas acho que algumas pessoas estão usando AI pra criar informações enganosas só para confundir as pessoas. E quando falamos em direita, eu pensava que o intuito era ser mais conservador e realista... Bom, pelo menos é bom ter essa conversa aberta sobre como lidar com isso!",
-        "detector": "Binoculars",
-        "prob_humano": 5.36,
-        "prob_IA": 94.64
+        "detector": "Radar",
+        "prob_humano": 14.26,
+        "prob_IA": 85.74
     },
     {
         "llm": "DeepSeek",
         "comentario": "Urgente! O Lula está deixando o Brasil na mão com a alta do dólar, que voltou a subir e já tá no R$ 6,15 começar essa semana. Pena mesmo é ver isso acontecer...",
-        "detector": "Binoculars",
-        "prob_humano": 5.06,
-        "prob_IA": 94.94
+        "detector": "Radar",
+        "prob_humano": 0.86,
+        "prob_IA": 99.14
     },
     {
         "llm": "DeepSeek",
         "comentario": "O dólar está valendo a pena! Afinal de contas, com o Banco Central mexendo no câmbio, ele subiu quase 1% hoje sózinho. Eita, Gustavo Ferreira do @valoreconomico explica que tá na hora certa pra pensar como isso pode ser importante ou interessante para nossa economia!",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 1.45,
+        "prob_IA": 98.55
     },
     {
         "llm": "DeepSeek",
         "comentario": "O cara do Secom falando que a alta do dólar é só porque as notícias são falsas! Tipo, eu entendi direitinho: ele acha que o valor do nosso dinheiro subiu e quer convencer a gente disso. Mas isso não faz sentido, né? Afinal, quem controla os preços é o mercado, e as notícias podem influenciar um pouco, mas pra elevar tanto assim, num curto espaço de tempo, acho que tem algo mais atrás.",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 41.04,
+        "prob_IA": 58.96
     },
     {
         "llm": "DeepSeek",
         "comentario": "Oi! To falando de uma coisa aqui... O dólar está muito alto, e eu acho que isso aconteceu porque o governo brasileiro anda gastando dinheiro como se não tivesse amanhã. Isso é ruim pra gente pobre, já que ele é essencial na cesta básica. O Haddad tá tentando ajudar, mas acho que só está complicado com o orçamento e pode acabar fazendo mais prejuízo do que ajudar. Reduzir impostos é legal, mas quando um governo inexperiente faz isso, ele só cria mais dívidas e aumenta a inflação. Tipo: eles estragam o país, incluindo aqueles que tentam salvar o dinheiro.",
-        "detector": "Binoculars",
-        "prob_humano": 7.37,
-        "prob_IA": 92.63
+        "detector": "Radar",
+        "prob_humano": 96.34,
+        "prob_IA": 3.66
     },
     {
         "llm": "Gemini",
-        "comentario": "\"Mano, real! Desse jeito a gente vai voltar a comprar só coisa 'made in Brazil' e olhe lá, viu? 💸😩 Saudade de comprar minhas tranqueiras baratinhas...\"",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "comentario": "Mano, real! Desse jeito a gente vai voltar a comprar só coisa 'made in Brazil' e olhe lá, viu? 💸😩 Saudade de comprar minhas tranqueiras baratinhas...",
+        "detector": "Radar",
+        "prob_humano": 0.23,
+        "prob_IA": 99.77
     },
     {
         "llm": "Gemini",
         "comentario": "Mano, inacreditável! Já não basta a gente ralando pra pagar as contas e essa galera ainda inventa fake news pra ferrar com o dólar? Que ódio! 🤬 Precisamos denunciar essa galera, não dá pra deixar isso barato.",
-        "detector": "Binoculars",
-        "prob_humano": 6.28,
-        "prob_IA": 93.72
+        "detector": "Radar",
+        "prob_humano": 0.15,
+        "prob_IA": 99.85
     },
     {
         "llm": "Gemini",
         "comentario": "Ih, gente, R$6,15 de novo? 🤦‍♂️ Que sufoco! A gente nem se recuperou da última alta e lá vem bomba de novo. 💸 Complica tudo pra gente, viu? 😥",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 0.33,
+        "prob_IA": 99.67
     },
     {
         "llm": "Gemini",
         "comentario": "Eita, que o dólar não dá folga! 😩 Intervenção do BC e nada, continua nas alturas... Assim não dá pra viajar, né? 💸 Alguém me explica por que essa novela não acaba? 🤷‍♀️ #dólar #altadodólar #economia",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 1.2,
+        "prob_IA": 98.8
     },
     {
         "llm": "Gemini",
-        "comentario": "\"Ah, fala sério! A culpa do dólar a 6,20 é fake news? 🙄 Conta outra, Pimenta! Parece que a galera do governo descobriu um novo bode expiatório pra tudo, né?\"",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "comentario": "Ah, fala sério! A culpa do dólar a 6,20 é fake news? 🙄 Conta outra, Pimenta! Parece que a galera do governo descobriu um novo bode expiatório pra tudo, né?",
+        "detector": "Radar",
+        "prob_humano": 0.37,
+        "prob_IA": 99.63
     },
     {
         "llm": "Gemini",
         "comentario": "Pois é, amigo, não dá pra tapar o sol com a peneira! O dólar nas alturas é um reflexo de como o Brasil tá sendo mal gerido. E a real é que essa conta chega direto pra gente no mercado. Reduzir imposto é ótimo, mas com o governo gastando desse jeito, vira só mais dívida e inflação... No fim das contas, quem se ferra é o povo! 🤦‍♂️",
-        "detector": "Binoculars",
-        "prob_humano": 9.52,
-        "prob_IA": 90.48
+        "detector": "Radar",
+        "prob_humano": 35.71,
+        "prob_IA": 64.29
     },
     {
         "llm": "Llama",
         "comentario": "\"Alta do dólar é boa para quem vende, mas mal para quem compra. Ainda não sei como vamos lidar com isso!\"",
-        "detector": "Binoculars",
-        "prob_humano": 10.08,
-        "prob_IA": 89.92
+        "detector": "Radar",
+        "prob_humano": 0.59,
+        "prob_IA": 99.41
     },
     {
         "llm": "Llama",
         "comentario": "Não acredito que esses profetas do mal consagramem suas contas pra fazer mentiras sobre a moeda e depois fingem surpresa quando as pessoas reagem",
-        "detector": "Binoculars",
-        "prob_humano": 8.65,
-        "prob_IA": 91.35
+        "detector": "Radar",
+        "prob_humano": 43.69,
+        "prob_IA": 56.31
     },
     {
         "llm": "Llama",
         "comentario": "Haha, lula é um especialista em inflação e dólares! Quem está indo pagar conta de luz?",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 0.11,
+        "prob_IA": 99.89
     },
     {
         "llm": "Llama",
         "comentario": "Parece que a China está economizando demais e não está comprando tanto dólar quanto antes...",
-        "detector": "Binoculars",
-        "prob_humano": 23.57,
-        "prob_IA": 76.43
+        "detector": "Radar",
+        "prob_humano": 0.57,
+        "prob_IA": 99.43
     },
     {
         "llm": "Llama",
         "comentario": "Que loucura! Como ele vai acertar as contas? #AltaDólar",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 0.61,
+        "prob_IA": 99.39
     },
     {
         "llm": "Llama",
         "comentario": "\"Então, qual é a ideia? O governo quer 'ajudar' com mais dívida e inflação? É como se fossem brincadeiras com as contas do país. Quem vai pagar isso?\" #AltaDoDólar #DesequilíbrioEconômico",
-        "detector": "Binoculars",
-        "prob_humano": 13.04,
-        "prob_IA": 86.96
+        "detector": "Radar",
+        "prob_humano": 6.5,
+        "prob_IA": 93.5
     },
     {
         "llm": "MaritacaIA",
         "comentario": "Verdade, tá osso! Com o dólar nas alturas e os impostos lá em cima, fica quase impossível trazer qualquer coisa de fora sem gastar uma fortuna. Ainda mais com a grana curta, ninguém merece, né? #FicaDifícil #ImportaçãoComplicada",
-        "detector": "Binoculars",
-        "prob_humano": 11.69,
-        "prob_IA": 88.31
+        "detector": "Radar",
+        "prob_humano": 5.2,
+        "prob_IA": 94.8
     },
     {
         "llm": "MaritacaIA",
         "comentario": "Cara, que absurdo, né? O dólar nas alturas e descobrimos que tem gente usando inteligência artificial pra espalhar mentira, colocando palavras na boca do Galipolo. Esses perfis de direita não têm limites, é golpe atrás de golpe. Precisamos ficar espertos e checar as fontes direitinho pra não cair nessas armadilhas. A galera tá passando dos limites, isso sim! #FimDasFakeNews #ChecaAntesDeCompartilhar",
-        "detector": "Binoculars",
-        "prob_humano": 1.36,
-        "prob_IA": 98.64
+        "detector": "Radar",
+        "prob_humano": 19.42,
+        "prob_IA": 80.58
     },
     {
         "llm": "MaritacaIA",
         "comentario": "E aí, o dólar disparando de novo, hein? Tá complicado, viu! Lula assumiu e parece que a turbulência na economia não tá dando trégua. Vai que a viagem pro exterior fica mais carinha ainda e aquele eletrônico que a gente tanto quer demora mais pra caber no bolso. Bora torcer pra estabilizar logo, porque esse sobe e desce não tá com nada! #DolarSubindo #EconomiaBrasil",
-        "detector": "Binoculars",
-        "prob_humano": 1.72,
-        "prob_IA": 98.28
+        "detector": "Radar",
+        "prob_humano": 54.4,
+        "prob_IA": 45.6
     },
     {
         "llm": "MaritacaIA",
         "comentario": "E aí, galera! O dólar deu mais uma subidinha e tá quase batendo nos R$ 6,09, mesmo com o Banco Central tentando segurar a onda. Gustavo Ferreira jogou luz na situação: parece que a grana dos investidores tá meio assustada com a instabilidade por aqui e buscando refúgio lá fora. Vamos ver até quando essa dança do câmbio vai continuar, né? #DólarEmAlta #EconomiaComplicada",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 70.52,
+        "prob_IA": 29.48
     },
     {
         "llm": "MaritacaIA",
         "comentario": "Cara, o Paulo Pimenta saiu dizendo que a alta do dólar pra R$ 6,20 é culpa de fake news. Será que ele tá de brincadeira? Tipo, a economia é um trem complicado e jogar a culpa nas notícias falsas é meio simplista, né? Vamos ver se ele consegue provar isso, porque tá cada vez mais difícil entender o que realmente tá rolando com o nosso dinheiro. #CNNArena",
-        "detector": "Binoculars",
-        "prob_humano": 3.35,
-        "prob_IA": 96.65
+        "detector": "Radar",
+        "prob_humano": 11.54,
+        "prob_IA": 88.46
     },
     {
         "llm": "MaritacaIA",
         "comentario": "Cara, essa alta do dólar tá complicando demais a vida da gente, né? O Brasil tá tipo uma peneira, só deixando o dinheiro vazar. E aí, quem sofre é a galera que já tá com a grana curta, porque o dólar lá em cima faz o preço da cesta básica disparar. O pacote econômico do Haddad, em vez de ajudar, tá assustando o mercado. Tipo, todo mundo gosta da ideia de pagar menos imposto, mas se o governo tá mais descontrolado que criança em loja de doces, a conta chega: rombo cresce, dívida explode, juros nas alturas e o crescimento do país vira uma promessa de ano novo que ninguém cumpre. No fim das contas, quem apanha mesmo é a economia e os mais pobres. Triste demais!",
-        "detector": "Binoculars",
-        "prob_humano": 5.94,
-        "prob_IA": 94.06
+        "detector": "Radar",
+        "prob_humano": 96.42,
+        "prob_IA": 3.58
     },
     {
         "llm": "Mistral",
         "comentario": "Mano, se o dólar continuar subindo assim, nem adianta pensar em comprar algo de fora. Vai ser o fim da picada para a importação!",
-        "detector": "Binoculars",
-        "prob_humano": 16.79,
-        "prob_IA": 83.21
+        "detector": "Radar",
+        "prob_humano": 0.06,
+        "prob_IA": 99.94
     },
     {
         "llm": "Mistral",
         "comentario": "Nossa, essa turma não tem limites mesmo! Usar fake news e IA pra bagunçar a economia? Inacreditável!",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 0.17,
+        "prob_IA": 99.83
     },
     {
         "llm": "Mistral",
         "comentario": "Nossa, já vi que essa semana vai ser complicada com o dólar na lua!",
-        "detector": "Binoculars",
-        "prob_humano": 7.04,
-        "prob_IA": 92.96
+        "detector": "Radar",
+        "prob_humano": 0.42,
+        "prob_IA": 99.58
     },
     {
         "llm": "Mistral",
         "comentario": "Cara, esse dólar não dá trégua! Mesmo com o BC tentando segurar, ele continua subindo. Vai entender... 💸📉",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 0.18,
+        "prob_IA": 99.82
     },
     {
         "llm": "Mistral",
         "comentario": "Ah, sério que o Paulo Pimenta disse isso? Então a culpa da alta do dólar é das fake news? Que loucura! #CNNArena",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 0.11,
+        "prob_IA": 99.89
     },
     {
         "llm": "Mistral",
         "comentario": "Cara, concordo plenamente. Esse pacote do Haddad só mostra mais irresponsabilidade. O dólar tá nas alturas e quem paga a conta é o povo.",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Radar",
+        "prob_humano": 0.34,
+        "prob_IA": 99.66
     }
 ]

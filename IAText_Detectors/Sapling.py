@@ -25,7 +25,7 @@ def probabilidade_IA(comentarios, modelos):
     warnings.filterwarnings("ignore")
 
     # Define a chave da API e o endpoint
-    api_key = "ELC1FVXZVPSCUJJB2N4P6WFHC9272EOO"
+    api_key = "1JIQU55BWAMDEXSZ0QZONSVZR2KWZRCQ"
     url = "https://api.sapling.ai/api/v1/aidetect"
 
     if not isinstance(comentarios, list):
@@ -63,7 +63,7 @@ def probabilidade_IA_comentarios_proprios(comentarios):
     warnings.filterwarnings("ignore")
 
     # Define a chave da API e o endpoint
-    api_key = "ELC1FVXZVPSCUJJB2N4P6WFHC9272EOO"
+    api_key = "1JIQU55BWAMDEXSZ0QZONSVZR2KWZRCQ"
     url = "https://api.sapling.ai/api/v1/aidetect"
 
     if not isinstance(comentarios, list):

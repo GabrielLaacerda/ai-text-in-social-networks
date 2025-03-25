@@ -2,295 +2,295 @@
     {
         "llm": "Cohere",
         "comentario": "Inteligência artificial na criação de conteúdo nas escolas? Interessante! Mas será que a IA vai conseguir entender as necessidades específicas de cada turma e adaptar o conteúdo de forma eficaz? Vamos acompanhar pra ver os resultados! #IAnaEducação #InovaçõesTecnológicas",
-        "detector": "Binoculars",
-        "prob_humano": 1.14,
-        "prob_IA": 98.86
+        "detector": "Roberta",
+        "prob_humano": 0.06,
+        "prob_IA": 99.94
     },
     {
         "llm": "Cohere",
         "comentario": "IA tá dominando! Daqui a pouco os influencers vão ser todos virtuais, e a gente nem vai saber. Vai ser uma revolução na propaganda e no entretenimento. Tô curioso pra ver até onde isso vai!",
-        "detector": "Binoculars",
-        "prob_humano": 6.97,
-        "prob_IA": 93.03
+        "detector": "Roberta",
+        "prob_humano": 1.26,
+        "prob_IA": 98.74
     },
     {
         "llm": "Cohere",
         "comentario": "Dublagem já é ruim, imagina feita por IA! Quero ouvir vozes humanas, com emoção de verdade, não robôs sem alma! #ConteúdoAutêntico #VozHumana",
-        "detector": "Binoculars",
-        "prob_humano": 2.2,
-        "prob_IA": 97.8
+        "detector": "Roberta",
+        "prob_humano": 0.19,
+        "prob_IA": 99.81
     },
     {
         "llm": "Cohere",
         "comentario": "IA é só mais uma maneira de nos sugarem até a última gota! Não vai melhorar nossas vidas, só vai sugar nossa criatividade e nos fazer trabalhar mais. É uma ferramenta a mais pra encher os bolsos de quem tá no topo enquanto a gente se mata de trabalhar. Fica o alerta!",
-        "detector": "Binoculars",
-        "prob_humano": 7.27,
-        "prob_IA": 92.73
+        "detector": "Roberta",
+        "prob_humano": 0.19,
+        "prob_IA": 99.81
     },
     {
         "llm": "Cohere",
         "comentario": "Caramba, é impressionante como a IA evoluiu em tão pouco tempo! A mulher da foto da direita parece tão real... Quase dá pra acreditar que ela é uma pessoa de verdade. Fico imaginando o que mais a inteligência artificial será capaz de fazer nos próximos anos.",
-        "detector": "Binoculars",
-        "prob_humano": 11.5,
-        "prob_IA": 88.5
+        "detector": "Roberta",
+        "prob_humano": 0.05,
+        "prob_IA": 99.95
     },
     {
         "llm": "Cohere",
         "comentario": "Uau, a IA tá dominando mesmo! Agora o YouTube quer todo mundo criando música com as vozes dos nossos artistas favoritos. Imagina só, você compondo uma música e de repente a voz da Demi Lovato aparece! Loucura, né? Tô doida pra testar esse Dream Track, mas pelo visto vou ter que esperar um pouquinho.",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Roberta",
+        "prob_humano": 0.06,
+        "prob_IA": 99.94
     },
     {
         "llm": "ChatGPT",
         "comentario": "Legal ver o governo de SP investindo em IA para as escolas! Tomara que isso ajude a trazer conteúdo mais interessante pra garotada. 🚀 #FuturoDigital",
-        "detector": "Binoculars",
-        "prob_humano": 2.21,
-        "prob_IA": 97.79
+        "detector": "Roberta",
+        "prob_humano": 0.84,
+        "prob_IA": 99.16
     },
     {
         "llm": "ChatGPT",
         "comentario": "Caraca, isso é doido demais! Imagina só o que vem por aí... A gente vai ter que começar a desconfiar de tudo que vê! 😅🎥💻 #aifuture",
-        "detector": "Binoculars",
-        "prob_humano": 13.15,
-        "prob_IA": 86.85
+        "detector": "Roberta",
+        "prob_humano": 1.38,
+        "prob_IA": 98.62
     },
     {
         "llm": "ChatGPT",
         "comentario": "Mano, eu também! Não dá pra substituir a vibe de uma dublagem de verdade. 😩🎤",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Roberta",
+        "prob_humano": 15.06,
+        "prob_IA": 84.94
     },
     {
         "llm": "ChatGPT",
         "comentario": "Concordo! A IA pode ser útil, mas no fim das contas, é mais uma forma de a galera ganhar em cima da gente. No jogo do lucro dos terceiros, a gente continua na mesma. 😒✌️",
-        "detector": "Binoculars",
-        "prob_humano": 6.77,
-        "prob_IA": 93.23
+        "detector": "Roberta",
+        "prob_humano": 0.73,
+        "prob_IA": 99.27
     },
     {
         "llm": "ChatGPT",
         "comentario": "Caraca, que doido! 😱 Olha como a IA evoluiu rapidinho! A tecnologia tá um passo à frente, e a gente só vendo essas criações incríveis! 🤖✨",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100.0
+        "detector": "Roberta",
+        "prob_humano": 0.16,
+        "prob_IA": 99.84
     },
     {
         "llm": "ChatGPT",
         "comentario": "Uau, isso é insano! Imagina criar faixas com vozes de Demi e Charlie Puth! Mal posso esperar pra testar o Dream Track! 🎶✨",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Roberta",
+        "prob_humano": 0.65,
+        "prob_IA": 99.35
     },
     {
         "llm": "DeepSeek",
         "comentario": "Interessante ver como a tecnologia está sendo usada pra facilitar e melhorar processos na educação! Acho que isso pode ajudar bastante nas escolas estaduais, criando conteúdo mais atualizado e envolvente para os alunos. Vamos ver o que dá certo! 🚀✨",
-        "detector": "Binoculars",
-        "prob_humano": 10.11,
-        "prob_IA": 89.89
+        "detector": "Roberta",
+        "prob_humano": 0.05,
+        "prob_IA": 99.95
     },
     {
         "llm": "DeepSeek",
         "comentario": "Interessante ver como a IA está evoluindo e já influenciando praticamente todos os setores, incluindo entretenimento. Imagina só o que vai acontecer nos próximos anos com propaganda, educação e redes sociais! Será fascinante ver como isso vai mudar a maneira como produzimos conteúdo.",
-        "detector": "Binoculars",
-        "prob_humano": 5.56,
-        "prob_IA": 94.44
+        "detector": "Roberta",
+        "prob_humano": 0.05,
+        "prob_IA": 99.95
     },
     {
         "llm": "DeepSeek",
         "comentario": "Eu pessoalmente prefiro conteúdo com qualidade em português, feito por atores reais. Acho que a IA ainda não consegue capturar a essência dos personagens e transmitir emoções como os dubladores profissionais fazem.",
-        "detector": "Binoculars",
-        "prob_humano": 2.69,
-        "prob_IA": 97.31
+        "detector": "Roberta",
+        "prob_humano": 0.16,
+        "prob_IA": 99.84
     },
     {
         "llm": "DeepSeek",
         "comentario": "Interessante ver como a Inteligência Artificial está se tornando uma ferramenta cada vez mais presente na criação de conteúdo, mas acho que ela não vai mudar muito o jogo em termos de melhorar nossas condições de trabalho ou nos deixar ganhando mais. Afinal, seja qual for o instrumento que usemos, o importante é criar conteúdo genuíno e valioso para os consumidores.",
-        "detector": "Binoculars",
-        "prob_humano": 5.59,
-        "prob_IA": 94.41
+        "detector": "Roberta",
+        "prob_humano": 0.05,
+        "prob_IA": 99.95
     },
     {
         "llm": "DeepSeek",
         "comentario": "Interessante ver como a tecnologia de IA evoluiu! No começo de 2014 tinha um rosto gerado por IA que já era bem realista, mas em 2018 conseguimos criar uma pessoa virtual tão fiel à aparência e expressões que nem mesmo um especialista consegue diferenciar. É impressionante o quanto as redes neurais estão melhorando todos os dias!",
-        "detector": "Binoculars",
-        "prob_humano": 8.53,
-        "prob_IA": 91.47
+        "detector": "Roberta",
+        "prob_humano": 0.05,
+        "prob_IA": 99.95
     },
     {
         "llm": "DeepSeek",
         "comentario": "Interessante! O Youtube criou uma ferramenta de IA que consegue gerar músicas com vozes de artistas renomados. Será legal poder experimentar isso em breve, imagina ouvir uma música feita por minha voz favorita? Estou curioso para ver como a tecnologia vai transformar a criação musical.",
-        "detector": "Binoculars",
-        "prob_humano": 6.93,
-        "prob_IA": 93.07
+        "detector": "Roberta",
+        "prob_humano": 0.05,
+        "prob_IA": 99.95
     },
-     {
+    {
         "llm": "Gemini",
         "comentario": "Hmm, IA pra criar conteúdo pra escola? Interessante... Mas será que não vão perder a mão na autenticidade e no pensamento crítico dos alunos? 🤔 #IAnaEducação #SP",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Roberta",
+        "prob_humano": 2.08,
+        "prob_IA": 97.92
     },
     {
         "llm": "Gemini",
         "comentario": "Caramba! Surreal como a IA tá evoluindo! Daqui a pouco a gente não sabe mais o que é real e o que é fake. 🤯 Imagina o impacto disso em tudo que a gente consome... Bizarro e fascinante ao mesmo tempo! 🤔",
-        "detector": "Binoculars",
-        "prob_humano": 8.7,
-        "prob_IA": 91.3
+        "detector": "Roberta",
+        "prob_humano": 0.1,
+        "prob_IA": 99.9
     },
     {
         "llm": "Gemini",
         "comentario": "Aí concordo! Prefiro legenda mil vezes. Dublagem por IA ainda soa meio robótica, né? 😬",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Roberta",
+        "prob_humano": 46.35,
+        "prob_IA": 53.65
     },
     {
         "llm": "Gemini",
         "comentario": "Bah, super concordo! Ferramenta nova, exploração velha, né? No fim, o lucro nunca fica com a gente. 😕",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Roberta",
+        "prob_humano": 10.61,
+        "prob_IA": 89.39
     },
     {
         "llm": "Gemini",
         "comentario": "Caraca, bizarro a evolução! A de 2014 parece meio \"boneca\", mas a de 2018 é MUITO real. Impressionante o que a IA tá fazendo! 🤯",
-        "detector": "Binoculars",
-        "prob_humano": 9.56,
-        "prob_IA": 90.44
+        "detector": "Roberta",
+        "prob_humano": 0.19,
+        "prob_IA": 99.81
     },
     {
         "llm": "Gemini",
         "comentario": "Caraca, YouTube tá pesado! Criar música com a voz dos artistas? 🤯 Dream Track... nome futurista! Curioso pra ver como vai ser isso na prática e se a galera vai curtir. Será que vem treta com direitos autorais por aí? 🤔 #IA #Música #YouTube",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Roberta",
+        "prob_humano": 0.24,
+        "prob_IA": 99.76
     },
     {
         "llm": "Llama",
         "comentario": "\"É legal que os kids estejam sendo preparados pra a vida digital já com isso? Quem vai decidir o conteúdo?\" #educacao",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Roberta",
+        "prob_humano": 0.26,
+        "prob_IA": 99.74
     },
     {
         "llm": "Llama",
         "comentario": "Pensei que estava assistindo a um show de comédia, mas era uma mulher inventada! E agora imagine se isso acontece em todo lado. Quem vai ser a próxima vítima da IA?",
-        "detector": "Binoculars",
-        "prob_humano": 1.37,
-        "prob_IA": 98.63
+        "detector": "Roberta",
+        "prob_humano": 0.26,
+        "prob_IA": 99.74
     },
     {
         "llm": "Llama",
         "comentario": "Não é legal quando a IA faz o conteúdo!",
-        "detector": "Binoculars",
-        "prob_humano": 3.38,
-        "prob_IA": 96.62
+        "detector": "Roberta",
+        "prob_humano": 11.6,
+        "prob_IA": 88.4
     },
     {
         "llm": "Llama",
         "comentario": "\"Eu acho que é meio complicado. A I.A. é poderosa, mas não muda o fato de que sempre vamos ter que vender nosso tempo e criatividade para sobreviver.\"",
-        "detector": "Binoculars",
-        "prob_humano": 6.67,
-        "prob_IA": 93.33
+        "detector": "Roberta",
+        "prob_humano": 3.5,
+        "prob_IA": 96.5
     },
     {
         "llm": "Llama",
         "comentario": "\"Que incrível, parece que a IA está cada vez mais próxima da realidade! Mas, sério, quem decide criar essas pessoas virtuais? E o que acontece com elas quando as usamos?\" #IAeConteúdo",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100.0
+        "detector": "Roberta",
+        "prob_humano": 0.14,
+        "prob_IA": 99.86
     },
     {
         "llm": "Llama",
         "comentario": "Que loucura! Aí vai uma música com a voz de Demi Lovato que ninguém sabe quem é?",
-        "detector": "Binoculars",
-        "prob_humano": 9.13,
-        "prob_IA": 90.87
+        "detector": "Roberta",
+        "prob_humano": 2.01,
+        "prob_IA": 97.99
     },
     {
         "llm": "MaritacaIA",
         "comentario": "Opa, que ideia bacana! Imagina só, IA ajudando a deixar o conteúdo das escolas de SP mais afiado e interessante. Pode ser um baita passo pra frente na educação, né? #InovaçãoNaEducação #SPcomIA",
-        "detector": "Binoculars",
-        "prob_humano": 1.69,
-        "prob_IA": 98.31
+        "detector": "Roberta",
+        "prob_humano": 0.16,
+        "prob_IA": 99.84
     },
     {
         "llm": "MaritacaIA",
         "comentario": "Cara, isso é louco! Imagina só, uma mulher que é só um rosto gerado por IA e um vídeo que parece real, mas não é. Tipo, a tecnologia tá avançando numa velocidade que nem dá pra piscar! Vai mudar tudo, saca? Propagandas com celebridades fake, aulas com professores virtuais, filmes com atores que nunca existiram... E nas redes sociais? Vai ser cada perfil falso mais convincente que o outro! É o futuro chegando, e a gente tá vendo acontecer na nossa frente. Bora pensar nos impactos disso tudo, porque vai ser gigante! 🤖✨ #IA #FuturoTech #ConteúdoDigital",
-        "detector": "Binoculars",
-        "prob_humano": 7.62,
-        "prob_IA": 92.38
+        "detector": "Roberta",
+        "prob_humano": 0.07,
+        "prob_IA": 99.93
     },
     {
         "llm": "MaritacaIA",
         "comentario": "Ah, eu te entendo! Dublagem feita por IA ainda não bate a emoção e o toque humano dos dubladores de verdade, né? Tem aquele jeito único de dar vida aos personagens que a tecnologia ainda tá tentando alcançar. Prefiro esperar um pouco mais e curtir o conteúdo com uma dublagem de qualidade! #ToqueHumanoImporta #DublagemDeRespeito",
-        "detector": "Binoculars",
-        "prob_humano": 3.35,
-        "prob_IA": 96.65
+        "detector": "Roberta",
+        "prob_humano": 0.07,
+        "prob_IA": 99.93
     },
     {
         "llm": "MaritacaIA",
         "comentario": "A I.A. tá aí, né? Uns dizem que é a salvação pro conteúdo, outros acham que é só mais um jeito de nos sugar. Tipo, ela pode até dar uma ajudada, mas não espere que vá aliviar a carga de trabalho ou aumentar o nosso salário. No fim, é só mais uma peça no tabuleiro pra fazer a gente produzir sem parar e encher o bolso de quem já tá cheio. #RealidadeDura #IAeExploração",
-        "detector": "Binoculars",
-        "prob_humano": 9.05,
-        "prob_IA": 90.95
+        "detector": "Roberta",
+        "prob_humano": 0.61,
+        "prob_IA": 99.39
     },
     {
         "llm": "MaritacaIA",
         "comentario": "Cara, a evolução da IA em só 4 anos é coisa de louco! Olha esses rostos, em 2014 ainda tinham aquele ar meio estranho, mas em 2018... a mulher da direita parece super real! Quem diria que IA já conseguiria fazer algo tão convincente, né? Imagina o que mais esses gênios da tecnologia não são capazes de criar! #IA #Tecnologia #FuturoIncrível",
-        "detector": "Binoculars",
-        "prob_humano": 8.45,
-        "prob_IA": 91.55
+        "detector": "Roberta",
+        "prob_humano": 0.19,
+        "prob_IA": 99.81
     },
     {
         "llm": "MaritacaIA",
         "comentario": "Cara, vi que o YouTube lançou um bagulho chamado Dream Track, que usa IA pra criar músicas com a voz de artistas top! Tipo Demi Lovato, John Legend e Sia, entre outros. Imagina só, ter uma música feita com a voz deles só pra você? Ainda não tá disponível pra geral, mas já tô ansioso pra testar e ver como isso vai soar. Será que a IA consegue captar a vibe de verdade dos artistas? Vai ser louco descobrir! #DreamTrack #IA #YouTubeMusic",
-        "detector": "Binoculars",
-        "prob_humano": 6.73,
-        "prob_IA": 93.27
+        "detector": "Roberta",
+        "prob_humano": 0.06,
+        "prob_IA": 99.94
     },
     {
         "llm": "Mistral",
         "comentario": "Espero que a IA consiga fazer as aulas de ciências serem mais divertidas! 🌟🔬",
-        "detector": "Binoculars",
-        "prob_humano": 6.72,
-        "prob_IA": 93.28
+        "detector": "Roberta",
+        "prob_humano": 2.29,
+        "prob_IA": 97.71
     },
     {
         "llm": "Mistral",
         "comentario": "Cara, isso é surreal! Se a IA já tá fazendo isso, imagina só daqui uns anos. Vai ser uma revolução total, né?",
-        "detector": "Binoculars",
-        "prob_humano": 7.17,
-        "prob_IA": 92.83
+        "detector": "Roberta",
+        "prob_humano": 2.48,
+        "prob_IA": 97.52
     },
     {
         "llm": "Mistral",
         "comentario": "Eu também não curto muito, prefiro ouvir as vozes originais!",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Roberta",
+        "prob_humano": 6.47,
+        "prob_IA": 93.53
     },
     {
         "llm": "Mistral",
         "comentario": "Cara, concordo plenamente! A IA pode ser útil, mas no fim das contas, é só mais uma ferramenta pra nos explorar e gerar lucro pra outras pessoas. Não dá pra esperar que vá melhorar nossas condições de trabalho ou nos fazer ganhar mais.",
-        "detector": "Binoculars",
-        "prob_humano": 4.33,
-        "prob_IA": 95.67
+        "detector": "Roberta",
+        "prob_humano": 1.13,
+        "prob_IA": 98.87
     },
     {
         "llm": "Mistral",
         "comentario": "Cara, a evolução é absurda! Em 2014 ainda dava pra notar que era fake, mas em 2018 já parece uma pessoa de verdade. Incrível como a tecnologia avançou rápido!",
-        "detector": "Binoculars",
-        "prob_humano": 12.82,
-        "prob_IA": 87.18
+        "detector": "Roberta",
+        "prob_humano": 0.22,
+        "prob_IA": 99.78
     },
     {
         "llm": "Mistral",
         "comentario": "Cara, que demais! O YouTube tá mandando ver com essa nova ferramenta de IA que cria músicas com vozes de artistas famosos. Demi Lovato, Charlie Puth, Sia... até o Papoose tá nessa! Mal posso esperar pra ver o que vão criar com o Dream Track. 🚀🎶",
-        "detector": "Binoculars",
-        "prob_humano": 0,
-        "prob_IA": 100
+        "detector": "Roberta",
+        "prob_humano": 0.1,
+        "prob_IA": 99.9
     }
 ]

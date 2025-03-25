@@ -2,10 +2,15 @@ import os
 import pandas as pd
 import nltk
 import re
+
+import torch
 from nltk.tokenize import word_tokenize, sent_tokenize
 import logging
 import string
 from nltk.corpus import stopwords
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
+import math
+
 
 logging.getLogger('nltk').setLevel(logging.CRITICAL)
 
@@ -68,7 +73,7 @@ def verificar_formalidade(texto):
         'girar a parada'
     ]
 
-    informal = any(palavra in texto.lower() for palavra in palavras_informais)
+    informal = any(re.search(rf'\b{re.escape(palavra)}\b', texto.lower()) for palavra in palavras_informais)
 
     if informal:
         return 'Informal'
@@ -150,6 +155,7 @@ def processar_comentarios(diretorio):
             complexidade = []
             lexical = []
             stopW = []
+            perplexidade = []
 
             for comentario in comentarios:
                 if comentario.strip():  # Ignora comentários vazios
@@ -160,6 +166,7 @@ def processar_comentarios(diretorio):
                     complexidade.append(flesch_kincaid(comentario))
                     lexical.append(riqueza_lexical(comentario))
                     stopW.append(frequencia_stopwords(comentario))
+                    #perplexidade.append(calcular_perplexidade(comentario))
 
 
             # Calcula as médias das características de todos os comentários
@@ -182,6 +189,7 @@ def processar_comentarios(diretorio):
             complexidadeMedia = sum(complexidade) / len(complexidade)
             lexicalMedia = sum(lexical) / len(lexical)
             stopWMedia= sum(stopW) / len(stopW)
+            #perplexidadeMedia = sum(perplexidade) / len(perplexidade)
 
             # Adiciona os dados ao resultado
             resultados.append({
@@ -193,7 +201,8 @@ def processar_comentarios(diretorio):
                 'emoji_media': f"{emoji_media*100:.2f}%",
                 'Complexidade de Leitura (Flesch-Kincaid)': complexidadeMedia,
                 'Riqueza Lexical' : lexicalMedia,
-                'Frequencia StopWords' : stopWMedia
+                'Frequencia StopWords' : stopWMedia,
+                #'Perplexidade': perplexidadeMedia
             })
 
     # Cria um DataFrame com os resultados
@@ -218,13 +227,32 @@ def frequencia_stopwords(texto):
 def riqueza_lexical(texto):
     # Tokenizar o texto em palavras
     palavras = word_tokenize(texto.lower())
-    # Remover palavras que não são alfabéticas (por exemplo, números ou pontuação)
-    palavras = [p for p in palavras if p.isalpha()]
+    # Obter a lista de stopwords
+    stop_words = set(stopwords.words('portuguese'))
+    # Remover palavras que não são alfabéticas ou stopwords
+    palavras = [p for p in palavras if p.isalpha() and p not in stop_words]
     # Calcular a riqueza lexical
     num_palavras = len(palavras)
     num_palavras_unicas = len(set(palavras))  # set() para pegar palavras únicas
     riqueza_lexical = num_palavras_unicas / num_palavras if num_palavras > 0 else 0
     return riqueza_lexical
+
+
+def calcular_perplexidade(texto):
+    model_name = "gpt2"  # Pode-se usar outros modelos como "gpt2-medium", "gpt2-large", etc.
+    model = GPT2LMHeadModel.from_pretrained(model_name)
+    tokenizer = GPT2Tokenizer.from_pretrained(model_name)
+    # Tokenizar o texto
+    inputs = tokenizer(texto, return_tensors="pt")
+
+    # Obter as probabilidades logarítmicas dos tokens
+    with torch.no_grad():
+        outputs = model(**inputs, labels=inputs["input_ids"])
+        log_likelihood = outputs.loss.item()
+
+    # Calcular a perplexidade
+    perplexidade = math.exp(log_likelihood)
+    return perplexidade
 
 
 def flesch_kincaid(texto):
@@ -243,7 +271,7 @@ diretorio = '/home/gabriel/TCC_GabrielVncs/Comentarios_Gerados_PrimeiraEtapa'
 
 
 df_resultados = processar_comentarios(diretorio)
-df_resultados_ordenado = df_resultados.sort_values(by=['tema','llm'])
+df_resultados_ordenado = df_resultados.sort_values(by=['llm'])
 
 print(df_resultados_ordenado)
 
