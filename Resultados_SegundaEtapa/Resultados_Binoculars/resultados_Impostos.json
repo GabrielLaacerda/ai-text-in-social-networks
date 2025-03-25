@@ -1,0 +1,296 @@
+[
+    {
+        "llm": "Cohere",
+        "comentario": "Vamos nessa! Já passou da hora de reconhecer o potencial da indústria de games no Brasil e incentivar o crescimento desse mercado. Menos impostos, mais investimentos, empregos e diversão! #GamesNoBrasil #ImpostosBaixos #IndústriaDeGames",
+        "detector": "Binoculars",
+        "prob_humano": 16.32,
+        "prob_IA": 83.68
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Concordo! Acho que a gente precisa apoiar mais as lojas nacionais que pagam seus impostos e contribuem pro nosso país. Se a gente exigir, elas podem melhorar seus serviços e preços. É mais fácil elas ouvirem a gente do que o governo rever impostos. Vamos valorizar o que é nosso! #CompraNacional #PagueSeusImpostos",
+        "detector": "Binoculars",
+        "prob_humano": 13.49,
+        "prob_IA": 86.51
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "É um absurdo mesmo! Esse imposto é um assalto ao consumidor. Você acaba pagando o dobro do valor do produto em imposto. E o pior é que isso afeta principalmente quem não tem condições de comprar no Brasil, onde os preços são inflacionados. É uma pena que o governo não pense nas consequências para a população antes de tomar decisões assim. #ImpostoAbusivo #ConsumidorPunido",
+        "detector": "Binoculars",
+        "prob_humano": 20.71,
+        "prob_IA": 79.29
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Finalmente! Agora posso comprar aqueles gadgets legais sem me preocupar com taxas extras. Adeus, impostos! Olá, novas compras! #Aliexpress #SemImpostos #ComprasFelizes",
+        "detector": "Binoculars",
+        "prob_humano": 8.68,
+        "prob_IA": 91.32
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Ah, não! Justo agora que eu tava pensando em fazer umas comprinhas na Shein... Se aumentar o ICMS, vai ficar bem mais caro importar produtos. Será que vai valer a pena mesmo assim?",
+        "detector": "Binoculars",
+        "prob_humano": 7.39,
+        "prob_IA": 92.61
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "E lá vamos nós! Mais uma vez o governo metendo a mão no nosso bolso. Agora, até comprar umas coisinhas simples de sites internacionais vai pesar no bolso. Aumentar o ICMS em 3% pode não parecer muito, mas faz diferença no fim das contas. #ImpostosAltos #ComprasOnline",
+        "detector": "Binoculars",
+        "prob_humano": 0.5,
+        "prob_IA": 99.5
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Isso é incrível! Finalmente, alguém reconhecendo a importância dos games no Brasil! 🎮🙌 Vamos mobilizar a galera gamer e fazer essa mudança acontecer! Imagina os investimentos e empregos que isso pode trazer! #GamesNoBrasil",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Concordo total! A gente reclama dos impostos, mas enquanto isso, as lojas aqui poderiam investir mais em atendimento e preços justos. Com o governo, é um jogo de empurra pra lá e pra cá. No fim, quem sai perdendo somos nós. 😩",
+        "detector": "Binoculars",
+        "prob_humano": 10.13,
+        "prob_IA": 89.87
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Pelo amor de Deus, 92% de imposto?! Isso é um assalto! 😱 Como é que alguém aguenta comprar assim? E ainda vem com essa de “governo para os pobres”. Só se for pra deixar a gente mais pobre! 🤦‍♂️💸 #ImpostosAbsurdo",
+        "detector": "Binoculars",
+        "prob_humano": 16.81,
+        "prob_IA": 83.19
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Isso sim é uma boa notícia! A gente finalmente pode comprar sem medo do imposto! 🛒✨",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Putz, já não tá fácil comprar lá fora! Se aumentar o ICMS, vai ser tchau, Shein e Shopee! 😩💸 #Tristeza",
+        "detector": "Binoculars",
+        "prob_humano": 0.66,
+        "prob_IA": 99.34
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Poxa, que chato! Mais 3% no ICMS vai pesar no bolso. Comprar online já tá caro, agora vai ficar só mais difícil. #FicaDica",
+        "detector": "Binoculars",
+        "prob_humano": 15.0,
+        "prob_IA": 85.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Que legal que a aprovação do PL 514/2011 vai ajudar no crescimento dos games aqui no Brasil! Com impostos menores, pode ser uma boa oportunidade para mais investimentos e empregos. Vamos ver se conseguimos dar um up no nosso time gamer para garantir essa vitória final! 🎮💸",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "É, acho que você tem uma boa ideia lá em cima. Aliás, será que não seria interessante ver se dá pra abrir um pouco de espaço para as lojas nacionais e fazer elas baixarem seus preços? Afinal, quem sabe o governo não pode pensar em alguma coisa assim. Mas enfim, é sempre complicado mudar regras grandes assim, né?",
+        "detector": "Binoculars",
+        "prob_humano": 10.31,
+        "prob_IA": 89.69
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Oi! Eu estava vendo essa notícia sobre os impostos na importação de produtos online e fiquei tipo, \"Eita, isso é uma porcaria!\" Tipo, um fone de ouvido que custa R$250 mais frete e seguro de R$30 totaliza quase R$540 só com impostos. Então eu imagino como é pra quem compra muita coisa online, as contas aumentam rapidinho. Afinal, os impostos incidiram sobre o valor total da compra, incluindo frete e seguro! É um absurdo mesmo, né? Tipo, se você paga 92% a mais só por causa do imposto, tipo que isso é uma grana boba. O ideal seria ter mais transparência sobre essas taxas para todos consigam entender melhor o custo real da compra.",
+        "detector": "Binoculars",
+        "prob_humano": 3.68,
+        "prob_IA": 96.32
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Uau! Isso é uma boa notícia! Agora, compras pequenas na Aliexpress são um pouco menos cara com essa isenção de imposto até US$ 50. Tá bom para comprar mais coisas sem se preocupar tanto com taxinhas adicionais!",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Ué, se o ICMS aumentar pra 25%, vai ter que ficar atento nas minhas compras online! Acho que vou começar a esperar um pouco antes de finalizar as compras para ver se tem promoções ou algo assim.",
+        "detector": "Binoculars",
+        "prob_humano": 9.39,
+        "prob_IA": 90.61
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Interessante que os estados mexeram na taxa de importação do ICMS, aumentando 3% a partir de abril de 2025. Então, se eu quiser importar algo que custava US$ 40, vai ficar US$ 10 mais caro. É um pouco chique, mas sempre tem alguma mudança pra enriquecer o estado hehe.",
+        "detector": "Binoculars",
+        "prob_humano": 4.83,
+        "prob_IA": 95.17
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Aí sim! Zerar PIS/Cofins na importação de jogos é um baita passo! Bora pressionar na CCJ e no Senado pra essa lei sair logo! Menos imposto = mais jogo e mais grana pro Brasil! 🎮🇧🇷",
+        "detector": "Binoculars",
+        "prob_humano": 1.5,
+        "prob_IA": 98.5
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Mano, real! Reclamar dos impostos é fácil, mas já parou pra pensar que se a gente desse mais moral pras lojas daqui, talvez elas se movessem pra valer a pena? Tipo, sei lá, brigar por um preço justo aqui em vez de esperar um milagre do governo... 🤔 Difícil, mas talvez menos impossível que o governo mudar, né?",
+        "detector": "Binoculars",
+        "prob_humano": 5.81,
+        "prob_IA": 94.19
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Mano, que roubo! 92% de imposto? 🤯 Comprar online virou artigo de luxo, só pode. E o pior é que o frete e seguro entram nessa conta também! Sacanagem, viu? Pra quem viaja e compra lá fora, tá suave, né? Mas pra gente, lascou. 🤦‍♂️",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Eita! Finalmente! AliExpress sem imposto até 50 dólares? Demorou, viu! 🤩 Bora aproveitar pra testar uns produtinhos baratinhos sem medo da facada da alfândega! #Aliexpress #SemTaxa #Importacao",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Puts, mais imposto na Shein e Shopee? 😭 Já não basta a facada que já levamos? Complicado viu, assim não dá pra ter alegria! 🤡",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Putz, mais caro importar?! 🤦‍♀️ Já não basta a facada do dólar, agora essa também? Complicado viu, assim não dá pra economizar! 💸 #taxas #importação #socorro",
+        "detector": "Binoculars",
+        "prob_humano": 2.31,
+        "prob_IA": 97.69
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Essa é legal! Ficou bem que os jogos sejam mais atraentes para investimentos e emprego? Vamos lá, mobilizar a galera gamer! #TaxasJogosEletrônicos",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Ahaha, parece que você está tentando convencer a si mesmo de que é uma boa ideia pagar mais impostos e esperar que as lojas nacionais façam seus melhores! Eu acho que vai ser mais fácil se vocês simplesmente começarem a comprar mais naqui.",
+        "detector": "Binoculars",
+        "prob_humano": 12.04,
+        "prob_IA": 87.96
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Quando vou comprar no exterior e descobrir que estou pagando do amor... Quem é o responsável por esse absurdo?",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Ah, isso é legal mesmo! Mas tem que ter cuidado com os custos de envio, né?",
+        "detector": "Binoculars",
+        "prob_humano": 18.82,
+        "prob_IA": 81.18
+    },
+    {
+        "llm": "Llama",
+        "comentario": "E aí, quem está pagando esse imposto? Quem é que vai se beneficiar dessa aumento? Eu só vou gastar mais dinheiro com comprinhas #Impostos #ComprasOnline",
+        "detector": "Binoculars",
+        "prob_humano": 12.39,
+        "prob_IA": 87.61
+    },
+    {
+        "llm": "Llama",
+        "comentario": "E aí, quem vai pagar isso? Quem tem que passar disso na conta?",
+        "detector": "Binoculars",
+        "prob_humano": 14.55,
+        "prob_IA": 85.45
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "\"Massa demais ver os jogos eletrônicos ganhando esse reconhecimento! Finalmente a indústria dos games tá recebendo o tratamento que merece. Com esses impostos mais baixos, a galera vai ter mais acesso a jogos e consoles, e quem sabe a gente não vê mais desenvolvedores brasileiros brilhando por aí, né? Bora mobilizar a comunidade gamer pra dar aquele gás e garantir essa aprovação final. Vai ser um up incrível pro cenário dos games no Brasil, gerando jobs e aquecendo o mercado! 🎮🚀 #GamerLife #ForçaNaCCJ\"",
+        "detector": "Binoculars",
+        "prob_humano": 5.99,
+        "prob_IA": 94.01
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Concordo, mano! A gente fica nessa briga com os impostos das importações, mas enquanto isso, as lojas daqui tão apanhando pra competir com os preços lá de fora. Se a galera desse uma força nas marcas nacionais, quem sabe a gente não faz elas baixarem os preços e capricharem no pós-venda, né? Governo mudar tributo é tipo missão impossível, então talvez empurrar as lojas brasileiras pra melhorar seja um plano mais realista. No fim, a gente tá todo mundo no mesmo barco, querendo qualidade e preço justo. Vamos torcer pra que uma coisa puxe a outra! 🤞 #VarejoBrasileiro #Impostos #ConsumoConsciente",
+        "detector": "Binoculars",
+        "prob_humano": 11.36,
+        "prob_IA": 88.64
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Cara, que absurdo esse imposto de 92% nas importações, né? Compra um fone de 250 conto e paga quase o mesmo valor só de taxas! Isso sem falar que o frete e o seguro também entram na conta. E aí, quando você vê, o preço final tá lá nas alturas, tipo quase 540 reais! E o pior é que esses caras que inventam essas taxas nem sentem no bolso, porque tá tudo lá fora gastando horrores. Enquanto isso, a gente aqui tentando economizar e só vê a grana indo embora em imposto. AliExpress já tá na real, e pelo visto Shein e Shopee vão seguir o mesmo caminho. Governo pra pobre, só se for na teoria, porque na prática tá complicado, viu? #TaxaAbusiva #ImportaçãoComplicada",
+        "detector": "Binoculars",
+        "prob_humano": 9.91,
+        "prob_IA": 90.09
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Eita, que notícia boa! Agora dá pra importar da Aliexpress sem se preocupar com imposto se a compra for até 50 dólares. Vou caprichar na escolha dos produtos! 🛒💸 #ComprasInternacionais #SemImposto #AliexpressBrasil",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "E aí, galera! Parece que as comprinhas da Shein e Shopee podem ficar um pouquinho mais caras. O Comsefaz tá decidindo se o ICMS nas importações vai subir de 17% pra 25%. Vamos torcer pra eles repensarem, porque ninguém merece pagar mais nessa vibe de encontrar os achadinhos internacionais, né? #VaiFicarSalgado #ComprasImportadas #FicaDica",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Nossa, viu a notícia? Compras lá de fora pela net vão pesar mais no bolso a partir de abril. O ICMS subiu de 17% pra 20%, e aquela compra gringa de 40 dólares vai ter um adicional de 10 só de imposto. Que chato, né? #FicouMaisDifícil #Importação #CNNBrasil360",
+        "detector": "Binoculars",
+        "prob_humano": 5.48,
+        "prob_IA": 94.52
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Mano, finalmente um passo gigante pra indústria dos games no Brasil! Zerar PIS/Cofins e reduzir IPI vai ser um game changer. Vamos lá, galera gamer, vamos mobilizar todo mundo pra garantir essa vitória!",
+        "detector": "Binoculars",
+        "prob_humano": 0,
+        "prob_IA": 100
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Ótima reflexão! Eu também acho que apoiar mais as lojas nacionais pode ser um caminho pra melhorar a economia e os serviços. Mas é claro que seria ótimo se o governo desse uma olhada naqueles impostos também, né? 🤔",
+        "detector": "Binoculars",
+        "prob_humano": 15.42,
+        "prob_IA": 84.58
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Que absurdo! Comprar algo online e pagar quase o mesmo valor em imposto? Isso não está certo. E ainda tem que pagar imposto sobre o frete e seguro? Só fica cada vez mais difícil pra gente.",
+        "detector": "Binoculars",
+        "prob_humano": 12.73,
+        "prob_IA": 87.27
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Finalmente uma boa notícia pra quem ama comprar online! 🙌",
+        "detector": "Binoculars",
+        "prob_humano": 7.6,
+        "prob_IA": 92.4
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Ai, bicho, daqui a pouco a gente vai ter que vender um rim pra comprar roupa na Shein!",
+        "detector": "Binoculars",
+        "prob_humano": 12.03,
+        "prob_IA": 87.97
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Nossa, vai ficar mais difícil fazer aquelas compras internacionais! Vou ter que pensar duas vezes antes de comprar algo online agora. 😒",
+        "detector": "Binoculars",
+        "prob_humano": 6.02,
+        "prob_IA": 93.98
+    }
+]
