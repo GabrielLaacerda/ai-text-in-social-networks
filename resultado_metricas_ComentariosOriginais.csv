@@ -1,0 +1,6 @@
+llm;tema;tamanho_medio;formalidade;giria_media;emoji_media;Complexidade de Leitura (Flesch-Kincaid);Riqueza Lexical (Variedade no vocab);Frequencia StopWords;Perplexidade;quant
+CasasDeApostas.txt;Desconhe;11.97;Formal;19.01%;15.49%;43.98;0.95;0.31;1.00;142
+Dolar.txt;Desconhe;11.96;Formal;17.00%;19.00%;69.53;0.93;0.22;1.00;100
+Impostos.txt;Desconhe;34.15;Formal;36.70%;1.83%;11.08;0.96;0.42;1.00;109
+InteligenciaArtificial.txt;Desconhe;12.30;Formal;17.48%;8.74%;32.09;0.97;0.32;1.00;103
+Streaming.txt;Desconhe;10.65;Formal;23.02%;10.07%;31.86;0.97;0.36;1.00;139

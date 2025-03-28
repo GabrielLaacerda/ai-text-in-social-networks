@@ -1,0 +1,37 @@
+DATA_INICIO#26/03/2025 06:03:03
+COMANDO#\"/home/producao/IME/sh/IME_AlarmeColeta_SBC.py\" 
+================================================================================
+
+26/03/2025-06:03:04 INICIO - Sistema..: IME
+                    INICIO - Script...: IME_AlarmeColeta_SBC
+                    --------------------------------------------------------------------------------
+26/03/2025-06:03:04    [E] Criando lock
+26/03/2025-06:03:04        [I] Lock criado
+26/03/2025-06:03:04    [E] ETAPA << INICIA >> :: INICIANDO
+26/03/2025-06:03:04            [I] Diretorio Nagios ...................................: /workprod/log
+26/03/2025-06:03:04        [I] ETAPA << INICIA >> :: SUCESSO
+26/03/2025-06:03:04[E] ETAPA << GERA LISTA >> :: INICIANDO
+26/03/2025-06:03:04    [E] Gerando Dicionario dos Arquivos a Processar.
+26/03/2025-06:03:04        [I] Diretorio .......: /workprod/ArqsOriginais/PROCESS/SBC/ORACLE01/in, Tempo limite Diretorio  .....:180 minuto(s), Tempo Limite Arquivo .....: 120 minuto(s).
+26/03/2025-06:03:04        [I] Diretorio .......: /workprod/ArqsOriginais/PROCESS/NGN_ENR/SBC, Tempo limite Diretorio  .....:600 minuto(s), Tempo Limite Arquivo .....: 120 minuto(s).
+26/03/2025-06:03:04        [I] Diretorio .......: /workprod/ArqsOriginais/PROCESS/SBC/ORACLE01/in/ULAJ, Tempo limite Diretorio  .....:180 minuto(s), Tempo Limite Arquivo .....: 120 minuto(s).
+26/03/2025-06:03:04        [I] Diretorio .......: /workprod/ArqsOriginais/PROCESS/SBC/ORACLE01/in/ULAK, Tempo limite Diretorio  .....:180 minuto(s), Tempo Limite Arquivo .....: 120 minuto(s).
+26/03/2025-06:03:04        [I] Diretorio .......: /workprod/ArqsOriginais/PROCESS/SBC/ORACLE01/in/ULAM, Tempo limite Diretorio  .....:180 minuto(s), Tempo Limite Arquivo .....: 120 minuto(s).
+26/03/2025-06:03:04        [I] Diretorio .......: /workprod/ArqsOriginais/PROCESS/SBC/ORACLE01/in/ULAN, Tempo limite Diretorio  .....:180 minuto(s), Tempo Limite Arquivo .....: 120 minuto(s).
+26/03/2025-06:03:04        [I] Diretorio .......: /workprod/ArqsOriginais/PROCESS/SBC/ORACLE01/in/ULAP, Tempo limite Diretorio  .....:180 minuto(s), Tempo Limite Arquivo .....: 120 minuto(s).
+26/03/2025-06:03:04        [I] Diretorio .......: /workprod/ArqsOriginais/PROCESS/SBC/ORACLE01/in/SRO1, Tempo limite Diretorio  .....:180 minuto(s), Tempo Limite Arquivo .....: 120 minuto(s).
+26/03/2025-06:03:04    [I] ETAPA << GERA LISTA >> :: SUCESSO
+26/03/2025-06:03:04[E] ETAPA << CHECA DIRETORIOS >> :: INICIANDO
+26/03/2025-06:03:04    [ERRO]############################################################
+                       [ERRO] Coleta Expirada para o Diretorio .......: /workprod/ArqsOriginais/PROCESS/SBC/ORACLE01/in/ULAN, em 180 minutos.
+                       [ERRO]############################################################
+26/03/2025-06:03:04        [I] NAO EXISTE ALARME PARA ARQUIVO
+26/03/2025-06:03:04    [I] ETAPA << CHECA DIRETORIOS >> :: ERRO
+26/03/2025-06:03:04 EMAIL ERRO .....: producao.mediacao@algartelecom.com.br
+26/03/2025-06:03:04 --------------------------------------------------------------------------------
+                    FIM :: STATUS .....: ERRO
+
+================================================================================
+DATA_FIM#26/03/2025 06:03:06
+STATUS#ERRO
+

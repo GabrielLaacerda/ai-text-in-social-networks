@@ -284,8 +284,8 @@ def gerarComentario():
             "cohere": cohereUnic,
             "chatgpt": gptUnic,
             "gemini": geminiIAUnic,
+            # Desativados devido aos modelos não estarem baixados
             #"llama": llamaUnic,
-            #Desativado devido ao modelo não estar baixado
             #"deepseek": deepseekUnic,
             "maritacaIA": maritacaIAUnic,
             "mistral": mistralUnic

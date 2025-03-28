@@ -1,0 +1,127 @@
+DATA_INICIO#26/03/2025 00:30:12
+COMANDO#/home/producao/GIS/py/ALGAR_PRD_ExecGen.py -P GIS_ATUALIZAENDALGARCRM
+================================================================================
+
+26/03/2025-00:30:13 INICIO - Sistema..: GIS
+                    INICIO - Script...: ALGAR_PRD_ExecGen_GIS_ATUALIZAENDALGARCRM
+                    --------------------------------------------------------------------------------
+26/03/2025-00:30:13    [E] Criando lock
+26/03/2025-00:30:13        [I] Lock criado
+26/03/2025-00:30:13    [E] ETAPA << EXECUTAR PROCESSO >> :: INICIANDO
+26/03/2025-00:30:13        [E] Executando processo generico => GIS_ATUALIZAENDALGARCRM
+26/03/2025-00:30:13        [E] Iniciando configuracao do processo GIS_ATUALIZAENDALGARCRM
+26/03/2025-00:30:13            [I] Preparando sequencia de etapas a executar
+26/03/2025-00:30:13            [I] Lista de etapas a executar: ['SP_BUSCA_ALTER_END_ALGAR_CRM']
+26/03/2025-00:30:13            [I] Processo NAO PERSISTENTE. Removendo residuos de execucao anterior
+26/03/2025-00:30:13        [E] Iniciando configuracao das etapas do processo GIS_ATUALIZAENDALGARCRM
+26/03/2025-00:30:13            [I] Etapas configuradas
+26/03/2025-00:30:13        [E] Iniciando execucao do processo
+26/03/2025-00:30:13        [E] Iniciando execucao da etapa SP_BUSCA_ALTER_END_ALGAR_CRM
+26/03/2025-00:30:13            [E] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM ] Iniciando instancias da etapa
+26/03/2025-00:30:14            [E] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM ] Iniciando execucao
+/home/producao/Python/Python37/lib/python3.7/site-packages/paramiko/transport.py:169: CryptographyDeprecationWarning: Blowfish has been deprecated
+  'class': algorithms.Blowfish,
+26/03/2025-00:30:14            [E] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Iniciando execucao
+26/03/2025-00:30:14                [E] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Executando procedure :: GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM
+26/03/2025-00:30:14                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Job possui os seguintes parametros: 
+26/03/2025-00:30:14                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] PARAMETRO 1 :: UTL_FILE
+26/03/2025-00:30:14                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] PARAMETRO 2 :: SP_BUSCA_ALTER_END_ALGAR_CRM_1_0_20250326003014.log
+26/03/2025-00:30:14                [EXCECAO]------------------------------------------------------------------------------------------------------------------------
+                                   [EXCECAO] generico.procedure : executa_procedure > Traceback (most recent call last):
+                                   [EXCECAO] generico.procedure : executa_procedure >   File \"/home/producao/pyApiAlgar/PRD/mods/generico/procedure.py\", line 221, in executa_procedure
+                                   [EXCECAO] generico.procedure : executa_procedure >      cur.callproc(self.procedure, self.parametros)
+                                   [EXCECAO] generico.procedure : executa_procedure > cx_Oracle.DatabaseError: ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 951
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 860
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 507
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-20101: Erro Fatal no processo CONSULTA_GRAVA_ENDERECO - SP_BUSCA_ALTER_END_ALGAR_CRM --> Erro geral ao executar a pc_integracao_algar_crm.pr_sincroniza_endereco_gis : ORA-02292: integrity constraint (ALGARCRM.FK_CRM_ADD_I_EX_PO_CRM_ADD_DES) violated - child record found
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at line 1
+                                   [EXCECAO]------------------------------------------------------------------------------------------------------------------------
+26/03/2025-00:30:14                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Tentativa 0 de 3. Realizando nova tentativa em 30 segundos
+26/03/2025-00:30:44                [E] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Executando procedure :: GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM
+26/03/2025-00:30:44                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Job possui os seguintes parametros: 
+26/03/2025-00:30:44                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] PARAMETRO 1 :: UTL_FILE
+26/03/2025-00:30:44                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] PARAMETRO 2 :: SP_BUSCA_ALTER_END_ALGAR_CRM_1_0_20250326003014.log
+26/03/2025-00:30:44                [EXCECAO]------------------------------------------------------------------------------------------------------------------------
+                                   [EXCECAO] generico.procedure : executa_procedure > Traceback (most recent call last):
+                                   [EXCECAO] generico.procedure : executa_procedure >   File \"/home/producao/pyApiAlgar/PRD/mods/generico/procedure.py\", line 221, in executa_procedure
+                                   [EXCECAO] generico.procedure : executa_procedure >      cur.callproc(self.procedure, self.parametros)
+                                   [EXCECAO] generico.procedure : executa_procedure > cx_Oracle.DatabaseError: ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 951
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 860
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 507
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-20101: Erro Fatal no processo CONSULTA_GRAVA_ENDERECO - SP_BUSCA_ALTER_END_ALGAR_CRM --> Erro geral ao executar a pc_integracao_algar_crm.pr_sincroniza_endereco_gis : ORA-02292: integrity constraint (ALGARCRM.FK_CRM_ADD_I_EX_PO_CRM_ADD_DES) violated - child record found
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at line 1
+                                   [EXCECAO]------------------------------------------------------------------------------------------------------------------------
+26/03/2025-00:30:44                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Tentativa 1 de 3. Realizando nova tentativa em 30 segundos
+26/03/2025-00:31:14                [E] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Executando procedure :: GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM
+26/03/2025-00:31:14                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Job possui os seguintes parametros: 
+26/03/2025-00:31:14                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] PARAMETRO 1 :: UTL_FILE
+26/03/2025-00:31:14                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] PARAMETRO 2 :: SP_BUSCA_ALTER_END_ALGAR_CRM_1_0_20250326003014.log
+26/03/2025-00:31:14                [EXCECAO]------------------------------------------------------------------------------------------------------------------------
+                                   [EXCECAO] generico.procedure : executa_procedure > Traceback (most recent call last):
+                                   [EXCECAO] generico.procedure : executa_procedure >   File \"/home/producao/pyApiAlgar/PRD/mods/generico/procedure.py\", line 221, in executa_procedure
+                                   [EXCECAO] generico.procedure : executa_procedure >      cur.callproc(self.procedure, self.parametros)
+                                   [EXCECAO] generico.procedure : executa_procedure > cx_Oracle.DatabaseError: ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 951
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 860
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 507
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-20101: Erro Fatal no processo CONSULTA_GRAVA_ENDERECO - SP_BUSCA_ALTER_END_ALGAR_CRM --> Erro geral ao executar a pc_integracao_algar_crm.pr_sincroniza_endereco_gis : ORA-02292: integrity constraint (ALGARCRM.FK_CRM_ADD_I_EX_PO_CRM_ADD_DES) violated - child record found
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at line 1
+                                   [EXCECAO]------------------------------------------------------------------------------------------------------------------------
+26/03/2025-00:31:14                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Tentativa 2 de 3. Realizando nova tentativa em 30 segundos
+26/03/2025-00:31:44                [E] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Executando procedure :: GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM
+26/03/2025-00:31:44                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Job possui os seguintes parametros: 
+26/03/2025-00:31:44                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] PARAMETRO 1 :: UTL_FILE
+26/03/2025-00:31:44                    [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] PARAMETRO 2 :: SP_BUSCA_ALTER_END_ALGAR_CRM_1_0_20250326003014.log
+26/03/2025-00:31:45                [EXCECAO]------------------------------------------------------------------------------------------------------------------------
+                                   [EXCECAO] generico.procedure : executa_procedure > Traceback (most recent call last):
+                                   [EXCECAO] generico.procedure : executa_procedure >   File \"/home/producao/pyApiAlgar/PRD/mods/generico/procedure.py\", line 221, in executa_procedure
+                                   [EXCECAO] generico.procedure : executa_procedure >      cur.callproc(self.procedure, self.parametros)
+                                   [EXCECAO] generico.procedure : executa_procedure > cx_Oracle.DatabaseError: ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 951
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 860
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-29282: invalid file ID
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"SYS.UTL_FILE\", line 878
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at \"GISTELDBA.SP_BUSCA_ALTER_END_ALGAR_CRM\", line 507
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-20101: Erro Fatal no processo CONSULTA_GRAVA_ENDERECO - SP_BUSCA_ALTER_END_ALGAR_CRM --> Erro geral ao executar a pc_integracao_algar_crm.pr_sincroniza_endereco_gis : ORA-02292: integrity constraint (ALGARCRM.FK_CRM_ADD_I_EX_PO_CRM_ADD_DES) violated - child record found
+                                   [EXCECAO] generico.procedure : executa_procedure >  ORA-06512: at line 1
+                                   [EXCECAO]------------------------------------------------------------------------------------------------------------------------
+26/03/2025-00:31:45                [ERRO]############################################################
+                                   [ERRO] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM - JOB :SP_BUSCA_ALTER_END_ALGAR_CRM ] Limite de tentativas alcancado. Encerrando execucao...
+                                   [ERRO]############################################################
+26/03/2025-00:30:15                [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM ] Instancias iniciadas
+26/03/2025-00:30:15                [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM ] Aguardando instancias finalizarem
+26/03/2025-00:31:45                [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM ] Instancias finalizaram
+26/03/2025-00:31:45                [I] [ ETAPA: SP_BUSCA_ALTER_END_ALGAR_CRM ] Instancia - 1_0 = ERRO
+26/03/2025-00:31:45            [ERRO]############################################################
+                               [ERRO] Etapa SP_BUSCA_ALTER_END_ALGAR_CRM finalizada com ERRO
+                               [ERRO]############################################################
+26/03/2025-00:31:45            [I] ETAPA << EXECUTAR PROCESSO >> :: ERRO
+26/03/2025-00:31:45 EMAIL ERRO .....: producao@algartelecom.com.br
+26/03/2025-00:31:45 --------------------------------------------------------------------------------
+                    FIM :: STATUS .....: ERRO
+EMAIL =>  application/octet-stream gzip application octet-stream utf-8
+
+================================================================================
+DATA_FIM#26/03/2025 00:31:48
+STATUS#ERRO
+
