@@ -17,7 +17,7 @@ texto_sem_usuario = [re.sub(r"^@\w+\s*", "", texto) for texto in coluna_n_textos
 texto_variavel = "\n".join(texto_sem_usuario)
 
 # Salvar o conteúdo com uma linha em branco entre os comentários
-with open('/home/gabriel/TCC_GabrielVncs/Comentarios_Originais_Twitter/InteligenciaArtificial.txt', 'w', encoding='utf-8') as f:
+with open('/home/gabriel/TCC_GabrielVncs/Comentarios_Originais_Twitter/InteligenciaArtificial.txt.txt', 'w', encoding='utf-8') as f:
     for comentario in texto_sem_usuario:
         f.write(comentario + "\n\n")  # Adiciona uma linha em branco após cada comentário
 

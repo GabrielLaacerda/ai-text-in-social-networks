@@ -1,0 +1,296 @@
+[
+    {
+        "llm": "Cohere",
+        "comentario": "Interessante! IA na educação pode ser um diferencial enorme, mas é importante ficar de olho na curadoria do conteúdo e na privacidade dos dados dos alunos.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Mal posso esperar pra ver as possibilidades! IA vai revolucionar a forma como consumimos conteúdo, mas também precisamos ficar de olho nos riscos éticos. É um futuro empolgante, mas que exige responsabilidade.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Dublagem já é ruim, imagina com a voz robótica da IA por cima! Prefiro mil vezes a voz original, mesmo que precise de legenda.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Concordo que a IA é só mais uma ferramenta, mas acho que o impacto dela vai além. Pode sim melhorar condições de trabalho, automatizando tarefas repetitivas e deixando mais tempo pra criatividade. Claro, tem que ter regulamentação pra evitar abusos, mas usada de forma ética, a IA pode ser uma aliada na luta contra a exploração e até ajudar a gente a ganhar mais, entregando conteúdo de qualidade mais rápido.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Caramba, impressionante! A evolução da IA é surreal, né? Dá até um frio na barriga pensar no futuro disso tudo.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Muito interessante! A IA na criação musical é um passo enorme. Fico curioso pra ver como vão lidar com os direitos autorais e a questão ética de usar a voz de artistas sem ser uma \"performance\" real deles.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Isso pode ser um bom passo, mas vamos ver como eles vão usar essa IA! Tem que ser com cuidado, senão vira uma bagunça. 🤔✌️ #Educação #IA",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Mano, é surreal pensar que isso já tá acontecendo! A IA vai revolucionar TUDO, né? Tô ao mesmo tempo empolgado e preocupado com as consequências disso... 😅",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Entendo totalmente! Nada como a emoção de uma voz humana, né? A IA pode ajudar, mas a autenticidade faz falta! 💔",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Concordo totalmente! A IA pode ser uma ferramenta incrível, mas se não tivermos cuidado, vai só favorecer quem já tá no controle. Precisamos garantir que isso seja usado pra apoiar a gente, não pra explorar mais ainda. 🤔💔",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Uau, a evolução é surreal! Esses rostos estão ficando tão reais que dá até um frio na barriga. 😳 Imagino o que vem pela frente! A IA tá evoluindo mais rápido do que a gente consegue acompanhar.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Caraca, isso é insano! Imagina criar músicas com vozes de artistas tão icônicos! 😍 Mal posso esperar pra ver onde isso vai dar. Só espero que a galera use isso de forma legal e criativa! 🎶✨",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Uau, que interessante! O governo de SP pensando em usar IA pra melhorar conteúdo nas escolas. Acho que isso pode ajudar a engajar mais os alunos e tornar o aprendizado um pouco mais interativo e atualizado com as tecnologias modernas. Vamos ver como eles vão implementar isso!",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Caramba! É espantoso ver como a IA está evoluindo e mudando a forma como criamos conteúdo. Imagina só, em breve nem precisaremos de atores reais para filmes ou modelos 3D para propagandas, todo mundo pode ser gerado pela AI. Será que isso vai impactar positivamente na diversidade e autenticidade das mídias? Afinal, quem dirá se a gente vai achar esses conteúdos mais genuinos ou mais desprov",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Não sou fã de conteúdo dublado gerado por IA porque prefiro a autenticidade da voz e expressão humana. Acho que a tecnologia pode ser útil, mas ainda sinto falta de um toque humano especial em cada produção artística.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Ai, Rafael! Eu acho que essa discussão sobre I.A. na criação de conteúdo é sempre bem interessante. Afinal, seja ferramenta ou inimiga, o ponto é ver como ela afeta nossa profissão e como podemos usá-la pra dar mais lucro a alguém. Mas cuidado, só porque facilita a produção de conteúdo, não significa que vai resolver todos os problemas ou nos deixar mais ricos direto. É sempre bom analisar bem o impacto real dela na indústria criativa.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Ah, esses avanços na IA são impressionantes! Imagina, um rosto criado em 2014 que tenta imitar um ser humano, e depois quatro anos depois, uma criação que é completamente digital mas parece mais real do que a vida própria. Tecnologia de verdade está mudando o jogo!",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Oi pessoal! Acho incrível o avanço da inteligência artificial na criação de conteúdo, especialmente em áreas que antes pareciam impossíveis de serem automatizadas. Eu vi um post sobre como o Youtube criou uma ferramenta chamada Dream Track para gerar músicas com vozes de artistas renomados. Será que algum dia vamos ver essas tecnologias tão avançadas na criação de conteúdo literário ou fotográfico? Vamos ver o que vem por aí!",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Opa! IA pra criar conteúdo pras escolas? 🤔 Interessante... mas será que a gente não corre o risco de robotizar demais o ensino? Precisamos equilibrar essa parada! #IAnaEducação #tecnologia",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Mano, bizarro! 🤯 Se já tá assim agora, imagina daqui a uns 5 anos? O futuro chegou pra valer, e a gente nem tá sabendo lidar direito ainda... Que doideira!",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Concordo total! Dublagem com IA ainda soa muito robótica, né? Prefiro o feeling da voz humana, mesmo que a legenda dê um trabalhinho a mais. 😅 #IAnao #dublagem #conteudo",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Pois é, essa parada da IA ser \"amiga\" é bem relativa, né? No fim das contas, quem lucra forte com a nossa criatividade continua sendo os de sempre. Mais ferramenta, mais trabalho, mesmo bolso. 😕",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Caramba! De 2014 pra 2018 a diferença é ABSURDA! Dá pra ver o salto que a IA deu, impressionante! 🤯",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Mano, que brisa! Imagina a treta que vai dar isso com direitos autorais... 🤯 Mas a ideia de criar música com a voz do John Legend é tentadora, confesso! 👀 #DreamTrack #IA #Música",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "\"Quem vai decidir o que é 'aprimorado' nos alunos? A IA só deve ajudar a criar conteúdo mais eficaz, não substituir a criatividade.\" #IAeConteúdo",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "E é isso mesmo? A IA vai acabar nos substituindo todos! Mas daqui pra lá, só vamos ver como ela pode ajudar e melhorar a qualidade do conteúdo. Ou que tal uma IA que ajude na criação de conteúdo mais autêntico? Isso é um desafio interessante!",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Uau, pra mim também! Vamos manter a arte humana no meio daquela tecnologia. Não é a mesma coisa que assistir um show feito por alguém com talento e paixão.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Eu acho que estámos colocando muito o peso na IA! É como se fosse uma solução para tudo, mas é só outra ferramenta... Não muda a lógica de negócios.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Isso é assustador! Quem diria que 4 anos de avanço em redes neurais poderiam levar a criar uma \"mulher\" virtual? A questão é, se não há ninguém lá, quem decide o que é real e o que é falso?",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Que cara legal! E aí vai ser capaz de criar músicas como se fossem feitas por profissionais? Ou é só uma ótima arma para ganhar tempo nos produtores?",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "\"Essa ideia do governo de SP é bem interessante! IA pra ajudar na criação de conteúdo escolar pode ser um grande avanço, mas temos que ficar de olho pra garantir que a autenticidade e a qualidade não se percam no processo. #EducaçãoComIA\"",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Cara, é surreal pensar que aquela mulher é só IA, né? Imagina o impacto disso na criação de conteúdo! Vai revolucionar tudo, desde anúncios até filmes. E aí, será que a gente vai saber diferenciar o que é real ou não? #FuturoLoko",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Concordo, mano! Dublagem feita por IA pode até ser prática, mas perde muito na autenticidade. Nada supera aquela voz original que a gente já conhece e ama, né? #RealidadeOuFicção",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Verdade, a IA pode ser uma mão na roda pra agilizar o trabalho, mas se não tomarmos cuidado, vira só mais uma forma de nos espremer até o último suco. No fim, quem lucra mesmo são os chefes, né? Precisamos pensar em como usar essas ferramentas de forma justa e ética, pra não virar uma exploração sem fim. #IA #TrabalhoJusto",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Caramba, a evolução é impressionante, né? De 2014 pra 2018, parece que a IA deu um salto quântico. Olha essa mulher da direita, parece de verdade! Imagina o que a gente vai ver daqui a mais 4 anos. Tá tudo ficando surreal! 🤖📸 #IAavançando",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "\"Vixi, esse Dream Track do YouTube tá parecendo coisa de outro mundo! Imagina só, músicas criadas com IA usando as vozes do Demi, do John Legend e outros? Se for pra democratizar a criação, acho top, mas tem que ficar de olho na autenticidade, né? #IA #DreamTrack\"",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Cara, isso pode ser um divisor de águas! Mas precisa ser feito com responsabilidade, senão vira bagunça.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Cara, isso é demais! A IA vai mudar tudo mesmo. Imagina só os filmes e séries que vão rolar! Mas precisamos ficar de olho pra não virar uma bagunça ética, né?",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Entendo, mas e se a IA for tão boa que a gente nem perceber a diferença? Já pensou nisso?",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Cara, a IA pode sim ser uma ferramenta poderosa, mas tudo depende de como a gente usa. Se for pra explorar mais e pagar menos, aí complica. Precisamos pensar em como regulamentar isso pra garantir que os criadores sejam valorizados.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Cara, impressionante como a IA evoluiu em tão pouco tempo! A mulher da direita parece tão real... Isso mostra o poder dessa tecnologia, mas também dá um pouco de medo, né? Precisamos estar atentos ao uso responsável dessas ferramentas.",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Que massa! Mal posso esperar para ver o que os criadores vão fazer com isso. Mas será que vai soar natural ou vai parecer meio robótico? Só o tempo dirá!",
+        "detector": "Distbert",
+        "prob_humano": 100.0,
+        "prob_IA": 0.0
+    }
+]

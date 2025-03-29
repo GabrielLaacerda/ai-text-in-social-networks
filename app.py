@@ -176,7 +176,7 @@ def download():
 def estatisticas():
 
     llms = ['Cohere', 'ChatGPT', 'DeepSeek', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
-    dir_base = "./Resultados"
+    dir_base = "./Resultados_SegundaEtapa"
 
     resultados = res.calcular_estatisticas_tabela(llms,dir_base)
     resultados_graficos = res.calcular_acerto_por_llm(resultados)
@@ -207,7 +207,6 @@ def analisarAutenticidadeGeral():
         }
 
         if ai_choice in ai_map:
-            print("ok")
             # Carregar comentários
             lista_comentarios = [
                 {"llm": llm, "comentarios": open(f"Comentarios_Gerados_PrimeiraEtapa/{llm}_{theme_choice[:-5]}.txt", "r", encoding="utf-8").read()}
@@ -270,8 +269,6 @@ def gerarComentario():
         return []
 
     personas = carregar_personas()
-
-    print(personas)
 
     if request.method == "POST":
         ai_choice = request.form.get("ai")

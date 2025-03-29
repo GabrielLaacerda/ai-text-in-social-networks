@@ -1,0 +1,254 @@
+[
+    {
+        "llm": "Cohere",
+        "comentario": "É estranho mesmo! Você já tá pagando pelo streaming, né? Aí ainda tem que pagar mais pelo filme que você quer ver. Fica parecendo que a gente tá pagando duas vezes pelo mesmo serviço.",
+        "prob_humano": 99.0,
+        "prob_IA": 1.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Pagar duas vezes, não! Já assino o streaming, se o filme tá lá, tem que liberar.",
+        "prob_humano": 93.0,
+        "prob_IA": 7.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Brasil, o país onde o streaming é um luxo. A gente tenta ser honesto, mas com esses preços, a pirataria reina. Netflix e Disney+ cobram uma fortuna, Amazon Prime é confuso e ainda quer mais grana, e agora essa tal de MAX quer entrar na jogada. IPTV é a salvação pra maioria, infelizmente.",
+        "prob_humano": 82.0,
+        "prob_IA": 18.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Pois é, a gente paga pelo serviço e ainda tem que aguentar anúncio! E se a gente tenta pular, ainda aparece um \"assista mais 30 segundos\". Aff, já cansei disso!",
+        "prob_humano": 54.0,
+        "prob_IA": 46.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "É verdade, tá ficando inviável acompanhar tudo. A gente acaba pagando um valor alto por mês e ainda assim não acha nada que preste pra assistir. E agora com anúncio também? A pirataria vai voltar com tudo mesmo, já to vendo.",
+        "prob_humano": 84.0,
+        "prob_IA": 16.0
+    },
+    {
+        "llm": "Cohere",
+        "comentario": "Pirataria é um problema sério, mas será que só bloquear resolve? Acho que as plataformas de streaming legais precisam oferecer mais conteúdo e preços acessíveis pra competir de verdade. Senão, sempre vai ter gente procurando alternativas ilegais. #Streaming #Pirataria",
+        "prob_humano": 0.0,
+        "prob_IA": 100.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Sério! Pagar pra alugar? Já pago a mensalidade, pra que mais essa? 😅",
+        "prob_humano": 89.0,
+        "prob_IA": 11.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Aí complica, né? Paga a mensalidade e ainda tem que alugar filme? 😤 Aff, é tipo um golpe na gente!",
+        "prob_humano": 12.0,
+        "prob_IA": 88.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Poxa, esses preços estão uma facada! 😅 Se continuar assim, vou acabar caindo nas IPTV também. É difícil competir com tanta grana sendo pedida, hein?",
+        "prob_humano": 0.0,
+        "prob_IA": 100.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Totalmente! É absurdo pagar pra ver anúncio! A gente só queria relaxar e curtir o filme, não pra ficar vendo propaganda! Que saco! 😤",
+        "prob_humano": 71.0,
+        "prob_IA": 29.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Pois é, nem me fale! Era tão bom ter tudo numa plataforma só... agora é um tal de assinar vários e ainda ter que aguentar propaganda. Tô começando a achar que vale mais a pena voltar pra DVD! 😅🍿",
+        "prob_humano": 18.0,
+        "prob_IA": 82.0
+    },
+    {
+        "llm": "ChatGPT",
+        "comentario": "Uau, mais de 250 sites e 65 apps bloqueados? Isso é uma grande limpa! 😅 Vamos ver se a galera que pirateava passa a valorizar as plataformas de streaming de verdade! 🍿🎥",
+        "prob_humano": 4.0,
+        "prob_IA": 96.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "To falando, nunca entendi essa brincadeira de alugar filmes dentro do streaming. Parece meio confuso pra mim!",
+        "prob_humano": 91.0,
+        "prob_IA": 9.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "To falando sério, não adoro quando plataformas de streaming oferecem filmes que só posso acessar se alugar. É tão frustrante! Prefiro plataformas onde eu possa pagar uma taxa mensal e assistir o que bem quiser, sem limites de escolha. Comprar um filme agora e então? Melhor ainda!",
+        "prob_humano": 51.0,
+        "prob_IA": 49.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "To falando, filmes em plataformas de streaming estão ficando cada vez mais caros! Além do Netflix com anúncios a 20,90 reais, o Disney+ custa 43,90 e o Amazon Prime pode ser um pouco confuso com preços diferentes para filmes. Acho que é sempre bom lembrar que tem opções legais de ver filmes como alugar ou assistir em grupo compartilhado. E olha só, até pirataria está crescendo aqui no Brasil e em outros países, com esse IPTVS que podem acessar conteúdo ilegalmente. É sempre bom respeitar o trabalho criativo!",
+        "prob_humano": 39.0,
+        "prob_IA": 61.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "\"Que porra de filhinha de puta é essa? Afinal, eu pago pra ver os filmes, né? Não era pra ser só isso? E agora, tenho que aturar anúncios na mesma plataforma que eu tô pagando? Puta merda! Já pensou em ter que pagar um preço e ainda ter que assitir propaganda o tempo todo?\"",
+        "prob_humano": 2.0,
+        "prob_IA": 98.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Nossa, parece que os preços subiram e a qualidade dos catálogos está cada vez piora! Agora com anúncios por toda parte, tá parecendo um convite para voltar à pirataria. Que pena...",
+        "prob_humano": 32.0,
+        "prob_IA": 68.0
+    },
+    {
+        "llm": "DeepSeek",
+        "comentario": "Interessante ver a operação contra pirataria digital bloqueando tantos sites e apps ilegais de streaming! É sempre bom ver esforços concretos sendo feitos para proteger o conteúdo legal e oferecer opções legais de entretenimento.",
+        "prob_humano": 1.0,
+        "prob_IA": 99.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Tipo assim, né? Já pago a assinatura, aí tenho que PAGAR A MAIS pra ver um filme? Que lógica é essa, gente? 🤦🏻‍♀️ Não faz sentido nenhum! Prefiro procurar em outro lugar, sério.",
+        "prob_humano": 3.0,
+        "prob_IA": 97.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Mano, que palha isso de ter que alugar filme DENTRO do streaming que já pago! 🤦‍♂️ Tipo, qual é a lógica? Me sinto garimpando ouro pra ver um filme.",
+        "prob_humano": 63.0,
+        "prob_IA": 37.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Mano, com esses preços de streaming, não me admira que a galera pirateia tudo! Alugar filme por fora ainda? Aí complica... 🤷‍♂️",
+        "prob_humano": 1.0,
+        "prob_IA": 99.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Mano, juro, não dá pra entender! Pago pra ver filme sem anúncio e TOMA ANÚNCIO NO MEIO DA SÉRIE! Que palhaçada é essa? A gente paga, eles fazem o que querem e a gente aceita calado? Brasil, cadê a revolta?! 😡",
+        "prob_humano": 59.0,
+        "prob_IA": 41.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "Mano, real! Antigamente era mó paz, pagava um valor e tinha tudo. Agora é cada streaming R$40+ e ainda com comercial? Sério que tão pedindo pra galera voltar pro torrent? 🤦‍♀️",
+        "prob_humano": 0.0,
+        "prob_IA": 100.0
+    },
+    {
+        "llm": "Gemini",
+        "comentario": "252 sites e 65 apps? UAU! 😮 Tomara que comecem a ter mais filme legal pra alugar nessas plataformas de streaming \"oficiais\" agora, né? Pq pagar caro por filme repetido ninguém merece... 😒",
+        "prob_humano": 97.0,
+        "prob_IA": 3.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Pessoal, eu juro que nunca vou entender como as plataformas de streaming funcionam... Não posso alugar filmes dentro delas, não faz sentido, né?",
+        "prob_humano": 88.0,
+        "prob_IA": 12.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "O aluguel de filmes é um dos maiores tesouros da era das plataformas de streaming!",
+        "prob_humano": 24.0,
+        "prob_IA": 76.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "\"Quando a Netflix chama de padrão... e eu só quero assistir às séries que tenho 1 ano pra ver \"",
+        "prob_humano": 77.0,
+        "prob_IA": 23.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "Não faz sentido pagar por um serviço e ter anúncios que te perturbam todo dia!",
+        "prob_humano": 67.0,
+        "prob_IA": 33.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "E aí, vocês acham que vale a pena pagar R$ 40/mês só para assistir a filmes?",
+        "prob_humano": 98.0,
+        "prob_IA": 2.0
+    },
+    {
+        "llm": "Llama",
+        "comentario": "E aí, quem vai perder tempo procurando por filmes ilegais de forma que eu possa assistir ao meu favorito do ano?",
+        "prob_humano": 92.0,
+        "prob_IA": 8.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Cara, é tipo pagar pedágio numa estrada que já é sua assinatura mensal, sabe? Aluguel dentro do streaming é sacanagem, a gente quer tudo disponível já que tá pagando a mensalidade! #StreamingComplicado #QueroAssistirSemPagarExtra",
+        "prob_humano": 2.0,
+        "prob_IA": 98.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "É o fim da picada, né? Você tá lá, pagando a mensalidade certinha pra usar o streaming, e quando quer assistir um filme, te pedem pra pagar mais? Tipo, já não basta a assinatura? Aff, isso é quase como pagar pra entrar numa festa e ainda ter que desembolsar mais pra ouvir a música que você quer. #ChateadoComStreaming #SóQueroAssistirEmPaz",
+        "prob_humano": 0.0,
+        "prob_IA": 100.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Cara, olha esses preços de streaming! Netflix querendo R$ 20,90 com anúncios, e sem, R$ 44,90! Disney+ e Amazon Prime na faixa dos R$ 40 e pouco, mas o Prime ainda pede mais uma graninha pra alguns filmes. E o MAX aí com opção baratinha, mas se quer algo melhor, já sobe pra R$ 29,90. Só que, né, mesmo com essas opções, o Brasil tá liderando o ranking da pirataria online. IPTV tá virando quase que o novo \"normal\", infelizmente. É mais fácil e barato, mas a gente sabe que tá errado, né? Precisamos valorizar o conteúdo e pensar nos impactos disso aí! #Streaming #Pirataria #Cultura",
+        "prob_humano": 0.0,
+        "prob_IA": 100.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Cara, é o fim da picada, né? A gente desembolsa uma grana pra ter um streaming sem comercial, pra curtir sossegado, e aí vem eles com anúncio no meio da plataforma? Tipo, sério isso? Tô pagando pra ter paz e ainda me obrigam a ver propaganda? Já passou do ponto, isso sim! Vamos ver até quando vão nos empurrar essas coisas... #chateada #consumidorrevoltado",
+        "prob_humano": 0.0,
+        "prob_IA": 100.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Verdade, né? Tá impossível manter todas essas assinaturas, e parece que quanto mais opções surgem, mais difícil fica achar algo realmente bom pra assistir. E esses anúncios no meio do streaming? Parece que voltamos no tempo pro DVD com propaganda antes do filme começar. Se continuar assim, a galera vai acabar optando pelos jeitos \"alternativos\" de ver filme de novo, porque tá ficando caro e chato demais! #ForaAnúncios #VoltaPirataria",
+        "prob_humano": 0.0,
+        "prob_IA": 100.0
+    },
+    {
+        "llm": "MaritacaIA",
+        "comentario": "Eita, a operação contra pirataria digital não tá de brincadeira, hein? Bloqueou 252 sites e 65 apps de streaming ilegais! Vamos respeitar a lei e curtir os filmes e séries nas plataformas de forma correta. #FicaADica #RespeitoAoCinema",
+        "prob_humano": 0.0,
+        "prob_IA": 100.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Sério, né? Eu pago pra ter acesso aos filmes e ainda querem que eu pague mais pra alugar? Não faz sentido!",
+        "prob_humano": 69.0,
+        "prob_IA": 31.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Ah, sério? Pago minha assinatura e ainda tenho que alugar o filme? Que zoação!",
+        "prob_humano": 5.0,
+        "prob_IA": 95.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Cara, esses preços dos streaming tão cada vez mais salgados! E ainda tem gente que prefere pagar uns trocados pra IPTV e pegar tudo pirata. Aí fica difícil pra Netflix e companhia competirem, né? 😐",
+        "prob_humano": 3.0,
+        "prob_IA": 97.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Sério, né? Pagar e ainda ter que aguentar propaganda? Tá de brincadeira!",
+        "prob_humano": 70.0,
+        "prob_IA": 30.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Cara, nem me fala! Parece que a gente volta pro tempo da locadora, só que agora a gente paga um absurdo e ainda tem que aturar propaganda. Tá meio sem cabimento! 😅",
+        "prob_humano": 3.0,
+        "prob_IA": 97.0
+    },
+    {
+        "llm": "Mistral",
+        "comentario": "Nossa, bateu a maior limpeza nos sites de pirataria! Quem aí vai ter que assinar streaming de verdade agora? 😂",
+        "prob_humano": 37.0,
+        "prob_IA": 63.0
+    }
+]
