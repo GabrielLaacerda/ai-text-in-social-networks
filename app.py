@@ -176,7 +176,7 @@ def download():
 def estatisticas():
 
     llms = ['Cohere', 'ChatGPT', 'DeepSeek', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
-    dir_base = "./Resultados_SegundaEtapa"
+    dir_base = "./Resultados"
 
     resultados = res.calcular_estatisticas_tabela(llms,dir_base)
     resultados_graficos = res.calcular_acerto_por_llm(resultados)
