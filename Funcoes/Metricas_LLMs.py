@@ -157,7 +157,7 @@ def processar_comentarios(diretorio):
             lexical = []
             stopW = []
             perplexidade = []
-            t = 0
+
             for comentario in comentarios:
                 if comentario.strip():  # Ignora comentários vazios
                     tamanhos.append(contar_palavras(comentario))
@@ -168,7 +168,6 @@ def processar_comentarios(diretorio):
                     lexical.append(riqueza_lexical(comentario))
                     stopW.append(frequencia_stopwords(comentario))
                     perplexidade.append(1)
-                    t = t+1
 
             # Calcula as médias das características de todos os comentários
             tamanho_medio = sum(tamanhos) / len(tamanhos) if tamanhos else 0
@@ -206,7 +205,6 @@ def processar_comentarios(diretorio):
                 'Riqueza Lexical (Variedade no vocab)' : lexicalMedia,
                 'Frequencia StopWords' : stopWMedia,
                 'Perplexidade': perplexidadeMedia,
-                'quant': t
             })
 
     # Cria um DataFrame com os resultados
@@ -266,19 +264,25 @@ def flesch_kincaid(texto):
     sentencas = sent_tokenize(texto)
     total_palavras = len(palavras)
     total_sentencas = len(sentencas)
-    total_silabas = sum([len(re.findall(r'[aeiouáéíóúãõâêîôûà]', palavra, re.IGNORECASE)) for palavra in palavras])
+
+    # Aproximação de contagem de sílabas
+    total_silabas = 0
+    for palavra in palavras:
+        # Contagem de sílabas baseada em vogais
+        total_silabas += len(re.findall(r'[aeiouáéíóúãõâêîôûà]', palavra, re.IGNORECASE))
 
     # Fórmula Flesch-Kincaid
     RE = 206.835 - (1.015 * (total_palavras / total_sentencas)) - (84.6 * (total_silabas / total_palavras))
     return RE
 
 # Diretório onde estão os arquivos
-#diretorio = '/home/gabriel/TCC_GabrielVncs/Comentarios_Gerados_PrimeiraEtapa'
-diretorio = '/home/gabriel/TCC_GabrielVncs/Comentarios_Originais_Twitter/Comentarios_Filtrados/'
+diretorio = '/home/gabriel/TCC_GabrielVncs/Comentarios_Gerados_PrimeiraEtapa'
+#diretorio = '/home/gabriel/TCC_GabrielVncs/Comentarios_Originais_Twitter/Comentarios_Filtrados/'
+#diretorio = '/home/gabriel/TCC_GabrielVncs/Comentarios_Gerados_SegundaEtapa'
 
 df_resultados = processar_comentarios(diretorio)
 df_resultados_ordenado = df_resultados.sort_values(by=['llm'])
-df_resultados_ordenado.to_csv("resultado_metricas_ComentariosOriginais.csv", index=False, sep=";", float_format="%.2f")
+df_resultados_ordenado.to_csv("resultado_metricas_SegundaEtapa.csv", index=False, sep=";", float_format="%.2f")
 
 
 print(df_resultados_ordenado)

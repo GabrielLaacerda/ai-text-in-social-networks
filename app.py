@@ -176,7 +176,7 @@ def download():
 def estatisticas():
 
     llms = ['Cohere', 'ChatGPT', 'DeepSeek', 'Gemini', 'Llama', 'MaritacaIA', 'Mistral']
-    dir_base = "./Resultados"
+    dir_base = "./Resultados_SegundaEtapa"
 
     resultados = res.calcular_estatisticas_tabela(llms,dir_base)
     resultados_graficos = res.calcular_acerto_por_llm(resultados)
@@ -198,11 +198,11 @@ def analisarAutenticidadeGeral():
 
         # Mapeamento dos detectores para suas funções correspondentes
         ai_map = {
-            "roberta": roberta_prob,
-            "sapling": sapling_prob,
-            "huggingface": prob_hugging,
+            #"roberta": roberta_prob,
+            #"sapling": sapling_prob,
+            #"huggingface": prob_hugging,
             "distbert": distbert_prob,
-            "radar": radar_prob,
+            #"radar": radar_prob,
             #"binoculars": binoc
         }
 
