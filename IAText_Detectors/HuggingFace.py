@@ -3,12 +3,13 @@ import torch
 from torch import cuda
 import os
 import re
+import time
 
 ACCESS_TOKEN = os.getenv('HUGGING_FACE_API_KEY')
 
 # Função principal que processa múltiplos comentários
 def probabilidade_IA(comentarios, modelos):
-    device = 'cuda' if cuda.is_available() else 'cpu'
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
     tokenizer = AutoTokenizer.from_pretrained("PirateXX/AI-Content-Detector", token=ACCESS_TOKEN)
     model = AutoModelForSequenceClassification.from_pretrained("PirateXX/AI-Content-Detector", token=ACCESS_TOKEN)
     model.to(device)
@@ -47,6 +48,8 @@ def probabilidade_IA(comentarios, modelos):
         return real
 
     def findRealProb(text):
+        inicio = time.time()  # Marca o tempo antes da execução
+
         chunksOfText = chunks_of_900(text)
         results = []
         for chunk in chunksOfText:
@@ -59,9 +62,15 @@ def probabilidade_IA(comentarios, modelos):
             cnt += length
             ans = ans + prob * length
         realProb = ans / cnt
-        return {"Real": realProb, "Fake": 1-realProb}, results
+
+        fim = time.time()  # Marca o tempo depois da execução
+        tempo_execucao = fim - inicio  # Calcula o tempo total de processamento
+
+        return {"Real": realProb, "Fake": 1 - realProb}, results, tempo_execucao
 
     result = []
+    tempos_execucao = []  # Lista para armazenar os tempos de execução
+
     for item in comentarios:
         if not isinstance(item, dict) or 'llm' not in item or 'comentarios' not in item:
             continue  # Pula itens inválidos
@@ -74,9 +83,11 @@ def probabilidade_IA(comentarios, modelos):
             frases = [frase.strip() for frase in frases if frase.strip()]
 
             for frase in frases:
-                probabilidade = findRealProb(frase)  # Obtém a probabilidade de ser "real"
-                real_prob = probabilidade[0]['Real']  # A probabilidade "real"
-                fake_prob = 1 - real_prob  # A probabilidade de ser "fake"
+                probabilidade, _, tempo_execucao = findRealProb(frase)  # Obtém a probabilidade e o tempo
+                real_prob = probabilidade['Real']  # Probabilidade de ser humano
+                fake_prob = probabilidade['Fake']  # Probabilidade de ser IA
+
+                tempos_execucao.append(tempo_execucao)  # Armazena o tempo de execução
 
                 # Adiciona o comentário e as probabilidades no formato desejado
                 result.append({
@@ -85,6 +96,10 @@ def probabilidade_IA(comentarios, modelos):
                     "prob_humano": real_prob * 100,  # Multiplicado por 100 para porcentagem
                     "prob_IA": fake_prob * 100  # Multiplicado por 100 para porcentagem
                 })
+
+    # Calcula a média do tempo de inferência
+    media_tempo = sum(tempos_execucao) / len(tempos_execucao) if tempos_execucao else 0
+    print(f"Média de tempo por inferência: {media_tempo:.6f} segundos")
 
     return result
 

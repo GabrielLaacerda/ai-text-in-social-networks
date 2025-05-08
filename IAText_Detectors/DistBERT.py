@@ -2,12 +2,10 @@ import torch
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, logging
 import torch.nn.functional as F
 import warnings
+import time
 
 def probabilidade_IA(comentarios, modelos):
     warnings.filterwarnings("ignore")
-
-    # Desabilitar logs do transformers (Hugging Face)
-    logging.set_verbosity_error()
 
     # Caminho para o modelo treinado
     model_path = '/home/gabriel/TCC_GabrielVncs/trained_model_HC3'
@@ -20,6 +18,7 @@ def probabilidade_IA(comentarios, modelos):
         raise ValueError("O argumento 'comentarios' deve ser uma lista.")
 
     resultados = []
+    tempos_execucao = []  # Lista para armazenar os tempos de execução
 
     for item in comentarios:
         if not isinstance(item, dict) or 'llm' not in item or 'comentarios' not in item:
@@ -33,9 +32,15 @@ def probabilidade_IA(comentarios, modelos):
             frases = [frase.strip() for frase in frases if frase.strip()]  # Remove espaços extras
 
             for frase in frases:
+                # Medir tempo de execução da inferência
+                inicio = time.time()
+
                 # Tokeniza a frase
                 inputs = tokenizer(frase, return_tensors="pt", truncation=True, max_length=64, padding=True)
                 outputs = model(**inputs)
+
+                fim = time.time()
+                tempos_execucao.append(fim - inicio)  # Registra o tempo de execução
 
                 logits = outputs.logits
 
@@ -54,7 +59,11 @@ def probabilidade_IA(comentarios, modelos):
                     'prob_IA': round(prob_ia, 2)
                 })
 
-    return resultados  # Retorna os resultados no formato desejado
+    # Calcula a média do tempo de execução por inferência
+    media_tempo = sum(tempos_execucao) / len(tempos_execucao) if tempos_execucao else 0
+    print(f"Média de tempo por inferência: {media_tempo:.6f} segundos")
+
+    return resultados
 
 def probabilidade_IA_comentarios_proprios(comentarios):
     warnings.filterwarnings("ignore")

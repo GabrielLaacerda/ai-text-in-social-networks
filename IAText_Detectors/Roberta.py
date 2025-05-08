@@ -2,8 +2,9 @@ import warnings
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, logging
 import torch.nn.functional as F
 import torch
+import time
 
-# Função comum para calcular as probabilidades
+
 def calcular_probabilidade(frase, model, tokenizer):
     inputs = tokenizer(frase, return_tensors="pt", truncation=True, max_length=512)
     outputs = model(**inputs)
@@ -19,12 +20,10 @@ def calcular_probabilidade(frase, model, tokenizer):
 
     return round(prob_human, 2), round(prob_ia, 2)
 
+
 # Função para processar a lista de comentários
 def probabilidade_IA(comentarios, modelos):
     warnings.filterwarnings("ignore")
-
-    # Desabilitar logs do transformers (Hugging Face)
-    logging.set_verbosity_error()
 
     # Define o repositório do modelo
     model_name = "roberta-large-openai-detector"
@@ -37,6 +36,7 @@ def probabilidade_IA(comentarios, modelos):
         raise ValueError("O argumento 'comentarios' deve ser uma lista.")
 
     resultados = []
+    tempos = []  # Lista para armazenar os tempos de execução
 
     for item in comentarios:
         if not isinstance(item, dict) or 'llm' not in item or 'comentarios' not in item:
@@ -50,8 +50,13 @@ def probabilidade_IA(comentarios, modelos):
             frases = [frase.strip() for frase in frases if frase.strip()]  # Remove espaços extras
 
             for frase in frases:
+                inicio = time.time()  # Marca o tempo antes de processar a frase
+
                 # Chama a função comum para calcular as probabilidades
                 prob_human, prob_ia = calcular_probabilidade(frase, model, tokenizer)
+
+                fim = time.time()  # Marca o tempo após processar a frase
+                tempos.append(fim - inicio)  # Armazena o tempo gasto
 
                 # Adiciona os resultados no formato desejado
                 resultados.append({
@@ -60,6 +65,12 @@ def probabilidade_IA(comentarios, modelos):
                     'prob_humano': prob_human,
                     'prob_IA': prob_ia
                 })
+
+    # Calcula e imprime a média do tempo gasto por comentário
+    if tempos:
+        media_tempo = sum(tempos) / len(tempos)
+        print(f"Tempo médio por comentário: {media_tempo:.4f} segundos")
+        print(f"Total de comentários: {len(tempos)}")
 
     return resultados  # Retorna os resultados no formato desejado
 
