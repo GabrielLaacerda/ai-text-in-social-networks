@@ -167,7 +167,7 @@ def processar_comentarios(diretorio):
                     complexidade.append(flesch_kincaid(comentario))
                     lexical.append(riqueza_lexical(comentario))
                     stopW.append(frequencia_stopwords(comentario))
-                    perplexidade.append(1)
+                    perplexidade.append(calcular_perplexidade(comentario))
 
             # Calcula as médias das características de todos os comentários
             tamanho_medio = sum(tamanhos) / len(tamanhos) if tamanhos else 0
@@ -286,7 +286,3 @@ df_resultados_ordenado.to_csv("resultado_metricas_SegundaEtapa.csv", index=False
 
 
 print(df_resultados_ordenado)
-
-
-
-
