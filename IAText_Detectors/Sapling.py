@@ -77,7 +77,7 @@ def probabilidade_IA_comentarios_proprios(comentarios):
     warnings.filterwarnings("ignore")
 
     # Define a chave da API e o endpoint
-    api_key = "1JIQU55BWAMDEXSZ0QZONSVZR2KWZRCQ"
+    api_key = os.getenv('SAPLING_API_KEY')
     url = "https://api.sapling.ai/api/v1/aidetect"
 
     if not isinstance(comentarios, list):
