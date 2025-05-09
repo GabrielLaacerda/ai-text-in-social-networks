@@ -3,7 +3,7 @@ import os
 import time
 
 #Autenticação da API
-openai.api_key = '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'
+openai.api_key = os.getenv('KEY_GPT')
 
 #Função que recebe as informações para montar o prompt que será enviado via API para a LLM
 def gerar_comentarios(persona, post, tema):
