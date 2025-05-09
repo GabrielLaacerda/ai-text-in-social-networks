@@ -1,6 +1,7 @@
 import requests
 import warnings
 import time
+import os
 
 # Função comum para calcular a probabilidade usando a API
 # Função para calcular a probabilidade e medir o tempo de chamada da API
@@ -32,7 +33,7 @@ def probabilidade_IA(comentarios, modelos):
     warnings.filterwarnings("ignore")
 
     # Define a chave da API e o endpoint
-    api_key = "1JIQU55BWAMDEXSZ0QZONSVZR2KWZRCQ"
+    api_key = os.getenv('SAPLING_API_KEY')
     url = "https://api.sapling.ai/api/v1/aidetect"
 
     if not isinstance(comentarios, list):
